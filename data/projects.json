@@ -818,5 +818,278 @@
     "featuredMetric": "Separated high engagement from high commercial relevance.",
     "sortDate": "2025-07",
     "priority": 8
+  },   {
+    "id": "public-sector-buying-committee-strategy",
+    "title": "Public-Sector Buying-Committee Strategy",
+    "employer": "Fresh Start in Education",
+    "summary": "Developed a commercial approach that recognised purchasing decisions as the result of multiple stakeholders, organisations and relationships.",
+    "details": "Structured commercial thinking around the reality that public-sector and education-sector decisions rarely depend on one person. The approach considered decision-makers, influencers, operational stakeholders, local authorities and organisational relationships across extended buying journeys.",
+    "tags": [
+      "Commercial Strategy",
+      "Salesforce & CRM",
+      "Data & Analytics",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Buying Committees",
+      "Stakeholder Mapping",
+      "Public-Sector Sales",
+      "Relationship Strategy",
+      "Commercial Planning"
+    ],
+    "tools": [
+      "Salesforce"
+    ],
+    "featuredMetric": "Shifted commercial analysis from individual leads to connected stakeholder groups.",
+    "sortDate": "2025-06",
+    "priority": 10
+  },
+  {
+    "id": "relationship-led-sales-model",
+    "title": "Relationship-Led Sales Model",
+    "employer": "Fresh Start in Education",
+    "summary": "Designed a sales approach centred on organisational relationships, stakeholder influence and long-term commercial engagement.",
+    "details": "Developed a relationship-led view of sales that treated contacts, organisations and external stakeholders as part of a connected commercial network. The model supported more informed engagement across complex and lengthy decision-making processes.",
+    "tags": [
+      "Commercial Strategy",
+      "Salesforce & CRM",
+      "Leadership & Stakeholder Management",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Relationship-Led Sales",
+      "Stakeholder Engagement",
+      "Account Strategy",
+      "Commercial Relationships",
+      "Customer Journeys"
+    ],
+    "tools": [
+      "Salesforce"
+    ],
+    "featuredMetric": "Connected individual engagement with broader organisational relationships.",
+    "sortDate": "2025-07",
+    "priority": 10
+  },
+  {
+    "id": "commercial-pricing-contract-segmentation",
+    "title": "Commercial Pricing and Contract Segmentation Framework",
+    "employer": "Fresh Start in Education",
+    "summary": "Structured pricing and segmentation around account relationships, contracts and organisational context.",
+    "details": "Developed an approach for applying pricing and segmentation rules using account hierarchies, local-authority relationships and commercial agreements. This supported more consistent pricing decisions and clearer commercial reporting.",
+    "tags": [
+      "Commercial Strategy",
+      "Salesforce & CRM",
+      "Data & Analytics",
+      "Operations",
+      "Automation"
+    ],
+    "skills": [
+      "Pricing Strategy",
+      "Contract Segmentation",
+      "Account Hierarchies",
+      "Commercial Governance",
+      "Data Modelling"
+    ],
+    "tools": [
+      "Salesforce",
+      "Custom Metadata Types"
+    ],
+    "featuredMetric": "Supported contract-based pricing across complex account relationships.",
+    "sortDate": "2025-04",
+    "priority": 9
+  },
+  {
+    "id": "account-based-marketing-strategy",
+    "title": "Account-Based Marketing for Complex Organisations",
+    "employer": "Fresh Start in Education",
+    "summary": "Applied account-based principles to organisations involving multiple stakeholders, relationships and commercial signals.",
+    "details": "Developed a more account-centred marketing approach by connecting individual engagement with wider organisational context. This allowed campaigns and commercial activity to consider stakeholder groups, account relationships and potential strategic value.",
+    "tags": [
+      "Commercial Strategy",
+      "Marketing",
+      "Automation",
+      "Salesforce & CRM",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Account-Based Marketing",
+      "Account Strategy",
+      "Stakeholder Segmentation",
+      "Audience Prioritisation",
+      "Commercial Targeting"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Linked individual campaign activity with organisation-level commercial context.",
+    "sortDate": "2025-08",
+    "priority": 9
+  },
+  {
+    "id": "long-cycle-b2b-customer-journey",
+    "title": "Long-Cycle B2B Customer Journey Design",
+    "employer": "Fresh Start in Education",
+    "summary": "Designed engagement approaches for lengthy buying journeys involving changing priorities and multiple decision-makers.",
+    "details": "Mapped commercial and marketing activity around extended B2B journeys where immediate conversion was unlikely. The approach considered long-term engagement, nurture, stakeholder changes and the need to maintain relevance across multiple stages.",
+    "tags": [
+      "Commercial Strategy",
+      "Marketing",
+      "Automation",
+      "Events & Engagement",
+      "Salesforce & CRM"
+    ],
+    "skills": [
+      "Customer Journey Design",
+      "B2B Marketing",
+      "Lead Nurturing",
+      "Lifecycle Marketing",
+      "Stakeholder Engagement"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Designed engagement around extended, multi-stage commercial journeys.",
+    "sortDate": "2025-07",
+    "priority": 9
+  },
+  {
+    "id": "sales-enablement-crm-intelligence",
+    "title": "Sales Enablement Through CRM Intelligence",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved the commercial value of CRM data by making stakeholder, account and engagement information more useful to sales teams.",
+    "details": "Structured CRM information so that sales activity could be informed by marketing engagement, organisational relationships, account context and previous interactions. The work aimed to make CRM data more actionable rather than merely administrative.",
+    "tags": [
+      "Commercial Strategy",
+      "Salesforce & CRM",
+      "Data & Analytics",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Sales Enablement",
+      "CRM Intelligence",
+      "Commercial Insight",
+      "Account Planning",
+      "Cross-Functional Collaboration"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Made marketing and relationship data more usable within commercial conversations.",
+    "sortDate": "2025-09",
+    "priority": 9
+  },
+  {
+    "id": "stakeholder-mapping-complex-sales",
+    "title": "Stakeholder Mapping for Complex Sales",
+    "employer": "Fresh Start in Education",
+    "summary": "Mapped the people, organisations and relationships influencing commercial decisions across complex accounts.",
+    "details": "Created a structured way to understand how different stakeholders influenced a potential purchase. The model considered roles, organisational relationships, authority, engagement and connections between individuals and accounts.",
+    "tags": [
+      "Commercial Strategy",
+      "Leadership & Stakeholder Management",
+      "Salesforce & CRM",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Stakeholder Mapping",
+      "Relationship Analysis",
+      "Buying Committees",
+      "Account Planning",
+      "Commercial Intelligence"
+    ],
+    "tools": [
+      "Salesforce"
+    ],
+    "featuredMetric": "Improved visibility of decision-makers, influencers and connected organisations.",
+    "sortDate": "2025-06",
+    "priority": 8
+  },
+  {
+    "id": "revenue-operations-model",
+    "title": "Revenue Operations Model for Sales and Marketing",
+    "employer": "Fresh Start in Education",
+    "summary": "Connected sales, marketing, CRM and reporting processes into a more consistent commercial operating model.",
+    "details": "Developed a revenue-operations approach that aligned data, campaign activity, sales workflows, reporting and governance. The work helped reduce separation between marketing engagement and commercial progression.",
+    "tags": [
+      "Commercial Strategy",
+      "Operations",
+      "Salesforce & CRM",
+      "Marketing",
+      "Automation",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Revenue Operations",
+      "Sales and Marketing Alignment",
+      "Commercial Systems",
+      "Process Design",
+      "Reporting"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Created a shared operating structure across sales, marketing and CRM.",
+    "sortDate": "2025-11",
+    "priority": 10
+  },
+  {
+    "id": "commercial-risk-opportunity-prioritisation",
+    "title": "Commercial Risk and Opportunity Prioritisation",
+    "employer": "Fresh Start in Education",
+    "summary": "Used account, engagement and pipeline information to support more deliberate commercial prioritisation.",
+    "details": "Combined commercial data, stakeholder relationships, engagement signals and opportunity information to distinguish stronger prospects from lower-priority activity. The approach supported more focused decision-making across limited time and resources.",
+    "tags": [
+      "Commercial Strategy",
+      "Data & Analytics",
+      "Salesforce & CRM",
+      "Operations"
+    ],
+    "skills": [
+      "Opportunity Prioritisation",
+      "Commercial Risk",
+      "Pipeline Analysis",
+      "Account Prioritisation",
+      "Decision Support"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Combined engagement and commercial context to support prioritisation.",
+    "sortDate": "2025-10",
+    "priority": 8
+  },
+  {
+    "id": "multi-channel-customer-acquisition",
+    "title": "Multi-Channel Customer Acquisition Strategy",
+    "employer": "Fresh Start in Education",
+    "summary": "Connected email, events, webinars, content, referrals and sales activity within one broader acquisition strategy.",
+    "details": "Developed a multi-channel view of customer acquisition that recognised the contribution of different interactions throughout the buying journey. The approach considered how marketing, events, referrals and sales engagement worked together rather than operating as isolated channels.",
+    "tags": [
+      "Commercial Strategy",
+      "Marketing",
+      "Automation",
+      "Events & Engagement",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Customer Acquisition",
+      "Multi-Channel Marketing",
+      "Campaign Strategy",
+      "Revenue Attribution",
+      "Customer Journeys"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE",
+      "Zoom"
+    ],
+    "featuredMetric": "Connected multiple engagement channels within one acquisition model.",
+    "sortDate": "2025-10",
+    "priority": 8
   }
 ]
