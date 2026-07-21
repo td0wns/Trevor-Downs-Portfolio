@@ -1851,5 +1851,282 @@
     "featuredMetric": "Strengthened accountability and consistency across departmental delivery.",
     "sortDate": "2025-12",
     "priority": 9
+  },  {
+    "id": "youth-event-portfolio-growth",
+    "title": "Youth Event Portfolio Growth Programme",
+    "employer": "Event and Conference Programmes",
+    "summary": "Expanded an event portfolio by improving programme relevance, audience engagement and the overall participant experience.",
+    "details": "Reviewed existing event activity and identified opportunities to strengthen programming, communication and audience appeal. The work focused on creating experiences that encouraged participation, repeat attendance and stronger long-term engagement.",
+    "tags": [
+      "Events & Engagement",
+      "Leadership & Stakeholder Management",
+      "Marketing",
+      "Operations"
+    ],
+    "skills": [
+      "Event Strategy",
+      "Audience Growth",
+      "Programme Development",
+      "Participant Engagement",
+      "Event Marketing"
+    ],
+    "tools": [
+      "Event Management Systems",
+      "CRM",
+      "Email Marketing"
+    ],
+    "featuredMetric": "Strengthened audience engagement across a growing event portfolio.",
+    "sortDate": "2024-10",
+    "priority": 10
+  },
+  {
+    "id": "large-scale-international-conference-operations",
+    "title": "Large-Scale International Conference Operations",
+    "employer": "Event and Conference Programmes",
+    "summary": "Supported the planning and delivery of complex international conferences involving multiple teams, audiences and operational workstreams.",
+    "details": "Coordinated practical requirements across registration, programming, venues, communications, volunteers and participant support. The work required detailed preparation, rapid problem-solving and close collaboration throughout live event delivery.",
+    "tags": [
+      "Events & Engagement",
+      "Operations",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Conference Operations",
+      "Event Logistics",
+      "Operational Planning",
+      "Live Event Delivery",
+      "Cross-Functional Coordination"
+    ],
+    "tools": [
+      "Event Management Systems",
+      "CRM",
+      "Registration Platforms"
+    ],
+    "featuredMetric": "Supported coordinated delivery across multiple international conference workstreams.",
+    "sortDate": "2024-09",
+    "priority": 10
+  },
+  {
+    "id": "international-conference-volunteer-management",
+    "title": "International Conference Volunteer Management",
+    "employer": "Event and Conference Programmes",
+    "summary": "Coordinated volunteer teams supporting participant services, programme delivery and live-event operations.",
+    "details": "Managed volunteer responsibilities through recruitment support, role allocation, briefings, scheduling and on-the-day communication. The approach helped volunteers understand their responsibilities while maintaining flexibility during changing live-event conditions.",
+    "tags": [
+      "Events & Engagement",
+      "Leadership & Stakeholder Management",
+      "Operations"
+    ],
+    "skills": [
+      "Volunteer Management",
+      "Team Briefing",
+      "Scheduling",
+      "Event Operations",
+      "Live Communication"
+    ],
+    "tools": [
+      "Event Management Systems",
+      "Scheduling Tools"
+    ],
+    "featuredMetric": "Created clearer volunteer coordination across complex conference operations.",
+    "sortDate": "2024-09",
+    "priority": 9
+  },
+  {
+    "id": "event-marketing-audience-growth",
+    "title": "Event Marketing and Audience-Growth Strategy",
+    "employer": "Event and Conference Programmes",
+    "summary": "Developed promotional activity designed to increase awareness, registration and participation across event audiences.",
+    "details": "Connected audience messaging, email communication, stakeholder outreach and programme positioning within a coordinated event-marketing approach. Campaign activity was shaped around audience needs and the value of attending.",
+    "tags": [
+      "Events & Engagement",
+      "Marketing",
+      "Automation",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Event Marketing",
+      "Audience Growth",
+      "Campaign Planning",
+      "Email Marketing",
+      "Registration Strategy"
+    ],
+    "tools": [
+      "Email Marketing",
+      "CRM",
+      "Event Registration Platforms"
+    ],
+    "featuredMetric": "Connected promotional campaigns with event registration and audience development.",
+    "sortDate": "2024-08",
+    "priority": 9
+  },
+  {
+    "id": "community-engagement-events-programmes",
+    "title": "Community Engagement Through Events and Programmes",
+    "employer": "Event and Conference Programmes",
+    "summary": "Used events and structured programmes to build stronger relationships with participants, communities and partner organisations.",
+    "details": "Designed engagement activity around meaningful participation rather than one-way communication. The approach combined events, regular contact and stakeholder relationships to create a stronger sense of connection and continuity.",
+    "tags": [
+      "Events & Engagement",
+      "Leadership & Stakeholder Management",
+      "Marketing"
+    ],
+    "skills": [
+      "Community Engagement",
+      "Programme Design",
+      "Relationship Building",
+      "Stakeholder Communication",
+      "Audience Development"
+    ],
+    "tools": [
+      "CRM",
+      "Email Marketing",
+      "Event Management Systems"
+    ],
+    "featuredMetric": "Built engagement beyond individual events through ongoing programme relationships.",
+    "sortDate": "2024-07",
+    "priority": 8
+  },
+  {
+    "id": "hybrid-event-webinar-delivery",
+    "title": "Hybrid Event and Webinar Delivery",
+    "employer": "Fresh Start in Education",
+    "summary": "Delivered digital and hybrid engagement activity that connected registration, attendance, communication and follow-up.",
+    "details": "Structured webinar and event processes across promotion, registration, attendance tracking and post-event communication. The work connected event participation with CRM and marketing records so engagement could contribute to wider customer journeys.",
+    "tags": [
+      "Events & Engagement",
+      "Marketing",
+      "Automation",
+      "Salesforce & CRM",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Webinar Delivery",
+      "Hybrid Events",
+      "Registration Management",
+      "Follow-Up Automation",
+      "Engagement Tracking"
+    ],
+    "tools": [
+      "Zoom",
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Connected webinar attendance with segmented follow-up and CRM reporting.",
+    "sortDate": "2025-08",
+    "priority": 9
+  },
+  {
+    "id": "event-registration-crm-engagement",
+    "title": "Event Registration and CRM Engagement Improvement",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved how event registrations and attendance information were captured, connected and used for follow-up.",
+    "details": "Reviewed the movement of event data from registration through to CRM and marketing systems. The improved structure supported campaign membership, audience segmentation, follow-up communications and analysis of event influence.",
+    "tags": [
+      "Events & Engagement",
+      "Salesforce & CRM",
+      "Marketing",
+      "Automation",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Event Registration",
+      "CRM Integration",
+      "Campaign Members",
+      "Data Capture",
+      "Audience Follow-Up"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE",
+      "Zoom"
+    ],
+    "featuredMetric": "Improved the connection between event participation and ongoing CRM engagement.",
+    "sortDate": "2025-08",
+    "priority": 9
+  },
+  {
+    "id": "multi-day-conference-logistics-risk",
+    "title": "Multi-Day Conference Logistics and Risk Management",
+    "employer": "Event and Conference Programmes",
+    "summary": "Planned and coordinated operational requirements for complex multi-day events with multiple dependencies.",
+    "details": "Managed logistics involving schedules, venues, participant movement, volunteers, communications and contingency planning. The work required identifying operational risks early and maintaining flexibility during live delivery.",
+    "tags": [
+      "Events & Engagement",
+      "Operations",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Event Logistics",
+      "Risk Management",
+      "Contingency Planning",
+      "Scheduling",
+      "Operational Coordination"
+    ],
+    "tools": [
+      "Event Management Systems",
+      "Scheduling Tools",
+      "Registration Platforms"
+    ],
+    "featuredMetric": "Coordinated multiple operational dependencies across multi-day event delivery.",
+    "sortDate": "2024-09",
+    "priority": 10
+  },
+  {
+    "id": "programme-revitalisation-attendance-growth",
+    "title": "Programme Revitalisation and Attendance Growth",
+    "employer": "Event and Conference Programmes",
+    "summary": "Refreshed event programming and engagement activity to improve relevance, participation and audience interest.",
+    "details": "Reviewed programme performance and audience response before introducing changes to content, structure and promotion. The work aimed to renew interest while preserving the elements participants valued most.",
+    "tags": [
+      "Events & Engagement",
+      "Marketing",
+      "Leadership & Stakeholder Management",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Programme Revitalisation",
+      "Attendance Growth",
+      "Audience Insight",
+      "Event Strategy",
+      "Performance Improvement"
+    ],
+    "tools": [
+      "CRM",
+      "Email Marketing",
+      "Event Management Systems"
+    ],
+    "featuredMetric": "Used audience insight to strengthen programme relevance and participation.",
+    "sortDate": "2024-10",
+    "priority": 9
+  },
+  {
+    "id": "stakeholder-engagement-long-buying-journeys",
+    "title": "Stakeholder Engagement Across Long Buying Journeys",
+    "employer": "Fresh Start in Education",
+    "summary": "Used events, webinars and ongoing communications to maintain stakeholder interest throughout extended commercial journeys.",
+    "details": "Designed engagement activity for prospects and organisations whose decisions could take place over long periods. Events and communications provided useful reasons to remain connected while supporting relationship development, segmentation and commercial follow-up.",
+    "tags": [
+      "Events & Engagement",
+      "Commercial Strategy",
+      "Marketing",
+      "Automation",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Stakeholder Engagement",
+      "Long-Cycle Sales",
+      "Event-Led Marketing",
+      "Lead Nurturing",
+      "Relationship Development"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE",
+      "Zoom"
+    ],
+    "featuredMetric": "Used recurring engagement to support relationships across extended buying journeys.",
+    "sortDate": "2025-09",
+    "priority": 9
   }
 ]
