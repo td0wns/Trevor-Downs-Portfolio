@@ -1,6 +1,4 @@
-@import url(
-  "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
-);
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
 
 :root {
   --background: #f3f0e9;
@@ -16,6 +14,10 @@
   --shadow: 0 20px 50px rgba(23, 32, 31, 0.09);
   --maximum-width: 1180px;
 }
+
+/* -------------------------------- */
+/* Base styles                      */
+/* -------------------------------- */
 
 * {
   box-sizing: border-box;
@@ -52,7 +54,13 @@ a {
   color: inherit;
 }
 
-/* Header */
+img {
+  max-width: 100%;
+}
+
+/* -------------------------------- */
+/* Header                           */
+/* -------------------------------- */
 
 .site-header {
   position: sticky;
@@ -96,6 +104,8 @@ a {
   width: 42px;
   height: 42px;
 
+  flex: 0 0 auto;
+
   display: grid;
   place-items: center;
 
@@ -115,7 +125,7 @@ a {
 
 .brand-text strong {
   font-family: "Manrope", sans-serif;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .brand-text small {
@@ -132,6 +142,7 @@ a {
 
 .site-navigation a {
   color: var(--muted);
+
   text-decoration: none;
   font-weight: 600;
 }
@@ -141,7 +152,9 @@ a {
   color: var(--accent);
 }
 
-/* Hero */
+/* -------------------------------- */
+/* Hero                             */
+/* -------------------------------- */
 
 .hero {
   min-height: 670px;
@@ -173,7 +186,6 @@ h3 {
   margin-top: 0;
 
   font-family: "Manrope", sans-serif;
-  line-height: 1.1;
   letter-spacing: -0.035em;
 }
 
@@ -182,16 +194,19 @@ h1 {
   margin-bottom: 24px;
 
   font-size: clamp(3.2rem, 7vw, 6.5rem);
+  line-height: 1.05;
 }
 
 h2 {
   margin-bottom: 16px;
 
   font-size: clamp(2rem, 4vw, 3.7rem);
+  line-height: 1.1;
 }
 
 h3 {
   font-size: 1.35rem;
+  line-height: 1.3;
 }
 
 .hero-introduction {
@@ -287,7 +302,9 @@ h3 {
   color: var(--muted);
 }
 
-/* Work section */
+/* -------------------------------- */
+/* Work section                     */
+/* -------------------------------- */
 
 .work-section {
   padding: 90px 0;
@@ -312,7 +329,9 @@ h3 {
   color: var(--muted);
 }
 
-/* Controls */
+/* -------------------------------- */
+/* Filtering and search controls    */
+/* -------------------------------- */
 
 .controls-panel {
   padding: 28px;
@@ -378,12 +397,14 @@ h3 {
   transition:
     border-color 140ms ease,
     background 140ms ease,
-    color 140ms ease;
+    color 140ms ease,
+    transform 140ms ease;
 }
 
 .tag-filter:hover,
 .tag-filter:focus-visible {
   border-color: var(--accent);
+  transform: translateY(-1px);
 }
 
 .tag-filter.active {
@@ -436,7 +457,9 @@ h3 {
   box-shadow: 0 0 0 3px rgba(23, 79, 69, 0.12);
 }
 
-/* Results heading */
+/* -------------------------------- */
+/* Results information              */
+/* -------------------------------- */
 
 .results-information {
   min-height: 68px;
@@ -454,18 +477,34 @@ h3 {
   color: var(--text);
 }
 
-/* Scrollable project library */
+/* -------------------------------- */
+/* Scrollable project library       */
+/* -------------------------------- */
 
 .project-grid {
   width: 100%;
-  height: 1214px;
+
+  /*
+    Three rows at a minimum of 500px each,
+    with two 22px gaps and small outer padding.
+    This creates a maximum of nine visible cards
+    on a three-column desktop layout.
+  */
+  max-height: 1552px;
 
   padding: 4px 14px 4px 4px;
 
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-auto-rows: 390px;
+
+  /*
+    Cards begin at 500px but the row can grow
+    when a card needs more room. Nothing is clipped.
+  */
+  grid-auto-rows: minmax(500px, auto);
+
   align-content: start;
+  align-items: stretch;
   gap: 22px;
 
   overflow-x: hidden;
@@ -475,6 +514,7 @@ h3 {
 
   overscroll-behavior: contain;
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 
   scrollbar-width: auto;
   scrollbar-color: var(--accent) var(--accent-soft);
@@ -502,16 +542,23 @@ h3 {
   background: var(--accent-dark);
 }
 
-/* Cards */
+/* -------------------------------- */
+/* Project cards                    */
+/* -------------------------------- */
 
 .project-card {
   min-width: 0;
-  min-height: 390px;
-  max-height: 390px;
-  overflow: hidden;
+  min-height: 500px;
 
   display: flex;
   flex-direction: column;
+
+  /*
+    This only keeps optional images inside the
+    rounded border. There is no maximum card height,
+    so text is not cut off.
+  */
+  overflow: hidden;
 
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -533,6 +580,8 @@ h3 {
   width: 100%;
   aspect-ratio: 16 / 8.5;
 
+  flex: 0 0 auto;
+
   object-fit: cover;
 
   border-bottom: 1px solid var(--border);
@@ -540,76 +589,103 @@ h3 {
 }
 
 .project-content {
-  height: 100%;
-  padding: 24px;
+  min-width: 0;
+  flex: 1;
+  padding: 26px;
 
   display: flex;
   flex-direction: column;
 }
 
 .project-employer {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 
   color: var(--accent);
 
   font-size: 0.78rem;
   font-weight: 800;
+  line-height: 1.4;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+
+  overflow-wrap: anywhere;
 }
+
+/*
+  No line clamp.
+  No hidden title overflow.
+  Long titles wrap naturally and remain readable.
+*/
 
 .project-card h3 {
-  margin-bottom: 12px;
+  margin: 0 0 16px;
 
-  display: -webkit-box;
-  overflow: hidden;
+  color: var(--text);
 
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  font-size: 1.3rem;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
 }
+
+/*
+  No line clamp.
+  Full summary text is displayed.
+*/
 
 .project-summary {
   margin: 0;
 
-  display: -webkit-box;
-  overflow: hidden;
-
   color: var(--muted);
 
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  font-size: 0.98rem;
+  line-height: 1.65;
+
+  overflow-wrap: anywhere;
 }
 
+/*
+  No line clamp.
+  The full metric is displayed.
+*/
+
 .project-metric {
-  margin: 20px 0 0;
+  margin: 22px 0 0;
   padding: 14px 16px;
 
-  display: -webkit-box;
-  overflow: hidden;
-
   border-left: 3px solid var(--warm);
+  border-radius: 0 8px 8px 0;
 
   background: rgba(217, 143, 78, 0.1);
 
+  font-size: 0.94rem;
   font-weight: 700;
+  line-height: 1.55;
 
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  overflow-wrap: anywhere;
 }
+
+/*
+  Tags are pushed toward the bottom when space
+  is available, but remain fully visible when
+  the content makes the card taller.
+*/
 
 .project-tags {
   margin-top: auto;
-  padding-top: 22px;
+  padding-top: 24px;
 
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 7px;
-
-  max-height: 72px;
-  overflow: hidden;
 }
 
 .project-tag {
+  max-width: 100%;
   padding: 6px 9px;
 
   border-radius: 6px;
@@ -619,9 +695,14 @@ h3 {
 
   font-size: 0.76rem;
   font-weight: 700;
+  line-height: 1.35;
+
+  overflow-wrap: anywhere;
 }
 
-/* Empty results */
+/* -------------------------------- */
+/* Empty results                    */
+/* -------------------------------- */
 
 .empty-state {
   padding: 60px 20px;
@@ -634,12 +715,18 @@ h3 {
   background: var(--surface);
 }
 
+.empty-state h3 {
+  margin-bottom: 10px;
+}
+
 .empty-state p {
-  margin-bottom: 0;
+  margin: 0;
   color: var(--muted);
 }
 
-/* About */
+/* -------------------------------- */
+/* About section                    */
+/* -------------------------------- */
 
 .about-section {
   padding: 100px 0;
@@ -660,7 +747,9 @@ h3 {
   margin-top: 0;
 }
 
-/* Footer */
+/* -------------------------------- */
+/* Footer                           */
+/* -------------------------------- */
 
 .site-footer {
   width: min(92%, var(--maximum-width));
@@ -684,14 +773,23 @@ h3 {
   font-weight: 700;
 }
 
-/* Tablet */
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------- */
+/* Tablet layout                    */
+/* -------------------------------- */
 
 @media (max-width: 1000px) {
   .project-grid {
-    height: 1214px;
-
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: 390px;
+    grid-auto-rows: minmax(500px, auto);
+
+    /*
+      Three rows of two cards are visible on tablet.
+    */
+    max-height: 1552px;
   }
 }
 
@@ -716,7 +814,9 @@ h3 {
   }
 }
 
-/* Mobile */
+/* -------------------------------- */
+/* Mobile layout                    */
+/* -------------------------------- */
 
 @media (max-width: 620px) {
   .header-inner {
@@ -757,7 +857,7 @@ h3 {
   }
 
   .project-grid {
-    height: 750px;
+    max-height: 780px;
 
     padding-right: 10px;
 
@@ -766,7 +866,36 @@ h3 {
   }
 
   .project-card {
-    min-height: 390px;
-    max-height: none;
+    min-height: 0;
+  }
+
+  .project-content {
+    padding: 24px;
+  }
+
+  .project-card h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* -------------------------------- */
+/* Reduced-motion accessibility     */
+/* -------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .button,
+  .tag-filter,
+  .project-card {
+    transition: none;
+  }
+
+  .project-card:hover,
+  .button:hover,
+  .tag-filter:hover {
+    transform: none;
   }
 }
