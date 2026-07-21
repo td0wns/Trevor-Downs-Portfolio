@@ -1364,5 +1364,226 @@
     "featuredMetric": "Created clearer ownership across operational workflows and delivery responsibilities.",
     "sortDate": "2025-11",
     "priority": 9
+  },  {
+    "id": "ai-assisted-newsletter-engagement-application",
+    "title": "AI-Assisted Newsletter Engagement Application",
+    "employer": "Independent Project",
+    "summary": "Designed a lightweight application concept for turning newsletter engagement into a more interactive and visible experience.",
+    "details": "Explored how AI-assisted development could be used to create a practical engagement tool around newsletter activity. The concept focused on presenting interaction data clearly, encouraging participation and transforming passive communications into a more engaging digital experience.",
+    "tags": [
+      "AI-Assisted Innovation",
+      "Marketing",
+      "Automation",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "AI-Assisted Development",
+      "Product Design",
+      "Engagement Strategy",
+      "Rapid Prototyping",
+      "Data Visualisation"
+    ],
+    "tools": [
+      "ChatGPT",
+      "GitHub",
+      "Vercel"
+    ],
+    "featuredMetric": "Turned an engagement concept into a functioning web-based prototype.",
+    "sortDate": "2026-06",
+    "priority": 10
+  },
+  {
+    "id": "rapid-prototyping-chatgpt-github-vercel",
+    "title": "Rapid Prototyping With ChatGPT, GitHub and Vercel",
+    "employer": "Independent Project",
+    "summary": "Used AI-assisted coding and cloud deployment tools to move rapidly from an initial concept to a working application.",
+    "details": "Combined conversational development, version control and cloud deployment to build and test web-based ideas quickly. The workflow supported iterative problem-solving, interface refinement, debugging and deployment without requiring a traditional software-development process.",
+    "tags": [
+      "AI-Assisted Innovation",
+      "Automation",
+      "Operations"
+    ],
+    "skills": [
+      "Rapid Prototyping",
+      "AI-Assisted Coding",
+      "Version Control",
+      "Cloud Deployment",
+      "Iterative Development"
+    ],
+    "tools": [
+      "ChatGPT",
+      "GitHub",
+      "Vercel"
+    ],
+    "featuredMetric": "Created a reusable workflow from prompt-led development through to live deployment.",
+    "sortDate": "2026-06",
+    "priority": 10
+  },
+  {
+    "id": "ai-assisted-stakeholder-engagement-tool",
+    "title": "AI-Assisted Stakeholder Engagement Tool",
+    "employer": "Independent Project",
+    "summary": "Developed a digital concept for presenting stakeholder activity and encouraging participation through an accessible interface.",
+    "details": "Used AI-assisted design and development to explore how engagement data could be transformed into a practical stakeholder-facing tool. The work combined audience needs, interface design, data handling and iterative testing.",
+    "tags": [
+      "AI-Assisted Innovation",
+      "Leadership & Stakeholder Management",
+      "Events & Engagement",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Stakeholder Engagement",
+      "Product Development",
+      "User Experience",
+      "AI-Assisted Coding",
+      "Digital Innovation"
+    ],
+    "tools": [
+      "ChatGPT",
+      "GitHub",
+      "Vercel"
+    ],
+    "featuredMetric": "Converted stakeholder-engagement requirements into an interactive digital prototype.",
+    "sortDate": "2026-05",
+    "priority": 9
+  },
+  {
+    "id": "agent-ready-commercial-data-architecture",
+    "title": "Agent-Ready CRM and Marketing Data Architecture",
+    "employer": "Fresh Start in Education",
+    "summary": "Structured CRM and marketing data so it could support future AI-assisted workflows, analysis and automated decision-making.",
+    "details": "Considered how cleaner relationships, consistent definitions and governed data structures could enable future AI agents and intelligent automation. The approach prioritised reliable account, stakeholder, campaign and commercial data rather than adding AI to fragmented information.",
+    "tags": [
+      "AI-Assisted Innovation",
+      "Salesforce & CRM",
+      "Marketing",
+      "Automation",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "AI-Ready Data",
+      "Data Architecture",
+      "CRM Strategy",
+      "Marketing Operations",
+      "Automation Planning"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Designed data foundations capable of supporting future intelligent automation.",
+    "sortDate": "2025-12",
+    "priority": 9
+  },
+  {
+    "id": "ai-assisted-commercial-product-innovation",
+    "title": "AI-Assisted Coding for Commercial Product Innovation",
+    "employer": "Independent Project",
+    "summary": "Applied AI-assisted coding to develop commercial and engagement ideas without relying on a conventional development team.",
+    "details": "Used conversational coding tools to translate commercial requirements into working interfaces and application behaviour. The process involved defining functionality, generating code, testing results, identifying errors and refining the product through repeated iterations.",
+    "tags": [
+      "AI-Assisted Innovation",
+      "Commercial Strategy",
+      "Automation",
+      "Operations"
+    ],
+    "skills": [
+      "AI-Assisted Coding",
+      "Commercial Innovation",
+      "Product Development",
+      "Problem Solving",
+      "Application Testing"
+    ],
+    "tools": [
+      "ChatGPT",
+      "GitHub",
+      "Vercel"
+    ],
+    "featuredMetric": "Reduced the distance between a commercial idea and a testable digital product.",
+    "sortDate": "2026-05",
+    "priority": 9
+  },
+  {
+    "id": "prompt-led-product-design-testing",
+    "title": "Prompt-Led Product Design and Testing",
+    "employer": "Independent Project",
+    "summary": "Used structured prompting to define product requirements, generate functionality and improve digital experiences through testing.",
+    "details": "Developed a prompt-led workflow for turning an initial idea into increasingly specific product requirements. Prompts were used to shape layouts, application behaviour, data structures and corrections, while testing was used to validate each iteration.",
+    "tags": [
+      "AI-Assisted Innovation",
+      "Operations",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Prompt Design",
+      "Product Requirements",
+      "Iterative Testing",
+      "User Experience",
+      "Quality Assurance"
+    ],
+    "tools": [
+      "ChatGPT",
+      "GitHub"
+    ],
+    "featuredMetric": "Created an iterative product-development process driven by structured prompts and testing.",
+    "sortDate": "2026-04",
+    "priority": 8
+  },
+  {
+    "id": "privacy-conscious-engagement-leaderboard",
+    "title": "Privacy-Conscious Engagement Leaderboard Application",
+    "employer": "Independent Project",
+    "summary": "Designed an engagement leaderboard concept that balanced visibility, participation and responsible handling of personal information.",
+    "details": "Explored how engagement information could be presented in a motivating format without exposing unnecessary personal data. The application concept considered display names, ranking logic, consent, data minimisation and the difference between public recognition and private reporting.",
+    "tags": [
+      "AI-Assisted Innovation",
+      "Events & Engagement",
+      "Data & Analytics",
+      "Operations"
+    ],
+    "skills": [
+      "Privacy by Design",
+      "Engagement Design",
+      "Data Minimisation",
+      "Leaderboard Logic",
+      "Application Design"
+    ],
+    "tools": [
+      "ChatGPT",
+      "GitHub",
+      "Vercel"
+    ],
+    "featuredMetric": "Combined engagement mechanics with privacy-conscious product design.",
+    "sortDate": "2026-06",
+    "priority": 9
+  },
+  {
+    "id": "ai-ready-commercial-systems-planning",
+    "title": "AI-Ready Commercial Systems Planning",
+    "employer": "Fresh Start in Education",
+    "summary": "Planned commercial systems around governed data, repeatable workflows and future AI-assisted capabilities.",
+    "details": "Considered how CRM, marketing automation and reporting structures would need to evolve before intelligent agents could be used safely and effectively. The planning focused on data quality, permissions, process consistency, ownership and reliable system relationships.",
+    "tags": [
+      "AI-Assisted Innovation",
+      "Commercial Strategy",
+      "Salesforce & CRM",
+      "Automation",
+      "Operations"
+    ],
+    "skills": [
+      "AI Strategy",
+      "Commercial Systems",
+      "Automation Planning",
+      "Data Governance",
+      "Digital Transformation"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE",
+      "ChatGPT"
+    ],
+    "featuredMetric": "Connected current platform improvements with future AI-assisted commercial operations.",
+    "sortDate": "2025-12",
+    "priority": 8
   }
 ]
