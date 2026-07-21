@@ -266,7 +266,8 @@
     "featuredMetric": "Created a stronger data foundation for pipeline and revenue forecasting.",
     "sortDate": "2025-12",
     "priority": 8
-  {
+  },
+   {
     "id": "mcae-platform-architecture-rebuild",
     "title": "MCAE Platform Architecture and Rebuild",
     "employer": "Fresh Start in Education",
