@@ -1585,5 +1585,271 @@
     "featuredMetric": "Connected current platform improvements with future AI-assisted commercial operations.",
     "sortDate": "2025-12",
     "priority": 8
+  },  {
+    "id": "cross-functional-sales-marketing-leadership",
+    "title": "Cross-Functional Leadership Across Sales and Marketing",
+    "employer": "Fresh Start in Education",
+    "summary": "Led work spanning sales, marketing, CRM, data and operational priorities to create more connected commercial practices.",
+    "details": "Coordinated requirements across teams that used the same customer and commercial information in different ways. The work involved balancing strategic priorities, technical constraints, operational needs and user expectations while building more consistent processes.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Commercial Strategy",
+      "Marketing",
+      "Salesforce & CRM",
+      "Operations"
+    ],
+    "skills": [
+      "Cross-Functional Leadership",
+      "Sales and Marketing Alignment",
+      "Stakeholder Management",
+      "Commercial Operations",
+      "Decision-Making"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Aligned commercial, marketing and operational requirements across shared systems.",
+    "sortDate": "2025-11",
+    "priority": 10
+  },
+  {
+    "id": "technical-commercial-stakeholder-management",
+    "title": "Stakeholder Management Across Technical and Commercial Teams",
+    "employer": "Fresh Start in Education",
+    "summary": "Translated between technical platform requirements and the practical needs of commercial and marketing stakeholders.",
+    "details": "Managed discussions involving users, decision-makers and technical contributors with different priorities and levels of system knowledge. The work focused on clarifying requirements, explaining trade-offs and maintaining progress across interconnected projects.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Salesforce & CRM",
+      "Operations",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Stakeholder Management",
+      "Requirements Gathering",
+      "Technical Communication",
+      "Commercial Communication",
+      "Conflict Resolution"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Converted differing technical and commercial priorities into shared delivery requirements.",
+    "sortDate": "2025-10",
+    "priority": 10
+  },
+  {
+    "id": "salesforce-mcae-user-training",
+    "title": "Salesforce and MCAE User Training Programme",
+    "employer": "Fresh Start in Education",
+    "summary": "Developed practical training to help users understand new Salesforce and marketing automation structures and processes.",
+    "details": "Created guidance around CRM records, platform responsibilities, campaign processes, data quality and new workflows. Training was adapted for users with different levels of confidence and focused on both how processes worked and why consistent use mattered.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Salesforce & CRM",
+      "Marketing",
+      "Automation",
+      "Operations"
+    ],
+    "skills": [
+      "User Training",
+      "Salesforce Adoption",
+      "MCAE Training",
+      "Process Documentation",
+      "Change Communication"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Supported adoption of connected CRM and marketing automation practices.",
+    "sortDate": "2025-11",
+    "priority": 9
+  },
+  {
+    "id": "operational-change-system-adoption",
+    "title": "Leadership of Operational Change and System Adoption",
+    "employer": "Fresh Start in Education",
+    "summary": "Led users through changes to systems, responsibilities, workflows and data-management expectations.",
+    "details": "Supported operational change by explaining the purpose of new processes, gathering concerns, addressing practical barriers and helping users adjust to different ways of working. The approach treated adoption as an ongoing leadership responsibility rather than a one-off system launch.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Operations",
+      "Salesforce & CRM",
+      "Automation"
+    ],
+    "skills": [
+      "Change Leadership",
+      "System Adoption",
+      "User Engagement",
+      "Operational Change",
+      "Communication"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Combined platform implementation with sustained user and operational support.",
+    "sortDate": "2025-10",
+    "priority": 10
+  },
+  {
+    "id": "team-workflow-responsibility-restructure",
+    "title": "Team Workflow and Responsibility Restructure",
+    "employer": "Fresh Start in Education",
+    "summary": "Clarified ownership and redesigned recurring workflows to improve accountability and delivery.",
+    "details": "Reviewed how work moved between individuals and teams, identifying areas where responsibilities overlapped or remained unclear. The resulting structure created clearer ownership, decision points and escalation routes across recurring activity.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Operations",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Team Restructure",
+      "Responsibility Design",
+      "Workflow Management",
+      "Accountability",
+      "Operational Leadership"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Established clearer ownership across shared operational workflows.",
+    "sortDate": "2025-09",
+    "priority": 9
+  },
+  {
+    "id": "executive-commercial-systems-collaboration",
+    "title": "Executive Collaboration on Commercial Systems Strategy",
+    "employer": "Fresh Start in Education",
+    "summary": "Worked with senior stakeholders to connect system decisions with wider commercial and organisational priorities.",
+    "details": "Presented platform, data and workflow considerations in terms of commercial impact, operational risk and future capability. This supported more informed decisions about priorities, governance and the direction of connected sales and marketing systems.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Commercial Strategy",
+      "Salesforce & CRM",
+      "Operations",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Executive Communication",
+      "Strategic Planning",
+      "Commercial Systems",
+      "Decision Support",
+      "Stakeholder Influence"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Connected technical system choices with strategic commercial outcomes.",
+    "sortDate": "2025-12",
+    "priority": 10
+  },
+  {
+    "id": "coaching-process-technology-change",
+    "title": "Coaching Teams Through Process and Technology Change",
+    "employer": "Fresh Start in Education",
+    "summary": "Helped teams build confidence in new processes, systems and responsibilities through practical coaching and support.",
+    "details": "Provided ongoing guidance as users adapted to changed workflows and platform expectations. Coaching focused on solving real operational problems, reinforcing consistent practices and helping individuals understand how their work affected wider data and commercial outcomes.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Operations",
+      "Salesforce & CRM"
+    ],
+    "skills": [
+      "Team Coaching",
+      "Change Support",
+      "User Adoption",
+      "Problem Solving",
+      "Capability Building"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Supported sustained adoption beyond initial system and process training.",
+    "sortDate": "2025-11",
+    "priority": 8
+  },
+  {
+    "id": "partnership-client-relationship-management",
+    "title": "Partnership and Client Relationship Management",
+    "employer": "Fresh Start in Education",
+    "summary": "Managed relationships with external stakeholders through clear communication, responsiveness and long-term engagement.",
+    "details": "Maintained productive relationships by understanding stakeholder priorities, coordinating communication and responding to changing requirements. The approach focused on trust, continuity and the broader organisational context surrounding each relationship.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Commercial Strategy",
+      "Events & Engagement"
+    ],
+    "skills": [
+      "Relationship Management",
+      "Client Engagement",
+      "Partnership Working",
+      "Communication",
+      "Stakeholder Support"
+    ],
+    "tools": [
+      "Salesforce"
+    ],
+    "featuredMetric": "Supported longer-term engagement across varied stakeholder and organisational relationships.",
+    "sortDate": "2024-12",
+    "priority": 8
+  },
+  {
+    "id": "large-scale-event-volunteer-leadership",
+    "title": "Volunteer Leadership Across Large-Scale Events",
+    "employer": "Event and Conference Programmes",
+    "summary": "Led and coordinated volunteers supporting complex events involving large audiences and multiple operational workstreams.",
+    "details": "Supported volunteer teams through clear briefings, role allocation, communication and on-the-day problem-solving. The work required maintaining participant experience while responding to changing operational demands in a live environment.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Events & Engagement",
+      "Operations"
+    ],
+    "skills": [
+      "Volunteer Leadership",
+      "Event Operations",
+      "Team Coordination",
+      "Live Problem Solving",
+      "Briefing and Communication"
+    ],
+    "tools": [
+      "Event Management Systems",
+      "CRM"
+    ],
+    "featuredMetric": "Coordinated volunteer activity across complex live-event operations.",
+    "sortDate": "2024-08",
+    "priority": 9
+  },
+  {
+    "id": "departmental-leadership-performance-improvement",
+    "title": "Departmental Leadership and Performance Improvement",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved departmental performance through clearer priorities, stronger processes and more consistent accountability.",
+    "details": "Reviewed recurring activity, team responsibilities and operational pressures to identify opportunities for improvement. Leadership focused on clarifying expectations, resolving blockers and creating working practices that supported more dependable delivery.",
+    "tags": [
+      "Leadership & Stakeholder Management",
+      "Operations",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Departmental Leadership",
+      "Performance Improvement",
+      "Operational Planning",
+      "Team Management",
+      "Continuous Improvement"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Strengthened accountability and consistency across departmental delivery.",
+    "sortDate": "2025-12",
+    "priority": 9
   }
 ]
