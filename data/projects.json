@@ -266,5 +266,284 @@
     "featuredMetric": "Created a stronger data foundation for pipeline and revenue forecasting.",
     "sortDate": "2025-12",
     "priority": 8
+  {
+    "id": "mcae-platform-architecture-rebuild",
+    "title": "MCAE Platform Architecture and Rebuild",
+    "employer": "Fresh Start in Education",
+    "summary": "Established a governed MCAE environment designed around segmentation, consent, campaign delivery and integration with Salesforce.",
+    "details": "Designed and rebuilt the organisation's marketing automation environment around more reliable data, clearer governance and stronger alignment with Salesforce. The work created a foundation for segmented communications, campaign reporting, audience management and future automation.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Salesforce & CRM",
+      "Operations"
+    ],
+    "skills": [
+      "MCAE Administration",
+      "Platform Architecture",
+      "Marketing Operations",
+      "Audience Management",
+      "CRM Integration"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Created a governed marketing automation foundation connected with Salesforce.",
+    "sortDate": "2025-02",
+    "priority": 10
+  },
+  {
+    "id": "mcae-consent-suppression-preferences",
+    "title": "MCAE Consent, Suppression and Preference Framework",
+    "employer": "Fresh Start in Education",
+    "summary": "Developed structured rules for consent, communication preferences and suppression across marketing audiences.",
+    "details": "Created a more controlled approach to deciding who could receive communications, which messages were appropriate and when records should be excluded. The framework supported safer campaign delivery and more consistent handling of consent and communication preferences.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Salesforce & CRM",
+      "Operations",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Consent Governance",
+      "Suppression Logic",
+      "Preference Management",
+      "Data Protection",
+      "Audience Governance"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Introduced clearer consent and suppression controls across campaign audiences.",
+    "sortDate": "2025-03",
+    "priority": 9
+  },
+  {
+    "id": "marketing-audience-segmentation",
+    "title": "Marketing Automation Audience Segmentation Model",
+    "employer": "Fresh Start in Education",
+    "summary": "Designed reusable audience structures based on stakeholder type, organisational relationships, engagement and commercial relevance.",
+    "details": "Built a segmentation approach that moved beyond broad mailing lists. Audiences could be shaped using CRM information, stakeholder characteristics, organisational relationships, engagement activity and commercial context.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Data & Analytics",
+      "Commercial Strategy",
+      "Salesforce & CRM"
+    ],
+    "skills": [
+      "Audience Segmentation",
+      "Dynamic Lists",
+      "Stakeholder Segmentation",
+      "CRM Data",
+      "Campaign Targeting"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Enabled more targeted communication across complex stakeholder groups.",
+    "sortDate": "2025-05",
+    "priority": 9
+  },
+  {
+    "id": "lead-scoring-profile-grading",
+    "title": "Lead Scoring and Profile Grading Framework",
+    "employer": "Fresh Start in Education",
+    "summary": "Structured behavioural scoring and profile grading to distinguish engagement from strategic commercial fit.",
+    "details": "Developed an approach that treated behavioural engagement and organisational suitability as different signals. Scoring reflected interactions and activity, while grading considered whether a prospect matched the organisation's desired profile and commercial priorities.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Data & Analytics",
+      "Commercial Strategy",
+      "Salesforce & CRM"
+    ],
+    "skills": [
+      "Lead Scoring",
+      "Profile Grading",
+      "Prospect Prioritisation",
+      "Behavioural Data",
+      "Commercial Qualification"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Separated engagement signals from commercial-fit indicators.",
+    "sortDate": "2025-06",
+    "priority": 9
+  },
+  {
+    "id": "mcae-campaign-revenue-engine",
+    "title": "MCAE Campaign and Revenue Engine",
+    "employer": "Fresh Start in Education",
+    "summary": "Managed segmented campaigns across email, events, webinars and gated content while connecting engagement with commercial outcomes.",
+    "details": "Created and managed a repeatable campaign operating model across multiple content and engagement formats. Campaign activity was structured to support audience targeting, engagement analysis, Salesforce visibility and assessment of commercial influence.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Data & Analytics",
+      "Commercial Strategy",
+      "Salesforce & CRM"
+    ],
+    "skills": [
+      "Campaign Management",
+      "Revenue Influence",
+      "Email Marketing",
+      "Campaign Reporting",
+      "Audience Engagement"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce",
+      "Zoom"
+    ],
+    "featuredMetric": "Managed more than 50 segmented campaigns.",
+    "sortDate": "2025-10",
+    "priority": 10
+  },
+  {
+    "id": "email-deliverability-database-cleaning",
+    "title": "Email Deliverability and Database-Cleaning Programme",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved email performance by removing poor-quality records, strengthening audience controls and rebuilding campaign practices.",
+    "details": "Reviewed legacy marketing data to identify invalid, duplicated, outdated and commercially unusable records. Combined database rationalisation with improved campaign practices, suppression controls and audience management to strengthen delivery performance.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Data & Analytics",
+      "Operations"
+    ],
+    "skills": [
+      "Email Deliverability",
+      "Database Cleaning",
+      "Data Hygiene",
+      "Suppression Management",
+      "Audience Quality"
+    ],
+    "tools": [
+      "MCAE",
+      "Mailchimp",
+      "Salesforce"
+    ],
+    "featuredMetric": "Improved successful email send rates to approximately 99%.",
+    "sortDate": "2025-01",
+    "priority": 10
+  },
+  {
+    "id": "automated-lead-nurture-journeys",
+    "title": "Automated Lead-Nurture Journey Design",
+    "employer": "Fresh Start in Education",
+    "summary": "Designed automated communications intended to maintain engagement throughout long and complex buying journeys.",
+    "details": "Structured nurture activity around the reality that education and public-sector decisions can involve long timeframes and multiple stakeholders. The approach used segmentation, engagement signals and planned communications to sustain interest without relying entirely on manual follow-up.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Commercial Strategy",
+      "Salesforce & CRM"
+    ],
+    "skills": [
+      "Lead Nurturing",
+      "Customer Journeys",
+      "Engagement Studio",
+      "Lifecycle Marketing",
+      "Audience Segmentation"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Supported engagement across extended B2B and public-sector buying journeys.",
+    "sortDate": "2025-07",
+    "priority": 8
+  },
+  {
+    "id": "marketing-automation-governance",
+    "title": "Marketing Automation Governance and Quality Assurance",
+    "employer": "Fresh Start in Education",
+    "summary": "Introduced clearer controls for campaign creation, audience selection, testing, approval and ongoing platform management.",
+    "details": "Developed more consistent practices for planning and delivering automated marketing activity. The work addressed audience checks, suppression, testing, naming conventions, campaign structure and the operational risks created by poorly governed automation.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Operations",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Marketing Governance",
+      "Quality Assurance",
+      "Campaign Testing",
+      "Process Design",
+      "Risk Management"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Created repeatable controls for safer and more consistent campaign delivery.",
+    "sortDate": "2025-09",
+    "priority": 8
+  },
+  {
+    "id": "webinar-event-lead-capture",
+    "title": "Webinar and Event Lead-Capture Automation",
+    "employer": "Fresh Start in Education",
+    "summary": "Connected webinar and event participation with CRM and marketing records to support follow-up, segmentation and reporting.",
+    "details": "Structured event and webinar activity so registrations and engagement could contribute to wider customer journeys. The approach supported lead capture, campaign membership, segmented follow-up and improved visibility of event influence.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Events & Engagement",
+      "Salesforce & CRM",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Event Lead Capture",
+      "Webinar Marketing",
+      "Campaign Members",
+      "Follow-Up Automation",
+      "Engagement Tracking"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce",
+      "Zoom"
+    ],
+    "featuredMetric": "Connected event engagement with CRM follow-up and campaign reporting.",
+    "sortDate": "2025-08",
+    "priority": 8
+  },
+  {
+    "id": "mailchimp-mcae-operational-transition",
+    "title": "Mailchimp-to-MCAE Migration and Operational Transition",
+    "employer": "Fresh Start in Education",
+    "summary": "Managed the transition from fragmented Mailchimp practices to a more integrated and governed Salesforce marketing operation.",
+    "details": "Focused on the migration journey rather than only the new platform design. This included reviewing legacy audiences, rationalising records, changing campaign processes, introducing new controls and helping move marketing activity into a Salesforce-connected operating model.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Salesforce & CRM",
+      "Operations",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Platform Migration",
+      "Change Management",
+      "Legacy Data",
+      "Process Transformation",
+      "User Adoption"
+    ],
+    "tools": [
+      "Mailchimp",
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Transitioned marketing activity into a governed Salesforce-connected platform.",
+    "sortDate": "2025-02",
+    "priority": 9
   }
 ]
