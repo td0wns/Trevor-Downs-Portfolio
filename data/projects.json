@@ -1,0 +1,208 @@
+[
+  {
+    "id": "salesforce-attribution-model",
+    "title": "Salesforce Multi-Touch Attribution Model",
+    "employer": "Fresh Start in Education",
+    "summary": "Designed a weighted attribution model connecting recent email, event, sales and organisational engagement across complex education-sector buying committees.",
+    "tags": [
+      "Salesforce & CRM",
+      "Automation",
+      "Data & Analytics",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Salesforce Flow",
+      "Campaign Members",
+      "Custom Objects",
+      "Revenue Attribution"
+    ],
+    "outcomes": [
+      "Allocated enquiry and referral influence across multiple channels",
+      "Created structured data for dashboards and revenue reporting"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE",
+      "Custom Metadata Types"
+    ],
+    "featuredMetric": "Normalised attribution across applicable channels to 100%.",
+    "sortDate": "2025-08",
+    "priority": 10
+  },
+  {
+    "id": "mcae-platform-rebuild",
+    "title": "MCAE Migration and Platform Rebuild",
+    "employer": "Fresh Start in Education",
+    "summary": "Led the migration from a high-risk Mailchimp and legacy CRM environment into a governed MCAE instance with consent, suppression and audience-management controls.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Data & Analytics",
+      "Operations"
+    ],
+    "skills": [
+      "MCAE Administration",
+      "CRM Migration",
+      "Consent Governance",
+      "Data Hygiene"
+    ],
+    "outcomes": [
+      "Reduced approximately 30,000 legacy contacts to 19,000 viable prospects",
+      "Improved successful send rate"
+    ],
+    "tools": [
+      "MCAE",
+      "Mailchimp",
+      "Salesforce"
+    ],
+    "featuredMetric": "Improved successful send rate to approximately 99%.",
+    "sortDate": "2025-01",
+    "priority": 10
+  },
+  {
+    "id": "local-authority-data-model",
+    "title": "Local-Authority Commercial Data Model",
+    "employer": "Fresh Start in Education",
+    "summary": "Designed a Salesforce parent-account and contract-pricing model representing local-authority influence across accounts, contacts, leads and opportunities.",
+    "tags": [
+      "Salesforce & CRM",
+      "Automation",
+      "Data & Analytics",
+      "Commercial Strategy",
+      "Operations"
+    ],
+    "skills": [
+      "Account Hierarchies",
+      "Salesforce Flow",
+      "Contract Pricing",
+      "CRM Governance"
+    ],
+    "outcomes": [
+      "Supported account governance and contract-based segmentation",
+      "Improved pricing and forecasting accuracy"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE",
+      "Custom Metadata Types"
+    ],
+    "featuredMetric": "Applied across 1,000+ accounts and 20,000+ leads and contacts.",
+    "sortDate": "2025-04",
+    "priority": 9
+  },
+  {
+    "id": "mcae-campaign-performance",
+    "title": "MCAE Campaign and Revenue Engine",
+    "employer": "Fresh Start in Education",
+    "summary": "Managed segmented campaign operations across email, events, webinars and gated content while connecting performance with purchase and revenue influence.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Data & Analytics",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Campaign Operations",
+      "Email Marketing",
+      "Marketing Analytics",
+      "Revenue Influence"
+    ],
+    "outcomes": [
+      "Managed more than 50 campaigns",
+      "Supported events, webinars and gated content"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce",
+      "Zoom"
+    ],
+    "featuredMetric": "Raised average open rates from approximately 8% to 40%.",
+    "sortDate": "2025-10",
+    "priority": 9
+  },
+  {
+    "id": "newsletter-engagement-app",
+    "title": "Recurring Newsletter Engagement Application",
+    "employer": "Fresh Start in Education",
+    "summary": "Conceived, tested and deployed a mobile-friendly web application designed to sustain stakeholder engagement during a long B2B buying journey.",
+    "tags": [
+      "Marketing",
+      "AI-Assisted Innovation",
+      "Events & Engagement",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Rapid Prototyping",
+      "Prompt Engineering",
+      "Product Ideation",
+      "Responsive Design"
+    ],
+    "outcomes": [
+      "Produced a viable prototype within one day",
+      "Deployed a privacy-conscious monthly leaderboard"
+    ],
+    "tools": [
+      "ChatGPT",
+      "GitHub",
+      "Vercel"
+    ],
+    "featuredMetric": "Refined into a deployed product over approximately one week.",
+    "sortDate": "2026-02",
+    "priority": 8
+  },
+  {
+    "id": "life-church-event-growth",
+    "title": "Youth Event Portfolio Growth",
+    "employer": "Life Church",
+    "summary": "Overhauled event strategy, marketing, CRM engagement and operational workflows to improve consistency, attendance and programme momentum.",
+    "tags": [
+      "Marketing",
+      "Operations",
+      "Leadership & Stakeholder Management",
+      "Events & Engagement"
+    ],
+    "skills": [
+      "Event Strategy",
+      "Team Leadership",
+      "Audience Engagement",
+      "Process Improvement"
+    ],
+    "outcomes": [
+      "Revitalised stalled programmes",
+      "Improved event portfolio performance"
+    ],
+    "tools": [
+      "Eventbrite",
+      "CRM",
+      "Social Media"
+    ],
+    "featuredMetric": "Tripled average attendance across the youth event portfolio.",
+    "sortDate": "2023-06",
+    "priority": 7
+  },
+  {
+    "id": "hillsong-conference-operations",
+    "title": "Large-Scale International Conference Operations",
+    "employer": "Hillsong",
+    "summary": "Managed planning, logistics, volunteer coordination and live operations for multi-day international conferences involving complex venues and high attendee volumes.",
+    "tags": [
+      "Operations",
+      "Leadership & Stakeholder Management",
+      "Events & Engagement"
+    ],
+    "skills": [
+      "Conference Operations",
+      "Risk Management",
+      "Volunteer Leadership",
+      "Event Logistics"
+    ],
+    "outcomes": [
+      "Delivered multiple major and smaller international conferences",
+      "Supported complex venue and attendee operations"
+    ],
+    "tools": [],
+    "featuredMetric": "Managed five week-long conferences with 30,000+ attendees each.",
+    "sortDate": "2019-06",
+    "priority": 7
+  }
+]
