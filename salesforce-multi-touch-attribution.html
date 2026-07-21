@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Salesforce Multi-Touch Attribution Model project by Trevor Downs."
+    />
+
+    <title>
+      Salesforce Multi-Touch Attribution Model | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Fresh Start in Education
+          </p>
+
+          <h1>
+            Salesforce Multi-Touch Attribution Model
+          </h1>
+
+          <p class="case-study-introduction">
+            A modular Salesforce attribution framework
+            designed to show how marketing, sales,
+            events, referrals and organisational
+            relationships contributed to commercial
+            outcomes across complex buying journeys.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              Salesforce &amp; CRM
+            </span>
+
+            <span class="case-study-tag">
+              Automation
+            </span>
+
+            <span class="case-study-tag">
+              Data &amp; Analytics
+            </span>
+
+            <span class="case-study-tag">
+              Commercial Strategy
+            </span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              The framework replaced a single-touch
+              interpretation of conversion with a
+              structured model capable of recognising
+              several meaningful interactions. Applicable
+              channels received a weighted share of
+              influence, with the final attribution
+              normalised to 100%.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Normalised applicable channel influence
+                to 100%.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>Revenue attribution</li>
+                <li>Salesforce Flow</li>
+                <li>Campaign members</li>
+                <li>Custom objects</li>
+                <li>Custom metadata types</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce</li>
+                <li>MCAE</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The commercial challenge</h2>
+
+            <p>
+              Commercial outcomes were rarely caused by
+              one interaction. A prospect might attend an
+              event, receive several campaign
+              communications, speak with the sales team
+              and be influenced by an existing
+              organisational relationship before
+              progressing.
+            </p>
+
+            <p>
+              Traditional first-touch or last-touch
+              reporting could not represent this journey
+              accurately. It risked overvaluing the most
+              visible interaction while ignoring the
+              wider combination of activity that
+              contributed to the decision.
+            </p>
+
+            <ul class="case-study-list">
+              <li>
+                Multiple stakeholders could influence one
+                commercial outcome.
+              </li>
+
+              <li>
+                Engagement occurred across marketing,
+                events, referrals and direct sales.
+              </li>
+
+              <li>
+                Individual contacts could be connected to
+                wider account relationships.
+              </li>
+
+              <li>
+                Not every attribution channel applied to
+                every opportunity.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>The attribution framework</h2>
+
+            <p>
+              The model evaluated recent and relevant
+              interactions across a defined set of
+              attribution channels. Each applicable
+              channel received a starting weight based on
+              its role in the commercial journey.
+            </p>
+
+            <p>
+              The framework recalculated those weights so
+              that the final attribution across the
+              opportunity always totalled 100%.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Marketing campaign engagement</li>
+              <li>Event and webinar participation</li>
+              <li>Direct sales engagement</li>
+              <li>Referral influence</li>
+              <li>Account relationships</li>
+              <li>Recent stakeholder activity</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Salesforce architecture</h2>
+
+            <p>
+              Salesforce provided the central
+              relationship and reporting layer. Leads,
+              contacts, accounts, opportunities,
+              campaigns and campaign members contributed
+              different parts of the attribution picture.
+            </p>
+
+            <p>
+              Custom objects and structured relationships
+              were used where standard records alone
+              could not represent the full commercial
+              journey.
+            </p>
+
+            <ul class="case-study-list">
+              <li>
+                Campaign members recorded marketing and
+                event participation.
+              </li>
+
+              <li>
+                Opportunity relationships connected
+                activity with commercial outcomes.
+              </li>
+
+              <li>
+                Account structures represented wider
+                organisational influence.
+              </li>
+
+              <li>
+                Custom metadata kept attribution rules
+                configurable.
+              </li>
+
+              <li>
+                Salesforce Flow supported repeatable
+                calculations and record updates.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Weighted attribution logic</h2>
+
+            <p>
+              A channel only received attribution when
+              supporting evidence showed that it had
+              contributed to the opportunity. This
+              prevented inactive or irrelevant channels
+              from automatically receiving a share.
+            </p>
+
+            <p>
+              The remaining channel weights were then
+              normalised. This preserved their relative
+              importance while ensuring every completed
+              calculation totalled exactly 100%.
+            </p>
+
+            <ul class="case-study-list">
+              <li>
+                Identify the channels applicable to the
+                opportunity.
+              </li>
+
+              <li>
+                Retrieve the configured weight for each
+                applicable channel.
+              </li>
+
+              <li>
+                Calculate the combined applicable weight.
+              </li>
+
+              <li>
+                Divide each channel weight by the
+                applicable total.
+              </li>
+
+              <li>
+                Store the resulting percentage on the
+                attribution record.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Governance and maintainability</h2>
+
+            <p>
+              The model was designed as a maintainable
+              commercial framework rather than a group of
+              hard-coded calculations. Attribution
+              definitions and weights could be governed
+              centrally and adjusted as organisational
+              understanding developed.
+            </p>
+
+            <p>
+              Separating configuration from automation
+              reduced the need to repeatedly edit
+              Salesforce logic whenever a commercial rule
+              changed.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Centralised attribution definitions</li>
+              <li>Configurable channel weights</li>
+              <li>Consistent calculation rules</li>
+              <li>Traceable engagement records</li>
+              <li>Repeatable quality checks</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>Reporting and commercial use</h2>
+
+            <p>
+              The resulting attribution records created a
+              stronger foundation for evaluating campaign
+              performance, event influence and the
+              contribution of relationship-led sales
+              activity.
+            </p>
+
+            <p>
+              The framework provided a consistent and
+              transparent interpretation of the available
+              commercial evidence rather than claiming
+              that one calculation could perfectly
+              explain every purchase.
+            </p>
+
+            <ul class="case-study-list">
+              <li>
+                Campaign and channel performance analysis
+              </li>
+
+              <li>
+                Opportunity-level influence reporting
+              </li>
+
+              <li>Revenue contribution dashboards</li>
+
+              <li>
+                Comparison of marketing and sales
+                activity
+              </li>
+
+              <li>
+                Improved commercial planning and
+                prioritisation
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the attribution framework enabled
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>More balanced attribution</h3>
+
+              <p>
+                Commercial influence could be distributed
+                across multiple supported interactions
+                rather than assigned entirely to one
+                touchpoint.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Consistent calculations</h3>
+
+              <p>
+                Applicable channel weights were processed
+                through one repeatable framework and
+                normalised to 100%.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Configurable governance</h3>
+
+              <p>
+                Attribution rules could be managed
+                centrally without embedding every
+                assumption directly inside automation.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Stronger reporting</h3>
+
+              <p>
+                Salesforce data could support more useful
+                analysis of campaign, event, referral and
+                relationship influence.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
