@@ -546,5 +546,277 @@
     "featuredMetric": "Transitioned marketing activity into a governed Salesforce-connected platform.",
     "sortDate": "2025-02",
     "priority": 9
+  },  {
+    "id": "commercial-data-architecture",
+    "title": "Commercial Data Architecture for Complex Sales",
+    "employer": "Fresh Start in Education",
+    "summary": "Designed structured commercial data models to represent organisations, stakeholders, opportunities, engagement and wider buying relationships.",
+    "details": "Developed a commercial data architecture that connected people, organisations, account relationships, opportunities, campaigns and engagement activity. The structure was designed to support long buying journeys, multiple stakeholders and more dependable reporting across sales and marketing.",
+    "tags": [
+      "Data & Analytics",
+      "Salesforce & CRM",
+      "Commercial Strategy",
+      "Operations"
+    ],
+    "skills": [
+      "Data Architecture",
+      "Data Modelling",
+      "Commercial Systems",
+      "Relationship Modelling",
+      "CRM Strategy"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Connected commercial, organisational and engagement data within one reporting structure.",
+    "sortDate": "2025-06",
+    "priority": 10
+  },
+  {
+    "id": "revenue-attribution-dashboarding",
+    "title": "Revenue Attribution and Campaign Performance Dashboarding",
+    "employer": "Fresh Start in Education",
+    "summary": "Created reporting structures that connected campaign engagement, stakeholder activity and commercial outcomes.",
+    "details": "Developed a reporting approach for assessing how marketing, sales, events and organisational relationships contributed to enquiries, opportunities and purchases. Attribution data was structured so it could support dashboards, analysis and commercial decision-making.",
+    "tags": [
+      "Data & Analytics",
+      "Salesforce & CRM",
+      "Marketing",
+      "Automation",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Revenue Attribution",
+      "Dashboarding",
+      "Campaign Reporting",
+      "Marketing Analytics",
+      "Commercial Analysis"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Created reporting-ready attribution data across multiple engagement channels.",
+    "sortDate": "2025-09",
+    "priority": 10
+  },
+  {
+    "id": "marketing-performance-measurement",
+    "title": "Marketing Performance Measurement Framework",
+    "employer": "Fresh Start in Education",
+    "summary": "Defined a broader set of measures for evaluating campaign reach, engagement, audience quality and commercial influence.",
+    "details": "Moved marketing evaluation beyond isolated email statistics by considering audience size, delivery, engagement, progression, campaign influence and downstream commercial outcomes. The framework supported more balanced assessment of marketing effectiveness.",
+    "tags": [
+      "Data & Analytics",
+      "Marketing",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Marketing Measurement",
+      "KPI Design",
+      "Campaign Analytics",
+      "Performance Reporting",
+      "Commercial Insight"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Expanded performance analysis beyond opens and clicks.",
+    "sortDate": "2025-10",
+    "priority": 9
+  },
+  {
+    "id": "customer-prospect-segmentation",
+    "title": "Customer and Prospect Segmentation Model",
+    "employer": "Fresh Start in Education",
+    "summary": "Built segmentation structures using stakeholder characteristics, organisational relationships, engagement and commercial relevance.",
+    "details": "Created reusable approaches for grouping customers and prospects according to role, organisation, geography, account relationships, engagement behaviour and commercial context. The model supported more targeted marketing and more useful analysis.",
+    "tags": [
+      "Data & Analytics",
+      "Marketing",
+      "Automation",
+      "Commercial Strategy",
+      "Salesforce & CRM"
+    ],
+    "skills": [
+      "Customer Segmentation",
+      "Prospect Segmentation",
+      "Audience Analysis",
+      "Dynamic Lists",
+      "Commercial Targeting"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Enabled segmentation across behavioural, organisational and commercial attributes.",
+    "sortDate": "2025-05",
+    "priority": 9
+  },
+  {
+    "id": "crm-data-quality-improvement",
+    "title": "CRM Data Quality Improvement Programme",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved the reliability of CRM data through cleansing, standardisation, duplicate reduction and clearer governance.",
+    "details": "Reviewed the quality of records across leads, contacts, accounts and marketing prospects. The work addressed duplication, missing values, inconsistent definitions, unusable records and governance risks that affected segmentation, reporting and operational confidence.",
+    "tags": [
+      "Data & Analytics",
+      "Salesforce & CRM",
+      "Operations",
+      "Automation"
+    ],
+    "skills": [
+      "Data Quality",
+      "Data Cleansing",
+      "Duplicate Management",
+      "Data Standardisation",
+      "CRM Governance"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE",
+      "Mailchimp"
+    ],
+    "featuredMetric": "Reduced approximately 30,000 legacy contacts to 19,000 viable prospects.",
+    "sortDate": "2025-01",
+    "priority": 10
+  },
+  {
+    "id": "revenue-pipeline-forecast-reporting",
+    "title": "Revenue Pipeline and Forecast Reporting",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved the structure of opportunity and revenue data to support clearer pipeline visibility and forecasting.",
+    "details": "Developed reporting foundations around opportunity stages, account relationships, expected revenue and commercial progression. The work strengthened visibility of pipeline health and supported more informed forecasting and planning.",
+    "tags": [
+      "Data & Analytics",
+      "Salesforce & CRM",
+      "Commercial Strategy",
+      "Operations"
+    ],
+    "skills": [
+      "Pipeline Reporting",
+      "Revenue Forecasting",
+      "Opportunity Analysis",
+      "Commercial Reporting",
+      "Data Modelling"
+    ],
+    "tools": [
+      "Salesforce"
+    ],
+    "featuredMetric": "Created a stronger reporting foundation for pipeline and forecast analysis.",
+    "sortDate": "2025-12",
+    "priority": 9
+  },
+  {
+    "id": "identity-resolution-crm-records",
+    "title": "Identity Resolution Across Leads, Contacts and Accounts",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved the connection between individual records and the organisations, accounts and relationships they represented.",
+    "details": "Addressed the challenge of identifying the same person or organisation across different CRM and marketing records. The work improved how leads, contacts, prospects and accounts could be understood as part of a connected commercial relationship.",
+    "tags": [
+      "Data & Analytics",
+      "Salesforce & CRM",
+      "Automation",
+      "Operations"
+    ],
+    "skills": [
+      "Identity Resolution",
+      "Record Matching",
+      "Lead Conversion",
+      "Account Matching",
+      "Data Relationships"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Improved visibility of relationships across separate CRM record types.",
+    "sortDate": "2025-04",
+    "priority": 8
+  },
+  {
+    "id": "campaign-purchase-influence-analysis",
+    "title": "Campaign Engagement and Purchase-Influence Analysis",
+    "employer": "Fresh Start in Education",
+    "summary": "Analysed how campaign participation, email activity, events and sales engagement contributed to commercial outcomes.",
+    "details": "Connected campaign-member activity and wider stakeholder engagement with opportunities and purchases. The analysis considered multiple interactions rather than relying on a single first-touch or last-touch explanation of commercial influence.",
+    "tags": [
+      "Data & Analytics",
+      "Marketing",
+      "Salesforce & CRM",
+      "Automation",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Campaign Analysis",
+      "Purchase Influence",
+      "Multi-Touch Attribution",
+      "Engagement Analysis",
+      "Revenue Analytics"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Evaluated commercial influence across multiple stakeholder interactions.",
+    "sortDate": "2025-08",
+    "priority": 9
+  },
+  {
+    "id": "complex-buying-journey-reporting",
+    "title": "Commercial Reporting for Complex Buying Journeys",
+    "employer": "Fresh Start in Education",
+    "summary": "Designed reporting structures for long sales journeys involving multiple people, organisations and engagement channels.",
+    "details": "Developed an approach to reporting that reflected the reality of complex commercial decisions. Rather than treating one individual as the entire customer journey, the structure considered organisational relationships, stakeholder activity, campaigns and opportunity progression.",
+    "tags": [
+      "Data & Analytics",
+      "Commercial Strategy",
+      "Salesforce & CRM",
+      "Marketing"
+    ],
+    "skills": [
+      "Buying Journey Analysis",
+      "Stakeholder Reporting",
+      "Account Analysis",
+      "Commercial Intelligence",
+      "Relationship Analytics"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Connected multiple stakeholders and channels within one commercial reporting view.",
+    "sortDate": "2025-11",
+    "priority": 9
+  },
+  {
+    "id": "data-led-audience-prioritisation",
+    "title": "Data-Led Audience Prioritisation",
+    "employer": "Fresh Start in Education",
+    "summary": "Used behavioural, profile and organisational data to identify audiences and prospects with stronger commercial relevance.",
+    "details": "Combined engagement activity, profile grading, organisational relationships and commercial context to support more deliberate audience prioritisation. The approach helped distinguish high activity from genuine strategic value.",
+    "tags": [
+      "Data & Analytics",
+      "Marketing",
+      "Automation",
+      "Commercial Strategy",
+      "Salesforce & CRM"
+    ],
+    "skills": [
+      "Audience Prioritisation",
+      "Lead Scoring",
+      "Profile Grading",
+      "Commercial Qualification",
+      "Behavioural Analytics"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Separated high engagement from high commercial relevance.",
+    "sortDate": "2025-07",
+    "priority": 8
   }
 ]
