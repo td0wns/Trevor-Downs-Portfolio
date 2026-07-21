@@ -1091,5 +1091,278 @@
     "featuredMetric": "Connected multiple engagement channels within one acquisition model.",
     "sortDate": "2025-10",
     "priority": 8
+  },   {
+    "id": "marketing-operations-transformation",
+    "title": "Marketing Operations Transformation Programme",
+    "employer": "Fresh Start in Education",
+    "summary": "Redesigned marketing operations around clearer processes, stronger governance and closer integration with Salesforce.",
+    "details": "Reviewed fragmented marketing activity and introduced a more structured operating model covering campaign planning, audience selection, data management, testing, reporting and platform ownership. The work improved consistency while creating a stronger foundation for future automation.",
+    "tags": [
+      "Operations",
+      "Marketing",
+      "Automation",
+      "Salesforce & CRM",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Marketing Operations",
+      "Operating Model Design",
+      "Process Improvement",
+      "Campaign Governance",
+      "Platform Management"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce",
+      "Mailchimp"
+    ],
+    "featuredMetric": "Moved marketing activity from fragmented practices into a more governed operating model.",
+    "sortDate": "2025-09",
+    "priority": 10
+  },
+  {
+    "id": "sales-marketing-process-automation",
+    "title": "Business Process Automation Across Sales and Marketing",
+    "employer": "Fresh Start in Education",
+    "summary": "Automated repeatable sales and marketing processes to reduce manual work and improve data consistency.",
+    "details": "Identified workflows that depended on repeated manual updates and redesigned them using Salesforce and marketing automation. The work covered record handling, campaign activity, audience management, commercial processes and movement between marketing and sales.",
+    "tags": [
+      "Operations",
+      "Automation",
+      "Salesforce & CRM",
+      "Marketing",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Business Process Automation",
+      "Workflow Design",
+      "Salesforce Flow",
+      "Marketing Automation",
+      "Process Mapping"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Created repeatable automated workflows across commercial and marketing processes.",
+    "sortDate": "2025-08",
+    "priority": 10
+  },
+  {
+    "id": "crm-marketing-platform-operating-model",
+    "title": "CRM and Marketing Platform Operating Model",
+    "employer": "Fresh Start in Education",
+    "summary": "Established clearer ownership, governance and working practices for Salesforce and marketing automation platforms.",
+    "details": "Defined how CRM and marketing systems should be administered, maintained and used across teams. The model considered platform ownership, permissions, data quality, campaign processes, change controls, user responsibilities and reporting requirements.",
+    "tags": [
+      "Operations",
+      "Salesforce & CRM",
+      "Marketing",
+      "Automation",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Operating Model Design",
+      "Platform Governance",
+      "CRM Administration",
+      "Marketing Operations",
+      "Roles and Responsibilities"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Defined clearer ownership and governance across connected commercial platforms.",
+    "sortDate": "2025-10",
+    "priority": 9
+  },
+  {
+    "id": "cross-functional-workflow-redesign",
+    "title": "Cross-Functional Workflow Redesign",
+    "employer": "Fresh Start in Education",
+    "summary": "Redesigned workflows that crossed marketing, sales, operations and technical responsibilities.",
+    "details": "Reviewed where work moved between teams and identified unclear ownership, duplication and unnecessary manual intervention. New workflows established clearer responsibilities, better information flow and more consistent handling of commercial activity.",
+    "tags": [
+      "Operations",
+      "Leadership & Stakeholder Management",
+      "Commercial Strategy",
+      "Salesforce & CRM"
+    ],
+    "skills": [
+      "Workflow Redesign",
+      "Cross-Functional Collaboration",
+      "Process Mapping",
+      "Responsibility Design",
+      "Operational Improvement"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Improved coordination across marketing, commercial and operational teams.",
+    "sortDate": "2025-07",
+    "priority": 9
+  },
+  {
+    "id": "legacy-commercial-systems-transformation",
+    "title": "Digital Transformation of Legacy Commercial Systems",
+    "employer": "Fresh Start in Education",
+    "summary": "Replaced fragmented legacy practices with more connected, governed and scalable commercial systems.",
+    "details": "Assessed legacy data, mailing platforms and manual processes before moving viable activity into a Salesforce-connected environment. The transformation involved data rationalisation, workflow redesign, platform migration and changes to everyday working practices.",
+    "tags": [
+      "Operations",
+      "Salesforce & CRM",
+      "Marketing",
+      "Automation",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Digital Transformation",
+      "Legacy Systems",
+      "Platform Migration",
+      "Process Redesign",
+      "Data Rationalisation"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE",
+      "Mailchimp"
+    ],
+    "featuredMetric": "Transitioned legacy marketing and commercial activity into a connected platform environment.",
+    "sortDate": "2025-02",
+    "priority": 10
+  },
+  {
+    "id": "campaign-delivery-operational-governance",
+    "title": "Operational Governance for Campaign Delivery",
+    "employer": "Fresh Start in Education",
+    "summary": "Introduced structured controls for campaign planning, audience approval, testing and release.",
+    "details": "Developed repeatable campaign-delivery practices covering briefs, segmentation, consent, suppression, testing, approvals, naming conventions and reporting. These controls reduced operational risk and improved consistency across marketing activity.",
+    "tags": [
+      "Operations",
+      "Marketing",
+      "Automation",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Campaign Governance",
+      "Quality Assurance",
+      "Risk Management",
+      "Approval Processes",
+      "Marketing Operations"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce"
+    ],
+    "featuredMetric": "Created repeatable quality controls for campaign planning and release.",
+    "sortDate": "2025-09",
+    "priority": 8
+  },
+  {
+    "id": "process-improvement-quality-control",
+    "title": "Process Improvement and Quality-Control Framework",
+    "employer": "Fresh Start in Education",
+    "summary": "Created a structured approach for reviewing processes, reducing errors and improving operational reliability.",
+    "details": "Introduced clearer checkpoints for how commercial and marketing work was planned, completed and reviewed. The framework focused on identifying recurring problems, clarifying responsibilities and embedding checks before data or campaigns entered live systems.",
+    "tags": [
+      "Operations",
+      "Leadership & Stakeholder Management",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Process Improvement",
+      "Quality Control",
+      "Operational Governance",
+      "Risk Reduction",
+      "Continuous Improvement"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Embedded clearer checks into recurring operational processes.",
+    "sortDate": "2025-08",
+    "priority": 8
+  },
+  {
+    "id": "salesforce-user-adoption-training",
+    "title": "User Adoption and Salesforce Training Programme",
+    "employer": "Fresh Start in Education",
+    "summary": "Supported users in adopting new Salesforce structures, workflows and data-management practices.",
+    "details": "Translated technical platform changes into practical guidance for users with different levels of experience. Training focused on how new records, fields, relationships and workflows should be used and why consistent adoption mattered to reporting and commercial performance.",
+    "tags": [
+      "Operations",
+      "Salesforce & CRM",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "User Training",
+      "Salesforce Adoption",
+      "Change Communication",
+      "Process Documentation",
+      "Stakeholder Support"
+    ],
+    "tools": [
+      "Salesforce"
+    ],
+    "featuredMetric": "Improved understanding of new CRM structures and working practices.",
+    "sortDate": "2025-11",
+    "priority": 9
+  },
+  {
+    "id": "commercial-systems-change-management",
+    "title": "Commercial Systems Implementation and Change Management",
+    "employer": "Fresh Start in Education",
+    "summary": "Managed the operational change required to introduce new CRM and marketing systems successfully.",
+    "details": "Supported implementation through process redesign, stakeholder engagement, data preparation, governance, training and transition planning. The work recognised that platform implementation required changes to responsibilities and behaviour as well as technical configuration.",
+    "tags": [
+      "Operations",
+      "Leadership & Stakeholder Management",
+      "Salesforce & CRM",
+      "Marketing",
+      "Automation"
+    ],
+    "skills": [
+      "Change Management",
+      "Systems Implementation",
+      "Stakeholder Engagement",
+      "User Adoption",
+      "Transition Planning"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE",
+      "Mailchimp"
+    ],
+    "featuredMetric": "Combined technical implementation with operational and user change.",
+    "sortDate": "2025-10",
+    "priority": 10
+  },
+  {
+    "id": "operational-restructure-delivery",
+    "title": "Operational Restructure for Improved Delivery",
+    "employer": "Fresh Start in Education",
+    "summary": "Clarified team responsibilities and redesigned operational practices to support more reliable delivery.",
+    "details": "Reviewed how responsibilities were distributed and where unclear ownership affected delivery. The resulting changes focused on clearer roles, more consistent workflows, better coordination and stronger accountability across recurring operational activity.",
+    "tags": [
+      "Operations",
+      "Leadership & Stakeholder Management",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Operational Restructure",
+      "Team Responsibilities",
+      "Workflow Improvement",
+      "Change Leadership",
+      "Performance Improvement"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Created clearer ownership across operational workflows and delivery responsibilities.",
+    "sortDate": "2025-11",
+    "priority": 9
   }
 ]
