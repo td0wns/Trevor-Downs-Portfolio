@@ -485,12 +485,10 @@ h3 {
   width: 100%;
 
   /*
-    Three rows at a minimum of 500px each,
-    with two 22px gaps and small outer padding.
-    This creates a maximum of nine visible cards
-    on a three-column desktop layout.
+    Two rows of three cards:
+    500px + 500px + 22px gap + 8px outer padding
   */
-  max-height: 1552px;
+  max-height: 1030px;
 
   padding: 4px 14px 4px 4px;
 
