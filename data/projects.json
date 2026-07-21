@@ -1,9 +1,10 @@
 [
   {
-    "id": "salesforce-attribution-model",
+    "id": "salesforce-multi-touch-attribution",
     "title": "Salesforce Multi-Touch Attribution Model",
     "employer": "Fresh Start in Education",
-    "summary": "Designed a weighted attribution model connecting recent email, event, sales and organisational engagement across complex education-sector buying committees.",
+    "summary": "Designed a weighted Salesforce attribution model connecting marketing, event, sales and organisational engagement with commercial outcomes.",
+    "details": "Created a structured multi-touch attribution approach for a complex education-sector buying journey. The model considered recent interactions across campaigns, events, referrals, sales activity and organisational relationships, then distributed influence across applicable channels.",
     "tags": [
       "Salesforce & CRM",
       "Automation",
@@ -11,59 +12,26 @@
       "Commercial Strategy"
     ],
     "skills": [
+      "Revenue Attribution",
       "Salesforce Flow",
       "Campaign Members",
       "Custom Objects",
-      "Revenue Attribution"
-    ],
-    "outcomes": [
-      "Allocated enquiry and referral influence across multiple channels",
-      "Created structured data for dashboards and revenue reporting"
+      "Custom Metadata Types"
     ],
     "tools": [
       "Salesforce",
-      "MCAE",
-      "Custom Metadata Types"
+      "MCAE"
     ],
-    "featuredMetric": "Normalised attribution across applicable channels to 100%.",
+    "featuredMetric": "Normalised applicable channel influence to 100%.",
     "sortDate": "2025-08",
     "priority": 10
   },
   {
-    "id": "mcae-platform-rebuild",
-    "title": "MCAE Migration and Platform Rebuild",
+    "id": "local-authority-account-hierarchy",
+    "title": "Local-Authority Account Hierarchy and Pricing Model",
     "employer": "Fresh Start in Education",
-    "summary": "Led the migration from a high-risk Mailchimp and legacy CRM environment into a governed MCAE instance with consent, suppression and audience-management controls.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Data & Analytics",
-      "Operations"
-    ],
-    "skills": [
-      "MCAE Administration",
-      "CRM Migration",
-      "Consent Governance",
-      "Data Hygiene"
-    ],
-    "outcomes": [
-      "Reduced approximately 30,000 legacy contacts to 19,000 viable prospects",
-      "Improved successful send rate"
-    ],
-    "tools": [
-      "MCAE",
-      "Mailchimp",
-      "Salesforce"
-    ],
-    "featuredMetric": "Improved successful send rate to approximately 99%.",
-    "sortDate": "2025-01",
-    "priority": 10
-  },
-  {
-    "id": "local-authority-data-model",
-    "title": "Local-Authority Commercial Data Model",
-    "employer": "Fresh Start in Education",
-    "summary": "Designed a Salesforce parent-account and contract-pricing model representing local-authority influence across accounts, contacts, leads and opportunities.",
+    "summary": "Designed a Salesforce account structure that represented relationships between local authorities, organisations, contacts, leads and commercial agreements.",
+    "details": "Developed a parent-account and relationship model that reflected the influence local authorities could have across multiple education organisations. The structure supported contract pricing, segmentation, governance and more accurate commercial reporting.",
     "tags": [
       "Salesforce & CRM",
       "Automation",
@@ -73,136 +41,230 @@
     ],
     "skills": [
       "Account Hierarchies",
-      "Salesforce Flow",
       "Contract Pricing",
+      "Data Modelling",
+      "Salesforce Flow",
       "CRM Governance"
-    ],
-    "outcomes": [
-      "Supported account governance and contract-based segmentation",
-      "Improved pricing and forecasting accuracy"
     ],
     "tools": [
       "Salesforce",
-      "MCAE",
       "Custom Metadata Types"
     ],
     "featuredMetric": "Applied across 1,000+ accounts and 20,000+ leads and contacts.",
     "sortDate": "2025-04",
+    "priority": 10
+  },
+  {
+    "id": "salesforce-flow-commercial-processes",
+    "title": "Salesforce Flow Automation for Commercial Processes",
+    "employer": "Fresh Start in Education",
+    "summary": "Built Salesforce automation to improve data consistency, reduce manual administration and support repeatable commercial workflows.",
+    "details": "Used Salesforce Flow to automate commercial processes involving accounts, contacts, leads, opportunities and related organisational data. The work reduced dependence on manual updates and helped ensure that key information was handled consistently.",
+    "tags": [
+      "Salesforce & CRM",
+      "Automation",
+      "Operations"
+    ],
+    "skills": [
+      "Salesforce Flow",
+      "Record-Triggered Flow",
+      "Screen Flow",
+      "Workflow Design",
+      "Process Automation"
+    ],
+    "tools": [
+      "Salesforce"
+    ],
+    "featuredMetric": "Created repeatable workflows across multiple CRM record types.",
+    "sortDate": "2025-07",
     "priority": 9
   },
   {
-    "id": "mcae-campaign-performance",
-    "title": "MCAE Campaign and Revenue Engine",
+    "id": "buying-committee-relationship-mapping",
+    "title": "Buying-Committee and Organisational Relationship Mapping",
     "employer": "Fresh Start in Education",
-    "summary": "Managed segmented campaign operations across email, events, webinars and gated content while connecting performance with purchase and revenue influence.",
+    "summary": "Structured CRM data around the people and organisations influencing complex public-sector and education-sector purchasing decisions.",
+    "details": "Designed a relationship-led approach to CRM data that went beyond individual leads and contacts. The model accounted for stakeholders, organisations, local authorities and wider buying committees involved in long and complex commercial journeys.",
     "tags": [
+      "Salesforce & CRM",
+      "Data & Analytics",
+      "Commercial Strategy"
+    ],
+    "skills": [
+      "Buying Committees",
+      "Stakeholder Mapping",
+      "Relationship Modelling",
+      "Account-Based Marketing",
+      "Public-Sector Sales"
+    ],
+    "tools": [
+      "Salesforce"
+    ],
+    "featuredMetric": "Connected individual engagement with wider organisational influence.",
+    "sortDate": "2025-06",
+    "priority": 9
+  },
+  {
+    "id": "crm-data-governance-permissions",
+    "title": "CRM Data Governance and Permission Architecture",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved Salesforce governance through clearer ownership, permissions, field controls and structured data-management practices.",
+    "details": "Developed governance principles for how commercial and marketing data should be created, accessed and maintained. The work included consideration of permissions, user responsibilities, field consistency and the risks created by uncontrolled CRM changes.",
+    "tags": [
+      "Salesforce & CRM",
+      "Operations",
+      "Leadership & Stakeholder Management",
+      "Data & Analytics"
+    ],
+    "skills": [
+      "Permission Sets",
+      "Data Governance",
+      "User Access",
+      "Quality Assurance",
+      "CRM Administration"
+    ],
+    "tools": [
+      "Salesforce"
+    ],
+    "featuredMetric": "Established clearer controls for CRM access and data quality.",
+    "sortDate": "2025-09",
+    "priority": 8
+  },
+  {
+    "id": "lead-contact-account-standardisation",
+    "title": "Lead, Contact and Account Data Standardisation",
+    "employer": "Fresh Start in Education",
+    "summary": "Standardised commercial data across Salesforce leads, contacts and accounts to improve segmentation, reporting and operational reliability.",
+    "details": "Reviewed how information was stored across different Salesforce objects and introduced more consistent structures and definitions. This supported cleaner segmentation, stronger reporting and more reliable movement between leads, contacts, accounts and opportunities.",
+    "tags": [
+      "Salesforce & CRM",
+      "Data & Analytics",
+      "Operations"
+    ],
+    "skills": [
+      "Data Standardisation",
+      "Data Quality",
+      "Lead Management",
+      "Contact Management",
+      "Account Management"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Improved consistency across key commercial CRM objects.",
+    "sortDate": "2025-03",
+    "priority": 8
+  },
+  {
+    "id": "salesforce-campaign-influence",
+    "title": "Salesforce Campaign Influence and Revenue Reporting",
+    "employer": "Fresh Start in Education",
+    "summary": "Connected campaign engagement with Salesforce commercial records to improve visibility of marketing influence and revenue contribution.",
+    "details": "Structured campaign and engagement information so that marketing activity could be assessed alongside leads, contacts, opportunities and purchases. This created a stronger foundation for revenue reporting and campaign-performance analysis.",
+    "tags": [
+      "Salesforce & CRM",
       "Marketing",
       "Automation",
       "Data & Analytics",
       "Commercial Strategy"
     ],
     "skills": [
-      "Campaign Operations",
-      "Email Marketing",
+      "Campaign Influence",
+      "Campaign Members",
+      "Revenue Reporting",
       "Marketing Analytics",
-      "Revenue Influence"
-    ],
-    "outcomes": [
-      "Managed more than 50 campaigns",
-      "Supported events, webinars and gated content"
+      "Opportunity Analysis"
     ],
     "tools": [
-      "MCAE",
       "Salesforce",
-      "Zoom"
+      "MCAE"
     ],
-    "featuredMetric": "Raised average open rates from approximately 8% to 40%.",
+    "featuredMetric": "Linked marketing engagement with opportunity and revenue data.",
     "sortDate": "2025-10",
     "priority": 9
   },
   {
-    "id": "newsletter-engagement-app",
-    "title": "Recurring Newsletter Engagement Application",
+    "id": "crm-migration-data-rationalisation",
+    "title": "CRM Migration and Legacy Data Rationalisation",
     "employer": "Fresh Start in Education",
-    "summary": "Conceived, tested and deployed a mobile-friendly web application designed to sustain stakeholder engagement during a long B2B buying journey.",
+    "summary": "Reviewed and rationalised legacy commercial data before moving viable records into a more controlled Salesforce and marketing environment.",
+    "details": "Assessed legacy CRM and marketing records to identify duplication, poor-quality data, unusable contacts and governance risks. The resulting rationalisation supported a cleaner platform migration and reduced the volume of unreliable data entering the new operating environment.",
     "tags": [
+      "Salesforce & CRM",
       "Marketing",
-      "AI-Assisted Innovation",
-      "Events & Engagement",
-      "Commercial Strategy"
+      "Automation",
+      "Data & Analytics",
+      "Operations"
     ],
     "skills": [
-      "Rapid Prototyping",
-      "Prompt Engineering",
-      "Product Ideation",
-      "Responsive Design"
-    ],
-    "outcomes": [
-      "Produced a viable prototype within one day",
-      "Deployed a privacy-conscious monthly leaderboard"
+      "CRM Migration",
+      "Data Cleansing",
+      "Duplicate Management",
+      "Data Rationalisation",
+      "Legacy Systems"
     ],
     "tools": [
-      "ChatGPT",
-      "GitHub",
-      "Vercel"
+      "Salesforce",
+      "MCAE",
+      "Mailchimp"
     ],
-    "featuredMetric": "Refined into a deployed product over approximately one week.",
-    "sortDate": "2026-02",
+    "featuredMetric": "Reduced approximately 30,000 legacy contacts to 19,000 viable prospects.",
+    "sortDate": "2025-01",
+    "priority": 9
+  },
+  {
+    "id": "sales-marketing-crm-alignment",
+    "title": "Sales and Marketing Alignment Through Salesforce",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved the connection between sales and marketing by creating shared Salesforce structures, definitions and commercial workflows.",
+    "details": "Worked across marketing and commercial requirements to reduce separation between campaign engagement and sales activity. Shared CRM structures helped both functions work from more consistent information about prospects, organisations, opportunities and customer journeys.",
+    "tags": [
+      "Salesforce & CRM",
+      "Marketing",
+      "Automation",
+      "Commercial Strategy",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Sales and Marketing Alignment",
+      "Revenue Operations",
+      "Cross-Functional Collaboration",
+      "CRM Strategy",
+      "Workflow Design"
+    ],
+    "tools": [
+      "Salesforce",
+      "MCAE"
+    ],
+    "featuredMetric": "Created shared commercial data structures across sales and marketing.",
+    "sortDate": "2025-11",
     "priority": 8
   },
   {
-    "id": "life-church-event-growth",
-    "title": "Youth Event Portfolio Growth",
-    "employer": "Life Church",
-    "summary": "Overhauled event strategy, marketing, CRM engagement and operational workflows to improve consistency, attendance and programme momentum.",
+    "id": "salesforce-forecasting-framework",
+    "title": "Salesforce Opportunity and Revenue Forecasting Framework",
+    "employer": "Fresh Start in Education",
+    "summary": "Improved the structure of Salesforce opportunity data to support clearer pipeline analysis, forecasting and commercial decision-making.",
+    "details": "Developed a more structured approach to opportunity and revenue information, considering stage progression, account relationships, buying journeys and wider commercial influence. The work strengthened the CRM foundation required for more dependable pipeline and forecast reporting.",
     "tags": [
-      "Marketing",
-      "Operations",
-      "Leadership & Stakeholder Management",
-      "Events & Engagement"
+      "Salesforce & CRM",
+      "Data & Analytics",
+      "Commercial Strategy",
+      "Operations"
     ],
     "skills": [
-      "Event Strategy",
-      "Team Leadership",
-      "Audience Engagement",
-      "Process Improvement"
-    ],
-    "outcomes": [
-      "Revitalised stalled programmes",
-      "Improved event portfolio performance"
+      "Opportunity Management",
+      "Revenue Forecasting",
+      "Pipeline Reporting",
+      "Commercial Analysis",
+      "Data Modelling"
     ],
     "tools": [
-      "Eventbrite",
-      "CRM",
-      "Social Media"
+      "Salesforce"
     ],
-    "featuredMetric": "Tripled average attendance across the youth event portfolio.",
-    "sortDate": "2023-06",
-    "priority": 7
-  },
-  {
-    "id": "hillsong-conference-operations",
-    "title": "Large-Scale International Conference Operations",
-    "employer": "Hillsong",
-    "summary": "Managed planning, logistics, volunteer coordination and live operations for multi-day international conferences involving complex venues and high attendee volumes.",
-    "tags": [
-      "Operations",
-      "Leadership & Stakeholder Management",
-      "Events & Engagement"
-    ],
-    "skills": [
-      "Conference Operations",
-      "Risk Management",
-      "Volunteer Leadership",
-      "Event Logistics"
-    ],
-    "outcomes": [
-      "Delivered multiple major and smaller international conferences",
-      "Supported complex venue and attendee operations"
-    ],
-    "tools": [],
-    "featuredMetric": "Managed five week-long conferences with 30,000+ attendees each.",
-    "sortDate": "2019-06",
-    "priority": 7
+    "featuredMetric": "Created a stronger data foundation for pipeline and revenue forecasting.",
+    "sortDate": "2025-12",
+    "priority": 8
   }
 ]
