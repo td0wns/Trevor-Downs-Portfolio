@@ -1,2132 +1,465 @@
-[
-  {
-    "id": "salesforce-multi-touch-attribution",
-    "title": "Salesforce Multi-Touch Attribution Model",
-    "employer": "Fresh Start in Education",
-    "summary": "Designed a weighted Salesforce attribution model connecting marketing, event, sales and organisational engagement with commercial outcomes.",
-    "details": "Created a structured multi-touch attribution approach for a complex education-sector buying journey. The model considered recent interactions across campaigns, events, referrals, sales activity and organisational relationships, then distributed influence across applicable channels.",
-    "tags": [
-      "Salesforce & CRM",
-      "Automation",
-      "Data & Analytics",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Revenue Attribution",
-      "Salesforce Flow",
-      "Campaign Members",
-      "Custom Objects",
-      "Custom Metadata Types"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Normalised applicable channel influence to 100%.",
-    "sortDate": "2025-08",
-    "priority": 10
-  },
-  {
-    "id": "local-authority-account-hierarchy",
-    "title": "Local-Authority Account Hierarchy and Pricing Model",
-    "employer": "Fresh Start in Education",
-    "summary": "Designed a Salesforce account structure that represented relationships between local authorities, organisations, contacts, leads and commercial agreements.",
-    "details": "Developed a parent-account and relationship model that reflected the influence local authorities could have across multiple education organisations. The structure supported contract pricing, segmentation, governance and more accurate commercial reporting.",
-    "tags": [
-      "Salesforce & CRM",
-      "Automation",
-      "Data & Analytics",
-      "Commercial Strategy",
-      "Operations"
-    ],
-    "skills": [
-      "Account Hierarchies",
-      "Contract Pricing",
-      "Data Modelling",
-      "Salesforce Flow",
-      "CRM Governance"
-    ],
-    "tools": [
-      "Salesforce",
-      "Custom Metadata Types"
-    ],
-    "featuredMetric": "Applied across 1,000+ accounts and 20,000+ leads and contacts.",
-    "sortDate": "2025-04",
-    "priority": 10
-  },
-  {
-    "id": "salesforce-flow-commercial-processes",
-    "title": "Salesforce Flow Automation for Commercial Processes",
-    "employer": "Fresh Start in Education",
-    "summary": "Built Salesforce automation to improve data consistency, reduce manual administration and support repeatable commercial workflows.",
-    "details": "Used Salesforce Flow to automate commercial processes involving accounts, contacts, leads, opportunities and related organisational data. The work reduced dependence on manual updates and helped ensure that key information was handled consistently.",
-    "tags": [
-      "Salesforce & CRM",
-      "Automation",
-      "Operations"
-    ],
-    "skills": [
-      "Salesforce Flow",
-      "Record-Triggered Flow",
-      "Screen Flow",
-      "Workflow Design",
-      "Process Automation"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Created repeatable workflows across multiple CRM record types.",
-    "sortDate": "2025-07",
-    "priority": 9
-  },
-  {
-    "id": "buying-committee-relationship-mapping",
-    "title": "Buying-Committee and Organisational Relationship Mapping",
-    "employer": "Fresh Start in Education",
-    "summary": "Structured CRM data around the people and organisations influencing complex public-sector and education-sector purchasing decisions.",
-    "details": "Designed a relationship-led approach to CRM data that went beyond individual leads and contacts. The model accounted for stakeholders, organisations, local authorities and wider buying committees involved in long and complex commercial journeys.",
-    "tags": [
-      "Salesforce & CRM",
-      "Data & Analytics",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Buying Committees",
-      "Stakeholder Mapping",
-      "Relationship Modelling",
-      "Account-Based Marketing",
-      "Public-Sector Sales"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Connected individual engagement with wider organisational influence.",
-    "sortDate": "2025-06",
-    "priority": 9
-  },
-  {
-    "id": "crm-data-governance-permissions",
-    "title": "CRM Data Governance and Permission Architecture",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved Salesforce governance through clearer ownership, permissions, field controls and structured data-management practices.",
-    "details": "Developed governance principles for how commercial and marketing data should be created, accessed and maintained. The work included consideration of permissions, user responsibilities, field consistency and the risks created by uncontrolled CRM changes.",
-    "tags": [
-      "Salesforce & CRM",
-      "Operations",
-      "Leadership & Stakeholder Management",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Permission Sets",
-      "Data Governance",
-      "User Access",
-      "Quality Assurance",
-      "CRM Administration"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Established clearer controls for CRM access and data quality.",
-    "sortDate": "2025-09",
-    "priority": 8
-  },
-  {
-    "id": "lead-contact-account-standardisation",
-    "title": "Lead, Contact and Account Data Standardisation",
-    "employer": "Fresh Start in Education",
-    "summary": "Standardised commercial data across Salesforce leads, contacts and accounts to improve segmentation, reporting and operational reliability.",
-    "details": "Reviewed how information was stored across different Salesforce objects and introduced more consistent structures and definitions. This supported cleaner segmentation, stronger reporting and more reliable movement between leads, contacts, accounts and opportunities.",
-    "tags": [
-      "Salesforce & CRM",
-      "Data & Analytics",
-      "Operations"
-    ],
-    "skills": [
-      "Data Standardisation",
-      "Data Quality",
-      "Lead Management",
-      "Contact Management",
-      "Account Management"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Improved consistency across key commercial CRM objects.",
-    "sortDate": "2025-03",
-    "priority": 8
-  },
-  {
-    "id": "salesforce-campaign-influence",
-    "title": "Salesforce Campaign Influence and Revenue Reporting",
-    "employer": "Fresh Start in Education",
-    "summary": "Connected campaign engagement with Salesforce commercial records to improve visibility of marketing influence and revenue contribution.",
-    "details": "Structured campaign and engagement information so that marketing activity could be assessed alongside leads, contacts, opportunities and purchases. This created a stronger foundation for revenue reporting and campaign-performance analysis.",
-    "tags": [
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Data & Analytics",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Campaign Influence",
-      "Campaign Members",
-      "Revenue Reporting",
-      "Marketing Analytics",
-      "Opportunity Analysis"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Linked marketing engagement with opportunity and revenue data.",
-    "sortDate": "2025-10",
-    "priority": 9
-  },
-  {
-    "id": "crm-migration-data-rationalisation",
-    "title": "CRM Migration and Legacy Data Rationalisation",
-    "employer": "Fresh Start in Education",
-    "summary": "Reviewed and rationalised legacy commercial data before moving viable records into a more controlled Salesforce and marketing environment.",
-    "details": "Assessed legacy CRM and marketing records to identify duplication, poor-quality data, unusable contacts and governance risks. The resulting rationalisation supported a cleaner platform migration and reduced the volume of unreliable data entering the new operating environment.",
-    "tags": [
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Data & Analytics",
-      "Operations"
-    ],
-    "skills": [
-      "CRM Migration",
-      "Data Cleansing",
-      "Duplicate Management",
-      "Data Rationalisation",
-      "Legacy Systems"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE",
-      "Mailchimp"
-    ],
-    "featuredMetric": "Reduced approximately 30,000 legacy contacts to 19,000 viable prospects.",
-    "sortDate": "2025-01",
-    "priority": 9
-  },
-  {
-    "id": "sales-marketing-crm-alignment",
-    "title": "Sales and Marketing Alignment Through Salesforce",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved the connection between sales and marketing by creating shared Salesforce structures, definitions and commercial workflows.",
-    "details": "Worked across marketing and commercial requirements to reduce separation between campaign engagement and sales activity. Shared CRM structures helped both functions work from more consistent information about prospects, organisations, opportunities and customer journeys.",
-    "tags": [
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Commercial Strategy",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Sales and Marketing Alignment",
-      "Revenue Operations",
-      "Cross-Functional Collaboration",
-      "CRM Strategy",
-      "Workflow Design"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Created shared commercial data structures across sales and marketing.",
-    "sortDate": "2025-11",
-    "priority": 8
-  },
-  {
-    "id": "salesforce-forecasting-framework",
-    "title": "Salesforce Opportunity and Revenue Forecasting Framework",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved the structure of Salesforce opportunity data to support clearer pipeline analysis, forecasting and commercial decision-making.",
-    "details": "Developed a more structured approach to opportunity and revenue information, considering stage progression, account relationships, buying journeys and wider commercial influence. The work strengthened the CRM foundation required for more dependable pipeline and forecast reporting.",
-    "tags": [
-      "Salesforce & CRM",
-      "Data & Analytics",
-      "Commercial Strategy",
-      "Operations"
-    ],
-    "skills": [
-      "Opportunity Management",
-      "Revenue Forecasting",
-      "Pipeline Reporting",
-      "Commercial Analysis",
-      "Data Modelling"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Created a stronger data foundation for pipeline and revenue forecasting.",
-    "sortDate": "2025-12",
-    "priority": 8
-  },
-   {
-    "id": "mcae-platform-architecture-rebuild",
-    "title": "MCAE Platform Architecture and Rebuild",
-    "employer": "Fresh Start in Education",
-    "summary": "Established a governed MCAE environment designed around segmentation, consent, campaign delivery and integration with Salesforce.",
-    "details": "Designed and rebuilt the organisation's marketing automation environment around more reliable data, clearer governance and stronger alignment with Salesforce. The work created a foundation for segmented communications, campaign reporting, audience management and future automation.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Salesforce & CRM",
-      "Operations"
-    ],
-    "skills": [
-      "MCAE Administration",
-      "Platform Architecture",
-      "Marketing Operations",
-      "Audience Management",
-      "CRM Integration"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Created a governed marketing automation foundation connected with Salesforce.",
-    "sortDate": "2025-02",
-    "priority": 10
-  },
-  {
-    "id": "mcae-consent-suppression-preferences",
-    "title": "MCAE Consent, Suppression and Preference Framework",
-    "employer": "Fresh Start in Education",
-    "summary": "Developed structured rules for consent, communication preferences and suppression across marketing audiences.",
-    "details": "Created a more controlled approach to deciding who could receive communications, which messages were appropriate and when records should be excluded. The framework supported safer campaign delivery and more consistent handling of consent and communication preferences.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Salesforce & CRM",
-      "Operations",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Consent Governance",
-      "Suppression Logic",
-      "Preference Management",
-      "Data Protection",
-      "Audience Governance"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Introduced clearer consent and suppression controls across campaign audiences.",
-    "sortDate": "2025-03",
-    "priority": 9
-  },
-  {
-    "id": "marketing-audience-segmentation",
-    "title": "Marketing Automation Audience Segmentation Model",
-    "employer": "Fresh Start in Education",
-    "summary": "Designed reusable audience structures based on stakeholder type, organisational relationships, engagement and commercial relevance.",
-    "details": "Built a segmentation approach that moved beyond broad mailing lists. Audiences could be shaped using CRM information, stakeholder characteristics, organisational relationships, engagement activity and commercial context.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Data & Analytics",
-      "Commercial Strategy",
-      "Salesforce & CRM"
-    ],
-    "skills": [
-      "Audience Segmentation",
-      "Dynamic Lists",
-      "Stakeholder Segmentation",
-      "CRM Data",
-      "Campaign Targeting"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Enabled more targeted communication across complex stakeholder groups.",
-    "sortDate": "2025-05",
-    "priority": 9
-  },
-  {
-    "id": "lead-scoring-profile-grading",
-    "title": "Lead Scoring and Profile Grading Framework",
-    "employer": "Fresh Start in Education",
-    "summary": "Structured behavioural scoring and profile grading to distinguish engagement from strategic commercial fit.",
-    "details": "Developed an approach that treated behavioural engagement and organisational suitability as different signals. Scoring reflected interactions and activity, while grading considered whether a prospect matched the organisation's desired profile and commercial priorities.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Data & Analytics",
-      "Commercial Strategy",
-      "Salesforce & CRM"
-    ],
-    "skills": [
-      "Lead Scoring",
-      "Profile Grading",
-      "Prospect Prioritisation",
-      "Behavioural Data",
-      "Commercial Qualification"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Separated engagement signals from commercial-fit indicators.",
-    "sortDate": "2025-06",
-    "priority": 9
-  },
-  {
-    "id": "mcae-campaign-revenue-engine",
-    "title": "MCAE Campaign and Revenue Engine",
-    "employer": "Fresh Start in Education",
-    "summary": "Managed segmented campaigns across email, events, webinars and gated content while connecting engagement with commercial outcomes.",
-    "details": "Created and managed a repeatable campaign operating model across multiple content and engagement formats. Campaign activity was structured to support audience targeting, engagement analysis, Salesforce visibility and assessment of commercial influence.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Data & Analytics",
-      "Commercial Strategy",
-      "Salesforce & CRM"
-    ],
-    "skills": [
-      "Campaign Management",
-      "Revenue Influence",
-      "Email Marketing",
-      "Campaign Reporting",
-      "Audience Engagement"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce",
-      "Zoom"
-    ],
-    "featuredMetric": "Managed more than 50 segmented campaigns.",
-    "sortDate": "2025-10",
-    "priority": 10
-  },
-  {
-    "id": "email-deliverability-database-cleaning",
-    "title": "Email Deliverability and Database-Cleaning Programme",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved email performance by removing poor-quality records, strengthening audience controls and rebuilding campaign practices.",
-    "details": "Reviewed legacy marketing data to identify invalid, duplicated, outdated and commercially unusable records. Combined database rationalisation with improved campaign practices, suppression controls and audience management to strengthen delivery performance.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Data & Analytics",
-      "Operations"
-    ],
-    "skills": [
-      "Email Deliverability",
-      "Database Cleaning",
-      "Data Hygiene",
-      "Suppression Management",
-      "Audience Quality"
-    ],
-    "tools": [
-      "MCAE",
-      "Mailchimp",
-      "Salesforce"
-    ],
-    "featuredMetric": "Improved successful email send rates to approximately 99%.",
-    "sortDate": "2025-01",
-    "priority": 10
-  },
-  {
-    "id": "automated-lead-nurture-journeys",
-    "title": "Automated Lead-Nurture Journey Design",
-    "employer": "Fresh Start in Education",
-    "summary": "Designed automated communications intended to maintain engagement throughout long and complex buying journeys.",
-    "details": "Structured nurture activity around the reality that education and public-sector decisions can involve long timeframes and multiple stakeholders. The approach used segmentation, engagement signals and planned communications to sustain interest without relying entirely on manual follow-up.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Commercial Strategy",
-      "Salesforce & CRM"
-    ],
-    "skills": [
-      "Lead Nurturing",
-      "Customer Journeys",
-      "Engagement Studio",
-      "Lifecycle Marketing",
-      "Audience Segmentation"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Supported engagement across extended B2B and public-sector buying journeys.",
-    "sortDate": "2025-07",
-    "priority": 8
-  },
-  {
-    "id": "marketing-automation-governance",
-    "title": "Marketing Automation Governance and Quality Assurance",
-    "employer": "Fresh Start in Education",
-    "summary": "Introduced clearer controls for campaign creation, audience selection, testing, approval and ongoing platform management.",
-    "details": "Developed more consistent practices for planning and delivering automated marketing activity. The work addressed audience checks, suppression, testing, naming conventions, campaign structure and the operational risks created by poorly governed automation.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Operations",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Marketing Governance",
-      "Quality Assurance",
-      "Campaign Testing",
-      "Process Design",
-      "Risk Management"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Created repeatable controls for safer and more consistent campaign delivery.",
-    "sortDate": "2025-09",
-    "priority": 8
-  },
-  {
-    "id": "webinar-event-lead-capture",
-    "title": "Webinar and Event Lead-Capture Automation",
-    "employer": "Fresh Start in Education",
-    "summary": "Connected webinar and event participation with CRM and marketing records to support follow-up, segmentation and reporting.",
-    "details": "Structured event and webinar activity so registrations and engagement could contribute to wider customer journeys. The approach supported lead capture, campaign membership, segmented follow-up and improved visibility of event influence.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Events & Engagement",
-      "Salesforce & CRM",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Event Lead Capture",
-      "Webinar Marketing",
-      "Campaign Members",
-      "Follow-Up Automation",
-      "Engagement Tracking"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce",
-      "Zoom"
-    ],
-    "featuredMetric": "Connected event engagement with CRM follow-up and campaign reporting.",
-    "sortDate": "2025-08",
-    "priority": 8
-  },
-  {
-    "id": "mailchimp-mcae-operational-transition",
-    "title": "Mailchimp-to-MCAE Migration and Operational Transition",
-    "employer": "Fresh Start in Education",
-    "summary": "Managed the transition from fragmented Mailchimp practices to a more integrated and governed Salesforce marketing operation.",
-    "details": "Focused on the migration journey rather than only the new platform design. This included reviewing legacy audiences, rationalising records, changing campaign processes, introducing new controls and helping move marketing activity into a Salesforce-connected operating model.",
-    "tags": [
-      "Marketing",
-      "Automation",
-      "Salesforce & CRM",
-      "Operations",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Platform Migration",
-      "Change Management",
-      "Legacy Data",
-      "Process Transformation",
-      "User Adoption"
-    ],
-    "tools": [
-      "Mailchimp",
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Transitioned marketing activity into a governed Salesforce-connected platform.",
-    "sortDate": "2025-02",
-    "priority": 9
-  },  {
-    "id": "commercial-data-architecture",
-    "title": "Commercial Data Architecture for Complex Sales",
-    "employer": "Fresh Start in Education",
-    "summary": "Designed structured commercial data models to represent organisations, stakeholders, opportunities, engagement and wider buying relationships.",
-    "details": "Developed a commercial data architecture that connected people, organisations, account relationships, opportunities, campaigns and engagement activity. The structure was designed to support long buying journeys, multiple stakeholders and more dependable reporting across sales and marketing.",
-    "tags": [
-      "Data & Analytics",
-      "Salesforce & CRM",
-      "Commercial Strategy",
-      "Operations"
-    ],
-    "skills": [
-      "Data Architecture",
-      "Data Modelling",
-      "Commercial Systems",
-      "Relationship Modelling",
-      "CRM Strategy"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Connected commercial, organisational and engagement data within one reporting structure.",
-    "sortDate": "2025-06",
-    "priority": 10
-  },
-  {
-    "id": "revenue-attribution-dashboarding",
-    "title": "Revenue Attribution and Campaign Performance Dashboarding",
-    "employer": "Fresh Start in Education",
-    "summary": "Created reporting structures that connected campaign engagement, stakeholder activity and commercial outcomes.",
-    "details": "Developed a reporting approach for assessing how marketing, sales, events and organisational relationships contributed to enquiries, opportunities and purchases. Attribution data was structured so it could support dashboards, analysis and commercial decision-making.",
-    "tags": [
-      "Data & Analytics",
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Revenue Attribution",
-      "Dashboarding",
-      "Campaign Reporting",
-      "Marketing Analytics",
-      "Commercial Analysis"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Created reporting-ready attribution data across multiple engagement channels.",
-    "sortDate": "2025-09",
-    "priority": 10
-  },
-  {
-    "id": "marketing-performance-measurement",
-    "title": "Marketing Performance Measurement Framework",
-    "employer": "Fresh Start in Education",
-    "summary": "Defined a broader set of measures for evaluating campaign reach, engagement, audience quality and commercial influence.",
-    "details": "Moved marketing evaluation beyond isolated email statistics by considering audience size, delivery, engagement, progression, campaign influence and downstream commercial outcomes. The framework supported more balanced assessment of marketing effectiveness.",
-    "tags": [
-      "Data & Analytics",
-      "Marketing",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Marketing Measurement",
-      "KPI Design",
-      "Campaign Analytics",
-      "Performance Reporting",
-      "Commercial Insight"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Expanded performance analysis beyond opens and clicks.",
-    "sortDate": "2025-10",
-    "priority": 9
-  },
-  {
-    "id": "customer-prospect-segmentation",
-    "title": "Customer and Prospect Segmentation Model",
-    "employer": "Fresh Start in Education",
-    "summary": "Built segmentation structures using stakeholder characteristics, organisational relationships, engagement and commercial relevance.",
-    "details": "Created reusable approaches for grouping customers and prospects according to role, organisation, geography, account relationships, engagement behaviour and commercial context. The model supported more targeted marketing and more useful analysis.",
-    "tags": [
-      "Data & Analytics",
-      "Marketing",
-      "Automation",
-      "Commercial Strategy",
-      "Salesforce & CRM"
-    ],
-    "skills": [
-      "Customer Segmentation",
-      "Prospect Segmentation",
-      "Audience Analysis",
-      "Dynamic Lists",
-      "Commercial Targeting"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Enabled segmentation across behavioural, organisational and commercial attributes.",
-    "sortDate": "2025-05",
-    "priority": 9
-  },
-  {
-    "id": "crm-data-quality-improvement",
-    "title": "CRM Data Quality Improvement Programme",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved the reliability of CRM data through cleansing, standardisation, duplicate reduction and clearer governance.",
-    "details": "Reviewed the quality of records across leads, contacts, accounts and marketing prospects. The work addressed duplication, missing values, inconsistent definitions, unusable records and governance risks that affected segmentation, reporting and operational confidence.",
-    "tags": [
-      "Data & Analytics",
-      "Salesforce & CRM",
-      "Operations",
-      "Automation"
-    ],
-    "skills": [
-      "Data Quality",
-      "Data Cleansing",
-      "Duplicate Management",
-      "Data Standardisation",
-      "CRM Governance"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE",
-      "Mailchimp"
-    ],
-    "featuredMetric": "Reduced approximately 30,000 legacy contacts to 19,000 viable prospects.",
-    "sortDate": "2025-01",
-    "priority": 10
-  },
-  {
-    "id": "revenue-pipeline-forecast-reporting",
-    "title": "Revenue Pipeline and Forecast Reporting",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved the structure of opportunity and revenue data to support clearer pipeline visibility and forecasting.",
-    "details": "Developed reporting foundations around opportunity stages, account relationships, expected revenue and commercial progression. The work strengthened visibility of pipeline health and supported more informed forecasting and planning.",
-    "tags": [
-      "Data & Analytics",
-      "Salesforce & CRM",
-      "Commercial Strategy",
-      "Operations"
-    ],
-    "skills": [
-      "Pipeline Reporting",
-      "Revenue Forecasting",
-      "Opportunity Analysis",
-      "Commercial Reporting",
-      "Data Modelling"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Created a stronger reporting foundation for pipeline and forecast analysis.",
-    "sortDate": "2025-12",
-    "priority": 9
-  },
-  {
-    "id": "identity-resolution-crm-records",
-    "title": "Identity Resolution Across Leads, Contacts and Accounts",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved the connection between individual records and the organisations, accounts and relationships they represented.",
-    "details": "Addressed the challenge of identifying the same person or organisation across different CRM and marketing records. The work improved how leads, contacts, prospects and accounts could be understood as part of a connected commercial relationship.",
-    "tags": [
-      "Data & Analytics",
-      "Salesforce & CRM",
-      "Automation",
-      "Operations"
-    ],
-    "skills": [
-      "Identity Resolution",
-      "Record Matching",
-      "Lead Conversion",
-      "Account Matching",
-      "Data Relationships"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Improved visibility of relationships across separate CRM record types.",
-    "sortDate": "2025-04",
-    "priority": 8
-  },
-  {
-    "id": "campaign-purchase-influence-analysis",
-    "title": "Campaign Engagement and Purchase-Influence Analysis",
-    "employer": "Fresh Start in Education",
-    "summary": "Analysed how campaign participation, email activity, events and sales engagement contributed to commercial outcomes.",
-    "details": "Connected campaign-member activity and wider stakeholder engagement with opportunities and purchases. The analysis considered multiple interactions rather than relying on a single first-touch or last-touch explanation of commercial influence.",
-    "tags": [
-      "Data & Analytics",
-      "Marketing",
-      "Salesforce & CRM",
-      "Automation",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Campaign Analysis",
-      "Purchase Influence",
-      "Multi-Touch Attribution",
-      "Engagement Analysis",
-      "Revenue Analytics"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Evaluated commercial influence across multiple stakeholder interactions.",
-    "sortDate": "2025-08",
-    "priority": 9
-  },
-  {
-    "id": "complex-buying-journey-reporting",
-    "title": "Commercial Reporting for Complex Buying Journeys",
-    "employer": "Fresh Start in Education",
-    "summary": "Designed reporting structures for long sales journeys involving multiple people, organisations and engagement channels.",
-    "details": "Developed an approach to reporting that reflected the reality of complex commercial decisions. Rather than treating one individual as the entire customer journey, the structure considered organisational relationships, stakeholder activity, campaigns and opportunity progression.",
-    "tags": [
-      "Data & Analytics",
-      "Commercial Strategy",
-      "Salesforce & CRM",
-      "Marketing"
-    ],
-    "skills": [
-      "Buying Journey Analysis",
-      "Stakeholder Reporting",
-      "Account Analysis",
-      "Commercial Intelligence",
-      "Relationship Analytics"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Connected multiple stakeholders and channels within one commercial reporting view.",
-    "sortDate": "2025-11",
-    "priority": 9
-  },
-  {
-    "id": "data-led-audience-prioritisation",
-    "title": "Data-Led Audience Prioritisation",
-    "employer": "Fresh Start in Education",
-    "summary": "Used behavioural, profile and organisational data to identify audiences and prospects with stronger commercial relevance.",
-    "details": "Combined engagement activity, profile grading, organisational relationships and commercial context to support more deliberate audience prioritisation. The approach helped distinguish high activity from genuine strategic value.",
-    "tags": [
-      "Data & Analytics",
-      "Marketing",
-      "Automation",
-      "Commercial Strategy",
-      "Salesforce & CRM"
-    ],
-    "skills": [
-      "Audience Prioritisation",
-      "Lead Scoring",
-      "Profile Grading",
-      "Commercial Qualification",
-      "Behavioural Analytics"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Separated high engagement from high commercial relevance.",
-    "sortDate": "2025-07",
-    "priority": 8
-  },   {
-    "id": "public-sector-buying-committee-strategy",
-    "title": "Public-Sector Buying-Committee Strategy",
-    "employer": "Fresh Start in Education",
-    "summary": "Developed a commercial approach that recognised purchasing decisions as the result of multiple stakeholders, organisations and relationships.",
-    "details": "Structured commercial thinking around the reality that public-sector and education-sector decisions rarely depend on one person. The approach considered decision-makers, influencers, operational stakeholders, local authorities and organisational relationships across extended buying journeys.",
-    "tags": [
-      "Commercial Strategy",
-      "Salesforce & CRM",
-      "Data & Analytics",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Buying Committees",
-      "Stakeholder Mapping",
-      "Public-Sector Sales",
-      "Relationship Strategy",
-      "Commercial Planning"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Shifted commercial analysis from individual leads to connected stakeholder groups.",
-    "sortDate": "2025-06",
-    "priority": 10
-  },
-  {
-    "id": "relationship-led-sales-model",
-    "title": "Relationship-Led Sales Model",
-    "employer": "Fresh Start in Education",
-    "summary": "Designed a sales approach centred on organisational relationships, stakeholder influence and long-term commercial engagement.",
-    "details": "Developed a relationship-led view of sales that treated contacts, organisations and external stakeholders as part of a connected commercial network. The model supported more informed engagement across complex and lengthy decision-making processes.",
-    "tags": [
-      "Commercial Strategy",
-      "Salesforce & CRM",
-      "Leadership & Stakeholder Management",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Relationship-Led Sales",
-      "Stakeholder Engagement",
-      "Account Strategy",
-      "Commercial Relationships",
-      "Customer Journeys"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Connected individual engagement with broader organisational relationships.",
-    "sortDate": "2025-07",
-    "priority": 10
-  },
-  {
-    "id": "commercial-pricing-contract-segmentation",
-    "title": "Commercial Pricing and Contract Segmentation Framework",
-    "employer": "Fresh Start in Education",
-    "summary": "Structured pricing and segmentation around account relationships, contracts and organisational context.",
-    "details": "Developed an approach for applying pricing and segmentation rules using account hierarchies, local-authority relationships and commercial agreements. This supported more consistent pricing decisions and clearer commercial reporting.",
-    "tags": [
-      "Commercial Strategy",
-      "Salesforce & CRM",
-      "Data & Analytics",
-      "Operations",
-      "Automation"
-    ],
-    "skills": [
-      "Pricing Strategy",
-      "Contract Segmentation",
-      "Account Hierarchies",
-      "Commercial Governance",
-      "Data Modelling"
-    ],
-    "tools": [
-      "Salesforce",
-      "Custom Metadata Types"
-    ],
-    "featuredMetric": "Supported contract-based pricing across complex account relationships.",
-    "sortDate": "2025-04",
-    "priority": 9
-  },
-  {
-    "id": "account-based-marketing-strategy",
-    "title": "Account-Based Marketing for Complex Organisations",
-    "employer": "Fresh Start in Education",
-    "summary": "Applied account-based principles to organisations involving multiple stakeholders, relationships and commercial signals.",
-    "details": "Developed a more account-centred marketing approach by connecting individual engagement with wider organisational context. This allowed campaigns and commercial activity to consider stakeholder groups, account relationships and potential strategic value.",
-    "tags": [
-      "Commercial Strategy",
-      "Marketing",
-      "Automation",
-      "Salesforce & CRM",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Account-Based Marketing",
-      "Account Strategy",
-      "Stakeholder Segmentation",
-      "Audience Prioritisation",
-      "Commercial Targeting"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Linked individual campaign activity with organisation-level commercial context.",
-    "sortDate": "2025-08",
-    "priority": 9
-  },
-  {
-    "id": "long-cycle-b2b-customer-journey",
-    "title": "Long-Cycle B2B Customer Journey Design",
-    "employer": "Fresh Start in Education",
-    "summary": "Designed engagement approaches for lengthy buying journeys involving changing priorities and multiple decision-makers.",
-    "details": "Mapped commercial and marketing activity around extended B2B journeys where immediate conversion was unlikely. The approach considered long-term engagement, nurture, stakeholder changes and the need to maintain relevance across multiple stages.",
-    "tags": [
-      "Commercial Strategy",
-      "Marketing",
-      "Automation",
-      "Events & Engagement",
-      "Salesforce & CRM"
-    ],
-    "skills": [
-      "Customer Journey Design",
-      "B2B Marketing",
-      "Lead Nurturing",
-      "Lifecycle Marketing",
-      "Stakeholder Engagement"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Designed engagement around extended, multi-stage commercial journeys.",
-    "sortDate": "2025-07",
-    "priority": 9
-  },
-  {
-    "id": "sales-enablement-crm-intelligence",
-    "title": "Sales Enablement Through CRM Intelligence",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved the commercial value of CRM data by making stakeholder, account and engagement information more useful to sales teams.",
-    "details": "Structured CRM information so that sales activity could be informed by marketing engagement, organisational relationships, account context and previous interactions. The work aimed to make CRM data more actionable rather than merely administrative.",
-    "tags": [
-      "Commercial Strategy",
-      "Salesforce & CRM",
-      "Data & Analytics",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Sales Enablement",
-      "CRM Intelligence",
-      "Commercial Insight",
-      "Account Planning",
-      "Cross-Functional Collaboration"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Made marketing and relationship data more usable within commercial conversations.",
-    "sortDate": "2025-09",
-    "priority": 9
-  },
-  {
-    "id": "stakeholder-mapping-complex-sales",
-    "title": "Stakeholder Mapping for Complex Sales",
-    "employer": "Fresh Start in Education",
-    "summary": "Mapped the people, organisations and relationships influencing commercial decisions across complex accounts.",
-    "details": "Created a structured way to understand how different stakeholders influenced a potential purchase. The model considered roles, organisational relationships, authority, engagement and connections between individuals and accounts.",
-    "tags": [
-      "Commercial Strategy",
-      "Leadership & Stakeholder Management",
-      "Salesforce & CRM",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Stakeholder Mapping",
-      "Relationship Analysis",
-      "Buying Committees",
-      "Account Planning",
-      "Commercial Intelligence"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Improved visibility of decision-makers, influencers and connected organisations.",
-    "sortDate": "2025-06",
-    "priority": 8
-  },
-  {
-    "id": "revenue-operations-model",
-    "title": "Revenue Operations Model for Sales and Marketing",
-    "employer": "Fresh Start in Education",
-    "summary": "Connected sales, marketing, CRM and reporting processes into a more consistent commercial operating model.",
-    "details": "Developed a revenue-operations approach that aligned data, campaign activity, sales workflows, reporting and governance. The work helped reduce separation between marketing engagement and commercial progression.",
-    "tags": [
-      "Commercial Strategy",
-      "Operations",
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Revenue Operations",
-      "Sales and Marketing Alignment",
-      "Commercial Systems",
-      "Process Design",
-      "Reporting"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Created a shared operating structure across sales, marketing and CRM.",
-    "sortDate": "2025-11",
-    "priority": 10
-  },
-  {
-    "id": "commercial-risk-opportunity-prioritisation",
-    "title": "Commercial Risk and Opportunity Prioritisation",
-    "employer": "Fresh Start in Education",
-    "summary": "Used account, engagement and pipeline information to support more deliberate commercial prioritisation.",
-    "details": "Combined commercial data, stakeholder relationships, engagement signals and opportunity information to distinguish stronger prospects from lower-priority activity. The approach supported more focused decision-making across limited time and resources.",
-    "tags": [
-      "Commercial Strategy",
-      "Data & Analytics",
-      "Salesforce & CRM",
-      "Operations"
-    ],
-    "skills": [
-      "Opportunity Prioritisation",
-      "Commercial Risk",
-      "Pipeline Analysis",
-      "Account Prioritisation",
-      "Decision Support"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Combined engagement and commercial context to support prioritisation.",
-    "sortDate": "2025-10",
-    "priority": 8
-  },
-  {
-    "id": "multi-channel-customer-acquisition",
-    "title": "Multi-Channel Customer Acquisition Strategy",
-    "employer": "Fresh Start in Education",
-    "summary": "Connected email, events, webinars, content, referrals and sales activity within one broader acquisition strategy.",
-    "details": "Developed a multi-channel view of customer acquisition that recognised the contribution of different interactions throughout the buying journey. The approach considered how marketing, events, referrals and sales engagement worked together rather than operating as isolated channels.",
-    "tags": [
-      "Commercial Strategy",
-      "Marketing",
-      "Automation",
-      "Events & Engagement",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Customer Acquisition",
-      "Multi-Channel Marketing",
-      "Campaign Strategy",
-      "Revenue Attribution",
-      "Customer Journeys"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE",
-      "Zoom"
-    ],
-    "featuredMetric": "Connected multiple engagement channels within one acquisition model.",
-    "sortDate": "2025-10",
-    "priority": 8
-  },   {
-    "id": "marketing-operations-transformation",
-    "title": "Marketing Operations Transformation Programme",
-    "employer": "Fresh Start in Education",
-    "summary": "Redesigned marketing operations around clearer processes, stronger governance and closer integration with Salesforce.",
-    "details": "Reviewed fragmented marketing activity and introduced a more structured operating model covering campaign planning, audience selection, data management, testing, reporting and platform ownership. The work improved consistency while creating a stronger foundation for future automation.",
-    "tags": [
-      "Operations",
-      "Marketing",
-      "Automation",
-      "Salesforce & CRM",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Marketing Operations",
-      "Operating Model Design",
-      "Process Improvement",
-      "Campaign Governance",
-      "Platform Management"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce",
-      "Mailchimp"
-    ],
-    "featuredMetric": "Moved marketing activity from fragmented practices into a more governed operating model.",
-    "sortDate": "2025-09",
-    "priority": 10
-  },
-  {
-    "id": "sales-marketing-process-automation",
-    "title": "Business Process Automation Across Sales and Marketing",
-    "employer": "Fresh Start in Education",
-    "summary": "Automated repeatable sales and marketing processes to reduce manual work and improve data consistency.",
-    "details": "Identified workflows that depended on repeated manual updates and redesigned them using Salesforce and marketing automation. The work covered record handling, campaign activity, audience management, commercial processes and movement between marketing and sales.",
-    "tags": [
-      "Operations",
-      "Automation",
-      "Salesforce & CRM",
-      "Marketing",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Business Process Automation",
-      "Workflow Design",
-      "Salesforce Flow",
-      "Marketing Automation",
-      "Process Mapping"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Created repeatable automated workflows across commercial and marketing processes.",
-    "sortDate": "2025-08",
-    "priority": 10
-  },
-  {
-    "id": "crm-marketing-platform-operating-model",
-    "title": "CRM and Marketing Platform Operating Model",
-    "employer": "Fresh Start in Education",
-    "summary": "Established clearer ownership, governance and working practices for Salesforce and marketing automation platforms.",
-    "details": "Defined how CRM and marketing systems should be administered, maintained and used across teams. The model considered platform ownership, permissions, data quality, campaign processes, change controls, user responsibilities and reporting requirements.",
-    "tags": [
-      "Operations",
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Operating Model Design",
-      "Platform Governance",
-      "CRM Administration",
-      "Marketing Operations",
-      "Roles and Responsibilities"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Defined clearer ownership and governance across connected commercial platforms.",
-    "sortDate": "2025-10",
-    "priority": 9
-  },
-  {
-    "id": "cross-functional-workflow-redesign",
-    "title": "Cross-Functional Workflow Redesign",
-    "employer": "Fresh Start in Education",
-    "summary": "Redesigned workflows that crossed marketing, sales, operations and technical responsibilities.",
-    "details": "Reviewed where work moved between teams and identified unclear ownership, duplication and unnecessary manual intervention. New workflows established clearer responsibilities, better information flow and more consistent handling of commercial activity.",
-    "tags": [
-      "Operations",
-      "Leadership & Stakeholder Management",
-      "Commercial Strategy",
-      "Salesforce & CRM"
-    ],
-    "skills": [
-      "Workflow Redesign",
-      "Cross-Functional Collaboration",
-      "Process Mapping",
-      "Responsibility Design",
-      "Operational Improvement"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Improved coordination across marketing, commercial and operational teams.",
-    "sortDate": "2025-07",
-    "priority": 9
-  },
-  {
-    "id": "legacy-commercial-systems-transformation",
-    "title": "Digital Transformation of Legacy Commercial Systems",
-    "employer": "Fresh Start in Education",
-    "summary": "Replaced fragmented legacy practices with more connected, governed and scalable commercial systems.",
-    "details": "Assessed legacy data, mailing platforms and manual processes before moving viable activity into a Salesforce-connected environment. The transformation involved data rationalisation, workflow redesign, platform migration and changes to everyday working practices.",
-    "tags": [
-      "Operations",
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Digital Transformation",
-      "Legacy Systems",
-      "Platform Migration",
-      "Process Redesign",
-      "Data Rationalisation"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE",
-      "Mailchimp"
-    ],
-    "featuredMetric": "Transitioned legacy marketing and commercial activity into a connected platform environment.",
-    "sortDate": "2025-02",
-    "priority": 10
-  },
-  {
-    "id": "campaign-delivery-operational-governance",
-    "title": "Operational Governance for Campaign Delivery",
-    "employer": "Fresh Start in Education",
-    "summary": "Introduced structured controls for campaign planning, audience approval, testing and release.",
-    "details": "Developed repeatable campaign-delivery practices covering briefs, segmentation, consent, suppression, testing, approvals, naming conventions and reporting. These controls reduced operational risk and improved consistency across marketing activity.",
-    "tags": [
-      "Operations",
-      "Marketing",
-      "Automation",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Campaign Governance",
-      "Quality Assurance",
-      "Risk Management",
-      "Approval Processes",
-      "Marketing Operations"
-    ],
-    "tools": [
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Created repeatable quality controls for campaign planning and release.",
-    "sortDate": "2025-09",
-    "priority": 8
-  },
-  {
-    "id": "process-improvement-quality-control",
-    "title": "Process Improvement and Quality-Control Framework",
-    "employer": "Fresh Start in Education",
-    "summary": "Created a structured approach for reviewing processes, reducing errors and improving operational reliability.",
-    "details": "Introduced clearer checkpoints for how commercial and marketing work was planned, completed and reviewed. The framework focused on identifying recurring problems, clarifying responsibilities and embedding checks before data or campaigns entered live systems.",
-    "tags": [
-      "Operations",
-      "Leadership & Stakeholder Management",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Process Improvement",
-      "Quality Control",
-      "Operational Governance",
-      "Risk Reduction",
-      "Continuous Improvement"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Embedded clearer checks into recurring operational processes.",
-    "sortDate": "2025-08",
-    "priority": 8
-  },
-  {
-    "id": "salesforce-user-adoption-training",
-    "title": "User Adoption and Salesforce Training Programme",
-    "employer": "Fresh Start in Education",
-    "summary": "Supported users in adopting new Salesforce structures, workflows and data-management practices.",
-    "details": "Translated technical platform changes into practical guidance for users with different levels of experience. Training focused on how new records, fields, relationships and workflows should be used and why consistent adoption mattered to reporting and commercial performance.",
-    "tags": [
-      "Operations",
-      "Salesforce & CRM",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "User Training",
-      "Salesforce Adoption",
-      "Change Communication",
-      "Process Documentation",
-      "Stakeholder Support"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Improved understanding of new CRM structures and working practices.",
-    "sortDate": "2025-11",
-    "priority": 9
-  },
-  {
-    "id": "commercial-systems-change-management",
-    "title": "Commercial Systems Implementation and Change Management",
-    "employer": "Fresh Start in Education",
-    "summary": "Managed the operational change required to introduce new CRM and marketing systems successfully.",
-    "details": "Supported implementation through process redesign, stakeholder engagement, data preparation, governance, training and transition planning. The work recognised that platform implementation required changes to responsibilities and behaviour as well as technical configuration.",
-    "tags": [
-      "Operations",
-      "Leadership & Stakeholder Management",
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation"
-    ],
-    "skills": [
-      "Change Management",
-      "Systems Implementation",
-      "Stakeholder Engagement",
-      "User Adoption",
-      "Transition Planning"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE",
-      "Mailchimp"
-    ],
-    "featuredMetric": "Combined technical implementation with operational and user change.",
-    "sortDate": "2025-10",
-    "priority": 10
-  },
-  {
-    "id": "operational-restructure-delivery",
-    "title": "Operational Restructure for Improved Delivery",
-    "employer": "Fresh Start in Education",
-    "summary": "Clarified team responsibilities and redesigned operational practices to support more reliable delivery.",
-    "details": "Reviewed how responsibilities were distributed and where unclear ownership affected delivery. The resulting changes focused on clearer roles, more consistent workflows, better coordination and stronger accountability across recurring operational activity.",
-    "tags": [
-      "Operations",
-      "Leadership & Stakeholder Management",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Operational Restructure",
-      "Team Responsibilities",
-      "Workflow Improvement",
-      "Change Leadership",
-      "Performance Improvement"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Created clearer ownership across operational workflows and delivery responsibilities.",
-    "sortDate": "2025-11",
-    "priority": 9
-  },  {
-    "id": "ai-assisted-newsletter-engagement-application",
-    "title": "AI-Assisted Newsletter Engagement Application",
-    "employer": "Independent Project",
-    "summary": "Designed a lightweight application concept for turning newsletter engagement into a more interactive and visible experience.",
-    "details": "Explored how AI-assisted development could be used to create a practical engagement tool around newsletter activity. The concept focused on presenting interaction data clearly, encouraging participation and transforming passive communications into a more engaging digital experience.",
-    "tags": [
-      "AI-Assisted Innovation",
-      "Marketing",
-      "Automation",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "AI-Assisted Development",
-      "Product Design",
-      "Engagement Strategy",
-      "Rapid Prototyping",
-      "Data Visualisation"
-    ],
-    "tools": [
-      "ChatGPT",
-      "GitHub",
-      "Vercel"
-    ],
-    "featuredMetric": "Turned an engagement concept into a functioning web-based prototype.",
-    "sortDate": "2026-06",
-    "priority": 10
-  },
-  {
-    "id": "rapid-prototyping-chatgpt-github-vercel",
-    "title": "Rapid Prototyping With ChatGPT, GitHub and Vercel",
-    "employer": "Independent Project",
-    "summary": "Used AI-assisted coding and cloud deployment tools to move rapidly from an initial concept to a working application.",
-    "details": "Combined conversational development, version control and cloud deployment to build and test web-based ideas quickly. The workflow supported iterative problem-solving, interface refinement, debugging and deployment without requiring a traditional software-development process.",
-    "tags": [
-      "AI-Assisted Innovation",
-      "Automation",
-      "Operations"
-    ],
-    "skills": [
-      "Rapid Prototyping",
-      "AI-Assisted Coding",
-      "Version Control",
-      "Cloud Deployment",
-      "Iterative Development"
-    ],
-    "tools": [
-      "ChatGPT",
-      "GitHub",
-      "Vercel"
-    ],
-    "featuredMetric": "Created a reusable workflow from prompt-led development through to live deployment.",
-    "sortDate": "2026-06",
-    "priority": 10
-  },
-  {
-    "id": "ai-assisted-stakeholder-engagement-tool",
-    "title": "AI-Assisted Stakeholder Engagement Tool",
-    "employer": "Independent Project",
-    "summary": "Developed a digital concept for presenting stakeholder activity and encouraging participation through an accessible interface.",
-    "details": "Used AI-assisted design and development to explore how engagement data could be transformed into a practical stakeholder-facing tool. The work combined audience needs, interface design, data handling and iterative testing.",
-    "tags": [
-      "AI-Assisted Innovation",
-      "Leadership & Stakeholder Management",
-      "Events & Engagement",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Stakeholder Engagement",
-      "Product Development",
-      "User Experience",
-      "AI-Assisted Coding",
-      "Digital Innovation"
-    ],
-    "tools": [
-      "ChatGPT",
-      "GitHub",
-      "Vercel"
-    ],
-    "featuredMetric": "Converted stakeholder-engagement requirements into an interactive digital prototype.",
-    "sortDate": "2026-05",
-    "priority": 9
-  },
-  {
-    "id": "agent-ready-commercial-data-architecture",
-    "title": "Agent-Ready CRM and Marketing Data Architecture",
-    "employer": "Fresh Start in Education",
-    "summary": "Structured CRM and marketing data so it could support future AI-assisted workflows, analysis and automated decision-making.",
-    "details": "Considered how cleaner relationships, consistent definitions and governed data structures could enable future AI agents and intelligent automation. The approach prioritised reliable account, stakeholder, campaign and commercial data rather than adding AI to fragmented information.",
-    "tags": [
-      "AI-Assisted Innovation",
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "AI-Ready Data",
-      "Data Architecture",
-      "CRM Strategy",
-      "Marketing Operations",
-      "Automation Planning"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Designed data foundations capable of supporting future intelligent automation.",
-    "sortDate": "2025-12",
-    "priority": 9
-  },
-  {
-    "id": "ai-assisted-commercial-product-innovation",
-    "title": "AI-Assisted Coding for Commercial Product Innovation",
-    "employer": "Independent Project",
-    "summary": "Applied AI-assisted coding to develop commercial and engagement ideas without relying on a conventional development team.",
-    "details": "Used conversational coding tools to translate commercial requirements into working interfaces and application behaviour. The process involved defining functionality, generating code, testing results, identifying errors and refining the product through repeated iterations.",
-    "tags": [
-      "AI-Assisted Innovation",
-      "Commercial Strategy",
-      "Automation",
-      "Operations"
-    ],
-    "skills": [
-      "AI-Assisted Coding",
-      "Commercial Innovation",
-      "Product Development",
-      "Problem Solving",
-      "Application Testing"
-    ],
-    "tools": [
-      "ChatGPT",
-      "GitHub",
-      "Vercel"
-    ],
-    "featuredMetric": "Reduced the distance between a commercial idea and a testable digital product.",
-    "sortDate": "2026-05",
-    "priority": 9
-  },
-  {
-    "id": "prompt-led-product-design-testing",
-    "title": "Prompt-Led Product Design and Testing",
-    "employer": "Independent Project",
-    "summary": "Used structured prompting to define product requirements, generate functionality and improve digital experiences through testing.",
-    "details": "Developed a prompt-led workflow for turning an initial idea into increasingly specific product requirements. Prompts were used to shape layouts, application behaviour, data structures and corrections, while testing was used to validate each iteration.",
-    "tags": [
-      "AI-Assisted Innovation",
-      "Operations",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Prompt Design",
-      "Product Requirements",
-      "Iterative Testing",
-      "User Experience",
-      "Quality Assurance"
-    ],
-    "tools": [
-      "ChatGPT",
-      "GitHub"
-    ],
-    "featuredMetric": "Created an iterative product-development process driven by structured prompts and testing.",
-    "sortDate": "2026-04",
-    "priority": 8
-  },
-  {
-    "id": "privacy-conscious-engagement-leaderboard",
-    "title": "Privacy-Conscious Engagement Leaderboard Application",
-    "employer": "Independent Project",
-    "summary": "Designed an engagement leaderboard concept that balanced visibility, participation and responsible handling of personal information.",
-    "details": "Explored how engagement information could be presented in a motivating format without exposing unnecessary personal data. The application concept considered display names, ranking logic, consent, data minimisation and the difference between public recognition and private reporting.",
-    "tags": [
-      "AI-Assisted Innovation",
-      "Events & Engagement",
-      "Data & Analytics",
-      "Operations"
-    ],
-    "skills": [
-      "Privacy by Design",
-      "Engagement Design",
-      "Data Minimisation",
-      "Leaderboard Logic",
-      "Application Design"
-    ],
-    "tools": [
-      "ChatGPT",
-      "GitHub",
-      "Vercel"
-    ],
-    "featuredMetric": "Combined engagement mechanics with privacy-conscious product design.",
-    "sortDate": "2026-06",
-    "priority": 9
-  },
-  {
-    "id": "ai-ready-commercial-systems-planning",
-    "title": "AI-Ready Commercial Systems Planning",
-    "employer": "Fresh Start in Education",
-    "summary": "Planned commercial systems around governed data, repeatable workflows and future AI-assisted capabilities.",
-    "details": "Considered how CRM, marketing automation and reporting structures would need to evolve before intelligent agents could be used safely and effectively. The planning focused on data quality, permissions, process consistency, ownership and reliable system relationships.",
-    "tags": [
-      "AI-Assisted Innovation",
-      "Commercial Strategy",
-      "Salesforce & CRM",
-      "Automation",
-      "Operations"
-    ],
-    "skills": [
-      "AI Strategy",
-      "Commercial Systems",
-      "Automation Planning",
-      "Data Governance",
-      "Digital Transformation"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE",
-      "ChatGPT"
-    ],
-    "featuredMetric": "Connected current platform improvements with future AI-assisted commercial operations.",
-    "sortDate": "2025-12",
-    "priority": 8
-  },  {
-    "id": "cross-functional-sales-marketing-leadership",
-    "title": "Cross-Functional Leadership Across Sales and Marketing",
-    "employer": "Fresh Start in Education",
-    "summary": "Led work spanning sales, marketing, CRM, data and operational priorities to create more connected commercial practices.",
-    "details": "Coordinated requirements across teams that used the same customer and commercial information in different ways. The work involved balancing strategic priorities, technical constraints, operational needs and user expectations while building more consistent processes.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Commercial Strategy",
-      "Marketing",
-      "Salesforce & CRM",
-      "Operations"
-    ],
-    "skills": [
-      "Cross-Functional Leadership",
-      "Sales and Marketing Alignment",
-      "Stakeholder Management",
-      "Commercial Operations",
-      "Decision-Making"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Aligned commercial, marketing and operational requirements across shared systems.",
-    "sortDate": "2025-11",
-    "priority": 10
-  },
-  {
-    "id": "technical-commercial-stakeholder-management",
-    "title": "Stakeholder Management Across Technical and Commercial Teams",
-    "employer": "Fresh Start in Education",
-    "summary": "Translated between technical platform requirements and the practical needs of commercial and marketing stakeholders.",
-    "details": "Managed discussions involving users, decision-makers and technical contributors with different priorities and levels of system knowledge. The work focused on clarifying requirements, explaining trade-offs and maintaining progress across interconnected projects.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Salesforce & CRM",
-      "Operations",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Stakeholder Management",
-      "Requirements Gathering",
-      "Technical Communication",
-      "Commercial Communication",
-      "Conflict Resolution"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Converted differing technical and commercial priorities into shared delivery requirements.",
-    "sortDate": "2025-10",
-    "priority": 10
-  },
-  {
-    "id": "salesforce-mcae-user-training",
-    "title": "Salesforce and MCAE User Training Programme",
-    "employer": "Fresh Start in Education",
-    "summary": "Developed practical training to help users understand new Salesforce and marketing automation structures and processes.",
-    "details": "Created guidance around CRM records, platform responsibilities, campaign processes, data quality and new workflows. Training was adapted for users with different levels of confidence and focused on both how processes worked and why consistent use mattered.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Operations"
-    ],
-    "skills": [
-      "User Training",
-      "Salesforce Adoption",
-      "MCAE Training",
-      "Process Documentation",
-      "Change Communication"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Supported adoption of connected CRM and marketing automation practices.",
-    "sortDate": "2025-11",
-    "priority": 9
-  },
-  {
-    "id": "operational-change-system-adoption",
-    "title": "Leadership of Operational Change and System Adoption",
-    "employer": "Fresh Start in Education",
-    "summary": "Led users through changes to systems, responsibilities, workflows and data-management expectations.",
-    "details": "Supported operational change by explaining the purpose of new processes, gathering concerns, addressing practical barriers and helping users adjust to different ways of working. The approach treated adoption as an ongoing leadership responsibility rather than a one-off system launch.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Operations",
-      "Salesforce & CRM",
-      "Automation"
-    ],
-    "skills": [
-      "Change Leadership",
-      "System Adoption",
-      "User Engagement",
-      "Operational Change",
-      "Communication"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Combined platform implementation with sustained user and operational support.",
-    "sortDate": "2025-10",
-    "priority": 10
-  },
-  {
-    "id": "team-workflow-responsibility-restructure",
-    "title": "Team Workflow and Responsibility Restructure",
-    "employer": "Fresh Start in Education",
-    "summary": "Clarified ownership and redesigned recurring workflows to improve accountability and delivery.",
-    "details": "Reviewed how work moved between individuals and teams, identifying areas where responsibilities overlapped or remained unclear. The resulting structure created clearer ownership, decision points and escalation routes across recurring activity.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Operations",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Team Restructure",
-      "Responsibility Design",
-      "Workflow Management",
-      "Accountability",
-      "Operational Leadership"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Established clearer ownership across shared operational workflows.",
-    "sortDate": "2025-09",
-    "priority": 9
-  },
-  {
-    "id": "executive-commercial-systems-collaboration",
-    "title": "Executive Collaboration on Commercial Systems Strategy",
-    "employer": "Fresh Start in Education",
-    "summary": "Worked with senior stakeholders to connect system decisions with wider commercial and organisational priorities.",
-    "details": "Presented platform, data and workflow considerations in terms of commercial impact, operational risk and future capability. This supported more informed decisions about priorities, governance and the direction of connected sales and marketing systems.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Commercial Strategy",
-      "Salesforce & CRM",
-      "Operations",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Executive Communication",
-      "Strategic Planning",
-      "Commercial Systems",
-      "Decision Support",
-      "Stakeholder Influence"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Connected technical system choices with strategic commercial outcomes.",
-    "sortDate": "2025-12",
-    "priority": 10
-  },
-  {
-    "id": "coaching-process-technology-change",
-    "title": "Coaching Teams Through Process and Technology Change",
-    "employer": "Fresh Start in Education",
-    "summary": "Helped teams build confidence in new processes, systems and responsibilities through practical coaching and support.",
-    "details": "Provided ongoing guidance as users adapted to changed workflows and platform expectations. Coaching focused on solving real operational problems, reinforcing consistent practices and helping individuals understand how their work affected wider data and commercial outcomes.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Operations",
-      "Salesforce & CRM"
-    ],
-    "skills": [
-      "Team Coaching",
-      "Change Support",
-      "User Adoption",
-      "Problem Solving",
-      "Capability Building"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Supported sustained adoption beyond initial system and process training.",
-    "sortDate": "2025-11",
-    "priority": 8
-  },
-  {
-    "id": "partnership-client-relationship-management",
-    "title": "Partnership and Client Relationship Management",
-    "employer": "Fresh Start in Education",
-    "summary": "Managed relationships with external stakeholders through clear communication, responsiveness and long-term engagement.",
-    "details": "Maintained productive relationships by understanding stakeholder priorities, coordinating communication and responding to changing requirements. The approach focused on trust, continuity and the broader organisational context surrounding each relationship.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Commercial Strategy",
-      "Events & Engagement"
-    ],
-    "skills": [
-      "Relationship Management",
-      "Client Engagement",
-      "Partnership Working",
-      "Communication",
-      "Stakeholder Support"
-    ],
-    "tools": [
-      "Salesforce"
-    ],
-    "featuredMetric": "Supported longer-term engagement across varied stakeholder and organisational relationships.",
-    "sortDate": "2024-12",
-    "priority": 8
-  },
-  {
-    "id": "large-scale-event-volunteer-leadership",
-    "title": "Volunteer Leadership Across Large-Scale Events",
-    "employer": "Event and Conference Programmes",
-    "summary": "Led and coordinated volunteers supporting complex events involving large audiences and multiple operational workstreams.",
-    "details": "Supported volunteer teams through clear briefings, role allocation, communication and on-the-day problem-solving. The work required maintaining participant experience while responding to changing operational demands in a live environment.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Events & Engagement",
-      "Operations"
-    ],
-    "skills": [
-      "Volunteer Leadership",
-      "Event Operations",
-      "Team Coordination",
-      "Live Problem Solving",
-      "Briefing and Communication"
-    ],
-    "tools": [
-      "Event Management Systems",
-      "CRM"
-    ],
-    "featuredMetric": "Coordinated volunteer activity across complex live-event operations.",
-    "sortDate": "2024-08",
-    "priority": 9
-  },
-  {
-    "id": "departmental-leadership-performance-improvement",
-    "title": "Departmental Leadership and Performance Improvement",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved departmental performance through clearer priorities, stronger processes and more consistent accountability.",
-    "details": "Reviewed recurring activity, team responsibilities and operational pressures to identify opportunities for improvement. Leadership focused on clarifying expectations, resolving blockers and creating working practices that supported more dependable delivery.",
-    "tags": [
-      "Leadership & Stakeholder Management",
-      "Operations",
-      "Commercial Strategy"
-    ],
-    "skills": [
-      "Departmental Leadership",
-      "Performance Improvement",
-      "Operational Planning",
-      "Team Management",
-      "Continuous Improvement"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE"
-    ],
-    "featuredMetric": "Strengthened accountability and consistency across departmental delivery.",
-    "sortDate": "2025-12",
-    "priority": 9
-  },  {
-    "id": "youth-event-portfolio-growth",
-    "title": "Youth Event Portfolio Growth Programme",
-    "employer": "Event and Conference Programmes",
-    "summary": "Expanded an event portfolio by improving programme relevance, audience engagement and the overall participant experience.",
-    "details": "Reviewed existing event activity and identified opportunities to strengthen programming, communication and audience appeal. The work focused on creating experiences that encouraged participation, repeat attendance and stronger long-term engagement.",
-    "tags": [
-      "Events & Engagement",
-      "Leadership & Stakeholder Management",
-      "Marketing",
-      "Operations"
-    ],
-    "skills": [
-      "Event Strategy",
-      "Audience Growth",
-      "Programme Development",
-      "Participant Engagement",
-      "Event Marketing"
-    ],
-    "tools": [
-      "Event Management Systems",
-      "CRM",
-      "Email Marketing"
-    ],
-    "featuredMetric": "Strengthened audience engagement across a growing event portfolio.",
-    "sortDate": "2024-10",
-    "priority": 10
-  },
-  {
-    "id": "large-scale-international-conference-operations",
-    "title": "Large-Scale International Conference Operations",
-    "employer": "Event and Conference Programmes",
-    "summary": "Supported the planning and delivery of complex international conferences involving multiple teams, audiences and operational workstreams.",
-    "details": "Coordinated practical requirements across registration, programming, venues, communications, volunteers and participant support. The work required detailed preparation, rapid problem-solving and close collaboration throughout live event delivery.",
-    "tags": [
-      "Events & Engagement",
-      "Operations",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Conference Operations",
-      "Event Logistics",
-      "Operational Planning",
-      "Live Event Delivery",
-      "Cross-Functional Coordination"
-    ],
-    "tools": [
-      "Event Management Systems",
-      "CRM",
-      "Registration Platforms"
-    ],
-    "featuredMetric": "Supported coordinated delivery across multiple international conference workstreams.",
-    "sortDate": "2024-09",
-    "priority": 10
-  },
-  {
-    "id": "international-conference-volunteer-management",
-    "title": "International Conference Volunteer Management",
-    "employer": "Event and Conference Programmes",
-    "summary": "Coordinated volunteer teams supporting participant services, programme delivery and live-event operations.",
-    "details": "Managed volunteer responsibilities through recruitment support, role allocation, briefings, scheduling and on-the-day communication. The approach helped volunteers understand their responsibilities while maintaining flexibility during changing live-event conditions.",
-    "tags": [
-      "Events & Engagement",
-      "Leadership & Stakeholder Management",
-      "Operations"
-    ],
-    "skills": [
-      "Volunteer Management",
-      "Team Briefing",
-      "Scheduling",
-      "Event Operations",
-      "Live Communication"
-    ],
-    "tools": [
-      "Event Management Systems",
-      "Scheduling Tools"
-    ],
-    "featuredMetric": "Created clearer volunteer coordination across complex conference operations.",
-    "sortDate": "2024-09",
-    "priority": 9
-  },
-  {
-    "id": "event-marketing-audience-growth",
-    "title": "Event Marketing and Audience-Growth Strategy",
-    "employer": "Event and Conference Programmes",
-    "summary": "Developed promotional activity designed to increase awareness, registration and participation across event audiences.",
-    "details": "Connected audience messaging, email communication, stakeholder outreach and programme positioning within a coordinated event-marketing approach. Campaign activity was shaped around audience needs and the value of attending.",
-    "tags": [
-      "Events & Engagement",
-      "Marketing",
-      "Automation",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Event Marketing",
-      "Audience Growth",
-      "Campaign Planning",
-      "Email Marketing",
-      "Registration Strategy"
-    ],
-    "tools": [
-      "Email Marketing",
-      "CRM",
-      "Event Registration Platforms"
-    ],
-    "featuredMetric": "Connected promotional campaigns with event registration and audience development.",
-    "sortDate": "2024-08",
-    "priority": 9
-  },
-  {
-    "id": "community-engagement-events-programmes",
-    "title": "Community Engagement Through Events and Programmes",
-    "employer": "Event and Conference Programmes",
-    "summary": "Used events and structured programmes to build stronger relationships with participants, communities and partner organisations.",
-    "details": "Designed engagement activity around meaningful participation rather than one-way communication. The approach combined events, regular contact and stakeholder relationships to create a stronger sense of connection and continuity.",
-    "tags": [
-      "Events & Engagement",
-      "Leadership & Stakeholder Management",
-      "Marketing"
-    ],
-    "skills": [
-      "Community Engagement",
-      "Programme Design",
-      "Relationship Building",
-      "Stakeholder Communication",
-      "Audience Development"
-    ],
-    "tools": [
-      "CRM",
-      "Email Marketing",
-      "Event Management Systems"
-    ],
-    "featuredMetric": "Built engagement beyond individual events through ongoing programme relationships.",
-    "sortDate": "2024-07",
-    "priority": 8
-  },
-  {
-    "id": "hybrid-event-webinar-delivery",
-    "title": "Hybrid Event and Webinar Delivery",
-    "employer": "Fresh Start in Education",
-    "summary": "Delivered digital and hybrid engagement activity that connected registration, attendance, communication and follow-up.",
-    "details": "Structured webinar and event processes across promotion, registration, attendance tracking and post-event communication. The work connected event participation with CRM and marketing records so engagement could contribute to wider customer journeys.",
-    "tags": [
-      "Events & Engagement",
-      "Marketing",
-      "Automation",
-      "Salesforce & CRM",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Webinar Delivery",
-      "Hybrid Events",
-      "Registration Management",
-      "Follow-Up Automation",
-      "Engagement Tracking"
-    ],
-    "tools": [
-      "Zoom",
-      "MCAE",
-      "Salesforce"
-    ],
-    "featuredMetric": "Connected webinar attendance with segmented follow-up and CRM reporting.",
-    "sortDate": "2025-08",
-    "priority": 9
-  },
-  {
-    "id": "event-registration-crm-engagement",
-    "title": "Event Registration and CRM Engagement Improvement",
-    "employer": "Fresh Start in Education",
-    "summary": "Improved how event registrations and attendance information were captured, connected and used for follow-up.",
-    "details": "Reviewed the movement of event data from registration through to CRM and marketing systems. The improved structure supported campaign membership, audience segmentation, follow-up communications and analysis of event influence.",
-    "tags": [
-      "Events & Engagement",
-      "Salesforce & CRM",
-      "Marketing",
-      "Automation",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Event Registration",
-      "CRM Integration",
-      "Campaign Members",
-      "Data Capture",
-      "Audience Follow-Up"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE",
-      "Zoom"
-    ],
-    "featuredMetric": "Improved the connection between event participation and ongoing CRM engagement.",
-    "sortDate": "2025-08",
-    "priority": 9
-  },
-  {
-    "id": "multi-day-conference-logistics-risk",
-    "title": "Multi-Day Conference Logistics and Risk Management",
-    "employer": "Event and Conference Programmes",
-    "summary": "Planned and coordinated operational requirements for complex multi-day events with multiple dependencies.",
-    "details": "Managed logistics involving schedules, venues, participant movement, volunteers, communications and contingency planning. The work required identifying operational risks early and maintaining flexibility during live delivery.",
-    "tags": [
-      "Events & Engagement",
-      "Operations",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Event Logistics",
-      "Risk Management",
-      "Contingency Planning",
-      "Scheduling",
-      "Operational Coordination"
-    ],
-    "tools": [
-      "Event Management Systems",
-      "Scheduling Tools",
-      "Registration Platforms"
-    ],
-    "featuredMetric": "Coordinated multiple operational dependencies across multi-day event delivery.",
-    "sortDate": "2024-09",
-    "priority": 10
-  },
-  {
-    "id": "programme-revitalisation-attendance-growth",
-    "title": "Programme Revitalisation and Attendance Growth",
-    "employer": "Event and Conference Programmes",
-    "summary": "Refreshed event programming and engagement activity to improve relevance, participation and audience interest.",
-    "details": "Reviewed programme performance and audience response before introducing changes to content, structure and promotion. The work aimed to renew interest while preserving the elements participants valued most.",
-    "tags": [
-      "Events & Engagement",
-      "Marketing",
-      "Leadership & Stakeholder Management",
-      "Data & Analytics"
-    ],
-    "skills": [
-      "Programme Revitalisation",
-      "Attendance Growth",
-      "Audience Insight",
-      "Event Strategy",
-      "Performance Improvement"
-    ],
-    "tools": [
-      "CRM",
-      "Email Marketing",
-      "Event Management Systems"
-    ],
-    "featuredMetric": "Used audience insight to strengthen programme relevance and participation.",
-    "sortDate": "2024-10",
-    "priority": 9
-  },
-  {
-    "id": "stakeholder-engagement-long-buying-journeys",
-    "title": "Stakeholder Engagement Across Long Buying Journeys",
-    "employer": "Fresh Start in Education",
-    "summary": "Used events, webinars and ongoing communications to maintain stakeholder interest throughout extended commercial journeys.",
-    "details": "Designed engagement activity for prospects and organisations whose decisions could take place over long periods. Events and communications provided useful reasons to remain connected while supporting relationship development, segmentation and commercial follow-up.",
-    "tags": [
-      "Events & Engagement",
-      "Commercial Strategy",
-      "Marketing",
-      "Automation",
-      "Leadership & Stakeholder Management"
-    ],
-    "skills": [
-      "Stakeholder Engagement",
-      "Long-Cycle Sales",
-      "Event-Led Marketing",
-      "Lead Nurturing",
-      "Relationship Development"
-    ],
-    "tools": [
-      "Salesforce",
-      "MCAE",
-      "Zoom"
-    ],
-    "featuredMetric": "Used recurring engagement to support relationships across extended buying journeys.",
-    "sortDate": "2025-09",
-    "priority": 9
+const FILTER_TAGS = [
+  "Marketing",
+  "Automation",
+  "Salesforce & CRM",
+  "Data & Analytics",
+  "Commercial Strategy",
+  "Operations",
+  "Leadership & Stakeholder Management",
+  "Events & Engagement",
+  "AI-Assisted Innovation"
+];
+
+const state = {
+  projects: [],
+  selectedTags: new Set(),
+  searchQuery: "",
+  sortOrder: "relevance"
+};
+
+const elements = {
+  tagFilters: document.getElementById("tag-filters"),
+  clearFilters: document.getElementById("clear-filters"),
+  filterDescription: document.getElementById(
+    "filter-description"
+  ),
+  search: document.getElementById("project-search"),
+  sort: document.getElementById("sort-order"),
+  grid: document.getElementById("project-grid"),
+  resultCount: document.getElementById("result-count"),
+  activeFilterSummary: document.getElementById(
+    "active-filter-summary"
+  ),
+  emptyState: document.getElementById("empty-state"),
+  currentYear: document.getElementById("current-year")
+};
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function escapeAttribute(value) {
+  return escapeHtml(value);
+}
+
+function createFilterButtons() {
+  if (!elements.tagFilters) {
+    return;
   }
-]
+
+  elements.tagFilters.innerHTML = FILTER_TAGS
+    .map((tag) => {
+      return `
+        <button
+          class="tag-filter"
+          type="button"
+          data-tag="${escapeAttribute(tag)}"
+          aria-pressed="false"
+        >
+          ${escapeHtml(tag)}
+        </button>
+      `;
+    })
+    .join("");
+
+  const filterButtons =
+    elements.tagFilters.querySelectorAll(".tag-filter");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const tag = button.dataset.tag;
+
+      if (state.selectedTags.has(tag)) {
+        state.selectedTags.delete(tag);
+      } else {
+        state.selectedTags.add(tag);
+      }
+
+      updateFilterButtons();
+      renderProjects();
+    });
+  });
+}
+
+function updateFilterButtons() {
+  if (!elements.tagFilters) {
+    return;
+  }
+
+  const filterButtons =
+    elements.tagFilters.querySelectorAll(".tag-filter");
+
+  filterButtons.forEach((button) => {
+    const isActive =
+      state.selectedTags.has(button.dataset.tag);
+
+    button.classList.toggle("active", isActive);
+
+    button.setAttribute(
+      "aria-pressed",
+      String(isActive)
+    );
+  });
+
+  const selectedTags = [...state.selectedTags];
+
+  if (!elements.filterDescription) {
+    return;
+  }
+
+  if (selectedTags.length === 0) {
+    elements.filterDescription.textContent =
+      "No filters selected. Showing all work.";
+
+    return;
+  }
+
+  elements.filterDescription.textContent =
+    `Matching every selected capability: ${
+      selectedTags.join(" + ")
+    }`;
+}
+
+function projectMatchesSelectedTags(project) {
+  return [...state.selectedTags].every((tag) => {
+    return (
+      Array.isArray(project.tags) &&
+      project.tags.includes(tag)
+    );
+  });
+}
+
+function projectMatchesSearch(project) {
+  const query =
+    state.searchQuery.trim().toLowerCase();
+
+  if (!query) {
+    return true;
+  }
+
+  const searchableValues = [
+    project.title,
+    project.employer,
+    project.summary,
+    project.details,
+    project.featuredMetric,
+    ...(project.tags || []),
+    ...(project.skills || []),
+    ...(project.outcomes || []),
+    ...(project.tools || [])
+  ];
+
+  const searchableText = searchableValues
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  return searchableText.includes(query);
+}
+
+function sortProjects(projects) {
+  const sortedProjects = [...projects];
+
+  if (state.sortOrder === "newest") {
+    return sortedProjects.sort(
+      (projectA, projectB) => {
+        return String(projectB.sortDate || "")
+          .localeCompare(
+            String(projectA.sortDate || "")
+          );
+      }
+    );
+  }
+
+  if (state.sortOrder === "oldest") {
+    return sortedProjects.sort(
+      (projectA, projectB) => {
+        return String(projectA.sortDate || "")
+          .localeCompare(
+            String(projectB.sortDate || "")
+          );
+      }
+    );
+  }
+
+  return sortedProjects.sort(
+    (projectA, projectB) => {
+      return (
+        Number(projectB.priority || 0) -
+        Number(projectA.priority || 0)
+      );
+    }
+  );
+}
+
+function createProjectCard(project) {
+  const pageUrl =
+    String(project.pageUrl || "").trim();
+
+  const imageMarkup = project.image
+    ? `
+      <img
+        class="project-image"
+        src="${escapeAttribute(project.image)}"
+        alt="${escapeAttribute(
+          project.imageAlt || ""
+        )}"
+        loading="lazy"
+      >
+    `
+    : "";
+
+  const employerMarkup = project.employer
+    ? `
+      <p class="project-employer">
+        ${escapeHtml(project.employer)}
+      </p>
+    `
+    : "";
+
+  const metricMarkup = project.featuredMetric
+    ? `
+      <p class="project-metric">
+        ${escapeHtml(project.featuredMetric)}
+      </p>
+    `
+    : "";
+
+  const actionMarkup = pageUrl
+    ? `
+      <span
+        class="project-card-action"
+        aria-hidden="true"
+      >
+        View project
+        <span class="project-card-arrow">→</span>
+      </span>
+    `
+    : "";
+
+  const tagsMarkup = (project.tags || [])
+    .map((tag) => {
+      return `
+        <span class="project-tag">
+          ${escapeHtml(tag)}
+        </span>
+      `;
+    })
+    .join("");
+
+  const cardContents = `
+    ${imageMarkup}
+
+    <div class="project-content">
+      ${employerMarkup}
+
+      <h3>
+        ${escapeHtml(
+          project.title || "Untitled project"
+        )}
+      </h3>
+
+      <p class="project-summary">
+        ${escapeHtml(project.summary || "")}
+      </p>
+
+      ${metricMarkup}
+
+      ${actionMarkup}
+
+      <div class="project-tags">
+        ${tagsMarkup}
+      </div>
+    </div>
+  `;
+
+  /*
+    A project becomes clickable only when its
+    projects.json record contains a pageUrl field.
+  */
+
+  if (pageUrl) {
+    return `
+      <a
+        class="project-card project-card-link"
+        href="${escapeAttribute(pageUrl)}"
+        aria-label="View project: ${escapeAttribute(
+          project.title || "Project"
+        )}"
+      >
+        ${cardContents}
+      </a>
+    `;
+  }
+
+  /*
+    Projects without an expanded page remain
+    ordinary, non-clickable cards.
+  */
+
+  return `
+    <article class="project-card">
+      ${cardContents}
+    </article>
+  `;
+}
+
+function renderProjects() {
+  if (!elements.grid) {
+    return;
+  }
+
+  const matchingProjects =
+    state.projects.filter((project) => {
+      return (
+        projectMatchesSelectedTags(project) &&
+        projectMatchesSearch(project)
+      );
+    });
+
+  const visibleProjects =
+    sortProjects(matchingProjects);
+
+  const projectWord =
+    visibleProjects.length === 1
+      ? "project"
+      : "projects";
+
+  if (elements.resultCount) {
+    elements.resultCount.textContent =
+      `${visibleProjects.length} ${projectWord}`;
+  }
+
+  if (elements.activeFilterSummary) {
+    if (state.selectedTags.size > 0) {
+      elements.activeFilterSummary.textContent =
+        [...state.selectedTags].join(" + ");
+    } else {
+      elements.activeFilterSummary.textContent =
+        "Showing all work";
+    }
+  }
+
+  if (elements.emptyState) {
+    elements.emptyState.hidden =
+      visibleProjects.length !== 0;
+  }
+
+  elements.grid.innerHTML = visibleProjects
+    .map((project) => {
+      return createProjectCard(project);
+    })
+    .join("");
+
+  /*
+    Return to the top of the internal project
+    window whenever search, sorting or filters
+    produce a new result set.
+  */
+
+  elements.grid.scrollTop = 0;
+}
+
+async function loadProjects() {
+  try {
+    const response = await fetch(
+      "data/projects.json",
+      {
+        cache: "no-store"
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        `Unable to load projects.json: ${
+          response.status
+        }`
+      );
+    }
+
+    const projectData = await response.json();
+
+    if (!Array.isArray(projectData)) {
+      throw new Error(
+        "projects.json must contain a JSON array."
+      );
+    }
+
+    state.projects = projectData;
+
+    renderProjects();
+  } catch (error) {
+    console.error(error);
+
+    if (elements.resultCount) {
+      elements.resultCount.textContent =
+        "Projects could not be loaded";
+    }
+
+    if (elements.grid) {
+      elements.grid.innerHTML = `
+        <div class="empty-state">
+          <h3>Projects could not be loaded</h3>
+
+          <p>
+            Check that data/projects.json exists
+            and contains valid JSON.
+          </p>
+        </div>
+      `;
+    }
+  }
+}
+
+if (elements.search) {
+  elements.search.addEventListener(
+    "input",
+    (event) => {
+      state.searchQuery = event.target.value;
+
+      renderProjects();
+    }
+  );
+}
+
+if (elements.sort) {
+  elements.sort.addEventListener(
+    "change",
+    (event) => {
+      state.sortOrder = event.target.value;
+
+      renderProjects();
+    }
+  );
+}
+
+if (elements.clearFilters) {
+  elements.clearFilters.addEventListener(
+    "click",
+    () => {
+      state.selectedTags.clear();
+      state.searchQuery = "";
+
+      if (elements.search) {
+        elements.search.value = "";
+      }
+
+      updateFilterButtons();
+      renderProjects();
+    }
+  );
+}
+
+if (elements.currentYear) {
+  elements.currentYear.textContent =
+    new Date().getFullYear();
+}
+
+createFilterButtons();
+updateFilterButtons();
+loadProjects();
