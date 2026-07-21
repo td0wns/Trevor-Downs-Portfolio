@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Trevor Downs | Career Portfolio</title>
+
+  <meta
+    name="description"
+    content="Explore Trevor Downs' career portfolio across Salesforce, CRM, marketing, automation, data, strategy, operations, leadership and events."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">TD</span>
+
+        <span class="brand-text">
+          <strong>Trevor Downs</strong>
+          <small>Career Portfolio</small>
+        </span>
+      </a>
+
+      <nav class="site-navigation" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="mailto:trevor.p.downs@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          Commercial systems • Marketing automation • Operations
+        </p>
+
+        <h1>
+          Work built around people, data and relationships.
+        </h1>
+
+        <p class="hero-introduction">
+          Explore selected projects across Salesforce, marketing,
+          automation, data, commercial strategy, operations, leadership
+          and large-scale engagement.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">
+            Explore my work
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://www.linkedin.com/in/trevor-downs-77a65a2b0/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <span class="panel-label">Portfolio format</span>
+
+        <strong>
+          Choose the experience most relevant to your organisation.
+        </strong>
+
+        <p>
+          Filter by multiple capability areas, search specific keywords,
+          or place the results into chronological order.
+        </p>
+      </aside>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Project library</p>
+
+          <h2>
+            Choose the work most relevant to you.
+          </h2>
+        </div>
+
+        <p class="section-description">
+          Select multiple tags to narrow the portfolio. A project must
+          contain every selected tag to appear in the results.
+        </p>
+      </div>
+
+      <div class="controls-panel">
+        <div class="filter-header">
+          <div>
+            <span class="control-label">Filter by capability</span>
+
+            <p id="filter-description">
+              No filters selected. Showing all work.
+            </p>
+          </div>
+
+          <button
+            id="clear-filters"
+            class="clear-button"
+            type="button"
+          >
+            Clear filters
+          </button>
+        </div>
+
+        <div
+          id="tag-filters"
+          class="tag-filters"
+          aria-label="Portfolio filters"
+        ></div>
+
+        <div class="search-sort-row">
+          <label class="control-field" for="project-search">
+            <span>Search portfolio</span>
+
+            <input
+              id="project-search"
+              type="search"
+              placeholder="Search projects, tools, outcomes or employers"
+              autocomplete="off"
+            >
+          </label>
+
+          <label class="control-field" for="sort-order">
+            <span>Sort projects</span>
+
+            <select id="sort-order">
+              <option value="relevance">
+                Relevance
+              </option>
+
+              <option value="newest">
+                Chronological: newest first
+              </option>
+
+              <option value="oldest">
+                Chronological: oldest first
+              </option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="results-information" aria-live="polite">
+        <strong id="result-count">
+          Loading projects
+        </strong>
+
+        <span id="active-filter-summary">
+          Showing all work
+        </span>
+      </div>
+
+      <div id="project-grid" class="project-grid"></div>
+
+      <div id="empty-state" class="empty-state" hidden>
+        <h3>No matching projects</h3>
+
+        <p>
+          Try removing a filter or using a broader search term.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <p class="eyebrow">About</p>
+
+        <h2>
+          A career spanning systems, strategy, operations and engagement.
+        </h2>
+      </div>
+
+      <div class="about-copy">
+        <p>
+          My recent work centres on Salesforce, CRM architecture,
+          marketing automation, commercial data and revenue operations.
+          Earlier roles developed my experience in operational leadership,
+          community engagement and large-scale event delivery.
+        </p>
+
+        <p>
+          This portfolio is designed to let recruiters and collaborators
+          explore the evidence most relevant to their requirements.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>
+      © <span id="current-year"></span> Trevor Downs
+    </span>
+
+    <a href="mailto:trevor.p.downs@gmail.com">
+      trevor.p.downs@gmail.com
+    </a>
+  </footer>
+</body>
+</html>
