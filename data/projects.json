@@ -24,7 +24,8 @@
     ],
     "featuredMetric": "Normalised applicable channel influence to 100%.",
     "sortDate": "2025-08",
-    "priority": 10
+    "priority": 10,
+    "pageUrl": "salesforce-multi-touch-attribution.html"
   },
   {
     "id": "local-authority-account-hierarchy",
@@ -267,7 +268,7 @@
     "sortDate": "2025-12",
     "priority": 8
   },
-   {
+  {
     "id": "mcae-platform-architecture-rebuild",
     "title": "MCAE Platform Architecture and Rebuild",
     "employer": "Fresh Start in Education",
@@ -546,7 +547,8 @@
     "featuredMetric": "Transitioned marketing activity into a governed Salesforce-connected platform.",
     "sortDate": "2025-02",
     "priority": 9
-  },  {
+  },
+  {
     "id": "commercial-data-architecture",
     "title": "Commercial Data Architecture for Complex Sales",
     "employer": "Fresh Start in Education",
@@ -818,7 +820,8 @@
     "featuredMetric": "Separated high engagement from high commercial relevance.",
     "sortDate": "2025-07",
     "priority": 8
-  },   {
+  },
+  {
     "id": "public-sector-buying-committee-strategy",
     "title": "Public-Sector Buying-Committee Strategy",
     "employer": "Fresh Start in Education",
@@ -1091,7 +1094,8 @@
     "featuredMetric": "Connected multiple engagement channels within one acquisition model.",
     "sortDate": "2025-10",
     "priority": 8
-  },   {
+  },
+  {
     "id": "marketing-operations-transformation",
     "title": "Marketing Operations Transformation Programme",
     "employer": "Fresh Start in Education",
@@ -1364,7 +1368,8 @@
     "featuredMetric": "Created clearer ownership across operational workflows and delivery responsibilities.",
     "sortDate": "2025-11",
     "priority": 9
-  },  {
+  },
+  {
     "id": "ai-assisted-newsletter-engagement-application",
     "title": "AI-Assisted Newsletter Engagement Application",
     "employer": "Independent Project",
@@ -1585,7 +1590,8 @@
     "featuredMetric": "Connected current platform improvements with future AI-assisted commercial operations.",
     "sortDate": "2025-12",
     "priority": 8
-  },  {
+  },
+  {
     "id": "cross-functional-sales-marketing-leadership",
     "title": "Cross-Functional Leadership Across Sales and Marketing",
     "employer": "Fresh Start in Education",
@@ -1851,7 +1857,8 @@
     "featuredMetric": "Strengthened accountability and consistency across departmental delivery.",
     "sortDate": "2025-12",
     "priority": 9
-  },  {
+  },
+  {
     "id": "youth-event-portfolio-growth",
     "title": "Youth Event Portfolio Growth Programme",
     "employer": "Event and Conference Programmes",
