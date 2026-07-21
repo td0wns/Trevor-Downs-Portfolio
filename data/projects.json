@@ -34,18 +34,155 @@ const elements = {
   currentYear: document.getElementById("current-year")
 };
 
+/*
+  Protects content inserted into the page from
+  accidentally being treated as HTML.
+*/
+
 function escapeHtml(value) {
   return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 function escapeAttribute(value) {
   return escapeHtml(value);
 }
+
+/*
+  Converts punctuation and formatting differences
+  into a consistent searchable format.
+
+  Examples:
+
+  Salesforce & CRM -> salesforce and crm
+  Multi-Touch       -> multi touch
+  Data-Quality      -> data quality
+*/
+
+function normaliseSearchText(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/*
+  Turns arrays and nested objects into plain text.
+  This allows the search to support either simple
+  outcome strings or more detailed outcome objects.
+*/
+
+function flattenSearchValue(value) {
+  if (value === null || value === undefined) {
+    return [];
+  }
+
+  if (Array.isArray(value)) {
+    return value.flatMap((item) => {
+      return flattenSearchValue(item);
+    });
+  }
+
+  if (typeof value === "object") {
+    return Object.values(value).flatMap((item) => {
+      return flattenSearchValue(item);
+    });
+  }
+
+  return [String(value)];
+}
+
+/*
+  Builds a reusable search index for one project.
+*/
+
+function buildProjectSearchData(project) {
+  return {
+    id: normaliseSearchText(project.id),
+
+    title: normaliseSearchText(project.title),
+
+    employer: normaliseSearchText(project.employer),
+
+    summary: normaliseSearchText(project.summary),
+
+    details: normaliseSearchText(project.details),
+
+    metric: normaliseSearchText(
+      project.featuredMetric
+    ),
+
+    tags: normaliseSearchText(
+      flattenSearchValue(project.tags).join(" ")
+    ),
+
+    skills: normaliseSearchText(
+      flattenSearchValue(project.skills).join(" ")
+    ),
+
+    tools: normaliseSearchText(
+      flattenSearchValue(project.tools).join(" ")
+    ),
+
+    outcomes: normaliseSearchText(
+      flattenSearchValue(project.outcomes).join(" ")
+    )
+  };
+}
+
+/*
+  Creates one combined searchable string from all
+  relevant project fields.
+*/
+
+function getCombinedSearchText(project) {
+  const searchData =
+    project._searchData ||
+    buildProjectSearchData(project);
+
+  return Object.values(searchData).join(" ");
+}
+
+/*
+  Splits the search into individual words.
+
+  "salesforce crm attribution" becomes:
+
+  ["salesforce", "crm", "attribution"]
+
+  The word "and" is ignored so Salesforce & CRM
+  can be found by typing either:
+
+  salesforce crm
+  salesforce & crm
+*/
+
+function getSearchTerms() {
+  const normalisedQuery =
+    normaliseSearchText(state.searchQuery);
+
+  if (!normalisedQuery) {
+    return [];
+  }
+
+  return normalisedQuery
+    .split(" ")
+    .filter((term) => {
+      return term && term !== "and";
+    });
+}
+
+/*
+  Builds the capability filter buttons.
+*/
 
 function createFilterButtons() {
   if (!elements.tagFilters) {
@@ -68,7 +205,9 @@ function createFilterButtons() {
     .join("");
 
   const filterButtons =
-    elements.tagFilters.querySelectorAll(".tag-filter");
+    elements.tagFilters.querySelectorAll(
+      ".tag-filter"
+    );
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -86,19 +225,29 @@ function createFilterButtons() {
   });
 }
 
+/*
+  Updates the selected appearance and description
+  whenever a filter is changed.
+*/
+
 function updateFilterButtons() {
   if (!elements.tagFilters) {
     return;
   }
 
   const filterButtons =
-    elements.tagFilters.querySelectorAll(".tag-filter");
+    elements.tagFilters.querySelectorAll(
+      ".tag-filter"
+    );
 
   filterButtons.forEach((button) => {
     const isActive =
       state.selectedTags.has(button.dataset.tag);
 
-    button.classList.toggle("active", isActive);
+    button.classList.toggle(
+      "active",
+      isActive
+    );
 
     button.setAttribute(
       "aria-pressed",
@@ -106,11 +255,11 @@ function updateFilterButtons() {
     );
   });
 
-  const selectedTags = [...state.selectedTags];
-
   if (!elements.filterDescription) {
     return;
   }
+
+  const selectedTags = [...state.selectedTags];
 
   if (selectedTags.length === 0) {
     elements.filterDescription.textContent =
@@ -125,6 +274,13 @@ function updateFilterButtons() {
     }`;
 }
 
+/*
+  Uses AND filtering.
+
+  Selecting Salesforce & CRM and Automation means
+  the project must contain both tags.
+*/
+
 function projectMatchesSelectedTags(project) {
   return [...state.selectedTags].every((tag) => {
     return (
@@ -134,33 +290,114 @@ function projectMatchesSelectedTags(project) {
   });
 }
 
-function projectMatchesSearch(project) {
-  const query =
-    state.searchQuery.trim().toLowerCase();
+/*
+  Every entered search word must appear somewhere
+  in the project's searchable information.
 
-  if (!query) {
+  The words can appear:
+  - in any order
+  - in different fields
+  - separated by punctuation
+*/
+
+function projectMatchesSearch(project) {
+  const searchTerms = getSearchTerms();
+
+  if (searchTerms.length === 0) {
     return true;
   }
 
-  const searchableValues = [
-    project.title,
-    project.employer,
-    project.summary,
-    project.details,
-    project.featuredMetric,
-    ...(project.tags || []),
-    ...(project.skills || []),
-    ...(project.outcomes || []),
-    ...(project.tools || [])
-  ];
+  const searchableText =
+    getCombinedSearchText(project);
 
-  const searchableText = searchableValues
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-
-  return searchableText.includes(query);
+  return searchTerms.every((term) => {
+    return searchableText.includes(term);
+  });
 }
+
+/*
+  Calculates relevance when the recruiter searches.
+
+  Matches in titles, tags and skills receive more
+  weight than matches buried in longer descriptions.
+*/
+
+function calculateSearchRelevance(project) {
+  const searchTerms = getSearchTerms();
+
+  if (searchTerms.length === 0) {
+    return Number(project.priority || 0);
+  }
+
+  const searchData =
+    project._searchData ||
+    buildProjectSearchData(project);
+
+  let score = 0;
+
+  searchTerms.forEach((term) => {
+    if (searchData.title.includes(term)) {
+      score += 20;
+    }
+
+    if (searchData.tags.includes(term)) {
+      score += 16;
+    }
+
+    if (searchData.skills.includes(term)) {
+      score += 14;
+    }
+
+    if (searchData.employer.includes(term)) {
+      score += 9;
+    }
+
+    if (searchData.tools.includes(term)) {
+      score += 9;
+    }
+
+    if (searchData.metric.includes(term)) {
+      score += 7;
+    }
+
+    if (searchData.summary.includes(term)) {
+      score += 6;
+    }
+
+    if (searchData.outcomes.includes(term)) {
+      score += 5;
+    }
+
+    if (searchData.details.includes(term)) {
+      score += 3;
+    }
+
+    if (searchData.id.includes(term)) {
+      score += 1;
+    }
+  });
+
+  const completeQuery =
+    normaliseSearchText(state.searchQuery)
+      .replace(/\band\b/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+  if (
+    completeQuery &&
+    searchData.title.includes(completeQuery)
+  ) {
+    score += 40;
+  }
+
+  score += Number(project.priority || 0);
+
+  return score;
+}
+
+/*
+  Sorts filtered projects.
+*/
 
 function sortProjects(projects) {
   const sortedProjects = [...projects];
@@ -189,13 +426,38 @@ function sortProjects(projects) {
 
   return sortedProjects.sort(
     (projectA, projectB) => {
-      return (
+      const relevanceDifference =
+        calculateSearchRelevance(projectB) -
+        calculateSearchRelevance(projectA);
+
+      if (relevanceDifference !== 0) {
+        return relevanceDifference;
+      }
+
+      const priorityDifference =
         Number(projectB.priority || 0) -
-        Number(projectA.priority || 0)
-      );
+        Number(projectA.priority || 0);
+
+      if (priorityDifference !== 0) {
+        return priorityDifference;
+      }
+
+      return String(projectB.sortDate || "")
+        .localeCompare(
+          String(projectA.sortDate || "")
+        );
     }
   );
 }
+
+/*
+  Creates each portfolio card.
+
+  A card becomes clickable automatically when its
+  projects.json object contains:
+
+  "pageUrl": "project-page.html"
+*/
 
 function createProjectCard(project) {
   const pageUrl =
@@ -237,7 +499,9 @@ function createProjectCard(project) {
         aria-hidden="true"
       >
         View project
-        <span class="project-card-arrow">→</span>
+        <span class="project-card-arrow">
+          →
+        </span>
       </span>
     `
     : "";
@@ -278,11 +542,6 @@ function createProjectCard(project) {
     </div>
   `;
 
-  /*
-    A project becomes clickable only when its
-    projects.json record contains a pageUrl field.
-  */
-
   if (pageUrl) {
     return `
       <a
@@ -297,17 +556,16 @@ function createProjectCard(project) {
     `;
   }
 
-  /*
-    Projects without an expanded page remain
-    ordinary, non-clickable cards.
-  */
-
   return `
     <article class="project-card">
       ${cardContents}
     </article>
   `;
 }
+
+/*
+  Filters, sorts and displays the project library.
+*/
 
 function renderProjects() {
   if (!elements.grid) {
@@ -339,6 +597,9 @@ function renderProjects() {
     if (state.selectedTags.size > 0) {
       elements.activeFilterSummary.textContent =
         [...state.selectedTags].join(" + ");
+    } else if (state.searchQuery.trim()) {
+      elements.activeFilterSummary.textContent =
+        `Search: “${state.searchQuery.trim()}”`;
     } else {
       elements.activeFilterSummary.textContent =
         "Showing all work";
@@ -356,14 +617,12 @@ function renderProjects() {
     })
     .join("");
 
-  /*
-    Return to the top of the internal project
-    window whenever search, sorting or filters
-    produce a new result set.
-  */
-
   elements.grid.scrollTop = 0;
 }
+
+/*
+  Loads the project database.
+*/
 
 async function loadProjects() {
   try {
@@ -390,7 +649,18 @@ async function loadProjects() {
       );
     }
 
-    state.projects = projectData;
+    /*
+      Store a prepared search index with every
+      project so repeated searches stay responsive.
+    */
+
+    state.projects = projectData.map((project) => {
+      return {
+        ...project,
+        _searchData:
+          buildProjectSearchData(project)
+      };
+    });
 
     renderProjects();
   } catch (error) {
@@ -404,7 +674,9 @@ async function loadProjects() {
     if (elements.grid) {
       elements.grid.innerHTML = `
         <div class="empty-state">
-          <h3>Projects could not be loaded</h3>
+          <h3>
+            Projects could not be loaded
+          </h3>
 
           <p>
             Check that data/projects.json exists
@@ -415,6 +687,10 @@ async function loadProjects() {
     }
   }
 }
+
+/*
+  Search event.
+*/
 
 if (elements.search) {
   elements.search.addEventListener(
@@ -427,6 +703,10 @@ if (elements.search) {
   );
 }
 
+/*
+  Sort event.
+*/
+
 if (elements.sort) {
   elements.sort.addEventListener(
     "change",
@@ -437,6 +717,10 @@ if (elements.sort) {
     }
   );
 }
+
+/*
+  Clear filters and search together.
+*/
 
 if (elements.clearFilters) {
   elements.clearFilters.addEventListener(
@@ -455,10 +739,18 @@ if (elements.clearFilters) {
   );
 }
 
+/*
+  Current footer year.
+*/
+
 if (elements.currentYear) {
   elements.currentYear.textContent =
     new Date().getFullYear();
 }
+
+/*
+  Start the portfolio.
+*/
 
 createFilterButtons();
 updateFilterButtons();
