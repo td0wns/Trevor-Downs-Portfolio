@@ -499,7 +499,7 @@ h3 {
     Cards begin at 500px but the row can grow
     when a card needs more room. Nothing is clipped.
   */
-  grid-auto-rows: minmax(500px, auto);
+grid-auto-rows: 500px;
 
   align-content: start;
   align-items: stretch;
