@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Salesforce Lead Opportunity Forecasting and Automated Closure project by Trevor Downs."
+    />
+
+    <title>
+      Salesforce Lead Opportunity Forecasting and
+      Automated Closure | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Fresh Start in Education
+          </p>
+
+          <h1>
+            Salesforce Lead Opportunity Forecasting and
+            Automated Closure
+          </h1>
+
+          <p class="case-study-introduction">
+            A guided, pre-conversion Lead opportunity
+            process that calculated forecast value from
+            historical purchasing data, preserved every
+            attempt for reporting, and closed inactive
+            work automatically after 21 days.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              Salesforce &amp; CRM
+            </span>
+
+            <span class="case-study-tag">
+              Automation
+            </span>
+
+            <span class="case-study-tag">
+              Data &amp; Analytics
+            </span>
+
+            <span class="case-study-tag">
+              Commercial Strategy
+            </span>
+
+            <span class="case-study-tag">
+              Operations
+            </span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Designed and implemented a Salesforce process
+              that enabled the sales team to create and
+              manage opportunity-style activity directly
+              from Lead records before conversion, using a
+              guided Screen Flow, dependent picklists,
+              12-month forecast-value modelling, a dedicated
+              custom object and scheduled closure automation
+              to prioritise higher-value activity and
+              preserve repeated attempts.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Used 12 months of purchasing data and
+                automatically closed inactive opportunities
+                after 21 days.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce Screen Flow</li>
+                <li>Forecast modelling</li>
+                <li>Custom object design</li>
+                <li>Scheduled automation</li>
+                <li>Pipeline reporting</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce</li>
+                <li>Salesforce Flow</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The commercial problem</h2>
+
+            <p>
+              The sales team wanted to create and manage
+              opportunity-style activity for Leads before
+              they were converted, but the Lead record did
+              not provide a structured process for
+              progressing, valuing, closing and retaining
+              repeated sales attempts. A single Lead could
+              experience several successful or unsuccessful
+              opportunity cycles, creating a need to
+              preserve historical outcomes without
+              overcrowding the Lead record.
+            </p>
+
+            <p>
+              The team also needed a consistent way to
+              measure how Leads were identified, contacted
+              and progressed, prioritise opportunities with
+              stronger historical revenue potential, and
+              prevent inactive activity from remaining open
+              indefinitely.
+            </p>
+
+            <ul class="case-study-list">
+              <li>
+                No structured pre-conversion opportunity
+                process on the Lead record
+              </li>
+
+              <li>
+                Leads could carry several successful or
+                unsuccessful attempts over time
+              </li>
+
+              <li>
+                Risk of overcrowding the Lead record with
+                historical detail
+              </li>
+
+              <li>
+                No consistent way to prioritise
+                higher-value activity
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>A guided, action-led Screen Flow</h2>
+
+            <p>
+              Once a Lead contained sufficient and
+              permissible field information, a user could
+              launch a Salesforce action from the Lead
+              record that started a guided Screen Flow. The
+              Flow activated a hidden checkbox marking the
+              Lead opportunity as active, then guided the
+              user through four sequential dependent
+              picklists covering how the Lead was
+              identified, how the organisation reached out,
+              how the Lead responded, and the resulting
+              outcome.
+            </p>
+
+            <p>
+              Each completed picklist unlocked the next
+              stage, creating a controlled progression that
+              enabled the sales team to record consistent,
+              measurable information across identification,
+              outreach, response and outcome.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Lead-readiness requirements before launch</li>
+              <li>Hidden activation checkbox</li>
+              <li>Identification, outreach, response and outcome picklists</li>
+              <li>Sequential unlocking of each stage</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Forecast value from historical purchasing</h2>
+
+            <p>
+              When the Lead opportunity process began,
+              Salesforce calculated a forecast value using
+              purchasing data from the previous 12 months,
+              based on organisation type, average rate,
+              average weekly hours and average length of
+              service in weeks. Historical rates were also
+              checked against Multi-Academy Trust context,
+              so the same organisation type could use
+              different assumptions depending on MAT
+              membership.
+            </p>
+
+            <p>
+              This allowed the sales team to focus on
+              opportunities associated with organisation
+              types that had historically generated more
+              revenue, without treating the forecast as
+              guaranteed income.
+            </p>
+
+            <ul class="case-study-list">
+              <li>12 months of historical purchasing data</li>
+              <li>Organisation type, rate, hours and service duration</li>
+              <li>MAT-adjusted rate assumptions</li>
+              <li>Sales prioritisation by forecast value</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Preserving every opportunity attempt</h2>
+
+            <p>
+              Created a dedicated Salesforce custom object
+              to store the results and progression of each
+              Lead opportunity, generating a new
+              custom-object record every time a Lead entered
+              a new opportunity cycle. This preserved
+              multiple successful and unsuccessful attempts
+              against the same Lead while the custom-object
+              record updated dynamically as fields were
+              completed or changed.
+            </p>
+
+            <p>
+              Only the current Lead opportunity remained
+              visible on the Lead record, with a link to the
+              most recent related opportunity, while working
+              fields were purged and refreshed for each new
+              cycle and previous attempts stayed intact
+              within the custom object.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Dedicated custom object per opportunity attempt</li>
+              <li>Dynamic record updates as fields changed</li>
+              <li>Current-only view on the Lead record</li>
+              <li>Lead-field purge and refresh between cycles</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Automated closure of inactive opportunities</h2>
+
+            <p>
+              A dedicated last-updated timestamp refreshed
+              whenever any of the four progression picklists
+              changed. A scheduled Salesforce Flow monitored
+              active Lead opportunities against this
+              timestamp and automatically closed and
+              deactivated any opportunity left without an
+              update for 21 days.
+            </p>
+
+            <p>
+              Automated closure unlocked additional outcome
+              options so the system-generated result could
+              be stored alongside whatever the user had
+              already documented, letting reports distinguish
+              between user-recorded outcomes and those closed
+              automatically through inactivity.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Last-updated timestamp on progression change</li>
+              <li>Scheduled Flow monitoring inactivity</li>
+              <li>21-day automated closure and deactivation</li>
+              <li>User-recorded vs. automated outcome distinction</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>Reportable history and sales feedback</h2>
+
+            <p>
+              The combination of a dedicated custom object
+              and consistent progression fields created a
+              reportable history of repeated opportunity
+              attempts, including attempts that did not
+              result in a successful outcome. This let the
+              sales team review compiled identification,
+              outreach, response, forecast-value and outcome
+              data across every cycle a Lead had been
+              through.
+            </p>
+
+            <p>
+              The resulting dataset gave the sales team
+              structured feedback that could be used to
+              iterate and improve its approach, rather than
+              relying on memory or informal notes about
+              which Leads had already been worked and how.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Full history of successful and unsuccessful attempts</li>
+              <li>Compiled identification, outreach and response data</li>
+              <li>Forecast-value and outcome reporting</li>
+              <li>Structured feedback for sales-process improvement</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the forecasting and closure process
+            enabled
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>Consistent, measurable progression</h3>
+
+              <p>
+                Four dependent picklists captured how each
+                Lead was identified, contacted, responded
+                and resolved, in a controlled and
+                repeatable sequence.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Revenue-informed prioritisation</h3>
+
+              <p>
+                Forecast value from 12 months of purchasing
+                data, adjusted for MAT context, helped the
+                team focus on historically higher-value
+                opportunities.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Clean records, full history</h3>
+
+              <p>
+                A dedicated custom object preserved every
+                opportunity attempt while the Lead record
+                stayed focused on the current cycle.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>No opportunities left open indefinitely</h3>
+
+              <p>
+                Scheduled automation closed inactive
+                opportunities after 21 days, distinguishing
+                user-recorded outcomes from automated
+                closures.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
