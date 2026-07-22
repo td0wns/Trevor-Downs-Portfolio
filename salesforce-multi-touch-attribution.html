@@ -10,11 +10,12 @@
 
     <meta
       name="description"
-      content="Salesforce Multi-Touch Attribution Model project by Trevor Downs."
+      content="Salesforce Multi-Touch Attribution and Revenue Reporting project by Trevor Downs."
     />
 
     <title>
-      Salesforce Multi-Touch Attribution Model | Trevor Downs
+      Salesforce Multi-Touch Attribution and Revenue
+      Reporting | Trevor Downs
     </title>
 
     <!-- Uses your existing portfolio stylesheet -->
@@ -339,15 +340,17 @@
           </p>
 
           <h1>
-            Salesforce Multi-Touch Attribution Model
+            Salesforce Multi-Touch Attribution and
+            Revenue Reporting
           </h1>
 
           <p class="case-study-introduction">
-            A modular Salesforce attribution framework
-            designed to show how marketing, sales,
-            events, referrals and organisational
-            relationships contributed to commercial
-            outcomes across complex buying journeys.
+            A weighted Salesforce attribution model
+            connecting recent email, event, sales and
+            organisational engagement with enquiries,
+            referrals, opportunities, placements and
+            revenue reporting across a complex
+            education-sector buying process.
           </p>
 
           <div class="case-study-tags">
@@ -366,6 +369,10 @@
             <span class="case-study-tag">
               Commercial Strategy
             </span>
+
+            <span class="case-study-tag">
+              Marketing
+            </span>
           </div>
         </section>
 
@@ -376,13 +383,17 @@
             </span>
 
             <p class="case-study-overview-copy">
-              The framework replaced a single-touch
-              interpretation of conversion with a
-              structured model capable of recognising
-              several meaningful interactions. Applicable
-              channels received a weighted share of
-              influence, with the final attribution
-              normalised to 100%.
+              Built separate Salesforce Flow entry paths
+              for Lead enquiries, Contact enquiries and
+              Account-level referrals. The model used a
+              three-week engagement window, Campaign
+              Member activity, recognised organisational
+              domains, MAT and Account context,
+              returning-customer status and
+              sequence-sensitive weighting, normalising
+              applicable channel influence to 100% and
+              storing the result for dashboards and
+              revenue reports.
             </p>
           </div>
 
@@ -397,7 +408,9 @@
 
               <strong>
                 Normalised applicable channel influence
-                to 100%.
+                to 100% across events, mailshots, sales
+                outreach and returning-customer
+                relationships.
               </strong>
             </div>
 
@@ -407,7 +420,7 @@
               </span>
 
               <ul class="case-study-list">
-                <li>Revenue attribution</li>
+                <li>Multi-touch attribution</li>
                 <li>Salesforce Flow</li>
                 <li>Campaign members</li>
                 <li>Custom objects</li>
@@ -435,43 +448,45 @@
             <h2>The commercial challenge</h2>
 
             <p>
-              Commercial outcomes were rarely caused by
-              one interaction. A prospect might attend an
-              event, receive several campaign
-              communications, speak with the sales team
-              and be influenced by an existing
-              organisational relationship before
-              progressing.
+              The organisation operated within a complex
+              education-sector purchasing environment
+              involving large buying committees, multiple
+              stakeholders, high staff turnover and
+              role-based email addresses. A person could
+              engage with email marketing, attend an
+              event or speak with sales, while a
+              completely different person from the same
+              organisation later submitted the website
+              enquiry or referral.
             </p>
 
             <p>
-              Traditional first-touch or last-touch
-              reporting could not represent this journey
-              accurately. It risked overvaluing the most
-              visible interaction while ignoring the
-              wider combination of activity that
-              contributed to the decision.
+              Conventional person-level, first-touch or
+              last-touch attribution could not reliably
+              explain which activity had actually
+              influenced the eventual outcome.
             </p>
 
             <ul class="case-study-list">
               <li>
-                Multiple stakeholders could influence one
-                commercial outcome.
+                Large buying committees with several
+                independently engaging stakeholders.
               </li>
 
               <li>
-                Engagement occurred across marketing,
-                events, referrals and direct sales.
+                Enquiries or referrals frequently submitted
+                by someone who had not personally engaged
+                with earlier activity.
               </li>
 
               <li>
-                Individual contacts could be connected to
-                wider account relationships.
+                High staff turnover reducing the reliability
+                of individual Lead and Contact records.
               </li>
 
               <li>
-                Not every attribution channel applied to
-                every opportunity.
+                Frequent use of role-based email addresses
+                across schools and local authorities.
               </li>
             </ul>
           </div>
@@ -481,29 +496,35 @@
           <p class="case-study-number">02</p>
 
           <div>
-            <h2>The attribution framework</h2>
+            <h2>Engagement tracking architecture</h2>
 
             <p>
-              The model evaluated recent and relevant
-              interactions across a defined set of
-              attribution channels. Each applicable
-              channel received a starting weight based on
-              its role in the commercial journey.
+              Built an engagement-tracking architecture
+              using Salesforce Campaigns as indicators of
+              recent, attributable behaviour. MCAE
+              automation added prospects to engagement
+              Campaigns when they opened or clicked
+              qualifying email content, scheduled sales
+              calls added Leads and Contacts to a separate
+              Campaign, and event kiosk capture connected
+              attendees with event-specific Campaigns.
             </p>
 
             <p>
-              The framework recalculated those weights so
-              that the final attribution across the
-              opportunity always totalled 100%.
+              A weekly Salesforce Flow purged and
+              repopulated engagement Campaign membership
+              using a three-week engagement window, so
+              membership reflected recent commercially
+              relevant interaction rather than permanent
+              historical activity.
             </p>
 
             <ul class="case-study-list">
-              <li>Marketing campaign engagement</li>
-              <li>Event and webinar participation</li>
-              <li>Direct sales engagement</li>
-              <li>Referral influence</li>
-              <li>Account relationships</li>
-              <li>Recent stakeholder activity</li>
+              <li>MCAE mailshot engagement Campaigns</li>
+              <li>Sales-call engagement Campaigns</li>
+              <li>Event kiosk and event Campaigns</li>
+              <li>Weekly purge and repopulation Flow</li>
+              <li>Three-week rolling engagement window</li>
             </ul>
           </div>
         </section>
@@ -512,47 +533,32 @@
           <p class="case-study-number">03</p>
 
           <div>
-            <h2>Salesforce architecture</h2>
+            <h2>Three attribution Flow paths</h2>
 
             <p>
-              Salesforce provided the central
-              relationship and reporting layer. Leads,
-              contacts, accounts, opportunities,
-              campaigns and campaign members contributed
-              different parts of the attribution picture.
+              The attribution model triggered through
+              three separate Salesforce Flow entry paths:
+              a Lead enquiry, a Contact enquiry, and an
+              Account-level referral. Each path gathered
+              active engagement Campaigns, MAT membership,
+              Account context and related Lead or Contact
+              activity before calculating a result.
             </p>
 
             <p>
-              Custom objects and structured relationships
-              were used where standard records alone
-              could not represent the full commercial
-              journey.
+              The Account-level path evaluated engagement
+              across the wider organisation rather than
+              focusing on one person, looping through
+              related contact data to identify the most
+              relevant organisational domain.
             </p>
 
             <ul class="case-study-list">
+              <li>Lead enquiry attribution Flow</li>
+              <li>Contact enquiry attribution Flow</li>
+              <li>Account-level referral attribution Flow</li>
               <li>
-                Campaign members recorded marketing and
-                event participation.
-              </li>
-
-              <li>
-                Opportunity relationships connected
-                activity with commercial outcomes.
-              </li>
-
-              <li>
-                Account structures represented wider
-                organisational influence.
-              </li>
-
-              <li>
-                Custom metadata kept attribution rules
-                configurable.
-              </li>
-
-              <li>
-                Salesforce Flow supported repeatable
-                calculations and record updates.
+                Related Lead and Contact engagement checks
               </li>
             </ul>
           </div>
@@ -562,47 +568,35 @@
           <p class="case-study-number">04</p>
 
           <div>
-            <h2>Weighted attribution logic</h2>
+            <h2>Domain matching and organisational context</h2>
 
             <p>
-              A channel only received attribution when
-              supporting evidence showed that it had
-              contributed to the opportunity. This
-              prevented inactive or irrelevant channels
-              from automatically receiving a share.
+              Where the submitting person did not use a
+              government email address, the model used
+              shared email-domain matching, backed by
+              Custom Metadata Type reference data, to
+              identify related Leads and Contacts within
+              the same organisation. Domains ending in
+              .gov.uk were excluded from this matching, as
+              their broad usage did not support safe
+              assumptions about interconnectedness.
             </p>
 
             <p>
-              The remaining channel weights were then
-              normalised. This preserved their relative
-              importance while ensuring every completed
-              calculation totalled exactly 100%.
+              Engagement by several related people within
+              the same organisation could strengthen the
+              score of the corresponding attribution
+              channel, and Account status was factored in
+              because recent and returning customers were
+              more likely to purchase because of the
+              existing relationship.
             </p>
 
             <ul class="case-study-list">
-              <li>
-                Identify the channels applicable to the
-                opportunity.
-              </li>
-
-              <li>
-                Retrieve the configured weight for each
-                applicable channel.
-              </li>
-
-              <li>
-                Calculate the combined applicable weight.
-              </li>
-
-              <li>
-                Divide each channel weight by the
-                applicable total.
-              </li>
-
-              <li>
-                Store the resulting percentage on the
-                attribution record.
-              </li>
+              <li>Shared email-domain matching</li>
+              <li>.gov.uk domain exclusion</li>
+              <li>Custom Metadata Type domain reference data</li>
+              <li>MAT and Account-status weighting</li>
             </ul>
           </div>
         </section>
@@ -611,30 +605,34 @@
           <p class="case-study-number">05</p>
 
           <div>
-            <h2>Governance and maintainability</h2>
+            <h2>Sequence-sensitive weighting and normalisation</h2>
 
             <p>
-              The model was designed as a maintainable
-              commercial framework rather than a group of
-              hard-coded calculations. Attribution
-              definitions and weights could be governed
-              centrally and adjusted as organisational
-              understanding developed.
+              Custom weighting rules considered the
+              sequence and relationship between touchpoints
+              — for example, a preceding sales call reduced
+              the relative influence assigned to later
+              mailshot engagement, since direct sales
+              interaction was likely to have been the
+              stronger driver. Known purchasing patterns
+              were also checked before assigning the final
+              attribution.
             </p>
 
             <p>
-              Separating configuration from automation
-              reduced the need to repeatedly edit
-              Salesforce logic whenever a commercial rule
-              changed.
+              Individual channel scores were summed into a
+              total, each channel's proportional share was
+              calculated, and the final attribution across
+              events, returning-customer influence,
+              mailshots and sales outreach was always
+              normalised to 100%.
             </p>
 
             <ul class="case-study-list">
-              <li>Centralised attribution definitions</li>
-              <li>Configurable channel weights</li>
-              <li>Consistent calculation rules</li>
-              <li>Traceable engagement records</li>
-              <li>Repeatable quality checks</li>
+              <li>Touchpoint-sequence weighting</li>
+              <li>Purchasing-pattern checks</li>
+              <li>Total-score calculation</li>
+              <li>Proportional normalisation to 100%</li>
             </ul>
           </div>
         </section>
@@ -643,44 +641,33 @@
           <p class="case-study-number">06</p>
 
           <div>
-            <h2>Reporting and commercial use</h2>
+            <h2>Attribution Model object and reporting</h2>
 
             <p>
-              The resulting attribution records created a
-              stronger foundation for evaluating campaign
-              performance, event influence and the
-              contribution of relationship-led sales
-              activity.
+              Results were stored in a custom Attribution
+              Model object, dynamically populated through
+              Salesforce Flow to minimise manual data
+              entry. The record held numerical attribution
+              for each channel, lookups to the relevant
+              Lead, Contact and converted Contact, the
+              enquiring and referring Accounts, the related
+              Opportunity, and referral-to-placement
+              progression.
             </p>
 
             <p>
-              The framework provided a consistent and
-              transparent interpretation of the available
-              commercial evidence rather than claiming
-              that one calculation could perfectly
-              explain every purchase.
+              This preserved visibility across the full
+              journey from initial engagement through
+              enquiry, referral, Opportunity progression
+              and placement, and fed a sales dashboard and
+              multiple revenue reports.
             </p>
 
             <ul class="case-study-list">
-              <li>
-                Campaign and channel performance analysis
-              </li>
-
-              <li>
-                Opportunity-level influence reporting
-              </li>
-
-              <li>Revenue contribution dashboards</li>
-
-              <li>
-                Comparison of marketing and sales
-                activity
-              </li>
-
-              <li>
-                Improved commercial planning and
-                prioritisation
-              </li>
+              <li>Custom Attribution Model object</li>
+              <li>Lead, Contact and Account lookups</li>
+              <li>Opportunity and placement linkage</li>
+              <li>Sales dashboard and revenue reporting</li>
             </ul>
           </div>
         </section>
@@ -694,43 +681,46 @@
 
           <div class="case-study-outcome-grid">
             <article class="case-study-outcome">
-              <h3>More balanced attribution</h3>
+              <h3>Buying-committee visibility</h3>
 
               <p>
-                Commercial influence could be distributed
-                across multiple supported interactions
-                rather than assigned entirely to one
-                touchpoint.
+                Enabled reporting to recognise
+                organisational and buying-committee
+                influence rather than crediting only the
+                person who completed the final form.
               </p>
             </article>
 
             <article class="case-study-outcome">
-              <h3>Consistent calculations</h3>
+              <h3>Recent, relevant engagement</h3>
 
               <p>
-                Applicable channel weights were processed
-                through one repeatable framework and
-                normalised to 100%.
+                A three-week engagement window and weekly
+                Campaign refresh kept attribution grounded
+                in current activity rather than permanent
+                historical engagement.
               </p>
             </article>
 
             <article class="case-study-outcome">
-              <h3>Configurable governance</h3>
+              <h3>Safe organisational matching</h3>
 
               <p>
-                Attribution rules could be managed
-                centrally without embedding every
-                assumption directly inside automation.
+                Shared domain matching and .gov.uk
+                exclusions connected related people without
+                relying on unsafe assumptions about
+                government-domain contacts.
               </p>
             </article>
 
             <article class="case-study-outcome">
-              <h3>Stronger reporting</h3>
+              <h3>Dynamic dashboards and reporting</h3>
 
               <p>
-                Salesforce data could support more useful
-                analysis of campaign, event, referral and
-                relationship influence.
+                Attribution results were populated
+                automatically into a custom object,
+                supporting a sales dashboard and multiple
+                revenue reports without manual entry.
               </p>
             </article>
           </div>
