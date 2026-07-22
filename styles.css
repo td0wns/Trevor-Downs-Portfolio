@@ -45,7 +45,6 @@ body {
 }
 
 button,
-input,
 select {
   font: inherit;
 }
@@ -330,7 +329,7 @@ h3 {
 }
 
 /* -------------------------------- */
-/* Filtering and search controls    */
+/* Filtering and sorting controls   */
 /* -------------------------------- */
 
 .controls-panel {
@@ -414,15 +413,24 @@ h3 {
   background: var(--accent);
 }
 
+.control-field:has(#project-search),
+label[for="project-search"],
+#project-search {
+  display: none;
+}
+
 .search-sort-row {
   margin-top: 26px;
   padding-top: 24px;
 
-  display: grid;
-  grid-template-columns: 1fr minmax(250px, 0.36fr);
-  gap: 18px;
+  display: flex;
+  justify-content: flex-end;
 
   border-top: 1px solid var(--border);
+}
+
+.search-sort-row .control-field {
+  width: min(100%, 320px);
 }
 
 .control-field {
@@ -435,7 +443,6 @@ h3 {
   font-weight: 700;
 }
 
-.control-field input,
 .control-field select {
   width: 100%;
   min-height: 50px;
@@ -450,7 +457,6 @@ h3 {
   background: var(--white);
 }
 
-.control-field input:focus,
 .control-field select:focus {
   border-color: var(--accent);
 
@@ -807,8 +813,8 @@ h3 {
     gap: 15px;
   }
 
-  .search-sort-row {
-    grid-template-columns: 1fr;
+  .search-sort-row .control-field {
+    width: 100%;
   }
 }
 
