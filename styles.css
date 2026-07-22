@@ -614,14 +614,65 @@ label[for="project-search"],
     box-shadow 170ms ease;
 }
 
-.project-card:hover {
+.project-card--clickable {
+  cursor: pointer;
+}
+
+.project-card--clickable:hover,
+.project-card--clickable:focus-within {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
 }
 
-/* Preserve the corrective flip while lifting cards on hover. */
-.project-grid > .project-card:hover {
+/* Preserve the corrective flip while lifting linked cards. */
+.project-grid > .project-card--clickable:hover,
+.project-grid > .project-card--clickable:focus-within {
   transform: scaleY(-1) translateY(-4px);
+}
+
+/*
+  Keep the article as the direct grid child and let the anchor
+  fill the complete card. This preserves the flipped scrollbar
+  layout while making the full card clickable.
+*/
+.project-card-link {
+  min-width: 0;
+  min-height: 100%;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: inherit;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+.project-card--clickable:focus-within {
+  border-color: var(--accent);
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+
+  border: 0;
+
+  white-space: nowrap;
 }
 
 .project-image {
@@ -938,8 +989,9 @@ label[for="project-search"],
     transform: none;
   }
 
-  /* Keep cards upright while disabling the hover movement. */
-  .project-grid > .project-card:hover {
+  /* Keep linked cards upright while disabling movement. */
+  .project-grid > .project-card--clickable:hover,
+  .project-grid > .project-card--clickable:focus-within {
     transform: scaleY(-1);
   }
 }
