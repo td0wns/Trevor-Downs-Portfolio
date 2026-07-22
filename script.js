@@ -41,6 +41,47 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+/*
+  Accept normal relative links and HTTP/HTTPS links while
+  rejecting unsafe protocols such as javascript:.
+*/
+function getSafeProjectUrl(value) {
+  const rawUrl = String(value ?? "").trim();
+
+  if (!rawUrl) {
+    return "";
+  }
+
+  try {
+    const parsedUrl = new URL(
+      rawUrl,
+      window.location.href
+    );
+
+    const allowedProtocols = new Set([
+      "http:",
+      "https:"
+    ]);
+
+    if (!allowedProtocols.has(parsedUrl.protocol)) {
+      console.warn(
+        `Project URL skipped because the protocol is not allowed: ${rawUrl}`
+      );
+
+      return "";
+    }
+
+    return rawUrl;
+  } catch (error) {
+    console.warn(
+      `Project URL skipped because it is invalid: ${rawUrl}`,
+      error
+    );
+
+    return "";
+  }
+}
+
 function createFilterButtons() {
   elements.tagFilters.innerHTML = FILTER_TAGS
     .map((tag) => {
@@ -146,6 +187,14 @@ function sortProjects(projects) {
 }
 
 function createProjectCard(project) {
+  const projectTitle =
+    project.title || "Untitled project";
+
+  const projectUrl = getSafeProjectUrl(project.url);
+
+  const opensInNewTab =
+    project.openInNewTab === true;
+
   const imageMarkup = project.image
     ? `
       <img
@@ -183,29 +232,61 @@ function createProjectCard(project) {
     })
     .join("");
 
-  return `
-    <article class="project-card">
-      ${imageMarkup}
+  const cardContent = `
+    ${imageMarkup}
 
-      <div class="project-content">
-        ${employerMarkup}
+    <div class="project-content">
+      ${employerMarkup}
 
-        <h3>
-          ${escapeHtml(
-            project.title || "Untitled project"
-          )}
-        </h3>
+      <h3>
+        ${escapeHtml(projectTitle)}
+      </h3>
 
-        <p class="project-summary">
-          ${escapeHtml(project.summary || "")}
-        </p>
+      <p class="project-summary">
+        ${escapeHtml(project.summary || "")}
+      </p>
 
-        ${metricMarkup}
+      ${metricMarkup}
 
-        <div class="project-tags">
-          ${tagsMarkup}
-        </div>
+      <div class="project-tags">
+        ${tagsMarkup}
       </div>
+    </div>
+  `;
+
+  /*
+    Keep projects without a usable URL visible, but do not
+    make them behave like links.
+  */
+  if (!projectUrl) {
+    return `
+      <article class="project-card">
+        ${cardContent}
+      </article>
+    `;
+  }
+
+  const newTabAttributes = opensInNewTab
+    ? ' target="_blank" rel="noopener noreferrer"'
+    : "";
+
+  const newTabNotice = opensInNewTab
+    ? `
+      <span class="visually-hidden">
+        Opens in a new tab
+      </span>
+    `
+    : "";
+
+  return `
+    <article class="project-card project-card--clickable">
+      <a
+        class="project-card-link"
+        href="${escapeHtml(projectUrl)}"${newTabAttributes}
+      >
+        ${cardContent}
+        ${newTabNotice}
+      </a>
     </article>
   `;
 }
