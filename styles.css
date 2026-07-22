@@ -330,7 +330,7 @@ h3 {
 }
 
 /* -------------------------------- */
-/* Filtering and sorting controls   */
+/* Filtering and search controls    */
 /* -------------------------------- */
 
 .controls-panel {
@@ -419,18 +419,10 @@ h3 {
   padding-top: 24px;
 
   display: grid;
-  grid-template-columns: minmax(250px, 360px);
-  justify-content: end;
+  grid-template-columns: 1fr minmax(250px, 0.36fr);
+  gap: 18px;
 
   border-top: 1px solid var(--border);
-}
-
-/*
-  Remove the search control from the layout while
-  keeping the sort control visible.
-*/
-.search-sort-row > .control-field:has(#project-search) {
-  display: none;
 }
 
 .control-field {
@@ -443,6 +435,7 @@ h3 {
   font-weight: 700;
 }
 
+.control-field input,
 .control-field select {
   width: 100%;
   min-height: 50px;
@@ -457,6 +450,7 @@ h3 {
   background: var(--white);
 }
 
+.control-field input:focus,
 .control-field select:focus {
   border-color: var(--accent);
 
