@@ -13,7 +13,6 @@ const FILTER_TAGS = [
 const state = {
   projects: [],
   selectedTags: new Set(),
-  searchQuery: "",
   sortOrder: "relevance"
 };
 
@@ -23,7 +22,6 @@ const elements = {
   filterDescription: document.getElementById(
     "filter-description"
   ),
-  search: document.getElementById("project-search"),
   sort: document.getElementById("sort-order"),
   grid: document.getElementById("project-grid"),
   resultCount: document.getElementById("result-count"),
@@ -132,54 +130,6 @@ function projectMatchesSelectedTags(project) {
   );
 }
 
-function projectMatchesSearch(project) {
-  const query = state.searchQuery
-    .trim()
-    .toLowerCase();
-
-  if (!query) {
-    return true;
-  }
-
-  const tags = Array.isArray(project.tags)
-    ? project.tags
-    : [];
-
-  const skills = Array.isArray(project.skills)
-    ? project.skills
-    : [];
-
-  const outcomes = Array.isArray(project.outcomes)
-    ? project.outcomes
-    : [];
-
-  const tools = Array.isArray(project.tools)
-    ? project.tools
-    : [];
-
-  const searchableValues = [
-    project.title,
-    project.employer,
-    project.summary,
-    project.details,
-    project.featuredMetric
-  ].concat(
-    tags,
-    skills,
-    outcomes,
-    tools
-  );
-
-  const searchableText = searchableValues
-    .filter(function (value) {
-      return value != null;
-    })
-    .join(" ")
-    .toLowerCase();
-
-  return searchableText.indexOf(query) !== -1;
-}
-
 function sortProjects(projects) {
   const sortedProjects = projects.slice();
 
@@ -233,14 +183,14 @@ function createProjectCard(project) {
           'alt="' +
           escapeHtml(project.imageAlt || "") +
           '" ' +
-          'loading="lazy">' 
+          'loading="lazy">'
       )
     : "";
 
   const employerMarkup = project.employer
     ? (
         '<p class="project-employer">' +
-          escapeHtml(project.employer) +
+        '<p class="          escapeHtml(project.employer) +
         "</p>"
       )
     : "";
@@ -331,10 +281,7 @@ function renderProjects() {
 
   const matchingProjects =
     state.projects.filter(function (project) {
-      return (
-        projectMatchesSelectedTags(project) &&
-        projectMatchesSearch(project)
-      );
+      return projectMatchesSelectedTags(project);
     });
 
   const visibleProjects =
@@ -432,18 +379,6 @@ async function loadProjects() {
   }
 }
 
-if (elements.search) {
-  elements.search.addEventListener(
-    "input",
-    function (event) {
-      state.searchQuery =
-        event.target.value;
-
-      renderProjects();
-    }
-  );
-}
-
 if (elements.sort) {
   elements.sort.addEventListener(
     "change",
@@ -461,11 +396,6 @@ if (elements.clearFilters) {
     "click",
     function () {
       state.selectedTags.clear();
-      state.searchQuery = "";
-
-      if (elements.search) {
-        elements.search.value = "";
-      }
 
       updateFilterButtons();
       renderProjects();
@@ -478,6 +408,9 @@ if (elements.currentYear) {
     new Date().getFullYear();
 }
 
+createFilterButtons();
+updateFilterButtons();
+loadProjects();
 createFilterButtons();
 updateFilterButtons();
 loadProjects();
