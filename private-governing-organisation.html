@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="MAT and Private Governing-Organisation Commercial Architecture project by Trevor Downs."
+    />
+
+    <title>
+      MAT and Private Governing-Organisation
+      Commercial Architecture | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Fresh Start in Education
+          </p>
+
+          <h1>
+            MAT and Private Governing-Organisation
+            Commercial Architecture
+          </h1>
+
+          <p class="case-study-introduction">
+            A Salesforce and MCAE architecture that
+            represented schools within their wider
+            Multi-Academy Trust, independent school group
+            and private governing-organisation
+            relationships, then used purchases within
+            connected organisations as a commercial signal
+            for marketing qualification and sales routing.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              Salesforce &amp; CRM
+            </span>
+
+            <span class="case-study-tag">
+              Automation
+            </span>
+
+            <span class="case-study-tag">
+              Data &amp; Analytics
+            </span>
+
+            <span class="case-study-tag">
+              Commercial Strategy
+            </span>
+
+            <span class="case-study-tag">
+              Marketing
+            </span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Advocated for, designed and implemented an
+              architecture that mapped school Accounts to
+              their governing organisations, aligned
+              related Accounts, Contacts and Leads through
+              Custom Metadata Type-driven automation and
+              domain matching, and used purchases within
+              connected organisations to trigger Salesforce
+              Campaigns, MCAE validation, grading, nurture
+              and automated sales handoff.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Mapped approximately 50% of school Accounts
+                to 215 MATs and private governing
+                organisations.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>Account-family selling</li>
+                <li>Buying-committee mapping</li>
+                <li>Salesforce Screen Flow</li>
+                <li>Identity resolution</li>
+                <li>Sales routing</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce</li>
+                <li>MCAE</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The commercial problem</h2>
+
+            <p>
+              A substantial proportion of school accounts
+              did not operate as fully independent
+              organisations. Approximately half belonged to
+              Multi-Academy Trusts, independent school
+              groups or other private governing
+              organisations, while every school also
+              operated within a local-authority context.
+            </p>
+
+            <p>
+              The company historically risked approaching
+              schools as isolated buying entities, limiting
+              visibility of shared governance, related
+              purchases, buying momentum and influence
+              across connected organisations. Salesforce
+              did not contain a complete, governed
+              structure for these relationships, and Leads
+              could not be directly linked to Accounts
+              before conversion.
+            </p>
+
+            <ul class="case-study-list">
+              <li>
+                Approximately half of school accounts
+                belonged to a private governing organisation
+              </li>
+
+              <li>
+                Risk of treating connected schools as
+                isolated buying entities
+              </li>
+
+              <li>
+                No standard Lead-to-Account lookup before
+                conversion
+              </li>
+
+              <li>
+                No process for acting on purchases made
+                elsewhere in the same organisation
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>Mapping the governing-organisation landscape</h2>
+
+            <p>
+              Identified the governing-organisation
+              membership of school accounts across
+              Multi-Academy Trusts, independent school
+              groups and other private governing
+              organisations, then segmented the entire
+              school-account database according to the
+              correct governing organisation or confirmed
+              lack of membership.
+            </p>
+
+            <p>
+              Represented each governing organisation
+              through the additional parent-account
+              relationship within the Salesforce account
+              model, allowing school accounts to retain
+              both local-authority context and private
+              governing-organisation context at the same
+              time.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Approximately 215 private governing organisations</li>
+              <li>Approximately 50% of school accounts mapped</li>
+              <li>Additional parent-account relationships</li>
+              <li>Dual local-authority and private-governance context</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Lookup keys and metadata-driven alignment</h2>
+
+            <p>
+              Used Custom Metadata Types to support
+              repeatable assignment logic across accounts,
+              contacts and leads sharing the same MAT or
+              governing organisation, and built Salesforce
+              automation to align related records with the
+              appropriate master or MAT account.
+            </p>
+
+            <p>
+              Added custom fields that created lookup keys
+              for governing-organisation assignment,
+              enabling unconverted Leads to retain
+              organisational context despite there being no
+              standard direct Lead-to-Account lookup before
+              conversion. Validation rules protected the
+              completeness and accuracy of the resulting
+              hierarchy.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Custom Metadata Type-driven Flows</li>
+              <li>Custom lookup-key fields for Leads</li>
+              <li>Account, Contact and Lead alignment automation</li>
+              <li>Validation rules protecting hierarchy integrity</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>One dynamic, multi-object Screen Flow</h2>
+
+            <p>
+              Designed and implemented a single dynamic
+              Salesforce Screen Flow that adapted its
+              behaviour according to the object and record
+              context from which it was launched. From a
+              school Account it allowed alignment to the
+              correct private governing organisation, while
+              from a local-authority or local-authority
+              department Account it prevented an
+              inappropriate alignment being created.
+            </p>
+
+            <p>
+              From a Lead, the Flow presented the same user
+              experience while populating different
+              Lead-specific fields in the background, and
+              from a MAT Account it displayed a summary of
+              related Accounts and Leads, with safeguards
+              against selecting similarly named MATs and
+              support for requesting a new MAT Account
+              where none existed.
+            </p>
+
+            <ul class="case-study-list">
+              <li>School Account alignment path</li>
+              <li>Local-authority Account exclusion path</li>
+              <li>Lead-specific field population path</li>
+              <li>MAT Account related-record summary path</li>
+              <li>Final review before submission</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Domain matching for new records</h2>
+
+            <p>
+              Documented thousands of email domains
+              associated with MATs, independent school
+              groups and other private governing
+              organisations, storing them as Custom
+              Metadata Type reference data. Flow automation
+              checked newly created Leads and Contacts not
+              already within the architecture against these
+              records, using exact like-for-like matching
+              and wildcard matching to identify valid domain
+              variations.
+            </p>
+
+            <p>
+              Government and personal email domains were
+              excluded from this matching to prevent false
+              MAT or independent-school assignments, and
+              the Flow completed quietly when no valid match
+              was found, avoiding unnecessary interruption
+              or forced manual action.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Thousands of documented organisational domains</li>
+              <li>Exact and wildcard domain matching</li>
+              <li>Government and personal domain exclusions</li>
+              <li>Quiet completion on no match</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>Purchases as a tangential buying signal</h2>
+
+            <p>
+              Advocated for and designed the wider
+              architecture around the principle that a
+              purchase by one organisation could act as a
+              tangential buying signal for related Accounts
+              and Leads. When an Account within a MAT or
+              private governing organisation entered
+              purchase, related Accounts not currently
+              purchasing and related Leads were added to
+              Salesforce Campaigns synchronised into MCAE.
+            </p>
+
+            <p>
+              MCAE validated whether these related prospects
+              were legitimate and appropriate to pursue,
+              adjusted qualification according to buying
+              momentum, placed validated prospects into
+              follow-up journeys, and automatically routed
+              qualified Leads and Accounts to the relevant
+              sales teams.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Purchase-triggered Salesforce Campaigns</li>
+              <li>Salesforce-to-MCAE Campaign synchronisation</li>
+              <li>MCAE legitimacy validation and grading</li>
+              <li>Automated qualified-record sales routing</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the MAT and governing-organisation
+            architecture enabled
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>Account-family visibility</h3>
+
+              <p>
+                Mapped approximately 50% of school accounts
+                to 215 MATs and private governing
+                organisations, moving away from treating
+                schools as isolated buying entities.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Lead-to-organisation continuity</h3>
+
+              <p>
+                Custom lookup keys let unconverted Leads
+                carry governing-organisation context despite
+                no standard Lead-to-Account lookup existing
+                before conversion.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>One Flow, many contexts</h3>
+
+              <p>
+                A single dynamic Screen Flow supported
+                school, local-authority, Lead and MAT
+                Account contexts while preventing
+                inappropriate alignments.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Automated sales handoff</h3>
+
+              <p>
+                Purchases within one part of a governing
+                organisation triggered validated, graded and
+                automatically routed opportunities for
+                related accounts and leads.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
