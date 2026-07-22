@@ -13,7 +13,6 @@ const FILTER_TAGS = [
 const state = {
   projects: [],
   selectedTags: new Set(),
-  searchQuery: "",
   sortOrder: "relevance"
 };
 
@@ -23,7 +22,6 @@ const elements = {
   filterDescription: document.getElementById(
     "filter-description"
   ),
-  search: document.getElementById("project-search"),
   sort: document.getElementById("sort-order"),
   grid: document.getElementById("project-grid"),
   resultCount: document.getElementById("result-count"),
@@ -116,33 +114,6 @@ function projectMatchesSelectedTags(project) {
       project.tags.includes(tag)
     );
   });
-}
-
-function projectMatchesSearch(project) {
-  const query =
-    state.searchQuery.trim().toLowerCase();
-
-  if (!query) {
-    return true;
-  }
-
-  const searchableValues = [
-    project.title,
-    project.employer,
-    project.summary,
-    project.featuredMetric,
-    ...(project.tags || []),
-    ...(project.skills || []),
-    ...(project.outcomes || []),
-    ...(project.tools || [])
-  ];
-
-  const searchableText = searchableValues
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-
-  return searchableText.includes(query);
 }
 
 function sortProjects(projects) {
@@ -242,10 +213,7 @@ function createProjectCard(project) {
 function renderProjects() {
   const matchingProjects = state.projects.filter(
     (project) => {
-      return (
-        projectMatchesSelectedTags(project) &&
-        projectMatchesSearch(project)
-      );
+      return projectMatchesSelectedTags(project);
     }
   );
 
@@ -323,15 +291,6 @@ async function loadProjects() {
   }
 }
 
-elements.search.addEventListener(
-  "input",
-  (event) => {
-    state.searchQuery = event.target.value;
-
-    renderProjects();
-  }
-);
-
 elements.sort.addEventListener(
   "change",
   (event) => {
@@ -345,9 +304,6 @@ elements.clearFilters.addEventListener(
   "click",
   () => {
     state.selectedTags.clear();
-    state.searchQuery = "";
-
-    elements.search.value = "";
 
     updateFilterButtons();
     renderProjects();
