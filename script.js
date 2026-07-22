@@ -190,7 +190,7 @@ function createProjectCard(project) {
   const projectTitle =
     project.title || "Untitled project";
 
-  const projectUrl = getSafeProjectUrl(project.url);
+ const projectUrl = getSafeProjectUrl(project.url || project.pageUrl);
 
   const opensInNewTab =
     project.openInNewTab === true;
