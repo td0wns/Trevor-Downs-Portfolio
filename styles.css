@@ -335,6 +335,10 @@ h3 {
 .controls-panel {
   padding: 28px;
 
+  /* Reorder the existing controls without changing the HTML. */
+  display: flex;
+  flex-direction: column;
+
   border: 1px solid var(--border);
   border-radius: 20px;
 
@@ -343,6 +347,8 @@ h3 {
 }
 
 .filter-header {
+  order: 1;
+
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -374,6 +380,7 @@ h3 {
 }
 
 .tag-filters {
+  order: 3;
   margin-top: 22px;
 
   display: flex;
@@ -420,17 +427,38 @@ label[for="project-search"],
 }
 
 .search-sort-row {
-  margin-top: 26px;
-  padding-top: 24px;
+  order: 2;
+  width: min(100%, 320px);
+  margin-top: 18px;
 
-  display: flex;
-  justify-content: flex-end;
-
-  border-top: 1px solid var(--border);
+  display: block;
 }
 
 .search-sort-row .control-field {
-  width: min(100%, 320px);
+  width: 100%;
+  gap: 0;
+}
+
+/*
+  Remove the visible "Sort projects" text while retaining it
+  as the accessible name for the dropdown.
+*/
+.search-sort-row .control-label,
+.search-sort-row .control-field > span:first-child {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+
+  border: 0;
+
+  white-space: nowrap;
 }
 
 .control-field {
@@ -519,6 +547,12 @@ label[for="project-search"],
 
   scrollbar-width: auto;
   scrollbar-color: var(--accent) var(--accent-soft);
+
+  /*
+    Flip the vertical axis so the native horizontal scrollbar
+    is displayed above the cards rather than below them.
+  */
+  transform: scaleY(-1);
 }
 
 .project-grid::-webkit-scrollbar {
@@ -541,6 +575,11 @@ label[for="project-search"],
 
 .project-grid::-webkit-scrollbar-thumb:hover {
   background: var(--accent-dark);
+}
+
+/* Restore the normal orientation of every rendered grid item. */
+.project-grid > * {
+  transform: scaleY(-1);
 }
 
 /* -------------------------------- */
@@ -578,6 +617,11 @@ label[for="project-search"],
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
+}
+
+/* Preserve the corrective flip while lifting cards on hover. */
+.project-grid > .project-card:hover {
+  transform: scaleY(-1) translateY(-4px);
 }
 
 .project-image {
@@ -889,9 +933,13 @@ label[for="project-search"],
     transition: none;
   }
 
-  .project-card:hover,
   .button:hover,
   .tag-filter:hover {
     transform: none;
+  }
+
+  /* Keep cards upright while disabling the hover movement. */
+  .project-grid > .project-card:hover {
+    transform: scaleY(-1);
   }
 }
