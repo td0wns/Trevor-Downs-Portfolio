@@ -1,4 +1,4 @@
-cconst FILTER_TAGS = [
+const FILTER_TAGS = [
   "Marketing",
   "Automation",
   "Salesforce & CRM",
