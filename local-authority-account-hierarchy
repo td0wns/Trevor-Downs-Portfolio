@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Local-Authority Account Hierarchy, Contract Pricing and Commercial Risk project by Trevor Downs."
+    />
+
+    <title>
+      Local-Authority Account Hierarchy, Contract
+      Pricing and Commercial Risk | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Fresh Start in Education
+          </p>
+
+          <h1>
+            Local-Authority Account Hierarchy, Contract
+            Pricing and Commercial Risk
+          </h1>
+
+          <p class="case-study-introduction">
+            A local-authority-centred Salesforce data
+            model that represented local authorities as
+            commercially influential parent accounts,
+            connected contract pricing to Opportunities,
+            and exposed where a single authority
+            relationship could put many related accounts
+            at risk.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              Salesforce &amp; CRM
+            </span>
+
+            <span class="case-study-tag">
+              Automation
+            </span>
+
+            <span class="case-study-tag">
+              Data &amp; Analytics
+            </span>
+
+            <span class="case-study-tag">
+              Commercial Strategy
+            </span>
+
+            <span class="case-study-tag">
+              Operations
+            </span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Advocated for representing every local
+              authority as a Salesforce Account and
+              assigning it as the parent account of every
+              organisation within its geographic area.
+              Custom Metadata Type-driven Flows and
+              validation rules maintained the hierarchy
+              across more than 1,000 accounts and 20,000
+              leads and contacts, while an extended
+              Contract object and Opportunity automation
+              kept bespoke local-authority pricing visible
+              and accurate.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Applied across 1,000+ Accounts and 20,000+
+                Leads and Contacts, representing
+                approximately 240 local authorities.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>Account hierarchy design</li>
+                <li>Salesforce Flow</li>
+                <li>Contract pricing automation</li>
+                <li>Validation rules</li>
+                <li>Custom metadata types</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce</li>
+                <li>MCAE</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The commercial problem</h2>
+
+            <p>
+              Every customer account, contact and lead
+              operated within a geographic area overseen
+              by a local authority, but authorities were
+              commercially more significant than a
+              standard geography field could represent.
+              Depending on the area, an authority could
+              set prices, fund services, commission the
+              organisation, issue projects, restrict
+              provider access, influence a buying
+              committee, or remain a relatively passive
+              observer.
+            </p>
+
+            <p>
+              Without a relational Salesforce model, the
+              organisation could not consistently connect
+              accounts with the authorities influencing
+              them, segment communications by contract,
+              or quantify authority-level exposure.
+            </p>
+
+            <ul class="case-study-list">
+              <li>
+                Authorities could set pricing, fund,
+                commission or restrict service access.
+              </li>
+
+              <li>
+                Geography alone could not represent
+                commercial and contractual influence.
+              </li>
+
+              <li>
+                Bespoke pricing could be overlooked within
+                siloed Contract records.
+              </li>
+
+              <li>
+                No consolidated way to prioritise
+                authority relationships by exposure.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>A local-authority-centred account model</h2>
+
+            <p>
+              Advocated for representing each local
+              authority as a Salesforce Account and
+              assigning it as the parent account of every
+              organisation within its geographic area,
+              treating authorities as commercially
+              influential stakeholders rather than only a
+              geographic classification.
+            </p>
+
+            <p>
+              The model was applied across more than
+              1,000 Salesforce accounts and over 20,000
+              leads and contacts, representing
+              approximately 240 local authorities.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Approximately 240 local-authority Accounts</li>
+              <li>1,000+ related organisation Accounts</li>
+              <li>20,000+ leads and contacts</li>
+              <li>Parent-account hierarchy across all Accounts</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Metadata-driven assignment and governance</h2>
+
+            <p>
+              Built Salesforce Flows using Custom Metadata
+              Types to support local-authority assignment
+              and account ownership logic, making the
+              rules easier to maintain than hard-coded
+              automation. When an organisation received a
+              local authority as its parent account, its
+              contacts also received the relevant context
+              for segmentation and marketing within MCAE,
+              and leads carried the same context before
+              conversion.
+            </p>
+
+            <p>
+              Validation rules ensured that only accounts
+              explicitly marked as local authorities could
+              be selected as parent accounts, and required
+              every new organisation account to be
+              assigned an appropriate local-authority
+              parent on creation.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Custom Metadata Type-driven Flows</li>
+              <li>Account ownership assignment logic</li>
+              <li>Contact and Lead local-authority attribution</li>
+              <li>Parent-account eligibility validation rules</li>
+              <li>Mandatory parent validation on account creation</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Contract-based segmentation</h2>
+
+            <p>
+              The hierarchy enabled segmentation by
+              local-authority contract and commercial
+              relationship rather than relying on
+              geography alone, so bespoke messaging could
+              reach organisations affected by a particular
+              authority's pricing, contracts,
+              commissioning requirements or service
+              restrictions.
+            </p>
+
+            <p>
+              This created a structure through which the
+              organisation could assess the number and
+              commercial importance of accounts influenced
+              by each local authority, supporting
+              prioritisation of authority relationships
+              according to their direct role and their
+              wider influence over related accounts.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Contract- and authority-based MCAE segmentation</li>
+              <li>Bespoke messaging by pricing or commissioning context</li>
+              <li>Authority-level influence analysis</li>
+              <li>Relationship prioritisation by commercial exposure</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Commercial concentration risk</h2>
+
+            <p>
+              The hierarchy highlighted commercial
+              concentration risk where a weak relationship
+              with one local authority could affect many
+              otherwise independent accounts within its
+              area. Oxfordshire illustrated this: the
+              authority applied custom pricing and was
+              otherwise relatively uninvolved, but the
+              organisation's strong local popularity meant
+              that deterioration in the authority
+              relationship could create substantial
+              exposure across accounts in the area.
+            </p>
+
+            <p>
+              Surfacing this kind of exposure gave the
+              organisation a clearer basis for deciding
+              which authority relationships most needed
+              active management.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Authority-level exposure across related accounts</li>
+              <li>Oxfordshire custom-pricing example</li>
+              <li>Relationship-risk visibility for account planning</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>Contract pricing and Opportunity automation</h2>
+
+            <p>
+              Extended the Salesforce Contract object to
+              store bespoke local-authority and
+              contract-specific pricing, then built Flows
+              that pulled the applicable contract price
+              into Opportunities. This helped sales teams
+              identify and use the correct price when
+              preparing commercial discussions and
+              quotations.
+            </p>
+
+            <p>
+              Pricing management spanned approximately 240
+              local authorities and roughly half that
+              number of distinct contractual arrangements,
+              improving forecasting accuracy by ensuring
+              Opportunity values reflected the relevant
+              contract rather than generic or manually
+              remembered pricing.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Extended Contract object with bespoke pricing</li>
+              <li>Automated Opportunity pricing Flows</li>
+              <li>Sales quoting support</li>
+              <li>Improved revenue forecasting accuracy</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the account hierarchy enabled
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>Governed hierarchy at scale</h3>
+
+              <p>
+                Represented approximately 240 local
+                authorities as parent accounts across
+                1,000+ related organisation accounts and
+                20,000+ leads and contacts.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Contract-based segmentation</h3>
+
+              <p>
+                Enabled bespoke MCAE messaging to
+                organisations affected by a specific
+                authority's pricing, commissioning or
+                service conditions.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Protected data integrity</h3>
+
+              <p>
+                Validation rules restricted parent-account
+                selection to approved local authorities and
+                enforced hierarchy completeness at account
+                creation.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Accurate pricing and forecasting</h3>
+
+              <p>
+                Automated Opportunity pricing from the
+                Contract object helped sales quote correctly
+                and improved revenue forecast reliability.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
