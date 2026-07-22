@@ -133,7 +133,7 @@
     "featuredMetric": "Used 12 months of purchasing data and automatically closed inactive opportunities after 21 days.",
     "sortDate": "2025-12",
     "priority": 10,
-    "pageUrl": "salesforce-forecasting-framework.html"
+    "pageUrl": "salesforce-lead-opportunity-forecasting.html"
   },
   {
     "id": "crm-data-governance-permissions",
