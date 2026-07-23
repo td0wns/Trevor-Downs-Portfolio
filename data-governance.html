@@ -1,732 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-
-    <meta
-      name="description"
-      content="Salesforce Access Governance, Data Standards and User Adoption project by Trevor Downs."
-    />
-
-    <title>
-      Salesforce Access Governance, Data Standards
-      and User Adoption | Trevor Downs
-    </title>
-
-    <!-- Uses your existing portfolio stylesheet -->
-    <link rel="stylesheet" href="styles.css?v=8" />
-
-    <style>
-      /* Expanded project page */
-
-      .case-study {
-        width: min(92%, var(--maximum-width));
-        margin-inline: auto;
-      }
-
-      .case-study-hero {
-        padding: 80px 0 70px;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .case-study-back {
-        margin-bottom: 46px;
-      }
-
-      .case-study-back a {
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 700;
-      }
-
-      .case-study-back a:hover {
-        text-decoration: underline;
-      }
-
-      .case-study-hero h1 {
-        max-width: 1050px;
-        margin-bottom: 28px;
-
-        font-size: clamp(3rem, 7vw, 6.2rem);
-        line-height: 1.04;
-      }
-
-      .case-study-introduction {
-        max-width: 900px;
-        margin: 0;
-
-        color: var(--muted);
-        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
-        line-height: 1.65;
-      }
-
-      .case-study-tags {
-        margin-top: 34px;
-
-        display: flex;
-        flex-wrap: wrap;
-        gap: 9px;
-      }
-
-      .case-study-tag {
-        padding: 8px 12px;
-
-        border-radius: 999px;
-
-        color: var(--accent-dark);
-        background: var(--accent-soft);
-
-        font-size: 0.82rem;
-        font-weight: 700;
-      }
-
-      .case-study-overview {
-        padding: 76px 0;
-
-        display: grid;
-        grid-template-columns:
-          minmax(0, 1.3fr)
-          minmax(280px, 0.7fr);
-
-        gap: 68px;
-
-        border-bottom: 1px solid var(--border);
-      }
-
-      .case-study-label {
-        display: block;
-        margin-bottom: 14px;
-
-        color: var(--accent);
-
-        font-size: 0.76rem;
-        font-weight: 800;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-      }
-
-      .case-study-overview-copy {
-        max-width: 760px;
-        margin: 0;
-
-        font-family: "Manrope", sans-serif;
-        font-size: clamp(1.4rem, 3vw, 2.1rem);
-        font-weight: 600;
-        line-height: 1.45;
-        letter-spacing: -0.025em;
-      }
-
-      .case-study-facts {
-        display: grid;
-        gap: 18px;
-      }
-
-      .case-study-fact {
-        padding: 24px;
-
-        border: 1px solid var(--border);
-        border-radius: 14px;
-
-        background: var(--surface);
-      }
-
-      .case-study-fact-highlight {
-        border-left: 4px solid var(--warm);
-      }
-
-      .case-study-fact strong {
-        display: block;
-
-        font-family: "Manrope", sans-serif;
-        font-size: 1.08rem;
-        line-height: 1.5;
-      }
-
-      .case-study-list {
-        margin: 0;
-        padding-left: 20px;
-
-        color: var(--muted);
-      }
-
-      .case-study-list li + li {
-        margin-top: 8px;
-      }
-
-      .case-study-section {
-        padding: 72px 0;
-
-        display: grid;
-        grid-template-columns: 80px minmax(0, 780px);
-        gap: 40px;
-
-        border-bottom: 1px solid var(--border);
-      }
-
-      .case-study-number {
-        margin: 6px 0 0;
-
-        color: var(--warm);
-
-        font-family: "Manrope", sans-serif;
-        font-weight: 800;
-      }
-
-      .case-study-section h2 {
-        margin-bottom: 24px;
-
-        font-size: clamp(2rem, 4vw, 3.1rem);
-      }
-
-      .case-study-section p {
-        margin: 0;
-
-        color: var(--muted);
-        font-size: 1.07rem;
-      }
-
-      .case-study-section p + p {
-        margin-top: 18px;
-      }
-
-      .case-study-section .case-study-list {
-        margin-top: 26px;
-      }
-
-      .case-study-outcomes {
-        padding: 86px 0;
-      }
-
-      .case-study-outcomes h2 {
-        max-width: 760px;
-      }
-
-      .case-study-outcome-grid {
-        margin-top: 38px;
-
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 22px;
-      }
-
-      .case-study-outcome {
-        padding: 28px;
-
-        border: 1px solid var(--border);
-        border-radius: 16px;
-
-        background: var(--surface);
-      }
-
-      .case-study-outcome h3 {
-        margin-bottom: 12px;
-      }
-
-      .case-study-outcome p {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .case-study-return {
-        margin-bottom: 90px;
-        padding: 42px;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 30px;
-
-        border-radius: 20px;
-
-        color: var(--white);
-        background: var(--accent);
-      }
-
-      .case-study-return h2 {
-        max-width: 650px;
-        margin-bottom: 0;
-      }
-
-      .case-study-return .eyebrow {
-        color: var(--accent-soft);
-      }
-
-      .case-study-return .button {
-        flex: 0 0 auto;
-
-        border-color: var(--white);
-
-        color: var(--accent);
-        background: var(--white);
-      }
-
-      @media (max-width: 850px) {
-        .case-study-overview {
-          grid-template-columns: 1fr;
-          gap: 42px;
-        }
-
-        .case-study-section {
-          grid-template-columns: 1fr;
-          gap: 12px;
-        }
-
-        .case-study-outcome-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .case-study-return {
-          align-items: flex-start;
-          flex-direction: column;
-        }
-      }
-
-      @media (max-width: 620px) {
-        .case-study-hero {
-          padding-top: 55px;
-        }
-
-        .case-study-section,
-        .case-study-overview,
-        .case-study-outcomes {
-          padding: 54px 0;
-        }
-
-        .case-study-return {
-          padding: 28px;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">TD</span>
-
-          <span class="brand-text">
-            <strong>Trevor Downs</strong>
-            <small>Commercial systems and transformation</small>
-          </span>
-        </a>
-
-        <nav
-          class="site-navigation"
-          aria-label="Main navigation"
-        >
-          <a href="index.html#work">Projects</a>
-          <a href="index.html#about">About</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <article class="case-study">
-        <section class="case-study-hero">
-          <div class="case-study-back">
-            <a href="index.html#work">
-              ← Return to project library
-            </a>
-          </div>
-
-          <p class="eyebrow">
-            Fresh Start in Education
-          </p>
-
-          <h1>
-            Salesforce Access Governance, Data
-            Standards and User Adoption
-          </h1>
-
-          <p class="case-study-introduction">
-            Served as departmental Salesforce super user,
-            governing access to custom objects, fields and
-            Flows while supporting adoption, troubleshooting
-            access issues, and ensuring new architecture
-            reached the correct users without weakening
-            data or process control.
-          </p>
-
-          <div class="case-study-tags">
-            <span class="case-study-tag">
-              Salesforce &amp; CRM
-            </span>
-
-            <span class="case-study-tag">
-              Operations
-            </span>
-
-            <span class="case-study-tag">
-              Leadership &amp; Stakeholder Management
-            </span>
-
-            <span class="case-study-tag">
-              Data &amp; Analytics
-            </span>
-          </div>
-        </section>
-
-        <section class="case-study-overview">
-          <div>
-            <span class="case-study-label">
-              Project overview
-            </span>
-
-            <p class="case-study-overview-copy">
-              Configured and maintained permission sets,
-              object permissions, field-level access and
-              validation rules for standard and custom
-              Salesforce functionality. Tested new
-              architecture across different user-access
-              levels before release, diagnosed access and
-              Flow issues, and supported rollout through
-              documentation, guidance and training so the
-              correct departmental users could adopt new
-              processes without receiving unnecessary
-              permissions.
-            </p>
-          </div>
-
-          <aside class="case-study-facts">
-            <div
-              class="case-study-fact
-                case-study-fact-highlight"
-            >
-              <span class="case-study-label">
-                Key result
-              </span>
-
-              <strong>
-                Created a controlled departmental model
-                for access, data quality and adoption.
-              </strong>
-            </div>
-
-            <div class="case-study-fact">
-              <span class="case-study-label">
-                Capabilities
-              </span>
-
-              <ul class="case-study-list">
-                <li>Permission sets</li>
-                <li>Field-level security</li>
-                <li>Data governance</li>
-                <li>User acceptance testing</li>
-                <li>User training</li>
-              </ul>
-            </div>
-
-            <div class="case-study-fact">
-              <span class="case-study-label">
-                Platforms
-              </span>
-
-              <ul class="case-study-list">
-                <li>Salesforce</li>
-                <li>Salesforce Flow</li>
-              </ul>
-            </div>
-          </aside>
-        </section>
-
-        <section class="case-study-section">
-          <p class="case-study-number">01</p>
-
-          <div>
-            <h2>The governance problem</h2>
-
-            <p>
-              New Salesforce architecture, custom objects,
-              fields and Flows needed to be available to the
-              correct departmental users without granting
-              unnecessary access or weakening data and
-              process controls. Users also required support,
-              testing, documentation and training to adopt
-              the new functionality successfully.
-            </p>
-
-            <p>
-              Object, field, record and Flow access could
-              fail for different reasons, and new
-              architecture needed testing from multiple
-              user-access perspectives before it could be
-              safely released department-wide.
-            </p>
-
-            <ul class="case-study-list">
-              <li>
-                Different departmental users needed
-                different levels of access
-              </li>
-
-              <li>
-                Custom objects and Flows needed to stay
-                usable without over-granting permissions
-              </li>
-
-              <li>
-                Access issues could originate from objects,
-                fields, records or Flows
-              </li>
-
-              <li>
-                New architecture required multi-perspective
-                testing before release
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="case-study-section">
-          <p class="case-study-number">02</p>
-
-          <div>
-            <h2>Permission sets and field-level access</h2>
-
-            <p>
-              Created and maintained permission sets for
-              users requiring access to specific Salesforce
-              objects, fields and processes, and configured
-              object permissions to control which users
-              could create, read, edit or delete records
-              within standard and custom objects.
-            </p>
-
-            <p>
-              Managed field-level access so users could view
-              or update only the information required for
-              their responsibilities, governing access to
-              custom objects including the Attribution Model
-              object and other operational Salesforce
-              architecture built across the wider
-              transformation.
-            </p>
-
-            <ul class="case-study-list">
-              <li>Permission sets by user responsibility</li>
-              <li>Object-level create, read, edit and delete controls</li>
-              <li>Field-level access restrictions</li>
-              <li>Governed access to custom objects</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="case-study-section">
-          <p class="case-study-number">03</p>
-
-          <div>
-            <h2>Guarding Flows and Screen Flows</h2>
-
-            <p>
-              Ensured intended users could access and
-              complete Salesforce Flows and Screen Flows
-              while preventing inappropriate access,
-              diagnosing and resolving access problems
-              involving objects, fields, records, Flows and
-              related Salesforce functionality as they
-              arose.
-            </p>
-
-            <p>
-              Used validation rules alongside permissions to
-              protect controlled processes and prevent
-              incomplete or inappropriate data changes,
-              without blocking the legitimate activity users
-              needed to complete their work.
-            </p>
-
-            <ul class="case-study-list">
-              <li>Flow and Screen Flow access configuration</li>
-              <li>Access troubleshooting across objects and records</li>
-              <li>Validation rules alongside permission controls</li>
-              <li>Protection against incomplete or inappropriate changes</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="case-study-section">
-          <p class="case-study-number">04</p>
-
-          <div>
-            <h2>Testing before departmental release</h2>
-
-            <p>
-              Tested new Salesforce architecture using
-              different user-access levels before wider
-              departmental release, checking that intended
-              users could complete required processes while
-              users without a legitimate need were correctly
-              restricted.
-            </p>
-
-            <p>
-              This multi-perspective testing caught access
-              gaps and overreach before they reached
-              production, reducing the risk of disruption
-              when new objects, fields or Flows went live
-              for the wider department.
-            </p>
-
-            <ul class="case-study-list">
-              <li>Multi-perspective access testing before release</li>
-              <li>Verification of intended user journeys</li>
-              <li>Confirmation that restricted users stayed restricted</li>
-              <li>Reduced risk of production disruption</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="case-study-section">
-          <p class="case-study-number">05</p>
-
-          <div>
-            <h2>Documentation, guidance and training</h2>
-
-            <p>
-              Supported the rollout of new custom objects,
-              fields, Flows and CRM processes through
-              documentation, guidance and user training,
-              helping users understand how new Salesforce
-              structures affected their daily work rather
-              than leaving adoption to chance.
-            </p>
-
-            <p>
-              This translated technical configuration into
-              clear departmental processes, so users could
-              take up new functionality with confidence and
-              without needing repeated one-to-one support
-              for the same issue.
-            </p>
-
-            <ul class="case-study-list">
-              <li>User documentation for new functionality</li>
-              <li>Guidance and coaching on changed processes</li>
-              <li>Practical training tied to daily workflows</li>
-              <li>Translation of technical change into plain process</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="case-study-section">
-          <p class="case-study-number">06</p>
-
-          <div>
-            <h2>Balancing usability and control</h2>
-
-            <p>
-              Reduced reliance on unrestricted access by
-              assigning permissions according to user
-              responsibilities, balancing user accessibility
-              with data protection, process integrity and
-              operational control across the department.
-            </p>
-
-            <p>
-              This work covered departmental super-user
-              support, configuration and adoption
-              responsibility, distinct from organisation-wide
-              Salesforce platform ownership, and gave the
-              organisation a repeatable model for rolling out
-              future Salesforce changes safely.
-            </p>
-
-            <ul class="case-study-list">
-              <li>Permissions aligned to user responsibility</li>
-              <li>Usability balanced against data protection</li>
-              <li>Clear departmental (not org-wide) ownership scope</li>
-              <li>Repeatable model for future safe rollouts</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="case-study-outcomes">
-          <p class="eyebrow">Outcomes</p>
-
-          <h2>
-            What the access and governance model
-            enabled
-          </h2>
-
-          <div class="case-study-outcome-grid">
-            <article class="case-study-outcome">
-              <h3>Right access, right people</h3>
-
-              <p>
-                Permission sets, object permissions and
-                field-level security aligned access with
-                actual user responsibilities rather than
-                blanket permissions.
-              </p>
-            </article>
-
-            <article class="case-study-outcome">
-              <h3>Protected custom architecture</h3>
-
-              <p>
-                Governed access to custom objects and
-                Flows, including the Attribution Model
-                object, so intended users could work
-                without unnecessary exposure.
-              </p>
-            </article>
-
-            <article class="case-study-outcome">
-              <h3>Fewer surprises at release</h3>
-
-              <p>
-                Multi-perspective testing before rollout
-                reduced access-related disruption when new
-                functionality went live.
-              </p>
-            </article>
-
-            <article class="case-study-outcome">
-              <h3>Faster, smoother adoption</h3>
-
-              <p>
-                Documentation, guidance and training turned
-                technical configuration into clear
-                departmental process, reducing repeated
-                one-to-one support.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="case-study-return">
-          <div>
-            <p class="eyebrow">
-              Explore more work
-            </p>
-
-            <h2>
-              Return to the complete project library
-            </h2>
-          </div>
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Trevor Downs | Career Portfolio</title>
+
+  <meta
+    name="description"
+    content="Explore Trevor Downs' career portfolio across Salesforce, CRM, marketing, automation, data, strategy, operations, leadership and events."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js?v=2" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">TD</span>
+
+        <span class="brand-text">
+          <strong>Trevor Downs</strong>
+          <small>Career Portfolio</small>
+        </span>
+      </a>
+
+      <nav class="site-navigation" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="mailto:trevor.p.downs@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          Commercial systems • Marketing automation • Operations
+        </p>
+
+        <h1>
+          Work built around people, data and relationships.
+        </h1>
+
+        <p class="hero-introduction">
+          Explore selected projects across Salesforce, marketing,
+          automation, data, commercial strategy, operations, leadership
+          and large-scale engagement.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">
+            Explore my work
+          </a>
 
           <a
-            class="button"
-            href="index.html#work"
+            class="button button-secondary"
+            href="https://www.linkedin.com/in/trevor-downs-77a65a2b0/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            View all projects
+            View LinkedIn
           </a>
-        </section>
-      </article>
-    </main>
+        </div>
+      </div>
 
-    <footer class="site-footer">
-      <span>Trevor Downs</span>
+      <aside class="hero-panel">
+        <span class="panel-label">Portfolio format</span>
 
-      <a href="index.html#work">
-        Return to project library
-      </a>
-    </footer>
-  </body>
+        <strong>
+          Choose the experience most relevant to your organisation.
+        </strong>
+
+        <p>
+          Filter by multiple capability areas, search specific keywords,
+          or place the results into chronological order.
+        </p>
+      </aside>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Project library</p>
+
+          <h2>
+            Choose the work most relevant to you.
+          </h2>
+        </div>
+
+        <p class="section-description">
+          Select multiple tags to narrow the portfolio. A project must
+          contain every selected tag to appear in the results.
+        </p>
+      </div>
+
+      <div class="controls-panel">
+        <div class="filter-header">
+          <div>
+            <span class="control-label">Filter by capability</span>
+
+            <p id="filter-description">
+              No filters selected. Showing all work.
+            </p>
+          </div>
+
+          <button
+            id="clear-filters"
+            class="clear-button"
+            type="button"
+          >
+            Clear filters
+          </button>
+        </div>
+
+        <div
+          id="tag-filters"
+          class="tag-filters"
+          aria-label="Portfolio filters"
+        ></div>
+
+        <div class="search-sort-row">
+          <label class="control-field" for="project-search">
+            <span>Search portfolio</span>
+
+            <input
+              id="project-search"
+              type="search"
+              placeholder="Search projects, tools, outcomes or employers"
+              autocomplete="off"
+            >
+          </label>
+
+          <label class="control-field" for="sort-order">
+            <span>Sort projects</span>
+
+            <select id="sort-order">
+              <option value="relevance">
+                Relevance
+              </option>
+
+              <option value="newest">
+                Chronological: newest first
+              </option>
+
+              <option value="oldest">
+                Chronological: oldest first
+              </option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="results-information" aria-live="polite">
+        <strong id="result-count">
+          Loading projects
+        </strong>
+
+        <span id="active-filter-summary">
+          Showing all work
+        </span>
+      </div>
+
+      <div id="project-grid" class="project-grid"></div>
+
+      <div id="empty-state" class="empty-state" hidden>
+        <h3>No matching projects</h3>
+
+        <p>
+          Try removing a filter or using a broader search term.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <p class="eyebrow">About</p>
+
+        <h2>
+          A career spanning systems, strategy, operations and engagement.
+        </h2>
+      </div>
+
+      <div class="about-copy">
+        <p>
+          My recent work centres on Salesforce, CRM architecture,
+          marketing automation, commercial data and revenue operations.
+          Earlier roles developed my experience in operational leadership,
+          community engagement and large-scale event delivery.
+        </p>
+
+        <p>
+          This portfolio is designed to let recruiters and collaborators
+          explore the evidence most relevant to their requirements.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>
+      © <span id="current-year"></span> Trevor Downs
+    </span>
+
+    <a href="mailto:trevor.p.downs@gmail.com">
+      trevor.p.downs@gmail.com
+    </a>
+  </footer>
+</body>
 </html>
