@@ -420,13 +420,7 @@ h3 {
   background: var(--accent);
 }
 
-.control-field:has(#project-search),
-label[for="project-search"],
-#project-search {
-  display: none;
-}
-
-.search-sort-row {
+.sort-row {
   order: 2;
   width: min(100%, 320px);
   margin-top: 18px;
@@ -434,7 +428,7 @@ label[for="project-search"],
   display: block;
 }
 
-.search-sort-row .control-field {
+.sort-row .control-field {
   width: 100%;
   gap: 0;
 }
@@ -443,8 +437,8 @@ label[for="project-search"],
   Remove the visible "Sort projects" text while retaining it
   as the accessible name for the dropdown.
 */
-.search-sort-row .control-label,
-.search-sort-row .control-field > span:first-child {
+.sort-row .control-label,
+.sort-row .control-field > span:first-child {
   position: absolute;
 
   width: 1px;
@@ -903,9 +897,6 @@ label[for="project-search"],
     gap: 15px;
   }
 
-  .search-sort-row .control-field {
-    width: 100%;
-  }
 }
 
 /* -------------------------------- */
