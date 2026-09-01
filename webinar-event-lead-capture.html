@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Webinar and event registration, Salesforce Campaign and MCAE follow-up automation case study by Trevor Downs."
+    />
+
+    <title>
+      Webinar and Event Registration, CRM and
+      Follow-Up Automation | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Fresh Start in Education
+          </p>
+
+          <h1>
+            Webinar and Event Registration, CRM and
+            Follow-Up Automation
+          </h1>
+
+          <p class="case-study-introduction">
+            Connected event and webinar promotion,
+            registration, attendance and follow-up through
+            Salesforce Campaigns and MCAE audience journeys,
+            giving participation a structured place within
+            CRM visibility, segmented communication and wider
+            customer engagement.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              Events &amp; Engagement
+            </span>
+            <span class="case-study-tag">Marketing</span>
+            <span class="case-study-tag">Automation</span>
+            <span class="case-study-tag">
+              Salesforce &amp; CRM
+            </span>
+            <span class="case-study-tag">
+              Data &amp; Analytics
+            </span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Supported email activity for eight events and
+              two webinars, structuring the participant
+              lifecycle from targeted invitations and
+              registration through Salesforce Campaign
+              membership, attendance visibility and
+              segmented MCAE follow-up. Webinar delivery also
+              included live Zoom operation or hosting without
+              acting as the content presenter.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Supported email activity for eight events and
+                two webinars, including invitations,
+                promotion, CRM visibility, follow-up and live
+                Zoom operation or hosting.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>Event and webinar marketing</li>
+                <li>Registration and attendance workflows</li>
+                <li>Salesforce Campaign management</li>
+                <li>Segmented follow-up automation</li>
+                <li>Live webinar operations</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce</li>
+                <li>Salesforce Campaigns</li>
+                <li>MCAE / Pardot</li>
+                <li>Zoom</li>
+                <li>Forms</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The disconnected event lifecycle</h2>
+
+            <p>
+              Event and webinar activity needed to operate as
+              part of a wider commercial and engagement
+              journey rather than as isolated invitations.
+              Promotion, registration, attendance and
+              follow-up each created useful information, but
+              that value depended on the stages being visible
+              and connected across marketing automation and
+              CRM.
+            </p>
+
+            <p>
+              The operating model therefore needed to combine
+              audience selection, permission-aware email
+              activity, participant status, Salesforce
+              visibility and relevant post-event
+              communication.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Several participant lifecycle stages</li>
+              <li>Need for CRM-visible engagement</li>
+              <li>Different invite and follow-up audiences</li>
+              <li>Event and webinar operational requirements</li>
+              <li>Participation as part of wider journeys</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>Invitation and promotion</h2>
+
+            <p>
+              Used the governed MCAE audience architecture to
+              select relevant, permission-aware segments for
+              event and webinar communications. Email
+              activity supported invitations, promotion and
+              the practical information participants needed
+              before registration or attendance.
+            </p>
+
+            <p>
+              Campaign preparation connected audience logic
+              with the relevant event purpose rather than
+              treating the contact database as one
+              undifferentiated mailing list.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Governed invitation audiences</li>
+              <li>Segmented promotional email activity</li>
+              <li>Event and webinar messaging</li>
+              <li>Registration calls to action</li>
+              <li>Permission-aware campaign execution</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Registration and Salesforce Campaign membership</h2>
+
+            <p>
+              Structured registration information so
+              participant activity could be represented
+              through Salesforce Campaign membership.
+              Campaign records created a shared CRM reference
+              for the event or webinar and made engagement
+              available beyond the marketing platform.
+            </p>
+
+            <p>
+              This connected form and registration activity
+              with the relevant Lead or Contact context,
+              improving visibility of who had responded and
+              how participation related to other commercial
+              and relationship information.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Registration-form activity</li>
+              <li>Campaign Member representation</li>
+              <li>Lead and Contact visibility</li>
+              <li>Shared Salesforce event context</li>
+              <li>Marketing-to-sales information flow</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Attendance capture and engagement visibility</h2>
+
+            <p>
+              Attendance information distinguished
+              registration intent from actual participation.
+              Recorded event and webinar engagement could
+              remain visible through Campaign membership and
+              contribute to the wider understanding of a
+              prospect or customer journey.
+            </p>
+
+            <p>
+              This structure also supported event-influence
+              reporting without presenting attendance as the
+              sole cause of a later commercial outcome.
+              Participation became one governed engagement
+              signal alongside other marketing and sales
+              activity.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Registration and attendance distinction</li>
+              <li>Event-specific engagement status</li>
+              <li>CRM-visible participation history</li>
+              <li>Event-influence reporting support</li>
+              <li>Connection with wider engagement context</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Segmented post-event follow-up</h2>
+
+            <p>
+              Used participation state to support relevant
+              MCAE follow-up rather than sending the same
+              communication to every invited person.
+              Registrants, attendees and other relevant
+              segments could move into appropriate
+              post-event journeys.
+            </p>
+
+            <p>
+              Follow-up maintained connection between the
+              immediate event experience and longer customer,
+              nurture or buying-committee journeys, allowing
+              engagement to remain useful after the live
+              activity ended.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Participation-based segmentation</li>
+              <li>Relevant attendee follow-up</li>
+              <li>Registration-status journeys</li>
+              <li>Ongoing nurture connections</li>
+              <li>Audience-specific communication</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>Webinar and cross-functional operations</h2>
+
+            <p>
+              Managed webinar invitation and marketing
+              activity and supported live Zoom operation or
+              hosting. Responsibilities covered the
+              practical running of the call and participant
+              experience rather than serving as the content
+              presenter.
+            </p>
+
+            <p>
+              Event and webinar work required coordination
+              with stakeholders responsible for content,
+              client relationships and follow-up, connecting
+              technical delivery with campaign and CRM
+              processes.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Webinar invitation and promotion</li>
+              <li>Live Zoom operation or hosting</li>
+              <li>Participant experience support</li>
+              <li>Stakeholder coordination</li>
+              <li>Clear operational ownership boundary</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the connected lifecycle enabled
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>Repeatable event communications</h3>
+
+              <p>
+                Supported governed email activity for eight
+                events and two webinars through a consistent
+                invitation, registration and follow-up
+                approach.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Shared CRM visibility</h3>
+
+              <p>
+                Salesforce Campaign membership connected
+                registration and participation with Lead,
+                Contact and wider relationship context.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>More relevant follow-up</h3>
+
+              <p>
+                Participation state supported segmented MCAE
+                communication and connections into longer
+                nurture and customer journeys.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Integrated webinar delivery</h3>
+
+              <p>
+                Combined invitations and promotion with live
+                Zoom operation or hosting while accurately
+                separating operational delivery from content
+                presentation.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
