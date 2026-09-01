@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Large-scale international conference operations and volunteer leadership case study by Trevor Downs."
+    />
+
+    <title>
+      Large-Scale International Conference Operations
+      and Volunteer Leadership | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Hillsong
+          </p>
+
+          <h1>
+            Large-Scale International Conference Operations
+            and Volunteer Leadership
+          </h1>
+
+          <p class="case-study-introduction">
+            Managed operational delivery and supported
+            planning for large, multi-day international
+            conferences across venue flow, access systems,
+            volunteer leadership, participant services, VIP
+            coordination, risk controls and rapid live issue
+            resolution.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              Events &amp; Engagement
+            </span>
+            <span class="case-study-tag">Operations</span>
+            <span class="case-study-tag">
+              Leadership &amp; Stakeholder Management
+            </span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Coordinated operations across five week-long
+              conferences with more than 30,000 attendees
+              each, five smaller conferences of approximately
+              12,000 attendees each and a specialised
+              creativity conference. Combined detailed
+              planning, venue logistics, volunteer
+              deployment, access control, stakeholder
+              coordination and contingency response across
+              high-pressure live environments.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Supported and managed operations for major
+                week-long international conferences attended
+                by more than 30,000 people each.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>Large-scale event operations</li>
+                <li>Volunteer and team leadership</li>
+                <li>Venue flow and access control</li>
+                <li>Risk and contingency management</li>
+                <li>VIP and stakeholder coordination</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Operational systems
+              </span>
+
+              <ul class="case-study-list">
+                <li>Event-management systems</li>
+                <li>Registration processes</li>
+                <li>Scheduling tools</li>
+                <li>Multi-tier access controls</li>
+                <li>Venue and checkpoint protocols</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>Conference scale and complexity</h2>
+
+            <p>
+              Major conferences ran for a week and brought
+              more than 30,000 attendees into complex Sydney
+              venues. Operations spanned main sessions,
+              masterclasses, tradeshows, concession stands,
+              VIP areas, security checkpoints and
+              participant-facing services, often running
+              concurrently.
+            </p>
+
+            <p>
+              The wider programme also included five smaller
+              conferences of approximately 12,000 attendees
+              each and a specialist creativity and musicians
+              conference, requiring consistent operational
+              standards across different formats and scales.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Five week-long conferences of 30,000+ attendees</li>
+              <li>Five conferences of approximately 12,000 attendees</li>
+              <li>Several concurrent programme and venue areas</li>
+              <li>High-volume participant movement</li>
+              <li>International audiences and teams</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>Detailed planning and delivery control</h2>
+
+            <p>
+              Used detailed, time-sensitive operational plans
+              and Waterfall delivery methods to coordinate
+              setup, logistics, programme dependencies,
+              administrative work and on-site execution.
+              Planning supported schedule, budget, quality
+              and attendee-experience expectations.
+            </p>
+
+            <p>
+              Each operational workstream required clear
+              sequencing and handoffs so venue teams,
+              volunteers, security, participant services and
+              programme areas could act together during live
+              delivery.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Time-sensitive operational plans</li>
+              <li>Waterfall delivery methodology</li>
+              <li>Venue setup and logistics</li>
+              <li>Cross-functional handoffs</li>
+              <li>On-time and on-budget delivery support</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Venue flow, checkpoints and access systems</h2>
+
+            <p>
+              Designed and implemented event flows for
+              attendees, volunteers, staff and VIPs across
+              internal and external venue spaces.
+              Multi-tiered access systems and security
+              checkpoints helped control movement between
+              public, operational and restricted areas.
+            </p>
+
+            <p>
+              Created repeatable protocols and trained teams
+              to execute them, supporting clearer movement
+              and more consistent delivery across future
+              conferences as well as the immediate live
+              event.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Attendee and staff movement plans</li>
+              <li>Security checkpoint coordination</li>
+              <li>Multi-tier volunteer and staff access</li>
+              <li>VIP-area operational controls</li>
+              <li>Repeatable venue-flow protocols</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Volunteer leadership at scale</h2>
+
+            <p>
+              Led and coordinated cross-functional teams
+              across logistics, operations and client-facing
+              work. Managed five teams comprising more than
+              100 volunteers for daily operations, directly
+              managed a core team of 12 and coordinated
+              approximately 300–400 volunteers during larger
+              events.
+            </p>
+
+            <p>
+              Training, coaching, role clarity and
+              leadership development helped integrate
+              volunteers from diverse international
+              backgrounds and built capability that could be
+              reused beyond one conference.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Five teams and 100+ operational volunteers</li>
+              <li>300–400 volunteers during larger events</li>
+              <li>Core team of 12 under direct management</li>
+              <li>Briefing, allocation, training and coaching</li>
+              <li>Development of future team leaders</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Participant, VIP and stakeholder operations</h2>
+
+            <p>
+              Coordinated participant-facing services and
+              VIP operations with security, audiovisual,
+              internal department and event teams.
+              Stakeholder liaison connected guest
+              requirements with the practical realities of
+              venue access, scheduling and live programme
+              delivery.
+            </p>
+
+            <p>
+              Work also included coordination with NGO
+              partners for live events and support for
+              fundraising and community-engagement
+              objectives, requiring clear communication
+              across organisations as well as internal teams.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Participant-facing operational support</li>
+              <li>VIP guest coordination</li>
+              <li>Security and audiovisual liaison</li>
+              <li>NGO partnership delivery</li>
+              <li>Client and stakeholder communication</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>Live risk, contingency and improvement</h2>
+
+            <p>
+              High-volume live events required rapid
+              troubleshooting, conflict de-escalation and
+              contingency responses while maintaining
+              participant experience and operational
+              control. Prepared risk and contingency plans
+              provided a basis for acting when live
+              conditions changed.
+            </p>
+
+            <p>
+              On-site learning, post-event support and
+              evaluation informed future processes. Effective
+              contingency implementation during live events
+              contributed to progression into Event
+              Operations Manager.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Risk and contingency planning</li>
+              <li>Rapid live issue resolution</li>
+              <li>Conflict de-escalation</li>
+              <li>Post-event evaluation</li>
+              <li>Continuous operational improvement</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the conference programme demonstrated
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>Repeatable delivery at scale</h3>
+
+              <p>
+                Maintained operational standards across five
+                major week-long conferences, five smaller
+                conferences and a specialist creativity
+                event.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Coordinated venue control</h3>
+
+              <p>
+                Connected venue flow, checkpoints, access
+                levels and team protocols across complex,
+                concurrent event areas.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Volunteer capability</h3>
+
+              <p>
+                Coordinated up to 300–400 volunteers during
+                major events while training and developing
+                people into future operational leaders.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Resilient live operations</h3>
+
+              <p>
+                Combined detailed preparation with
+                contingency response and rapid issue
+                resolution to protect delivery quality and
+                participant experience.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
