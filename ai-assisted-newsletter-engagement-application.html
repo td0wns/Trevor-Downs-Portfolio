@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="AI-assisted newsletter engagement and privacy-conscious leaderboard application case study by Trevor Downs."
+    />
+
+    <title>
+      AI-Assisted Newsletter Engagement and
+      Privacy-Conscious Leaderboard | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Independent Project
+          </p>
+
+          <h1>
+            AI-Assisted Newsletter Engagement and
+            Privacy-Conscious Leaderboard
+          </h1>
+
+          <p class="case-study-introduction">
+            Independently conceived, designed, built, tested
+            and deployed a mobile-friendly web application
+            that transformed newsletter engagement into a
+            recurring memory, pattern and vocabulary
+            experience with an anonymous monthly leaderboard
+            and no requirement to retain personal user data.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              AI-Assisted Innovation
+            </span>
+            <span class="case-study-tag">Marketing</span>
+            <span class="case-study-tag">Automation</span>
+            <span class="case-study-tag">
+              Data &amp; Analytics
+            </span>
+            <span class="case-study-tag">Operations</span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Took an original B2B engagement concept from
+              idea to a viable prototype in one day and to a
+              polished, deployed product over approximately
+              one week and three major versions. Used
+              ChatGPT-led rapid prototyping, structured
+              prompting and testing to create a responsive,
+              brand-aligned application, then published it
+              through GitHub and deployed it through Vercel.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Produced a functioning prototype within one
+                day and a polished, mobile-friendly deployed
+                application within approximately one week.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>B2B engagement strategy</li>
+                <li>Product and interaction design</li>
+                <li>AI-assisted rapid prototyping</li>
+                <li>Responsive application testing</li>
+                <li>Privacy-conscious data minimisation</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>ChatGPT</li>
+                <li>GitHub</li>
+                <li>Vercel</li>
+                <li>Desktop and mobile browsers</li>
+                <li>Responsive web application</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The long-cycle engagement problem</h2>
+
+            <p>
+              The product concept responded to a long and
+              complex education-sector B2B buying journey in
+              which decisions could involve up to four
+              buying-committee members. Conventional
+              newsletter and sales content did not always
+              give individual stakeholders a low-friction
+              reason to keep engaging between formal
+              purchasing conversations.
+            </p>
+
+            <p>
+              The objective was to create a repeatable
+              newsletter feature that could support
+              retention, brand recall and individual
+              interaction while remaining aligned with an
+              educational brand rather than operating as a
+              disconnected one-off game.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Long, multi-stakeholder buying journey</li>
+              <li>Up to four buying-committee members</li>
+              <li>Need for recurring low-friction interaction</li>
+              <li>Newsletter retention and brand recall</li>
+              <li>Education-sector brand alignment</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>Original product and interaction concept</h2>
+
+            <p>
+              Created an experience combining memory,
+              pattern repetition and vocabulary to reflect
+              the organisation's educational positioning.
+              Defined the business purpose, product rules,
+              newsletter role, intended user experience,
+              recurring competition model and privacy
+              approach before development.
+            </p>
+
+            <p>
+              The application was designed as a monthly
+              newsletter feature rather than a single
+              campaign asset, giving future editions a
+              mechanism for referencing previous high scores
+              and continuing participation.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Memory and pattern-based interaction</li>
+              <li>Vocabulary-led educational alignment</li>
+              <li>Product rules and score model</li>
+              <li>Recurring monthly newsletter role</li>
+              <li>Continuity between campaign editions</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Prompt-led rapid prototyping</h2>
+
+            <p>
+              Used ChatGPT as an AI-assisted development tool
+              to translate the concept into a functioning web
+              application. Directed development through
+              structured prompts, evaluation, testing and
+              successive refinement rather than manually
+              editing the generated code.
+            </p>
+
+            <p>
+              A viable proof of concept was produced within
+              one day. The interface, game behaviour,
+              leaderboard handling and brand treatment were
+              then refined across three major versions over
+              approximately one week.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Structured prompt design</li>
+              <li>AI-assisted application generation</li>
+              <li>Evaluation-led refinement</li>
+              <li>One-day viable prototype</li>
+              <li>Three major product versions</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Cross-device testing and brand refinement</h2>
+
+            <p>
+              Tested the application across multiple desktop
+              browsers, mobile phones, mobile and desktop
+              screen sizes, core interactions, leaderboard
+              entry, score handling and visual consistency.
+              Findings informed each major version rather
+              than testing being left until the end.
+            </p>
+
+            <p>
+              Applied the education company's fonts,
+              colours, visual identity and brand values to
+              create a stakeholder-facing experience that
+              felt connected to the newsletter and wider
+              organisation.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Desktop cross-browser testing</li>
+              <li>Mobile-phone and screen-size testing</li>
+              <li>Core interaction validation</li>
+              <li>Leaderboard and score-handling checks</li>
+              <li>Brand-aligned interface refinement</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Privacy-conscious monthly leaderboard</h2>
+
+            <p>
+              Designed the application so names, email
+              addresses and other personally identifiable
+              information did not need to be retained.
+              Participants could submit an available,
+              anonymous five-letter identifier to the
+              arcade-style leaderboard.
+            </p>
+
+            <p>
+              The leaderboard was designed to reset monthly
+              alongside the newsletter cycle. Future
+              newsletters could reference the previous
+              month's highest score, creating continuity and
+              competition without requiring a persistent
+              personal profile.
+            </p>
+
+            <ul class="case-study-list">
+              <li>No retained names or email addresses</li>
+              <li>Anonymous five-letter identifiers</li>
+              <li>Monthly leaderboard reset model</li>
+              <li>Data-minimisation by design</li>
+              <li>Recurring competition without user profiles</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>Publishing, deployment and launch readiness</h2>
+
+            <p>
+              Published the completed project through GitHub
+              and deployed the functioning application
+              through Vercel. The product was technically
+              complete, mobile-friendly and ready to operate
+              as a recurring newsletter feature.
+            </p>
+
+            <p>
+              Technical deployment and public marketing
+              launch are separate outcomes. The application
+              was built and published, but its public
+              newsletter launch was delayed because the
+              associated newsletter had not yet been
+              released.
+            </p>
+
+            <ul class="case-study-list">
+              <li>GitHub version publishing</li>
+              <li>Vercel deployment</li>
+              <li>Completed responsive application</li>
+              <li>Recurring newsletter integration plan</li>
+              <li>Delayed newsletter launch stated separately</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the application demonstrated
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>Rapid concept validation</h3>
+
+              <p>
+                Converted an original engagement idea into a
+                viable proof of concept within one day and a
+                polished product within approximately one
+                week.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>End-to-end product ownership</h3>
+
+              <p>
+                Owned opportunity identification, product
+                rules, experience design, AI development
+                direction, testing, branding, publishing and
+                deployment.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Privacy-conscious continuity</h3>
+
+              <p>
+                Created monthly competition and newsletter
+                continuity through anonymous identifiers
+                without retaining names, emails or other
+                personal user data.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Deployment-ready experience</h3>
+
+              <p>
+                Delivered a tested, responsive application
+                through GitHub and Vercel while accurately
+                distinguishing deployment from the delayed
+                newsletter launch.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
