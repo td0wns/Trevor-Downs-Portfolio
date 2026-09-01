@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Local-Authority commercial intelligence and prioritisation application case study by Trevor Downs."
+    />
+
+    <title>
+      Local-Authority Commercial Intelligence
+      Application | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Fresh Start in Education
+          </p>
+
+          <h1>
+            Local-Authority Commercial Intelligence
+            Application
+          </h1>
+
+          <p class="case-study-introduction">
+            Designed and built a custom Salesforce
+            decision-support application that consolidated
+            Local Authority relationships, Contracts,
+            pricing, Accounts, governing organisations,
+            Bids, Opportunities and Referrals into dynamic
+            summaries, risk indicators and validated
+            prioritisation scores.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              AI-Assisted Innovation
+            </span>
+            <span class="case-study-tag">
+              Salesforce &amp; CRM
+            </span>
+            <span class="case-study-tag">
+              Data &amp; Analytics
+            </span>
+            <span class="case-study-tag">
+              Commercial Strategy
+            </span>
+            <span class="case-study-tag">Automation</span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Created a custom Salesforce app spanning
+              approximately 200 Local Authorities, more than
+              1,000 related Accounts and around 2,500 Bids
+              per year. Combined custom objects, AI-assisted
+              Apex and visual components, Contract and
+              pricing context, win/loss analysis, expiry
+              warnings and a validated scoring model to give
+              sales, marketing and accounts teams one shared
+              commercial view.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Consolidated approximately 200 Local
+                Authorities, 1,000+ related Accounts and
+                around 2,500 annual Bids into one dynamic
+                commercial-intelligence application.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce app and object design</li>
+                <li>Relational data modelling</li>
+                <li>Commercial scoring and prioritisation</li>
+                <li>Bid and Contract intelligence</li>
+                <li>AI-assisted component development</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce custom apps and objects</li>
+                <li>Accounts and Opportunities</li>
+                <li>Custom Contract object</li>
+                <li>Apex and visual components</li>
+                <li>Codex-assisted development</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The fragmented commercial picture</h2>
+
+            <p>
+              Local Authority information was distributed
+              across Account, Contract, pricing, Bid,
+              Opportunity, Referral and governing-organisation
+              records. Users had to locate each item and
+              manually assemble the wider relationship
+              picture before they could make a commercial
+              decision.
+            </p>
+
+            <p>
+              This made prioritisation difficult and created
+              practical risk. Bespoke Contract pricing could
+              be overlooked, sometimes contributing to
+              Accounts being charged incorrectly, while no
+              consolidated view existed for comparing Local
+              Authority performance or Bid outcomes.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Siloed commercial and relationship data</li>
+              <li>Manual research across several objects</li>
+              <li>Risk of overlooked custom pricing</li>
+              <li>No consolidated Bid win/loss view</li>
+              <li>Limited basis for regional prioritisation</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>Custom objects and relationship model</h2>
+
+            <p>
+              Created custom Local Authority and Bid objects
+              and connected them with Salesforce Accounts,
+              Opportunities and the organisation's custom
+              Contract object. Every Bid identified the
+              Account to which it was submitted, allowing the
+              relevant parent Local Authority to be populated
+              and successful Bids to progress into
+              Opportunities.
+            </p>
+
+            <p>
+              Parent-account validation rules required
+              relevant organisation Accounts to use the
+              correct Local Authority Account, protecting the
+              relationships on which every downstream summary
+              and score depended.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Custom Local Authority object</li>
+              <li>Custom Bid object and Account lookup</li>
+              <li>Opportunity progression for successful Bids</li>
+              <li>Contract-object integration</li>
+              <li>Parent-account hierarchy validation</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Dynamic relationship and activity summaries</h2>
+
+            <p>
+              Used AI-assisted Apex to surface child Accounts,
+              Master Report Accounts, recent Bid recipients,
+              Bid totals, Referral totals, recent activity
+              and win/loss information on each Local Authority
+              record. Master Report Account summaries showed
+              which Multi-Academy Trusts and other private
+              governing organisations operated within an
+              area.
+            </p>
+
+            <p>
+              The related-Account and Bid-list pattern was
+              adapted from functionality observed in another
+              Salesforce app already purchased by the
+              organisation. Comparable logic was implemented
+              for the custom Local Authority object, avoiding
+              additional supplier development without
+              claiming the underlying list concept as
+              original.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Dynamic child-Account lists</li>
+              <li>Private governing-organisation summaries</li>
+              <li>Total and recent Bid and Referral views</li>
+              <li>Six-month Bid-recipient visibility</li>
+              <li>Consolidated Bid win/loss ratio</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Contract, pricing and risk visibility</h2>
+
+            <p>
+              Pulled Contract start date, end date,
+              agreement-to-bid status and bespoke service
+              pricing into the Local Authority record. This
+              gave accounts and commercial users a direct
+              route to agreed prices without manually opening
+              and interpreting a separate Contract.
+            </p>
+
+            <p>
+              The application added warnings for Contracts
+              due to expire within 60 days and separate
+              indicators for already expired Contracts.
+              Custom pricing remained available on the Local
+              Authority record; the high-level summary card
+              showed pricing status rather than the price
+              itself.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Contract start and end summaries</li>
+              <li>Agreement-to-bid status</li>
+              <li>Accessible bespoke pricing records</li>
+              <li>60-day expiry warnings</li>
+              <li>Expired-Contract indicators</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Validated scoring and dynamic ranking</h2>
+
+            <p>
+              Designed a numerical model that compared
+              Referral volume with the number of Accounts in
+              each Local Authority area. Stronger Referral
+              generation relative to Account coverage
+              increased the score, weaker performance lowered
+              it, and proportionate performance remained
+              neutral.
+            </p>
+
+            <p>
+              Bid and Referral activity, connected Account
+              volume and Contract status informed the wider
+              prioritisation model. An active Contract added
+              a bonus without becoming a universal
+              requirement, because not every Local Authority
+              relationship needed one. The logic was
+              validated before being applied to the ranking.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Referral-to-Account performance comparison</li>
+              <li>Bid and Referral activity signals</li>
+              <li>Connected Account influence</li>
+              <li>Active-Contract scoring bonus</li>
+              <li>Validated dynamic card ordering</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>AI-assisted interface and end-to-end ownership</h2>
+
+            <p>
+              Directed AI-assisted Apex and custom visual
+              component development, including work with
+              Codex, to create a high-level card interface.
+              Crown, green-, yellow- and red-flag indicators
+              communicated relative value alongside recent
+              Referrals, recent Bids, win/loss ratio,
+              Contract status, custom-pricing status and
+              agreement-to-bid status.
+            </p>
+
+            <p>
+              Owned the project end to end through problem
+              identification, requirements, data
+              relationships, scoring logic, development
+              direction, output review, testing, validation,
+              configuration and deployment. The page does not
+              imply unaided authorship of all Apex or visual
+              code.
+            </p>
+
+            <ul class="case-study-list">
+              <li>AI-assisted Apex and component development</li>
+              <li>Human-defined requirements and scoring logic</li>
+              <li>Manual review, testing and validation</li>
+              <li>Dynamic visual ranking and status icons</li>
+              <li>Deployment across three team workflows</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the intelligence application enabled
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>One commercial view</h3>
+
+              <p>
+                Replaced fragmented manual research with a
+                shared view of Local Authority relationships,
+                Contracts, pricing, Accounts, Bids,
+                Referrals and Opportunities.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Current prioritisation</h3>
+
+              <p>
+                Scores, summaries and rankings refreshed as
+                Contracts, Bids, Referrals and Account
+                relationships changed.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Reduced pricing risk</h3>
+
+              <p>
+                Made bespoke Contract pricing easier for
+                accounts and commercial users to find before
+                acting, reducing reliance on siloed records.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Reusable commercial evidence</h3>
+
+              <p>
+                Established consolidated Bid win/loss
+                tracking and relative performance evidence
+                for sales, marketing and accounts decisions,
+                without claiming a historical improvement
+                percentage.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
