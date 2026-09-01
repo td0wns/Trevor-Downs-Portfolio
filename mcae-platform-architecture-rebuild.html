@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Mailchimp-to-MCAE migration, data remediation and marketing-automation platform rebuild project by Trevor Downs."
+    />
+
+    <title>
+      Mailchimp-to-MCAE Migration, Data Remediation and
+      Platform Rebuild | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Fresh Start in Education
+          </p>
+
+          <h1>
+            Mailchimp-to-MCAE Migration, Data Remediation
+            and Platform Rebuild
+          </h1>
+
+          <p class="case-study-introduction">
+            Led the transition from a high-risk Mailchimp
+            and Pro-Net email and CRM environment into a
+            newly built Salesforce Marketing Cloud Account
+            Engagement instance, creating the governed
+            foundations for scalable, permission-aware
+            marketing automation.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">Marketing</span>
+            <span class="case-study-tag">Automation</span>
+            <span class="case-study-tag">
+              Salesforce &amp; CRM
+            </span>
+            <span class="case-study-tag">
+              Data &amp; Analytics
+            </span>
+            <span class="case-study-tag">Operations</span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Served as sole owner of the Mailchimp-to-MCAE
+              migration and instance build from October 2024
+              to January 2026. Diagnosed and remediated the
+              legacy database, migrated viable audiences
+              while Salesforce was released in batches, and
+              rebuilt consent, suppression, preference,
+              unsubscribe and audience-governance
+              infrastructure from the ground up.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Reduced approximately 30,000 legacy contacts
+                to 19,000 viable prospects and improved
+                successful-send rate to approximately 99%.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>CRM and platform migration</li>
+                <li>Database remediation</li>
+                <li>Consent and suppression governance</li>
+                <li>Audience and preference management</li>
+                <li>Marketing operations</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce MCAE / Pardot</li>
+                <li>Salesforce</li>
+                <li>Mailchimp</li>
+                <li>Pro-Net CRM</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The inherited environment</h2>
+
+            <p>
+              The organisation relied on Mailchimp manually
+              synchronised with the legacy Pro-Net CRM. The
+              environment contained approximately 30,000
+              contacts and carried substantial data-quality,
+              sender-reputation, spam-placement, suppression,
+              consent and engagement risks.
+            </p>
+
+            <p>
+              Mailchimp needed to be phased out without
+              interrupting active marketing, while Salesforce
+              was being introduced in batches across the
+              organisation. The replacement platform therefore
+              had to support transition work and establish
+              stronger long-term governance at the same time.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Fragmented Mailchimp and Pro-Net processes</li>
+              <li>Poor-quality and disengaged legacy records</li>
+              <li>Weak suppression and consent controls</li>
+              <li>Damaged sender reputation and spam risk</li>
+              <li>A phased Salesforce rollout running in parallel</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>Database diagnosis and remediation</h2>
+
+            <p>
+              Audited the legacy contact base to distinguish
+              viable prospects from records affected by hard
+              bounces, unsubscribes, suppression requirements,
+              disengagement or unreliable data. Records were
+              corrected, suppressed, removed or sunsetted
+              according to their condition and permission
+              status.
+            </p>
+
+            <p>
+              Approximately 7,000 non-viable records were
+              removed, including hard-bounced, unsubscribed
+              and otherwise suppressed contacts. The wider
+              remediation process reduced the original
+              database to around 19,000 prospects suitable for
+              the governed MCAE environment.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Legacy-data quality assessment</li>
+              <li>Hard-bounce and unsubscribe remediation</li>
+              <li>Suppression and disengagement management</li>
+              <li>Correction and sunsetting of unusable records</li>
+              <li>Selection of viable migration audiences</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Migration and MCAE instance build</h2>
+
+            <p>
+              Planned and delivered the migration from
+              Mailchimp into Salesforce Marketing Cloud
+              Account Engagement while supporting the
+              transition away from Pro-Net and the staged
+              Salesforce rollout. This required maintaining
+              operational continuity while the organisation's
+              underlying systems were changing.
+            </p>
+
+            <p>
+              Built the MCAE instance from scratch, excluding
+              one pre-existing form, and configured the core
+              structures required for audience management,
+              email operations and connection with the new
+              Salesforce environment.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Mailchimp-to-MCAE migration planning</li>
+              <li>Pro-Net CRM transition support</li>
+              <li>Phased Salesforce rollout alignment</li>
+              <li>MCAE instance configuration</li>
+              <li>Operational continuity during migration</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Permission-aware governance foundations</h2>
+
+            <p>
+              Created the organisation's suppression policy
+              and consent-capture policy, then translated
+              those rules into the operational foundations of
+              the new platform. Unsubscribe handling and
+              audience preference management were rebuilt to
+              give prospect permission and suitability a
+              clearer role in campaign decisions.
+            </p>
+
+            <p>
+              Dynamic lists, static lists, suppression lists,
+              forms, preference pages and automation rules
+              provided the building blocks for cleaner
+              segmentation and repeatable audience
+              management.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Suppression policy</li>
+              <li>Consent-capture policy</li>
+              <li>Unsubscribe governance</li>
+              <li>Audience preference management</li>
+              <li>List and automation-rule foundations</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Send hygiene and operational recovery</h2>
+
+            <p>
+              Combined database remediation with stronger
+              suppression, consent and audience controls to
+              reduce the risks created by broken records,
+              weak governance and poor list hygiene. The
+              rebuild provided a more reliable basis for
+              recurring email and marketing-automation work.
+            </p>
+
+            <p>
+              Successful-send rate improved to approximately
+              99%. This figure represents messages accepted
+              for delivery and is not presented as a measure
+              of inbox placement.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Email send-hygiene controls</li>
+              <li>Sender-reputation recovery activity</li>
+              <li>Permission-aware audience selection</li>
+              <li>Repeatable campaign foundations</li>
+              <li>Successful-send monitoring</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the migration and rebuild delivered
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>Cleaner, viable audience</h3>
+
+              <p>
+                Reduced approximately 30,000 legacy contacts
+                to around 19,000 viable MCAE prospects
+                through structured diagnosis and remediation.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Governed platform foundations</h3>
+
+              <p>
+                Built MCAE from scratch, excluding one
+                existing form, with consent, suppression,
+                preference and unsubscribe controls embedded
+                into the operating environment.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Reduced operational risk</h3>
+
+              <p>
+                Removed approximately 7,000 non-viable
+                records and reduced exposure to hard bounces,
+                inappropriate sends and unreliable audience
+                data.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Successful-send recovery</h3>
+
+              <p>
+                Improved successful-send rate to approximately
+                99%, supported by cleaner data and stronger
+                audience-governance practices.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
+
+
