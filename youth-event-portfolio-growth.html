@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Youth programme revitalisation, audience growth and operational cost-control case study by Trevor Downs."
+    />
+
+    <title>
+      Youth Programme Revitalisation, Audience Growth
+      and Cost Control | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Life Church
+          </p>
+
+          <h1>
+            Youth Programme Revitalisation, Audience Growth
+            and Cost Control
+          </h1>
+
+          <p class="case-study-introduction">
+            Revitalised a youth and community event portfolio
+            through stronger programming, grassroots
+            marketing, stakeholder partnerships, CRM-informed
+            engagement, operational redesign and disciplined
+            resource management.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              Events &amp; Engagement
+            </span>
+            <span class="case-study-tag">Marketing</span>
+            <span class="case-study-tag">Operations</span>
+            <span class="case-study-tag">
+              Leadership &amp; Stakeholder Management
+            </span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Owned departmental event strategy and
+              execution across in-person, digital and hybrid
+              programmes, combining audience development,
+              marketing, team leadership, registration,
+              follow-up and post-event improvement. Tripled
+              average attendance, doubled the client base and
+              reduced departmental spending by 30% while
+              maintaining event quality.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Tripled average attendance, doubled the
+                client base and reduced departmental spending
+                by 30% while maintaining delivery quality.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>Event portfolio strategy</li>
+                <li>Programme revitalisation</li>
+                <li>Grassroots audience growth</li>
+                <li>Team and stakeholder leadership</li>
+                <li>Budget and operational control</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>Eventbrite</li>
+                <li>CRM</li>
+                <li>Email and social media</li>
+                <li>Calls and text messaging</li>
+                <li>Printed collateral</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The programme challenge</h2>
+
+            <p>
+              The youth department needed a clearer event
+              strategy, stronger delivery systems and more
+              relevant audience engagement. Several events
+              and programmes had stalled, while live activity
+              still needed to continue for youth and
+              community audiences.
+            </p>
+
+            <p>
+              Improvement required more than isolated event
+              promotion. Programming, operations, marketing,
+              registration, follow-up, stakeholder
+              relationships and resource use all needed to
+              work as one repeatable portfolio.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Stalled events requiring renewed momentum</li>
+              <li>Youth and vulnerable community audiences</li>
+              <li>Several in-person and digital formats</li>
+              <li>Inconsistent operational processes</li>
+              <li>Need for sustained rather than one-off growth</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>Portfolio strategy and programme redesign</h2>
+
+            <p>
+              Reviewed the event portfolio and developed a
+              stronger departmental roadmap spanning
+              in-person, digital and hybrid delivery.
+              Programming was refined to improve relevance,
+              consistency and the connection between
+              individual events.
+            </p>
+
+            <p>
+              Agile-style growth planning supported ongoing
+              adjustment while live programmes continued.
+              Stalled activity was revitalised, contributing
+              to a 15% increase in the event portfolio and
+              stronger systems for repeatable delivery.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Departmental event strategy</li>
+              <li>Youth programme roadmap</li>
+              <li>In-person, digital and hybrid formats</li>
+              <li>Revitalisation of stalled activity</li>
+              <li>15% event-portfolio growth</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Grassroots marketing and audience development</h2>
+
+            <p>
+              Combined social media, email, calls, text
+              messaging, printed collateral and in-person
+              outreach to improve awareness and participation.
+              Campaign messaging and content were shaped
+              around the needs of young people, families and
+              the surrounding community.
+            </p>
+
+            <p>
+              Growth activity increased brand awareness by
+              25%, tripled average attendance and doubled the
+              client base, creating stronger momentum across
+              the portfolio rather than relying on a single
+              successful event.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Social and email campaign activity</li>
+              <li>Calls, texts and printed outreach</li>
+              <li>Audience-specific event messaging</li>
+              <li>25% increase in brand awareness</li>
+              <li>Tripled average attendance</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Relationships, registration and follow-up</h2>
+
+            <p>
+              Strengthened relationships with participants,
+              families and partner organisations, connecting
+              community trust with event planning and
+              delivery. Registration and follow-up workflows
+              helped maintain contact beyond the moment of
+              attendance.
+            </p>
+
+            <p>
+              CRM-informed engagement and targeted
+              communication supported the doubled client base
+              and contributed to a 15% improvement in client
+              satisfaction.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Participant and family relationships</li>
+              <li>Community stakeholder partnerships</li>
+              <li>Registration workflows</li>
+              <li>CRM-informed follow-up</li>
+              <li>15% client-satisfaction improvement</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Analysis and continuous improvement</h2>
+
+            <p>
+              Used post-event analysis and weekly data review
+              to identify what was working, refine programme
+              decisions and improve future delivery.
+              Attendance, engagement and operational evidence
+              informed practical adjustments rather than
+              remaining retrospective reporting.
+            </p>
+
+            <p>
+              This cycle refined product delivery by 20% and
+              supported more consistent event experiences as
+              the portfolio expanded.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Post-event review cycles</li>
+              <li>Weekly performance analysis</li>
+              <li>Data-informed programme decisions</li>
+              <li>20% refinement in product delivery</li>
+              <li>Repeatable operational improvement</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>Cost control without reducing quality</h2>
+
+            <p>
+              Reduced departmental spending by 30% through
+              smarter purchasing, recycling initiatives,
+              improved resource management and redesigned
+              workflows. The saving came from operational
+              efficiency work alongside the programme-growth
+              activity.
+            </p>
+
+            <p>
+              Event and product quality was maintained while
+              departmental processes were restructured to
+              improve consistency and support ongoing
+              campaign and programme delivery.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Smarter purchasing decisions</li>
+              <li>Recycling and resource-use initiatives</li>
+              <li>Workflow and process redesign</li>
+              <li>30% reduction in departmental spending</li>
+              <li>Maintained event quality</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the revitalised programme delivered
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>Sustained audience growth</h3>
+
+              <p>
+                Tripled average attendance and doubled the
+                client base through stronger programming,
+                marketing and audience relationships.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Revived event portfolio</h3>
+
+              <p>
+                Restarted stalled programmes, expanded the
+                portfolio by 15% and created clearer systems
+                for consistent in-person, digital and hybrid
+                delivery.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Improved participant experience</h3>
+
+              <p>
+                CRM-informed engagement, post-event analysis
+                and targeted follow-up contributed to a 15%
+                improvement in client satisfaction.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>More efficient operations</h3>
+
+              <p>
+                Reduced departmental spending by 30% through
+                resource and workflow improvements while
+                maintaining event quality.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
