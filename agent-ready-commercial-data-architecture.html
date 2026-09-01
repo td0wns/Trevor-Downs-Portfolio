@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="AI-ready Salesforce, Pardot and website-automation architecture case study by Trevor Downs."
+    />
+
+    <title>
+      AI-Ready Salesforce, Pardot and
+      Website-Automation Architecture | Trevor Downs
+    </title>
+
+    <!-- Uses your existing portfolio stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=8" />
+
+    <style>
+      /* Expanded project page */
+
+      .case-study {
+        width: min(92%, var(--maximum-width));
+        margin-inline: auto;
+      }
+
+      .case-study-hero {
+        padding: 80px 0 70px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-back {
+        margin-bottom: 46px;
+      }
+
+      .case-study-back a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-study-back a:hover {
+        text-decoration: underline;
+      }
+
+      .case-study-hero h1 {
+        max-width: 1050px;
+        margin-bottom: 28px;
+
+        font-size: clamp(3rem, 7vw, 6.2rem);
+        line-height: 1.04;
+      }
+
+      .case-study-introduction {
+        max-width: 900px;
+        margin: 0;
+
+        color: var(--muted);
+        font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+        line-height: 1.65;
+      }
+
+      .case-study-tags {
+        margin-top: 34px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .case-study-tag {
+        padding: 8px 12px;
+
+        border-radius: 999px;
+
+        color: var(--accent-dark);
+        background: var(--accent-soft);
+
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .case-study-overview {
+        padding: 76px 0;
+
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1.3fr)
+          minmax(280px, 0.7fr);
+
+        gap: 68px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-label {
+        display: block;
+        margin-bottom: 14px;
+
+        color: var(--accent);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .case-study-overview-copy {
+        max-width: 760px;
+        margin: 0;
+
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(1.4rem, 3vw, 2.1rem);
+        font-weight: 600;
+        line-height: 1.45;
+        letter-spacing: -0.025em;
+      }
+
+      .case-study-facts {
+        display: grid;
+        gap: 18px;
+      }
+
+      .case-study-fact {
+        padding: 24px;
+
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        background: var(--surface);
+      }
+
+      .case-study-fact-highlight {
+        border-left: 4px solid var(--warm);
+      }
+
+      .case-study-fact strong {
+        display: block;
+
+        font-family: "Manrope", sans-serif;
+        font-size: 1.08rem;
+        line-height: 1.5;
+      }
+
+      .case-study-list {
+        margin: 0;
+        padding-left: 20px;
+
+        color: var(--muted);
+      }
+
+      .case-study-list li + li {
+        margin-top: 8px;
+      }
+
+      .case-study-section {
+        padding: 72px 0;
+
+        display: grid;
+        grid-template-columns: 80px minmax(0, 780px);
+        gap: 40px;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .case-study-number {
+        margin: 6px 0 0;
+
+        color: var(--warm);
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      .case-study-section h2 {
+        margin-bottom: 24px;
+
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .case-study-section p {
+        margin: 0;
+
+        color: var(--muted);
+        font-size: 1.07rem;
+      }
+
+      .case-study-section p + p {
+        margin-top: 18px;
+      }
+
+      .case-study-section .case-study-list {
+        margin-top: 26px;
+      }
+
+      .case-study-outcomes {
+        padding: 86px 0;
+      }
+
+      .case-study-outcomes h2 {
+        max-width: 760px;
+      }
+
+      .case-study-outcome-grid {
+        margin-top: 38px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .case-study-outcome {
+        padding: 28px;
+
+        border: 1px solid var(--border);
+        border-radius: 16px;
+
+        background: var(--surface);
+      }
+
+      .case-study-outcome h3 {
+        margin-bottom: 12px;
+      }
+
+      .case-study-outcome p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .case-study-return {
+        margin-bottom: 90px;
+        padding: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+
+        border-radius: 20px;
+
+        color: var(--white);
+        background: var(--accent);
+      }
+
+      .case-study-return h2 {
+        max-width: 650px;
+        margin-bottom: 0;
+      }
+
+      .case-study-return .eyebrow {
+        color: var(--accent-soft);
+      }
+
+      .case-study-return .button {
+        flex: 0 0 auto;
+
+        border-color: var(--white);
+
+        color: var(--accent);
+        background: var(--white);
+      }
+
+      @media (max-width: 850px) {
+        .case-study-overview {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+
+        .case-study-section {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .case-study-outcome-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .case-study-return {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .case-study-hero {
+          padding-top: 55px;
+        }
+
+        .case-study-section,
+        .case-study-overview,
+        .case-study-outcomes {
+          padding: 54px 0;
+        }
+
+        .case-study-return {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TD</span>
+
+          <span class="brand-text">
+            <strong>Trevor Downs</strong>
+            <small>Commercial systems and transformation</small>
+          </span>
+        </a>
+
+        <nav
+          class="site-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#work">Projects</a>
+          <a href="index.html#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="case-study">
+        <section class="case-study-hero">
+          <div class="case-study-back">
+            <a href="index.html#work">
+              ← Return to project library
+            </a>
+          </div>
+
+          <p class="eyebrow">
+            Fresh Start in Education
+          </p>
+
+          <h1>
+            AI-Ready Salesforce, Pardot and
+            Website-Automation Architecture
+          </h1>
+
+          <p class="case-study-introduction">
+            Designed and built governed Salesforce,
+            Pardot/MCAE, Campaign, website and automation
+            foundations to an agreed AI-ready specification,
+            creating structured commercial context and
+            implemented website handoffs while keeping
+            planned AI functionality clearly separate from
+            what was deployed.
+          </p>
+
+          <div class="case-study-tags">
+            <span class="case-study-tag">
+              AI-Assisted Innovation
+            </span>
+            <span class="case-study-tag">
+              Salesforce &amp; CRM
+            </span>
+            <span class="case-study-tag">Marketing</span>
+            <span class="case-study-tag">Automation</span>
+            <span class="case-study-tag">
+              Data &amp; Analytics
+            </span>
+          </div>
+        </section>
+
+        <section class="case-study-overview">
+          <div>
+            <span class="case-study-label">
+              Project overview
+            </span>
+
+            <p class="case-study-overview-copy">
+              Created structured Lead and Contact data
+              models, Salesforce Campaign connections,
+              Pardot/MCAE segmentation and journey pathways,
+              plus Zapier handoffs from website activity and
+              forms. These operational foundations were
+              completed for future agent integration; the
+              planned AI execution and agentic-attribution
+              layers were not deployed after token funding
+              was withdrawn.
+            </p>
+          </div>
+
+          <aside class="case-study-facts">
+            <div
+              class="case-study-fact
+                case-study-fact-highlight"
+            >
+              <span class="case-study-label">
+                Key result
+              </span>
+
+              <strong>
+                Completed the governed data, Campaign,
+                segmentation and website-automation
+                foundations required by the AI-ready
+                specification; no production AI agent was
+                deployed.
+              </strong>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Capabilities
+              </span>
+
+              <ul class="case-study-list">
+                <li>AI-ready data architecture</li>
+                <li>Salesforce data modelling</li>
+                <li>Campaign-based segmentation</li>
+                <li>Website-to-Pardot automation</li>
+                <li>Future-state AI use-case design</li>
+              </ul>
+            </div>
+
+            <div class="case-study-fact">
+              <span class="case-study-label">
+                Platforms
+              </span>
+
+              <ul class="case-study-list">
+                <li>Salesforce and Salesforce Flow</li>
+                <li>Salesforce Campaigns</li>
+                <li>Pardot / MCAE</li>
+                <li>Zapier</li>
+                <li>Website forms and integrations</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">01</p>
+
+          <div>
+            <h2>The future-integration requirement</h2>
+
+            <p>
+              AI integration was presented as a future
+              objective during the Salesforce conversion.
+              Before an agent could operate reliably, the
+              underlying CRM, Campaign, website and
+              marketing-automation systems needed structured,
+              governed information rather than dependence on
+              disconnected or unstructured context.
+            </p>
+
+            <p>
+              Leads and Contacts required clear segmentation,
+              relationship and email-journey eligibility
+              information. Website activity also needed to
+              reach Pardot/MCAE workflows consistently, and
+              any future AI decision layer would need to
+              preserve consent, suppression, subscription and
+              audience-governance rules.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Governed data required for reliable agent use</li>
+              <li>Structured Lead and Contact context</li>
+              <li>Clear journey-eligibility pathways</li>
+              <li>Reliable website-to-automation handoffs</li>
+              <li>Preservation of audience-governance rules</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">02</p>
+
+          <div>
+            <h2>Agent-operable CRM data models</h2>
+
+            <p>
+              Designed structured Salesforce Lead and Contact
+              models intended to make relevant commercial,
+              segmentation and relationship context available
+              through governed fields and relationships.
+              Future agents could therefore assess records
+              using defined operational data rather than
+              relying only on free-text interpretation.
+            </p>
+
+            <p>
+              The architecture connected record context with
+              Campaign membership, engagement information and
+              journey eligibility while keeping the data
+              useful to conventional Salesforce and
+              marketing-automation processes.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Structured Lead data model</li>
+              <li>Structured Contact data model</li>
+              <li>Governed commercial and relationship fields</li>
+              <li>Engagement and segmentation context</li>
+              <li>Reusable operational data foundations</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">03</p>
+
+          <div>
+            <h2>Campaign segmentation and journey routing</h2>
+
+            <p>
+              Connected Salesforce Campaigns with
+              Pardot/MCAE so Lead, Contact, engagement and
+              segmentation context could inform marketing
+              processes. Defined pathways through which
+              suitable records could be assessed for relevant
+              email journeys.
+            </p>
+
+            <p>
+              The routing design provided the structure a
+              future agent would need to interpret eligibility,
+              while immediately supporting governed
+              segmentation and conventional automated journey
+              placement without AI.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Salesforce Campaign connections</li>
+              <li>Lead and Contact segmentation pathways</li>
+              <li>Email-journey eligibility structures</li>
+              <li>Pardot/MCAE routing architecture</li>
+              <li>Sales and marketing alignment</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">04</p>
+
+          <div>
+            <h2>Implemented website and Zapier automation</h2>
+
+            <p>
+              Used Zapier to connect website activity and
+              form submissions with Pardot/MCAE automations.
+              The handoffs transferred relevant prospect
+              information into marketing workflows and
+              connected website behaviour with the wider
+              Salesforce Campaign, Lead and Contact
+              architecture.
+            </p>
+
+            <p>
+              Unlike the future AI layer, these
+              website-to-Pardot integrations were implemented
+              functionality and remained operationally useful
+              regardless of whether agent funding proceeded.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Website activity handoffs</li>
+              <li>Website form integrations</li>
+              <li>Zapier workflow orchestration</li>
+              <li>Pardot/MCAE automation entry</li>
+              <li>Connected digital prospect context</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">05</p>
+
+          <div>
+            <h2>Planned agentic attribution enhancement</h2>
+
+            <p>
+              Designed a future attribution enhancement in
+              which an AI agent would review summaries of CRM
+              records, activities and interactions. Its
+              purpose was to interpret qualitative
+              interaction history as an additional signal
+              alongside the existing attribution model.
+            </p>
+
+            <p>
+              The concept preserved transparent scoring,
+              weighting, Campaign, Account and organisational
+              context as the governed foundation. AI-supported
+              interpretation was intended to complement those
+              rules rather than replace or obscure them.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Record-summary interpretation concept</li>
+              <li>Activity and interaction-history summaries</li>
+              <li>Qualitative attribution input</li>
+              <li>Transparent rules retained as the foundation</li>
+              <li>Governed future-state AI design</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-section">
+          <p class="case-study-number">06</p>
+
+          <div>
+            <h2>Completed foundations, undeployed AI layer</h2>
+
+            <p>
+              Delivered the Salesforce Campaign,
+              Pardot/MCAE, website, Zapier, segmentation and
+              CRM-data components required by the agreed
+              specification. These foundations retained
+              value for structured journey routing and
+              marketing automation even without an AI model.
+            </p>
+
+            <p>
+              Funding for the required AI tokens was
+              withdrawn before an AI model or agent could be
+              integrated. No production agent, generative-AI
+              decision process or AI-driven attribution layer
+              was deployed, and the case study does not claim
+              otherwise.
+            </p>
+
+            <ul class="case-study-list">
+              <li>Completed data and Campaign architecture</li>
+              <li>Completed segmentation and journey pathways</li>
+              <li>Completed website and Zapier handoffs</li>
+              <li>Operational value without AI dependency</li>
+              <li>Clear boundary around undeployed functionality</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-study-outcomes">
+          <p class="eyebrow">Outcomes</p>
+
+          <h2>
+            What the AI-ready architecture delivered
+          </h2>
+
+          <div class="case-study-outcome-grid">
+            <article class="case-study-outcome">
+              <h3>Governed commercial context</h3>
+
+              <p>
+                Structured Lead and Contact models exposed
+                defined segmentation, relationship and
+                journey information for present processes
+                and future agent use.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Connected journey pathways</h3>
+
+              <p>
+                Salesforce Campaign and Pardot/MCAE
+                connections supported governed segmentation
+                and relevant email-journey routing.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Working website automation</h3>
+
+              <p>
+                Implemented Zapier handoffs moved website
+                activity and form information into
+                Pardot/MCAE workflows without manual
+                processing.
+              </p>
+            </article>
+
+            <article class="case-study-outcome">
+              <h3>Credible future-state design</h3>
+
+              <p>
+                Planned AI interpretation around transparent
+                attribution rules while clearly documenting
+                that the execution layer was not funded or
+                deployed.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-return">
+          <div>
+            <p class="eyebrow">
+              Explore more work
+            </p>
+
+            <h2>
+              Return to the complete project library
+            </h2>
+          </div>
+
+          <a
+            class="button"
+            href="index.html#work"
+          >
+            View all projects
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Trevor Downs</span>
+
+      <a href="index.html#work">
+        Return to project library
+      </a>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
