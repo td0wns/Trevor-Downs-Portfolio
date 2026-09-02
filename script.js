@@ -157,6 +157,14 @@ function projectMatchesSelectedTags(project) {
   });
 }
 
+function getFeaturedRank(project) {
+  const featuredRank = Number(project.featuredRank);
+
+  return Number.isFinite(featuredRank) && featuredRank > 0
+    ? featuredRank
+    : Number.MAX_SAFE_INTEGER;
+}
+
 function sortProjects(projects) {
   const sortedProjects = [...projects];
 
@@ -179,6 +187,13 @@ function sortProjects(projects) {
   }
 
   return sortedProjects.sort((projectA, projectB) => {
+    const featuredDifference =
+      getFeaturedRank(projectA) - getFeaturedRank(projectB);
+
+    if (featuredDifference !== 0) {
+      return featuredDifference;
+    }
+
     return (
       Number(projectB.priority || 0) -
       Number(projectA.priority || 0)

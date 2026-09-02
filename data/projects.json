@@ -31,7 +31,7 @@
     "featuredMetric": "Normalised applicable channel influence to 100%.",
     "sortDate": "2025-10",
     "priority": 10,
-    "pageUrl": "https://td0wns.github.io/Trevor-Downs-Portfolio/salesforce-multi-touch-attribution.html"
+    "pageUrl": "salesforce-multi-touch-attribution.html"
   },
   {
     "id": "local-authority-account-hierarchy",
@@ -62,7 +62,7 @@
       "Opportunities",
       "Custom Metadata Types"
     ],
-    "featuredMetric": "Applied across 1,000+ Accounts and 20,000+ Leads and Contacts, representing approximately 240 local authorities.",
+    "featuredMetric": "Applied across 1,000+ Accounts and 20,000+ Leads and Contacts, representing 200+ local authorities.",
     "sortDate": "2025-12",
     "priority": 10,
     "pageUrl": "local-authority-account-hierarchy.html"
@@ -195,6 +195,7 @@
     ],
     "featuredMetric": "Established shared operating practices across sales, marketing, CRM and operations.",
     "sortDate": "2025-12",
+    "featuredRank": 3,
     "priority": 9,
     "pageUrl": "revenue-operations-model.html"
   },
@@ -229,6 +230,7 @@
     ],
     "featuredMetric": "Reduced approximately 30,000 legacy contacts to 19,000 viable prospects and improved successful-send rate to approximately 99%.",
     "sortDate": "2026-01",
+    "featuredRank": 2,
     "priority": 10,
     "pageUrl": "mcae-platform-architecture-rebuild.html"
   },
@@ -268,10 +270,10 @@
   },
   {
     "id": "mcae-campaign-revenue-engine",
-    "title": "MCAE Campaign Operations, Performance and Revenue Influence",
+    "title": "Email Campaign Operations Across Mailchimp and MCAE",
     "employer": "Fresh Start in Education",
-    "summary": "Operated MCAE as a segmented campaign and performance channel across email, events, webinars and gated content, connecting activity with commercial influence.",
-    "details": "Planned, built and measured more than 50 segmented campaigns across email, events, webinars and gated content. Audience selection, Salesforce visibility, testing and stakeholder reporting were combined with broader performance measures covering delivery, engagement, progression and downstream commercial influence. The operating model increased average open rates and created evidence of email-attributed and email-influenced revenue without conflating campaign execution with the separate attribution model.",
+    "summary": "Owned campaign operations first through Mailchimp and then MCAE, maintaining the same audience through the Salesforce transition while improving performance and commercial visibility.",
+    "details": "Planned, built and measured more than 50 campaigns across email, events, webinars and gated content. Mailchimp activity influenced approximately £419,475 in internally modelled revenue during 2025. After the audience moved to MCAE, average open rate increased from approximately 8% to 40%, the strongest campaign achieved an 84% open rate and email influenced approximately 40% of purchases by number during 2026 to date.",
     "tags": [
       "Marketing",
       "Automation",
@@ -288,6 +290,7 @@
       "Stakeholder Reporting"
     ],
     "tools": [
+      "Mailchimp",
       "MCAE",
       "Salesforce",
       "Salesforce Campaigns",
@@ -295,8 +298,9 @@
       "Forms",
       "Campaign Reporting"
     ],
-    "featuredMetric": "Managed 50+ campaigns, increased average open rate from approximately 8% to 40%, achieved an 84% best campaign open rate and influenced approximately £419,475 in revenue.",
+    "featuredMetric": "Managed 50+ campaigns across Mailchimp and MCAE; influenced approximately £419,475 during 2025 and later increased average MCAE open rate from approximately 8% to 40%.",
     "sortDate": "2025-10",
+    "featuredRank": 4,
     "priority": 10,
     "pageUrl": "mcae-campaign-revenue-engine.html"
   },
@@ -397,15 +401,16 @@
       "Salesforce Reports",
       "Generative AI"
     ],
-    "featuredMetric": "Covered approximately 200 local authorities, 1,000+ Accounts and around 2,500 annual Bids.",
+    "featuredMetric": "Covered 200+ local authorities, 1,000+ Accounts and around 2,500 annual Bids.",
     "sortDate": "2026-01",
+    "featuredRank": 1,
     "priority": 10,
     "pageUrl": "local-authority-commercial-intelligence-application.html"
   },
   {
     "id": "ai-assisted-newsletter-engagement-application",
     "title": "AI-Assisted Newsletter Engagement and Privacy-Conscious Leaderboard",
-    "employer": "Independent Project",
+    "employer": "Fresh Start in Education",
     "summary": "Designed, built, tested and deployed a web application concept that turned newsletter engagement into a visible, privacy-conscious participation experience.",
     "details": "Translated an engagement concept into a stakeholder-facing web application using structured prompting, iterative testing, debugging and interface refinement. The product incorporated privacy-conscious display names, ranking logic, consent and data-minimisation considerations, with GitHub used for version control and Vercel for deployment. The application was built and published, although the associated public newsletter launch was delayed.",
     "tags": [
@@ -491,8 +496,9 @@
       "Email Marketing",
       "Event Management Systems"
     ],
-    "featuredMetric": "Tripled average attendance, doubled the client base and reduced departmental spending by 30% while maintaining delivery quality.",
+    "featuredMetric": "Tripled average attendance, doubled the community-member base and reduced departmental spending by 30% while maintaining delivery quality.",
     "sortDate": "2024-02",
+    "featuredRank": 5,
     "priority": 9,
     "pageUrl": "youth-event-portfolio-growth.html"
   },
@@ -523,6 +529,7 @@
     ],
     "featuredMetric": "Supported major conferences attended by more than 30,000 people.",
     "sortDate": "2021-07",
+    "featuredRank": 6,
     "priority": 9,
     "pageUrl": "large-scale-international-conference-operations.html"
   }
