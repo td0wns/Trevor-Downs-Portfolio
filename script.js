@@ -5,6 +5,7 @@ const FILTER_TAGS = [
   "Data & Analytics",
   "Commercial Strategy",
   "Operations",
+  "Implementation & Change",
   "Leadership & Stakeholder Management",
   "Events & Engagement",
   "AI-Assisted Innovation"
@@ -237,6 +238,28 @@ function createProjectCard(project) {
     `
     : "";
 
+  const proofItems = [
+    ["Ownership", project.ownership],
+    ["Adoption", project.adoption]
+  ].filter(([, value]) => Boolean(value));
+
+  const proofMarkup = proofItems.length
+    ? `
+      <div class="project-proof">
+        ${proofItems
+          .map(([label, value]) => {
+            return `
+              <p>
+                <span>${escapeHtml(label)}</span>
+                ${escapeHtml(value)}
+              </p>
+            `;
+          })
+          .join("")}
+      </div>
+    `
+    : "";
+
   const tagsMarkup = (project.tags || [])
     .map((tag) => {
       return `
@@ -260,6 +283,8 @@ function createProjectCard(project) {
       <p class="project-summary">
         ${escapeHtml(project.summary || "")}
       </p>
+
+      ${proofMarkup}
 
       ${metricMarkup}
 

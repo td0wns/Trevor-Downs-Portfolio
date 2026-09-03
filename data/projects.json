@@ -3,14 +3,17 @@
     "id": "salesforce-multi-touch-attribution",
     "title": "Salesforce Multi-Touch Attribution and Revenue Reporting",
     "employer": "Fresh Start in Education",
-    "summary": "Designed and implemented a weighted Salesforce attribution system connecting recent email, event, sales and organisational engagement with enquiries, referrals, opportunities, placements and revenue reporting.",
-    "details": "Built separate Salesforce Flow entry paths for Lead enquiries, Contact enquiries and Account-level referrals. The model used a three-week engagement window, Campaign Member activity, recognised organisational domains, MAT and Account context, returning-customer status and sequence-sensitive weighting. It normalised applicable channel influence to 100%, stored the result in a custom Attribution Model object and supplied structured data for dashboards and revenue reports.",
+    "ownership": "Identified the attribution problem and owned the architecture, Flow design, scoring, deployment and iteration.",
+    "adoption": "In production as a live ROI snapshot used to inform resource-allocation decisions.",
+    "summary": "Designed, implemented and deployed a weighted Salesforce attribution system connecting recent email, event, sales and organisational engagement with enquiries, referrals, opportunities, placements and commercial decisions.",
+    "details": "Built separate Salesforce Flow entry paths for Lead enquiries, Contact enquiries and Account-level referrals. The model used a three-week engagement window, Campaign Member activity, recognised organisational domains, MAT and Account context, returning-customer status and sequence-sensitive weighting. It normalised applicable channel influence to 100%, stored the result in a custom Attribution Model object and now supplies ROI snapshots for dashboards, revenue reports and resource allocation.",
     "tags": [
       "Salesforce & CRM",
       "Automation",
       "Data & Analytics",
       "Commercial Strategy",
-      "Marketing"
+      "Marketing",
+      "Implementation & Change"
     ],
     "skills": [
       "Multi-Touch Attribution",
@@ -28,7 +31,7 @@
       "MCAE",
       "Custom Metadata Types"
     ],
-    "featuredMetric": "Normalised applicable channel influence to 100%.",
+    "featuredMetric": "Normalises applicable channel influence to 100% and puts the result into live commercial use.",
     "sortDate": "2025-10",
     "priority": 10,
     "pageUrl": "salesforce-multi-touch-attribution.html"
@@ -37,14 +40,17 @@
     "id": "local-authority-account-hierarchy",
     "title": "Local-Authority Account Hierarchy, Contract Pricing and Commercial Risk",
     "employer": "Fresh Start in Education",
-    "summary": "Designed a local-authority-centred Salesforce account model linking organisations, people, contracts, pricing and commercial exposure.",
-    "details": "Represented local authorities as commercially relevant Accounts and connected their context across related Accounts, Leads and Contacts. Custom Metadata Type-driven assignment, Salesforce Flow and validation rules maintained the hierarchy, while Contract-object data and Opportunity automation supported relevant pricing. The resulting structure improved segmentation, reporting and visibility of authority-level commercial risk.",
+    "ownership": "Advocated for the model and owned its design, automation, validation, deployment and continuing governance.",
+    "adoption": "Production foundation for Local Authority relationships, pricing, segmentation and reporting.",
+    "summary": "Designed a local-authority-centred Salesforce account model linking organisations, people, contracts, pricing and commercial exposure in a usable one-to-many structure.",
+    "details": "Replaced operationally limited one-to-one views with a structure that surfaced all clients connected to each Local Authority. Custom Metadata Type-driven assignment, Salesforce Flow and validation rules maintained the hierarchy across Accounts, Leads and Contacts, while Contract data and Opportunity automation helped users find the correct bespoke charge rate and assess authority-level risk.",
     "tags": [
       "Salesforce & CRM",
       "Automation",
       "Data & Analytics",
       "Commercial Strategy",
-      "Operations"
+      "Operations",
+      "Implementation & Change"
     ],
     "skills": [
       "Account Hierarchies",
@@ -71,6 +77,8 @@
     "id": "commercial-data-architecture",
     "title": "MAT and Private Governing-Organisation Commercial Architecture",
     "employer": "Fresh Start in Education",
+    "ownership": "Defined the commercial model, designed the technical architecture and presented it for senior approval.",
+    "adoption": "Formally adopted after approval from the Director and CEO; now shapes email marketing and account strategy.",
     "summary": "Modelled schools within their Multi-Academy Trust, independent-school-group and wider governing-organisation relationships, then operationalised those relationships across Salesforce and MCAE.",
     "details": "Mapped school Accounts to MATs and other private governing organisations, represented those relationships through additional parent structures and created custom lookup keys so unconverted Leads could retain organisational context. A dynamic multi-object Screen Flow, validation rules and Custom Metadata Type-driven exact and wildcard domain matching maintained the model. Purchase-triggered Salesforce Campaigns then used related buying activity as a signal for MCAE validation, grading, nurture and sales routing.",
     "tags": [
@@ -78,7 +86,8 @@
       "Automation",
       "Data & Analytics",
       "Commercial Strategy",
-      "Marketing"
+      "Marketing",
+      "Implementation & Change"
     ],
     "skills": [
       "Account-Family Selling",
@@ -105,6 +114,8 @@
     "id": "salesforce-forecasting-framework",
     "title": "Salesforce Lead Opportunity Forecasting and Automated Closure",
     "employer": "Fresh Start in Education",
+    "ownership": "Identified the process gap and owned solution design, build, deployment and live refinement.",
+    "adoption": "Production sales workflow preserving repeated opportunity attempts and reportable outcomes.",
     "summary": "Built a pre-conversion Lead opportunity process that guided sales activity, calculated forecast value, preserved repeated attempts and closed inactive work automatically.",
     "details": "Created a guided Salesforce Screen Flow with four dependent progression stages covering identification, outreach, response and outcome. Forecast value used the previous 12 months of purchasing data, including organisation type, rate, weekly hours, service duration and MAT context. A dedicated custom object preserved every opportunity attempt while the Lead displayed only the current cycle, and scheduled automation closed inactive opportunities after 21 days while retaining user-recorded and system-generated outcomes for reporting.",
     "tags": [
@@ -112,7 +123,8 @@
       "Automation",
       "Data & Analytics",
       "Commercial Strategy",
-      "Operations"
+      "Operations",
+      "Implementation & Change"
     ],
     "skills": [
       "Salesforce Screen Flow",
@@ -139,13 +151,16 @@
     "id": "crm-data-governance-permissions",
     "title": "Salesforce Access Governance, Data Standards and User Adoption",
     "employer": "Fresh Start in Education",
-    "summary": "Governed departmental access to Salesforce objects, fields and Flows while standardising core CRM data and supporting users through testing, training and troubleshooting.",
-    "details": "Served as the departmental Salesforce super user and configured permission sets, object permissions, field-level access and validation controls for custom functionality. Standardised Lead, Contact and Account data, tested changes across different access levels, resolved user issues and translated technical changes into practical documentation, training and coaching. The work balanced usability with data protection and process integrity without implying organisation-wide platform ownership.",
+    "ownership": "Served as departmental Salesforce super user and feature owner, refining designs through user feedback.",
+    "adoption": "Production features available to 30+ users; daily use concentrated in Development and Referrals.",
+    "summary": "Governed access to Salesforce objects, fields and Flows while standardising CRM data and supporting company-wide feature adoption through testing, training and troubleshooting.",
+    "details": "Configured permission sets, object permissions, field-level access and validation controls for custom functionality. Standardised Lead, Contact and Account data, tested changes across different access levels, resolved user issues and translated technical changes into practical documentation, training and coaching. Features were available across the company to 30+ users, with day-to-day use concentrated in two teams and occasional use by Education.",
     "tags": [
       "Salesforce & CRM",
       "Operations",
       "Leadership & Stakeholder Management",
-      "Data & Analytics"
+      "Data & Analytics",
+      "Implementation & Change"
     ],
     "skills": [
       "Permission Sets",
@@ -163,7 +178,7 @@
       "Validation Rules",
       "Salesforce Flow"
     ],
-    "featuredMetric": "Created a controlled departmental model for access, data quality and adoption.",
+    "featuredMetric": "Enabled governed access to production features across 30+ company users.",
     "sortDate": "2025-11",
     "priority": 9,
     "pageUrl": "data-access-governance.html"
@@ -172,12 +187,15 @@
     "id": "revenue-operations-model",
     "title": "Commercial Systems Operating Model and Change Leadership",
     "employer": "Fresh Start in Education",
-    "summary": "Aligned sales, marketing, CRM and operational teams around clearer ownership, repeatable workflows, governance and shared commercial information.",
-    "details": "Gathered requirements across technical, commercial and marketing stakeholders, identified duplication and unclear ownership, and redesigned cross-functional workflows with defined responsibilities, checkpoints and escalation routes. Supported implementation through senior-stakeholder communication, documentation, training, coaching and sustained adoption. This work connected platform change with practical operating practices rather than treating Salesforce and MCAE as isolated technical systems.",
+    "ownership": "Defined and presented the relationship-led operating model across several senior-leadership meetings.",
+    "adoption": "Approved first by the Director and then the CEO through the formal company process.",
+    "summary": "Aligned sales, marketing, client services and operations around relationship-led commercial systems, clearer ownership, governed workflows and shared information.",
+    "details": "Presented the model across several meetings, secured Director and CEO approval and translated the strategy into Salesforce and MCAE workflows, responsibilities, checkpoints and user guidance. Implementation combined senior-stakeholder communication, documentation, training, feedback and sustained adoption, changing how the company viewed interconnected Accounts and influencing email marketing and wider brand voice.",
     "tags": [
       "Leadership & Stakeholder Management",
       "Operations",
-      "Commercial Strategy"
+      "Commercial Strategy",
+      "Implementation & Change"
     ],
     "skills": [
       "Operating Model Design",
@@ -193,7 +211,7 @@
       "Mailchimp",
       "Process Documentation"
     ],
-    "featuredMetric": "Established shared operating practices across sales, marketing, CRM and operations.",
+    "featuredMetric": "Secured Director and CEO approval for a relationship-led commercial operating model.",
     "sortDate": "2025-12",
     "featuredRank": 3,
     "priority": 9,
@@ -203,6 +221,8 @@
     "id": "mcae-platform-architecture-rebuild",
     "title": "Mailchimp-to-MCAE Migration, Data Remediation and Platform Rebuild",
     "employer": "Fresh Start in Education",
+    "ownership": "Led data remediation, platform design, migration controls, testing and production rollout.",
+    "adoption": "Production foundation for the company's MCAE audiences and campaign operations.",
     "summary": "Led the transition from a high-risk Mailchimp and Pro-Net environment into a governed MCAE instance built largely from scratch.",
     "details": "Reviewed legacy records, duplication, consent risks and unusable data before rationalising the database and moving viable prospects into MCAE. Rebuilt the marketing-automation foundation around Salesforce integration, controlled audience management, consent and suppression rules, preference handling, send hygiene and repeatable campaign processes. The transition replaced fragmented practices with a more governed operating environment.",
     "tags": [
@@ -210,7 +230,8 @@
       "Automation",
       "Salesforce & CRM",
       "Data & Analytics",
-      "Operations"
+      "Operations",
+      "Implementation & Change"
     ],
     "skills": [
       "CRM Migration",
@@ -238,6 +259,8 @@
     "id": "mcae-consent-suppression-preferences",
     "title": "Self-Healing MCAE Audience, Consent and Buyer-Qualification Architecture",
     "employer": "Fresh Start in Education",
+    "ownership": "Designed the initial architecture and continues to govern, patch and extend its automated controls.",
+    "adoption": "Central production architecture for audience eligibility, consent, segmentation and buyer qualification.",
     "summary": "Designed a self-healing audience and qualification system covering suppression, preferences, remediation, segmentation, scoring, grading and long-cycle nurture.",
     "details": "Built an MCAE architecture of approximately 400 lists using dynamic lists for current states and static lists for historical actions. A dynamic Master Suppression List, preference and unsubscribe controls, missing-data remediation and merge-tag protection governed sendability. Three core commercial audiences, behavioural scoring, profile grading and audience-prioritisation logic supported long-cycle nurture journeys, while campaign checks and release controls reduced operational risk.",
     "tags": [
@@ -245,7 +268,8 @@
       "Automation",
       "Salesforce & CRM",
       "Data & Analytics",
-      "Operations"
+      "Operations",
+      "Implementation & Change"
     ],
     "skills": [
       "Audience Architecture",
@@ -272,14 +296,17 @@
     "id": "mcae-campaign-revenue-engine",
     "title": "Email Campaign Operations Across Mailchimp and MCAE",
     "employer": "Fresh Start in Education",
+    "ownership": "Sole owner of campaign operations and the sequencing of Pardot/MCAE work affecting channel continuity.",
+    "adoption": "Live revenue-supporting channel using the same audience across the Mailchimp-to-MCAE transition.",
     "summary": "Owned campaign operations first through Mailchimp and then MCAE, maintaining the same audience through the Salesforce transition while improving performance and commercial visibility.",
-    "details": "Planned, built and measured more than 50 campaigns across email, events, webinars and gated content. Mailchimp activity influenced approximately £419,475 in internally modelled revenue during 2025. After the audience moved to MCAE, average open rate increased from approximately 8% to 40%, the strongest campaign achieved an 84% open rate and email influenced approximately 40% of purchases by number during 2026 to date.",
+    "details": "Planned, built and measured more than 50 campaigns across email, events, webinars and gated content. Mailchimp activity influenced approximately £419,475 in internally modelled revenue during 2025. After the audience moved to MCAE, average open rate increased from approximately 8% to 40%, the strongest campaign achieved an 84% open rate and MCAE-attributed activity recorded £127,642.98 in realised revenue from February through May 2026.",
     "tags": [
       "Marketing",
       "Automation",
       "Salesforce & CRM",
       "Data & Analytics",
-      "Commercial Strategy"
+      "Commercial Strategy",
+      "Implementation & Change"
     ],
     "skills": [
       "Campaign Operations",
@@ -298,7 +325,7 @@
       "Forms",
       "Campaign Reporting"
     ],
-    "featuredMetric": "Managed 50+ campaigns across Mailchimp and MCAE; influenced approximately £419,475 during 2025 and later increased average MCAE open rate from approximately 8% to 40%.",
+    "featuredMetric": "Recorded approximately £127.6k in realised MCAE-attributed revenue from February to May 2026.",
     "sortDate": "2025-10",
     "featuredRank": 4,
     "priority": 10,
@@ -308,6 +335,8 @@
     "id": "mcae-modular-xhtml-email-template-system",
     "title": "Modular MCAE XHTML Email Template System",
     "employer": "Fresh Start in Education",
+    "ownership": "Designed, tested and documented the framework, directing AI-assisted XHTML development and user training.",
+    "adoption": "Adopted as the organisation's standard marketing-email production framework.",
     "summary": "Designed and delivered MCAE's standard modular email-production framework after the Mailchimp migration removed the previous drag-and-drop content-block workflow.",
     "details": "Analysed commercially successful Mailchimp layouts, translated recurring patterns into reusable modules and applied a consistent brand system across MCAE templates. Used AI-assisted XHTML generation alongside manual code review, Gmail and Outlook testing, security-conscious structures, documentation and user training. The framework was expanded incrementally as campaign requirements developed and became the standard production approach for recurring emails.",
     "tags": [
@@ -315,7 +344,8 @@
       "Automation",
       "Salesforce & CRM",
       "Operations",
-      "AI-Assisted Innovation"
+      "AI-Assisted Innovation",
+      "Implementation & Change"
     ],
     "skills": [
       "Modular Email Architecture",
@@ -342,6 +372,8 @@
     "id": "agent-ready-commercial-data-architecture",
     "title": "AI-Ready Salesforce, Pardot and Website-Automation Architecture",
     "employer": "Fresh Start in Education",
+    "ownership": "Designed and implemented governed data and automation foundations while defining the unfunded future state separately.",
+    "adoption": "The data, Campaign and automation foundations are live; the proposed AI execution layer was not deployed.",
     "summary": "Built governed Salesforce and Pardot/MCAE data, Campaign, segmentation and website-handoff foundations designed to support future AI-assisted workflows.",
     "details": "Created structured Lead and Contact data models, Salesforce Campaign connections, journey-eligibility rules and segmentation pathways intended to provide future agents with governed commercial context. Zapier connected website activity and form submissions with Pardot/MCAE automations. A future agentic attribution enhancement was also designed, but no production AI model, agent or AI-driven attribution layer was deployed after funding for the required AI tokens was withdrawn.",
     "tags": [
@@ -349,7 +381,8 @@
       "Salesforce & CRM",
       "Marketing",
       "Automation",
-      "Data & Analytics"
+      "Data & Analytics",
+      "Implementation & Change"
     ],
     "skills": [
       "AI-Ready Data Architecture",
@@ -376,14 +409,17 @@
     "id": "local-authority-commercial-intelligence-application",
     "title": "Local-Authority Commercial Intelligence Application",
     "employer": "Fresh Start in Education",
-    "summary": "Built a custom commercial-intelligence application that brought local-authority, Account and Bid information into a more usable decision-support view.",
-    "details": "Defined the requirements, data relationships and user workflow for a Salesforce application that consolidated authority, Account and Bid information. Used AI-assisted Apex and Salesforce component development with manual testing, validation and configuration to create a decision-support layer on top of the local-authority data model. The application improved access to commercial context while keeping the underlying hierarchy and pricing architecture as a separate project.",
+    "ownership": "Owned the project end to end from problem definition and scoring logic through deployment and live refinement.",
+    "adoption": "Production decision-support application central to pricing, relationship and bid-prioritisation work.",
+    "summary": "Built a custom Salesforce commercial-intelligence application that turned Local Authority, Account, Contract and Bid data into an actionable decision-support view.",
+    "details": "Defined the requirements, data relationships, scoring logic and user workflow for an application that consolidated Local Authority relationships, Accounts, Bids, Referrals, Contracts and custom pricing. Directed AI-assisted Apex and component development with manual testing and validation. The production application surfaces one-to-many relationships, correct charge rates and bid win/loss evidence so limited effort can be prioritised where it is most likely to create value.",
     "tags": [
       "AI-Assisted Innovation",
       "Salesforce & CRM",
       "Data & Analytics",
       "Commercial Strategy",
-      "Automation"
+      "Automation",
+      "Implementation & Change"
     ],
     "skills": [
       "Commercial Intelligence",
@@ -401,7 +437,7 @@
       "Salesforce Reports",
       "Generative AI"
     ],
-    "featuredMetric": "Covered 200+ local authorities, 1,000+ Accounts and around 2,500 annual Bids.",
+    "featuredMetric": "Supports decisions across 200+ Local Authorities, 1,000+ Accounts and around 2,500 annual Bids.",
     "sortDate": "2026-01",
     "featuredRank": 1,
     "priority": 10,
@@ -411,14 +447,17 @@
     "id": "ai-assisted-newsletter-engagement-application",
     "title": "AI-Assisted Newsletter Engagement and Privacy-Conscious Leaderboard",
     "employer": "Fresh Start in Education",
-    "summary": "Designed, built, tested and deployed a web application concept that turned newsletter engagement into a visible, privacy-conscious participation experience.",
-    "details": "Translated an engagement concept into a stakeholder-facing web application using structured prompting, iterative testing, debugging and interface refinement. The product incorporated privacy-conscious display names, ranking logic, consent and data-minimisation considerations, with GitHub used for version control and Vercel for deployment. The application was built and published, although the associated public newsletter launch was delayed.",
+    "ownership": "Created the product concept and owned requirements, AI-assisted build, testing, refinement and deployment.",
+    "adoption": "Live within the Fresh Start newsletter; accessible through a free subscription.",
+    "summary": "Designed, built, tested and deployed a web application that turned newsletter engagement into a visible, privacy-conscious participation experience.",
+    "details": "Translated an engagement concept into a live newsletter application using structured prompting, iterative testing, debugging and interface refinement. The product incorporated privacy-conscious display names, ranking logic, consent and data-minimisation considerations, with GitHub used for version control and Vercel for deployment. It is now live within the Fresh Start newsletter behind a free subscription.",
     "tags": [
       "AI-Assisted Innovation",
       "Marketing",
       "Automation",
       "Data & Analytics",
-      "Operations"
+      "Operations",
+      "Implementation & Change"
     ],
     "skills": [
       "AI-Assisted Coding",
@@ -433,7 +472,7 @@
       "GitHub",
       "Vercel"
     ],
-    "featuredMetric": "Built and published a functioning web application; the public newsletter launch was delayed.",
+    "featuredMetric": "Built and deployed a functioning application now live within the Fresh Start newsletter.",
     "sortDate": "2026-06",
     "priority": 9,
     "pageUrl": "ai-assisted-newsletter-engagement-application.html"
@@ -442,6 +481,8 @@
     "id": "webinar-event-lead-capture",
     "title": "Webinar and Event Registration, CRM and Follow-Up Automation",
     "employer": "Fresh Start in Education",
+    "ownership": "Owned the registration-to-follow-up workflow and its connection across campaigns, CRM and MCAE.",
+    "adoption": "Production workflow used across events, webinars and segmented follow-up journeys.",
     "summary": "Connected event and webinar promotion, registration, attendance and follow-up with Salesforce Campaigns and MCAE audience journeys.",
     "details": "Structured the lifecycle from invitation and registration through attendance capture, Salesforce Campaign membership, CRM visibility and segmented MCAE follow-up. The workflow supported event-influence reporting and allowed participation to contribute to wider customer journeys. Delivery included email activity for events and webinars as well as live Zoom operation or hosting, without implying responsibility as the content presenter.",
     "tags": [
@@ -449,7 +490,8 @@
       "Marketing",
       "Automation",
       "Salesforce & CRM",
-      "Data & Analytics"
+      "Data & Analytics",
+      "Implementation & Change"
     ],
     "skills": [
       "Event Lead Capture",
@@ -475,13 +517,16 @@
     "id": "youth-event-portfolio-growth",
     "title": "Youth Programme Revitalisation, Audience Growth and Cost Control",
     "employer": "Life Church",
+    "ownership": "Owned departmental event strategy, programme delivery, marketing, volunteer development and budget control.",
+    "adoption": "Delivered as the department's operating model across in-person, digital and hybrid programmes from 2022 to February 2024.",
     "summary": "Revitalised youth events and community programmes through stronger programming, grassroots marketing, partnership development and operational control.",
-    "details": "Reviewed the programme portfolio, improved the relevance and consistency of events, strengthened grassroots promotion and built relationships with participants, families and partner organisations. Combined audience development with team leadership, operational planning and budget control to improve participation and delivery quality. The programme created sustained growth rather than treating each event as an isolated activity.",
+    "details": "Reviewed the programme portfolio, improved the relevance and consistency of events, strengthened grassroots promotion and built relationships with participants, families and partner organisations. Led 10 rotating established volunteers and recruited and trained nine additional junior volunteers. Combined audience development with operational planning and annual budget control to create sustained growth rather than treating each event as an isolated activity.",
     "tags": [
       "Events & Engagement",
       "Marketing",
       "Operations",
-      "Leadership & Stakeholder Management"
+      "Leadership & Stakeholder Management",
+      "Implementation & Change"
     ],
     "skills": [
       "Programme Revitalisation",
@@ -496,7 +541,7 @@
       "Email Marketing",
       "Event Management Systems"
     ],
-    "featuredMetric": "Tripled average attendance, doubled the community-member base and reduced departmental spending by 30% while maintaining delivery quality.",
+    "featuredMetric": "Tripled recurring average attendance, doubled the community-member base and reduced annual departmental spending by 30%.",
     "sortDate": "2024-02",
     "featuredRank": 5,
     "priority": 9,
@@ -506,12 +551,15 @@
     "id": "large-scale-international-conference-operations",
     "title": "Large-Scale International Conference Operations and Volunteer Leadership",
     "employer": "Hillsong",
-    "summary": "Supported the planning and live delivery of large, multi-day international conferences across registration, access, volunteers, participant services, VIP operations and risk controls.",
-    "details": "Coordinated practical workstreams involving registration, access systems, volunteer briefing and allocation, participant movement, VIP support, communications and contingency responses. The work required detailed preparation, rapid live problem-solving and close coordination across teams while maintaining participant experience and operational control throughout multi-day international events.",
+    "ownership": "Progressed from team member to co-manager and then the internally titled Event Operations Manager, all within an internship.",
+    "adoption": "Held broad delegated conference authority with six regular direct reports and peak oversight of approximately 450 people through team leaders.",
+    "summary": "Managed the planning and live delivery of large, multi-day international conferences across access, volunteers, participant services, VIP operations and risk controls.",
+    "details": "Progressed from Operations Team Member in 2017 to Operations Co-Manager in 2018 and Event Operations Manager from 2019 to July 2021. Managed approximately six regular direct reports, worked with around 20 changing reporting relationships during conferences and exercised peak operational oversight of approximately 450 people through team leaders as part of the conference lead's right-hand team.",
     "tags": [
       "Events & Engagement",
       "Operations",
-      "Leadership & Stakeholder Management"
+      "Leadership & Stakeholder Management",
+      "Implementation & Change"
     ],
     "skills": [
       "Conference Operations",
@@ -527,7 +575,7 @@
       "Scheduling Tools",
       "Access-Control Processes"
     ],
-    "featuredMetric": "Supported major conferences attended by more than 30,000 people.",
+    "featuredMetric": "Managed operations for conferences of 30,000+ attendees, with peak oversight of approximately 450 people through team leaders.",
     "sortDate": "2021-07",
     "featuredRank": 6,
     "priority": 9,
