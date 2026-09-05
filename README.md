@@ -1,7 +1,7 @@
 # Trevor Downs — Career Portfolio
 
 A static portfolio presenting selected work across commercial systems, Salesforce and MCAE, operational strategy,
-implementation leadership, marketing operations, and large-scale event delivery.
+implementation leadership, marketing operations, research-led community strategy, and large-scale event delivery.
 
 The homepage reads project information from `data/projects.json`. Each project links to a detailed HTML case study,
 with shared visual styling in `styles.css` and filtering and sorting behaviour in `script.js`.

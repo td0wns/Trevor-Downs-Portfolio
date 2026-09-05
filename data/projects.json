@@ -257,12 +257,12 @@
   },
   {
     "id": "mcae-consent-suppression-preferences",
-    "title": "Self-Healing MCAE Audience, Consent and Buyer-Qualification Architecture",
+    "title": "Initial MCAE Audience, Consent and Suppression Architecture",
     "employer": "Fresh Start in Education",
-    "ownership": "Designed the initial architecture and continues to govern, patch and extend its automated controls.",
-    "adoption": "Central production architecture for audience eligibility, consent, segmentation and buyer qualification.",
-    "summary": "Designed a self-healing audience and qualification system covering suppression, preferences, remediation, segmentation, scoring, grading and long-cycle nurture.",
-    "details": "Built an MCAE architecture of approximately 400 lists using dynamic lists for current states and static lists for historical actions. A dynamic Master Suppression List, preference and unsubscribe controls, missing-data remediation and merge-tag protection governed sendability. Three core commercial audiences, behavioural scoring, profile grading and audience-prioritisation logic supported long-cycle nurture journeys, while campaign checks and release controls reduced operational risk.",
+    "ownership": "Designed and implemented the initial architecture, including list strategy, suppression, remediation and preference governance.",
+    "adoption": "Completed in January 2026 and retained as the production foundation for three commercial audiences.",
+    "summary": "Built the initial self-healing MCAE audience architecture covering qualification, suppression, preferences, remediation and Salesforce-informed segmentation.",
+    "details": "Built approximately 400 MCAE lists, using dynamic lists for current prospect states and static micro-segmentation lists for historical actions. A fully dynamic Master Suppression List, preference and unsubscribe controls, missing-data remediation and merge-tag protection governed sendability. The completed architecture supported three commercial audiences spanning provision and services, community influence and professional development.",
     "tags": [
       "Marketing",
       "Automation",
@@ -275,9 +275,9 @@
       "Audience Architecture",
       "Consent and Suppression",
       "Dynamic Lists",
-      "Lead Scoring",
-      "Profile Grading",
-      "Lifecycle Nurture"
+      "Data Remediation",
+      "Preference Management",
+      "CRM Segmentation"
     ],
     "tools": [
       "MCAE",
@@ -291,6 +291,44 @@
     "sortDate": "2026-01",
     "priority": 10,
     "pageUrl": "mcae-consent-suppression-preferences.html"
+  },
+  {
+    "id": "mcae-audience-governance-optimisation",
+    "title": "Ongoing MCAE Audience Governance and Predictive Qualification",
+    "employer": "Fresh Start in Education",
+    "ownership": "Owns the production architecture after launch, monitoring, refining and extending its governance and qualification logic.",
+    "adoption": "Live operating layer for audience eligibility, buyer qualification, exception review and re-engagement.",
+    "summary": "Maintains and extends the MCAE audience system through reversible qualification, lifecycle controls, predictive buyer grading and human review of unresolved data.",
+    "details": "Since February 2026, refined production rules for qualification, suppression, remediation, subscription governance and Salesforce-informed segmentation. Added time-based score resets, dynamic profile degradation, formal sub-profiles, known-inferred-unknown states, administrator review queues and proof-of-life journeys so historic activity and uncertain data do not become permanent commercial assumptions.",
+    "tags": [
+      "Marketing",
+      "Automation",
+      "Salesforce & CRM",
+      "Data & Analytics",
+      "Operations",
+      "Commercial Strategy",
+      "Implementation & Change"
+    ],
+    "skills": [
+      "Audience Governance",
+      "Predictive Buyer Grading",
+      "Score and Profile Degradation",
+      "Certainty-State Classification",
+      "Lifecycle Automation",
+      "Human-in-the-Loop Governance"
+    ],
+    "tools": [
+      "MCAE",
+      "Salesforce",
+      "Dynamic Lists",
+      "Automation Rules",
+      "Profile Grading",
+      "Engagement Studio"
+    ],
+    "featuredMetric": "Implemented reversible qualification, time-based score resets and human review for unresolved audience data.",
+    "sortDate": "2026-02",
+    "priority": 10,
+    "pageUrl": "mcae-audience-governance-optimisation.html"
   },
   {
     "id": "mcae-campaign-revenue-engine",
@@ -476,6 +514,40 @@
     "sortDate": "2026-06",
     "priority": 9,
     "pageUrl": "ai-assisted-newsletter-engagement-application.html"
+  },
+  {
+    "id": "community-strategy-thought-leadership",
+    "title": "Community Strategy Framework and MCAE Thought Leadership",
+    "employer": "Downs Community Consulting",
+    "ownership": "Founded the venture and independently researched, developed and published its frameworks and technical writing, with guidance from a mentor and adviser.",
+    "adoption": "Published through the maintained DCC website; its relationship-led philosophy also informs employed systems work at Fresh Start in Education.",
+    "summary": "Developed an original five-stage community funnel and community taxonomy, then translated the research into published community-strategy and MCAE thought leadership.",
+    "details": "Reviewed more than 20 community-funnel models and conducted an expert interview with a financial representative with more than 20 years of experience. Synthesised the research into a five-stage funnel—Awareness, Interaction, Engagement, Buy-In and Advocacy—with trust and quality across every stage, plus a taxonomy of close, broad, digital and product communities. Published a seven-part community-strategy series and four MCAE papers while using engagement evidence to refine the work.",
+    "tags": [
+      "Commercial Strategy",
+      "Marketing",
+      "Salesforce & CRM",
+      "Data & Analytics",
+      "Leadership & Stakeholder Management"
+    ],
+    "skills": [
+      "Community Strategy",
+      "Framework Development",
+      "Research Synthesis",
+      "Community Funnel Design",
+      "MCAE Thought Leadership",
+      "Long-Form Technical Writing"
+    ],
+    "tools": [
+      "DCC Website",
+      "LinkedIn",
+      "Website Analytics",
+      "Salesforce Partner Program"
+    ],
+    "featuredMetric": "Published a seven-part community-strategy series and four MCAE papers; the community framework drew on 20+ model reviews and an expert interview.",
+    "sortDate": "2024-04",
+    "priority": 8,
+    "pageUrl": "community-strategy-thought-leadership.html"
   },
   {
     "id": "webinar-event-lead-capture",
