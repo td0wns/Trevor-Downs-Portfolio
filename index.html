@@ -15,11 +15,11 @@
     content="Explore Trevor Downs' work designing and implementing commercial systems across Salesforce, marketing automation, operational strategy, change leadership and large-scale delivery."
   >
 
-  <link rel="stylesheet" href="styles.css?v=20260908b">
-  <script src="script.js?v=20260908b" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260908c">
+  <script src="script.js?v=20260908c" defer></script>
 </head>
 
-<body class="portfolio-home" data-project-preview="true">
+<body class="portfolio-home" data-project-slider="true">
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-current="page">
@@ -150,14 +150,9 @@
         </span>
       </div>
 
-      <div id="project-grid" class="project-grid"></div>
+      <div id="project-grid" class="project-grid" tabindex="0" role="region" aria-label="Project slider"></div>
 
-      <nav class="project-pagination" aria-label="Project previews">
-        <button class="button button-secondary" id="previous-projects" type="button" aria-controls="project-grid">← Previous</button>
-        <span id="project-page-status" aria-live="polite"></span>
-        <button class="button button-secondary" id="next-projects" type="button" aria-controls="project-grid">Next →</button>
-        <a href="projects.html">View all projects ↗</a>
-      </nav>
+      <p class="slider-library-link"><a href="projects.html">View all projects ↗</a></p>
 
       <div id="empty-state" class="empty-state" hidden>
         <h3>No matching projects</h3>
@@ -171,11 +166,14 @@
     <section class="contact-cta" aria-labelledby="contact-heading">
       <div>
         <p class="eyebrow">Let’s connect</p>
-        <h2 id="contact-heading">Get to know the person behind the work.</h2>
-        <p>Explore my professional background and the thinking that connects my work.</p>
+        <h2 id="contact-heading">Different challenges. Connected skills. Adaptable systems.</h2>
+        <p>I bring together the skills developed across my career—from events
+          and team leadership to community strategy, CRM and automation—to build
+          systems that adapt to different people, organisations and challenges.
+          These projects show how I put that experience into practice.</p>
       </div>
       <div class="hero-actions">
-        <a class="button button-primary" href="about.html">About me</a>
+        <a class="button button-primary" href="projects.html">Explore all projects</a>
         <a class="button button-secondary" href="https://www.linkedin.com/in/trevor-downs-77a65a2b0/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
       </div>
     </section>
