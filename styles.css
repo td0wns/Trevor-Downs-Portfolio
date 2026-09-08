@@ -587,75 +587,11 @@ h3 {
   color: var(--text);
 }
 
-/* -------------------------------- */
-/* Scrollable project library       */
-/* -------------------------------- */
-
+/* Responsive project library */
 .project-grid {
-  width: 100%;
-
-  /*
-    Keep every rendered project in one horizontal row.
-    The column calculation shows exactly three cards at
-    a time on desktop, separated by two 22px gaps.
-  */
-  padding: 4px 4px 16px;
-
   display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: auto;
-  grid-auto-columns: calc((100% - 44px) / 3);
-
-  align-items: stretch;
-  gap: 22px;
-
-  overflow-x: auto;
-  overflow-y: hidden;
-
-  border-radius: 12px;
-
-  overscroll-behavior-x: contain;
-  scroll-behavior: smooth;
-  scroll-padding-inline: 4px;
-  scroll-snap-type: x mandatory;
-
-  -webkit-overflow-scrolling: touch;
-
-  scrollbar-width: auto;
-  scrollbar-color: var(--accent) var(--accent-soft);
-
-  /*
-    Flip the vertical axis so the native horizontal scrollbar
-    is displayed above the cards rather than below them.
-  */
-  transform: scaleY(-1);
-}
-
-.project-grid::-webkit-scrollbar {
-  height: 12px;
-}
-
-.project-grid::-webkit-scrollbar-track {
-  border-radius: 999px;
-  background: var(--accent-soft);
-}
-
-.project-grid::-webkit-scrollbar-thumb {
-  min-width: 60px;
-
-  border: 3px solid var(--accent-soft);
-  border-radius: 999px;
-
-  background: var(--accent);
-}
-
-.project-grid::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-dark);
-}
-
-/* Restore the normal orientation of every rendered grid item. */
-.project-grid > * {
-  transform: scaleY(-1);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
 /* -------------------------------- */
@@ -664,10 +600,9 @@ h3 {
 
 .project-card {
   min-width: 0;
-  min-height: 500px;
+  min-height: 0;
 
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
+
 
   display: flex;
   flex-direction: column;
@@ -700,17 +635,7 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-/* Preserve the corrective flip while lifting linked cards. */
-.project-grid > .project-card--clickable:hover,
-.project-grid > .project-card--clickable:focus-within {
-  transform: scaleY(-1) translateY(-4px);
-}
-
-/*
-  Keep the article as the direct grid child and let the anchor
-  fill the complete card. This preserves the flipped scrollbar
-  layout while making the full card clickable.
-*/
+/* The full card is a keyboard-accessible project link. */
 .project-card-link {
   min-width: 0;
   min-height: 100%;
@@ -1124,8 +1049,7 @@ h3 {
 
 @media (max-width: 1000px) {
   .project-grid {
-    /* Keep one row, with two cards visible at a time. */
-    grid-auto-columns: calc((100% - 22px) / 2);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1207,8 +1131,7 @@ h3 {
   }
 
   .project-grid {
-    /* Keep one row, with one card visible at a time. */
-    grid-auto-columns: 100%;
+    grid-template-columns: 1fr;
   }
 
   .project-card {
@@ -1251,9 +1174,72 @@ h3 {
     transform: none;
   }
 
-  /* Keep linked cards upright while disabling movement. */
-  .project-grid > .project-card--clickable:hover,
-  .project-grid > .project-card--clickable:focus-within {
-    transform: scaleY(-1);
-  }
+  .project-card--clickable:hover,
+  .project-card--clickable:focus-within { transform: none; }
+}
+
+/* Main-page proportions and shared contact invitation */
+.portfolio-home .hero,
+.about-hero {
+  display: block;
+  min-height: 0;
+  padding: clamp(48px, 7vw, 88px) 0;
+}
+.portfolio-home h1,
+.about-hero h1 {
+  max-width: 900px;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  text-wrap: balance;
+}
+.portfolio-home .work-section { padding: 24px 0 64px; }
+.portfolio-home .section-heading h2,
+.about-page h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
+.controls-panel { padding: 20px; box-shadow: none; }
+.tag-filter { padding: 8px 12px; font-size: .85rem; }
+.project-content { padding: 24px; }
+.project-card h3 { font-size: 1.2rem; }
+.project-summary { font-size: .95rem; line-height: 1.55; }
+.project-metric { margin-top: 18px; font-size: .88rem; }
+.project-read-more {
+  display: flex; justify-content: space-between;
+  margin-top: 22px; padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--accent); font-weight: 700;
+}
+.professional-about {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.65fr);
+  gap: clamp(28px, 5vw, 64px);
+  padding: clamp(40px, 6vw, 72px) 0;
+}
+.professional-principles {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.intersection-section { padding-top: clamp(40px, 6vw, 72px); }
+.about-page { padding-bottom: 0; }
+.about-visual-heading { grid-template-columns: 1fr; gap: 12px; }
+.about-visual figcaption { margin-top: 18px; font-size: .9rem; color: var(--accent); }
+.contact-cta {
+  width: min(92%, var(--maximum-width));
+  margin: 0 auto 64px;
+  padding: clamp(24px, 4vw, 48px);
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: space-between; gap: 24px;
+  background: var(--accent-soft); border-radius: 20px;
+}
+.about-page .contact-cta { width: 100%; margin-top: 64px; }
+.contact-cta h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
+.contact-cta p { max-width: 55ch; margin-bottom: 0; }
+.contact-cta .hero-actions { margin-top: 0; }
+.site-navigation { flex-wrap: wrap; }
+.site-navigation a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
+section[id] { scroll-margin-top: 140px; }
+@media (max-width: 850px) {
+  .professional-about { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .header-inner { gap: 14px; }
+  .site-navigation { gap: 20px; }
+  .site-navigation a { font-size: .9rem; }
+  .project-grid { gap: 20px; }
+  .about-visual { padding: 16px; }
 }

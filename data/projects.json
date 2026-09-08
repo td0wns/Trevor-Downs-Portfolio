@@ -1,6 +1,8 @@
 [
   {
     "id": "salesforce-multi-touch-attribution",
+    "cardTitle": "Revenue attribution",
+    "cardSummary": "Connected marketing and sales engagement with enquiries, placements and revenue reporting.",
     "title": "Salesforce Multi-Touch Attribution and Revenue Reporting",
     "employer": "Fresh Start in Education",
     "ownership": "Identified the attribution problem and owned the architecture, Flow design, scoring, deployment and iteration.",
@@ -38,6 +40,8 @@
   },
   {
     "id": "local-authority-account-hierarchy",
+    "cardTitle": "Local Authority account architecture",
+    "cardSummary": "Linked organisations, contracts and pricing to make commercial relationships easier to manage.",
     "title": "Local-Authority Account Hierarchy, Contract Pricing and Commercial Risk",
     "employer": "Fresh Start in Education",
     "ownership": "Advocated for the model and owned its design, automation, validation, deployment and continuing governance.",
@@ -75,6 +79,8 @@
   },
   {
     "id": "commercial-data-architecture",
+    "cardTitle": "School-group relationship architecture",
+    "cardSummary": "Connected school and governing-organisation data across Salesforce and MCAE.",
     "title": "MAT and Private Governing-Organisation Commercial Architecture",
     "employer": "Fresh Start in Education",
     "ownership": "Defined the commercial model, designed the technical architecture and presented it for senior approval.",
@@ -112,6 +118,8 @@
   },
   {
     "id": "salesforce-forecasting-framework",
+    "cardTitle": "Lead forecasting and follow-up",
+    "cardSummary": "Built guided sales workflows with forecast values and automated closure of inactive opportunities.",
     "title": "Salesforce Lead Opportunity Forecasting and Automated Closure",
     "employer": "Fresh Start in Education",
     "ownership": "Identified the process gap and owned solution design, build, deployment and live refinement.",
@@ -149,6 +157,8 @@
   },
   {
     "id": "crm-data-governance-permissions",
+    "cardTitle": "Salesforce governance and adoption",
+    "cardSummary": "Combined access controls, data standards and user support to bring new CRM features into daily use.",
     "title": "Salesforce Access Governance, Data Standards and User Adoption",
     "employer": "Fresh Start in Education",
     "ownership": "Served as departmental Salesforce super user and feature owner, refining designs through user feedback.",
@@ -185,6 +195,8 @@
   },
   {
     "id": "revenue-operations-model",
+    "cardTitle": "Commercial operating model",
+    "cardSummary": "Aligned teams around shared relationship data, responsibilities and commercial workflows.",
     "title": "Commercial Systems Operating Model and Change Leadership",
     "employer": "Fresh Start in Education",
     "ownership": "Defined and presented the relationship-led operating model across several senior-leadership meetings.",
@@ -219,6 +231,8 @@
   },
   {
     "id": "mcae-platform-architecture-rebuild",
+    "cardTitle": "Mailchimp-to-MCAE rebuild",
+    "cardSummary": "Led data remediation, migration and the rebuild of the marketing automation platform.",
     "title": "Mailchimp-to-MCAE Migration, Data Remediation and Platform Rebuild",
     "employer": "Fresh Start in Education",
     "ownership": "Led data remediation, platform design, migration controls, testing and production rollout.",
@@ -257,6 +271,8 @@
   },
   {
     "id": "mcae-consent-suppression-preferences",
+    "cardTitle": "Audience and consent architecture",
+    "cardSummary": "Built dynamic audience rules for qualification, suppression, preferences and data remediation.",
     "title": "Initial MCAE Audience, Consent and Suppression Architecture",
     "employer": "Fresh Start in Education",
     "ownership": "Designed and implemented the initial architecture, including list strategy, suppression, remediation and preference governance.",
@@ -294,6 +310,8 @@
   },
   {
     "id": "mcae-audience-governance-optimisation",
+    "cardTitle": "Predictive audience qualification",
+    "cardSummary": "Extended live audience governance with score resets, requalification and human review.",
     "title": "Ongoing MCAE Audience Governance and Predictive Qualification",
     "employer": "Fresh Start in Education",
     "ownership": "Owns the production architecture after launch, monitoring, refining and extending its governance and qualification logic.",
@@ -332,6 +350,8 @@
   },
   {
     "id": "mcae-campaign-revenue-engine",
+    "cardTitle": "Email campaigns and revenue",
+    "cardSummary": "Owned campaign delivery across the Mailchimp-to-MCAE transition and improved commercial visibility.",
     "title": "Email Campaign Operations Across Mailchimp and MCAE",
     "employer": "Fresh Start in Education",
     "ownership": "Sole owner of campaign operations and the sequencing of Pardot/MCAE work affecting channel continuity.",
@@ -371,6 +391,8 @@
   },
   {
     "id": "mcae-modular-xhtml-email-template-system",
+    "cardTitle": "Modular email templates",
+    "cardSummary": "Created a reusable email production framework, supported by testing, documentation and training.",
     "title": "Modular MCAE XHTML Email Template System",
     "employer": "Fresh Start in Education",
     "ownership": "Designed, tested and documented the framework, directing AI-assisted XHTML development and user training.",
@@ -408,6 +430,8 @@
   },
   {
     "id": "agent-ready-commercial-data-architecture",
+    "cardTitle": "AI-ready CRM foundations",
+    "cardSummary": "Built governed data and automation foundations for a proposed future AI integration.",
     "title": "AI-Ready Salesforce, Pardot and Website-Automation Architecture",
     "employer": "Fresh Start in Education",
     "ownership": "Designed and implemented governed data and automation foundations while defining the unfunded future state separately.",
@@ -445,6 +469,8 @@
   },
   {
     "id": "local-authority-commercial-intelligence-application",
+    "cardTitle": "Commercial intelligence application",
+    "cardSummary": "Turned relationship, contract and bid data into a practical Salesforce decision-support application.",
     "title": "Local-Authority Commercial Intelligence Application",
     "employer": "Fresh Start in Education",
     "ownership": "Owned the project end to end from problem definition and scoring logic through deployment and live refinement.",
@@ -483,6 +509,8 @@
   },
   {
     "id": "ai-assisted-newsletter-engagement-application",
+    "cardTitle": "Newsletter engagement application",
+    "cardSummary": "Built and deployed a privacy-conscious participation experience for newsletter subscribers.",
     "title": "AI-Assisted Newsletter Engagement and Privacy-Conscious Leaderboard",
     "employer": "Fresh Start in Education",
     "ownership": "Created the product concept and owned requirements, AI-assisted build, testing, refinement and deployment.",
@@ -517,6 +545,8 @@
   },
   {
     "id": "community-strategy-thought-leadership",
+    "cardTitle": "Community strategy and research",
+    "cardSummary": "Developed original community frameworks and published research-led community and MCAE writing.",
     "title": "Community Strategy Framework and MCAE Thought Leadership",
     "employer": "Downs Community Consulting",
     "ownership": "Founded the venture and independently researched, developed and published its frameworks and technical writing, with guidance from a mentor and adviser.",
@@ -551,6 +581,8 @@
   },
   {
     "id": "webinar-event-lead-capture",
+    "cardTitle": "Event registration and CRM automation",
+    "cardSummary": "Connected promotion, registration, attendance and follow-up across Salesforce and MCAE.",
     "title": "Webinar and Event Registration, CRM and Follow-Up Automation",
     "employer": "Fresh Start in Education",
     "ownership": "Owned the registration-to-follow-up workflow and its connection across campaigns, CRM and MCAE.",
@@ -587,6 +619,8 @@
   },
   {
     "id": "youth-event-portfolio-growth",
+    "cardTitle": "Youth programme growth",
+    "cardSummary": "Revitalised events through community engagement, team leadership and budget control.",
     "title": "Youth Programme Revitalisation, Audience Growth and Cost Control",
     "employer": "Life Church",
     "ownership": "Owned departmental event strategy, programme delivery, marketing, volunteer development and budget control.",
@@ -621,6 +655,8 @@
   },
   {
     "id": "large-scale-international-conference-operations",
+    "cardTitle": "International conference operations",
+    "cardSummary": "Progressed through an internship into conference operations and volunteer leadership at scale.",
     "title": "Large-Scale International Conference Operations and Volunteer Leadership",
     "employer": "Hillsong",
     "ownership": "Progressed from team member to co-manager and then the internally titled Event Operations Manager, all within an internship.",

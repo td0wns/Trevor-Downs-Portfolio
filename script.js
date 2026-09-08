@@ -204,9 +204,9 @@ function sortProjects(projects) {
 
 function createProjectCard(project) {
   const projectTitle =
-    project.title || "Untitled project";
+    project.cardTitle || project.title || "Untitled project";
 
- const projectUrl = getSafeProjectUrl(project.url || project.pageUrl);
+  const projectUrl = getSafeProjectUrl(project.url || project.pageUrl);
 
   const opensInNewTab =
     project.openInNewTab === true;
@@ -238,29 +238,7 @@ function createProjectCard(project) {
     `
     : "";
 
-  const proofItems = [
-    ["Ownership", project.ownership],
-    ["Adoption", project.adoption]
-  ].filter(([, value]) => Boolean(value));
-
-  const proofMarkup = proofItems.length
-    ? `
-      <div class="project-proof">
-        ${proofItems
-          .map(([label, value]) => {
-            return `
-              <p>
-                <span>${escapeHtml(label)}</span>
-                ${escapeHtml(value)}
-              </p>
-            `;
-          })
-          .join("")}
-      </div>
-    `
-    : "";
-
-  const tagsMarkup = (project.tags || [])
+  const tagsMarkup = (project.tags || []).slice(0, 3)
     .map((tag) => {
       return `
         <span class="project-tag">
@@ -281,16 +259,16 @@ function createProjectCard(project) {
       </h3>
 
       <p class="project-summary">
-        ${escapeHtml(project.summary || "")}
+        ${escapeHtml(project.cardSummary || project.summary || "")}
       </p>
 
-      ${proofMarkup}
 
       ${metricMarkup}
 
       <div class="project-tags">
         ${tagsMarkup}
       </div>
+      ${projectUrl ? '<span class="project-read-more">View project <span aria-hidden="true">↗</span></span>' : ""}
     </div>
   `;
 
