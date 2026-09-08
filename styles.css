@@ -1243,3 +1243,19 @@ section[id] { scroll-margin-top: 140px; }
   .project-grid { gap: 20px; }
   .about-visual { padding: 16px; }
 }
+
+.project-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+.project-pagination > a { color: var(--accent); font-weight: 700; }
+.project-pagination .button { cursor: pointer; font: inherit; }
+.project-pagination .button:disabled { opacity: .45; cursor: default; transform: none; }
+@media (min-width: 621px) and (max-width: 1000px) {
+  [data-project-preview] .project-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  [data-project-preview] .project-content { padding: 16px; }
+}

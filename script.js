@@ -14,7 +14,8 @@ const FILTER_TAGS = [
 const state = {
   projects: [],
   selectedTags: new Set(),
-  sortOrder: "relevance"
+  sortOrder: "relevance",
+  page: 0
 };
 
 const elements = {
@@ -112,6 +113,7 @@ function createFilterButtons() {
         state.selectedTags.add(tag);
       }
 
+      state.page = 0;
       updateFilterButtons();
       renderProjects();
     });
@@ -309,6 +311,12 @@ function createProjectCard(project) {
   `;
 }
 
+const previewMode = document.body.dataset.projectPreview === "true";
+const pageSize = 3;
+const previousButton = document.getElementById("previous-projects");
+const nextButton = document.getElementById("next-projects");
+const pageStatus = document.getElementById("project-page-status");
+
 function renderProjects() {
   const matchingProjects = state.projects.filter(
     (project) => {
@@ -338,7 +346,17 @@ function renderProjects() {
   elements.emptyState.hidden =
     visibleProjects.length !== 0;
 
-  elements.grid.innerHTML = visibleProjects
+  const pageCount = Math.ceil(visibleProjects.length / pageSize);
+  state.page = Math.min(state.page, Math.max(0, pageCount - 1));
+  const displayedProjects = previewMode
+    ? visibleProjects.slice(state.page * pageSize, (state.page + 1) * pageSize)
+    : visibleProjects;
+  if (previewMode) {
+    previousButton.disabled = state.page === 0;
+    nextButton.disabled = state.page >= pageCount - 1;
+    pageStatus.textContent = pageCount ? `Selection ${state.page + 1} of ${pageCount}` : "No matching projects";
+  }
+  elements.grid.innerHTML = displayedProjects
     .map((project) => {
       return createProjectCard(project);
     })
@@ -394,6 +412,7 @@ elements.sort.addEventListener(
   "change",
   (event) => {
     state.sortOrder = event.target.value;
+    state.page = 0;
 
     renderProjects();
   }
@@ -403,6 +422,7 @@ elements.clearFilters.addEventListener(
   "click",
   () => {
     state.selectedTags.clear();
+    state.page = 0;
 
     updateFilterButtons();
     renderProjects();
@@ -415,3 +435,14 @@ elements.currentYear.textContent =
 createFilterButtons();
 updateFilterButtons();
 loadProjects();
+
+if (previewMode) {
+  previousButton.addEventListener("click", () => {
+    state.page = Math.max(0, state.page - 1);
+    renderProjects();
+  });
+  nextButton.addEventListener("click", () => {
+    state.page += 1;
+    renderProjects();
+  });
+}
