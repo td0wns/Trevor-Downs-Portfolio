@@ -10,7 +10,7 @@
 
     <meta
       name="description"
-      content="Local-Authority Account Hierarchy, Contract Pricing and Commercial Risk project by Trevor Downs."
+    content="How Trevor Downs organised 200+ Local Authorities, 1,000+ Accounts and contract prices into a usable Salesforce hierarchy."
     />
 
     <title>
@@ -312,7 +312,7 @@
 
           <span class="brand-text">
             <strong>Trevor Downs</strong>
-            <small>Commercial systems and transformation</small>
+            <small>Career Portfolio</small>
           </span>
         </a>
 
@@ -345,13 +345,11 @@
           </h1>
 
           <p class="case-study-introduction">
-            A local-authority-centred Salesforce data
-            model that represented local authorities as
-            commercially influential parent accounts,
-            connected contract pricing to Opportunities,
-            and exposed where a single authority
-            relationship could put many related accounts
-            at risk.
+            I reorganised Salesforce around a commercial
+            fact the old structure missed: one Local
+            Authority can influence the pricing, funding or
+            access conditions of many otherwise separate
+            customers.
           </p>
 
           <div class="case-study-tags">
@@ -384,17 +382,14 @@
             </span>
 
             <p class="case-study-overview-copy">
-              Advocated for representing every local
-              authority as a Salesforce Account and
-              assigning it as the parent account of every
-              organisation within its geographic area.
-              Custom Metadata Type-driven Flows and
-              validation rules maintained the hierarchy
-              across more than 1,000 accounts and 20,000
-              leads and contacts, while an extended
-              Contract object and Opportunity automation
-              kept bespoke local-authority pricing visible
-              and accurate.
+              I made the case for treating every Local
+              Authority as a Salesforce Account and placing
+              organisations in its area beneath it. Flows
+              and validation rules now maintain that
+              hierarchy across 1,000+ Accounts and 20,000+
+              Leads and Contacts. Contract and Opportunity
+              automation also puts bespoke pricing where
+              users can find it.
             </p>
           </div>
 
@@ -448,29 +443,20 @@
             <h2>The commercial problem</h2>
 
             <p>
-              Every customer account, contact and lead
-              operated within a geographic area overseen
-              by a local authority, but authorities were
-              commercially more significant than a
-              standard geography field could represent.
-              Depending on the area, an authority could
-              set prices, fund services, commission the
-              organisation, issue projects, restrict
-              provider access, influence a buying
-              committee, or remain a relatively passive
-              observer.
+              Every customer sat within a Local Authority
+              area, but a location field could not describe
+              the commercial relationship. Depending on the
+              area, the authority might set prices, fund or
+              commission services, issue projects, restrict
+              provider access or take little active role.
             </p>
 
             <p>
-              Without a relational Salesforce model, the
-              organisation could not consistently connect
-              accounts with the authorities influencing
-              them, segment communications by contract,
-              or quantify authority-level exposure.
-              Operational users could see individual
-              one-to-one relationships, but could not
-              surface every client connected to the same
-              Local Authority in one usable view.
+              Salesforce held individual relationships, but
+              users could not open one authority and see
+              every client affected by it. That made
+              contract-based communication, pricing checks
+              and authority-level risk harder to manage.
             </p>
 
             <ul class="case-study-list">
@@ -504,20 +490,17 @@
             <h2>A local-authority-centred account model</h2>
 
             <p>
-              Advocated for representing each local
-              authority as a Salesforce Account and
-              assigning it as the parent account of every
-              organisation within its geographic area,
-              treating authorities as commercially
-              influential stakeholders rather than only a
-              geographic classification.
+              I proposed a Local Authority Account for each
+              area, used as the parent of every relevant
+              organisation. This gave the authority a real
+              place in the account model instead of leaving
+              it as a piece of geography.
             </p>
 
             <p>
-              The model was applied across more than
-              1,000 Salesforce accounts and over 20,000
-              leads and contacts, representing
-              200+ local authorities.
+              The model covers more than 1,000 Salesforce
+              Accounts and 20,000 Leads and Contacts across
+              200+ Local Authorities.
             </p>
 
             <ul class="case-study-list">
@@ -536,25 +519,19 @@
             <h2>Metadata-driven assignment and governance</h2>
 
             <p>
-              Built Salesforce Flows using Custom Metadata
-              Types to support local-authority assignment
-              and account ownership logic, making the
-              rules easier to maintain than hard-coded
-              automation. When an organisation received a
-              local authority as its parent account, its
-              contacts also received the relevant context
-              for segmentation and marketing within MCAE,
-              and leads carried the same context before
-              conversion.
+              I put assignment and ownership rules into
+              Custom Metadata Types so they could be
+              maintained without rewriting the automation.
+              Flows apply the Local Authority to Accounts,
+              Contacts and Leads. That context is available
+              in MCAE before and after Lead conversion.
             </p>
 
             <p>
-              Validation rules ensured that only accounts
-              explicitly marked as local authorities could
-              be selected as parent accounts, and required
-              every new organisation account to be
-              assigned an appropriate local-authority
-              parent on creation.
+              Validation rules allow only approved Local
+              Authority Accounts to be selected as parents.
+              They also prevent a new organisation Account
+              from being saved without one.
             </p>
 
             <ul class="case-study-list">
@@ -574,24 +551,19 @@
             <h2>Contract-based segmentation</h2>
 
             <p>
-              The hierarchy enabled segmentation by
-              local-authority contract and commercial
-              relationship rather than relying on
-              geography alone, so bespoke messaging could
-              reach organisations affected by a particular
-              authority's pricing, contracts,
-              commissioning requirements or service
-              restrictions.
+              MCAE can now segment by authority contract or
+              commercial relationship, not just county.
+              Messages can reach the organisations affected
+              by a particular price, contract, commissioning
+              rule or service restriction.
             </p>
 
             <p>
-              This created a structure through which the
-              organisation could assess the number and
-              commercial importance of accounts influenced
-              by each local authority, supporting
-              prioritisation of authority relationships
-              according to their direct role and their
-              wider influence over related accounts.
+              The same structure shows how many Accounts an
+              authority can influence and how commercially
+              important they are. That gives relationship
+              planning a firmer basis than local knowledge
+              alone.
             </p>
 
             <ul class="case-study-list">
@@ -610,24 +582,20 @@
             <h2>Commercial concentration risk</h2>
 
             <p>
-              The hierarchy highlighted commercial
-              concentration risk where a weak relationship
-              with one local authority could affect many
-              otherwise independent accounts within its
-              area. Oxfordshire illustrated this: the
-              authority applied custom pricing and was
-              otherwise relatively uninvolved, but the
-              organisation's strong local popularity meant
-              that deterioration in the authority
-              relationship could create substantial
-              exposure across accounts in the area.
+              One poor authority relationship can affect
+              many independent Accounts in the same area.
+              Oxfordshire was a useful example. The
+              authority applied custom pricing but was
+              otherwise fairly hands-off. Because the
+              service was popular locally, a deterioration
+              in that one relationship still represented
+              substantial exposure.
             </p>
 
             <p>
-              Surfacing this kind of exposure gave the
-              organisation a clearer basis for deciding
-              which authority relationships most needed
-              active management.
+              Making that exposure visible helped the team
+              decide which authority relationships deserved
+              active attention.
             </p>
 
             <ul class="case-study-list">
@@ -645,24 +613,20 @@
             <h2>Contract pricing and Opportunity automation</h2>
 
             <p>
-              Extended the Salesforce Contract object to
-              store bespoke local-authority and
-              contract-specific pricing, then built Flows
-              that pulled the applicable contract price
-              into Opportunities. This helped sales teams
-              and colleagues handling enquiries identify
-              the correct charge rate when preparing
-              commercial discussions and quotations.
+              I extended the Contract object to hold
+              authority-specific prices, then used Flow to
+              bring the applicable price into an
+              Opportunity. Sales and enquiry teams no
+              longer had to rely on memory when preparing a
+              quote.
             </p>
 
             <p>
-              Pricing management spanned 200+
-              local authorities and roughly half that
-              number of distinct contractual arrangements,
-              improving forecasting accuracy by ensuring
-              Opportunity values reflected the relevant
-              contract rather than generic or manually
-              remembered pricing.
+              Pricing covers 200+ authorities and roughly
+              half as many distinct contractual
+              arrangements. Opportunity values can now use
+              the relevant contract price instead of a
+              generic assumption.
             </p>
 
             <ul class="case-study-list">
@@ -678,7 +642,7 @@
           <p class="eyebrow">Outcomes</p>
 
           <h2>
-            What the account hierarchy enabled
+            The result in Salesforce
           </h2>
 
           <div class="case-study-outcome-grid">
@@ -686,10 +650,9 @@
               <h3>Governed hierarchy at scale</h3>
 
               <p>
-                Represented 200+ local
-                authorities as parent accounts across
-                1,000+ related organisation accounts and
-                20,000+ leads and contacts.
+                More than 200 Local Authorities now sit
+                above 1,000+ organisation Accounts and
+                20,000+ Leads and Contacts.
               </p>
             </article>
 
@@ -697,10 +660,9 @@
               <h3>Contract-based segmentation</h3>
 
               <p>
-                Enabled bespoke MCAE messaging to
-                organisations affected by a specific
-                authority's pricing, commissioning or
-                service conditions.
+                MCAE can target organisations affected by a
+                specific authority's pricing, commissioning
+                or service conditions.
               </p>
             </article>
 
@@ -708,10 +670,9 @@
               <h3>Protected data integrity</h3>
 
               <p>
-                Validation rules restricted parent-account
-                selection to approved local authorities and
-                enforced hierarchy completeness at account
-                creation.
+                Validation limits parent selection to
+                approved authorities and catches missing
+                relationships when an Account is created.
               </p>
             </article>
 
@@ -719,9 +680,9 @@
               <h3>Accurate pricing and forecasting</h3>
 
               <p>
-                Automated Opportunity pricing from the
-                Contract object helped sales quote correctly
-                and improved revenue forecast reliability.
+                Opportunity automation pulls the right price
+                from the Contract object for quoting and
+                forecasting.
               </p>
             </article>
           </div>

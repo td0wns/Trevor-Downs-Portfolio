@@ -10,7 +10,7 @@
 
     <meta
       name="description"
-      content="Initial MCAE audience, consent, suppression and segmentation architecture project by Trevor Downs."
+    content="How Trevor Downs built about 400 MCAE lists to manage audience qualification, suppression, subscriptions and data repair."
     />
 
     <title>
@@ -312,7 +312,7 @@
 
           <span class="brand-text">
             <strong>Trevor Downs</strong>
-            <small>Commercial systems and transformation</small>
+            <small>Career Portfolio</small>
           </span>
         </a>
 
@@ -345,11 +345,10 @@
           </h1>
 
           <p class="case-study-introduction">
-            Designed and implemented the self-healing
-            audience foundation for a rebuilt MCAE instance,
-            governing qualification, subscriptions,
-            suppression, remediation and Salesforce-informed
-            segmentation through January 2026.
+            I built the first set of rules that decides who
+            can enter an MCAE audience, who must be
+            suppressed and which records can qualify again
+            after their data changes.
           </p>
 
           <div class="case-study-tags">
@@ -375,15 +374,11 @@
             </span>
 
             <p class="case-study-overview-copy">
-              Built approximately 400 MCAE lists within a
-              governed architecture spanning dynamic
-              qualification, master suppression, subscription
-              preferences, data remediation, segmentation,
-              lifecycle management and buyer-readiness
-              foundations. The system moved prospects between
-              eligible, suppressed, remediation and
-              requalified states as their data, permission
-              and engagement changed.
+              About 400 lists manage qualification,
+              suppression, subscription preferences, data
+              repair and segmentation. A prospect can move
+              into or out of an audience when their data,
+              permission or engagement changes.
             </p>
           </div>
 
@@ -397,10 +392,9 @@
               </span>
 
               <strong>
-                Created a self-healing audience system of
-                approximately 400 MCAE lists supporting
-                three commercial audiences and continuous
-                prospect requalification.
+                About 400 MCAE lists manage three commercial
+                audiences and allow prospects to requalify
+                when their data changes.
               </strong>
             </div>
 
@@ -441,21 +435,17 @@
             <h2>The audience-management challenge</h2>
 
             <p>
-              The new MCAE environment needed to do more than
-              execute campaigns. It had to distinguish clean,
-              sendable and permission-aware prospects from
-              records that were unsubscribed, suppressed,
-              disengaged, incomplete or awaiting remediation.
+              The new MCAE instance needed a dependable way
+              to separate sendable prospects from
+              unsubscribes, suppressed records, disengaged
+              people and data that still needed repair.
             </p>
 
             <p>
-              The organisation also served several commercial
-              audiences with different qualification rules,
-              buying relationships and lifecycle patterns.
-              Static manual lists could not reliably keep
-              audience eligibility, data quality and
-              subscription state aligned as prospect records
-              changed.
+              Three commercial audiences had different rules
+              and buying patterns. Manually maintained lists
+              would fall out of date as soon as a prospect's
+              data or subscription changed.
             </p>
 
             <ul class="case-study-list">
@@ -475,23 +465,18 @@
             <h2>Dynamic qualification and list architecture</h2>
 
             <p>
-              Structured approximately 400 MCAE lists around
-              two different kinds of evidence. Dynamic lists
-              represented statements that were currently true,
-              such as whether a prospect had clean data,
-              remained engaged or met an audience's minimum
-              qualification rules. Static micro-segmentation
-              lists preserved historical actions that had
-              previously occurred.
+              I separated current state from history. Dynamic
+              lists answer questions that can change, such as
+              whether the data is clean or the prospect is
+              still engaged. Static micro-segmentation lists
+              keep actions that happened in the past.
             </p>
 
             <p>
-              Each core audience used dynamic qualifier lists
-              requiring minimum viable prospect information,
-              including a name, email address, relevant
-              subscription type and exclusion from the Master
-              Suppression List. As those inputs changed,
-              audience membership adjusted automatically.
+              To qualify, a prospect needs a name, an email
+              address, the right subscription and no place on
+              the Master Suppression List. Membership updates
+              automatically when any of those inputs changes.
             </p>
 
             <ul class="case-study-list">
@@ -511,24 +496,20 @@
             <h2>Suppression, remediation and data recovery</h2>
 
             <p>
-              Created a centralised, fully dynamic Master
-              Suppression List composed of issue-specific
-              controls covering unsubscribes, do-not-email
-              records, hard bounces, blank first names,
-              duplicates, test records, messaging fatigue and
-              other non-viable cases.
+              I created one dynamic Master Suppression List
+              from smaller issue lists. It covers
+              unsubscribes, do-not-email flags, hard bounces,
+              blank first names, duplicates, test records,
+              messaging fatigue and other reasons not to send.
             </p>
 
             <p>
-              Suppression was designed as an operational
-              routing mechanism rather than a permanent final
-              destination. Records with correctable issues
-              were removed from active audiences and routed
-              into remediation. Dedicated misfit lists
-              retained visibility of missing business-type or
-              local-authority data without treating incomplete
-              records as permanently invalid. Once corrected,
-              prospects could qualify again automatically.
+              Not every problem deserves permanent exclusion.
+              Correctable records leave the active audience
+              and enter a repair route. Separate misfit lists
+              expose missing business-type or Local Authority
+              data. Once fixed, those prospects can qualify
+              again without manual re-entry.
             </p>
 
             <ul class="case-study-list">
@@ -548,24 +529,18 @@
             <h2>Consent and subscription governance</h2>
 
             <p>
-              Built branded preference and unsubscribe pages
-              with cascading logic that respected both
-              audience-level choices and universal
-              unsubscribe requirements. Prospects could leave
-              an individual audience or channel without
-              necessarily losing every appropriate
-              subscription, while a universal unsubscribe
-              removed them from all lists capable of sending
-              email.
+              I built branded preference and unsubscribe pages
+              with cascading rules. A prospect can leave one
+              audience without losing every valid subscription.
+              A universal unsubscribe removes them from every
+              list that can send email.
             </p>
 
             <p>
-              Enquiry and gated-content forms routed opt-ins
-              into source-tracking lists, preserving the
-              context in which each subscription was obtained.
-              Most-recently-updated logic helped ensure that
-              the latest subscription state governed activity
-              across connected systems.
+              Enquiry and gated-content forms record where an
+              opt-in came from. When systems disagree, the
+              most recently updated subscription state takes
+              precedence.
             </p>
 
             <ul class="case-study-list">
@@ -585,24 +560,19 @@
             <h2>Three-audience segmentation model</h2>
 
             <p>
-              Structured MCAE around three commercial
-              audiences: provision and services, a community
-              newsletter supporting buying-committee
-              influence, and professional development sold to
-              schools. Cross-audience rules allowed prospects
-              to belong to more than one audience where they
-              met the relevant criteria without weakening
-              qualification requirements.
+              I organised MCAE around provision and services,
+              a community newsletter and professional
+              development for schools. A prospect can belong
+              to more than one, but must meet each audience's
+              own requirements.
             </p>
 
             <p>
-              Audience segmentation incorporated primary
-              schools, secondary schools, academies and local
-              authority teams. Salesforce-synchronised
-              business-type and local-authority data, combined
-              with formula-derived region logic, automated
-              county and geographic segmentation and reduced
-              manual list maintenance.
+              Salesforce supplies business type and Local
+              Authority data for primary schools, secondary
+              schools, academies and authority teams. Formula
+              fields derive region and county, removing much
+              of the manual geographic maintenance.
             </p>
 
             <ul class="case-study-list">
@@ -619,24 +589,20 @@
           <p class="case-study-number">06</p>
 
           <div>
-            <h2>A production foundation for continued improvement</h2>
+            <h2>Drawing a line under the first build</h2>
 
             <p>
-              Completed the initial architecture in January
-              2026 as the production foundation for governed
-              campaign operations across three commercial
-              audiences. The build established the rules,
-              controls and data routes needed for reliable
-              qualification and later lifecycle development.
+              I completed the initial production architecture
+              in January 2026. At that point, all three
+              audiences had working qualification rules,
+              controls and data routes.
             </p>
 
             <p>
-              From February 2026, ongoing monitoring and
-              optimisation became a separate phase of work.
-              That phase extends the foundation through
-              reversible qualification, predictive buyer
-              grading, score and profile degradation,
-              certainty-state routing and human review.
+              From February, I treated monitoring and
+              optimisation as a separate phase. That later
+              work includes expiring scores, reversible
+              profiles, certainty states and human review.
             </p>
 
             <ul class="case-study-list">
@@ -653,7 +619,7 @@
           <p class="eyebrow">Outcomes</p>
 
           <h2>
-            What the initial architecture enabled
+            What was in place by January 2026
           </h2>
 
           <div class="case-study-outcome-grid">
@@ -661,9 +627,9 @@
               <h3>Continuously governed audiences</h3>
 
               <p>
-                Dynamic qualification kept live audiences
-                aligned with current data, subscription,
-                suppression and engagement states.
+                Dynamic rules keep membership aligned with
+                current data, subscriptions, suppression and
+                engagement.
               </p>
             </article>
 
@@ -671,10 +637,8 @@
               <h3>Recoverable data quality</h3>
 
               <p>
-                Correctable records moved through visible
-                remediation routes and could requalify
-                automatically instead of remaining permanently
-                excluded.
+                Correctable records have a visible repair
+                route and can return automatically once fixed.
               </p>
             </article>
 
@@ -682,20 +646,19 @@
               <h3>Scalable segmentation</h3>
 
               <p>
-                Three commercial audience models combined
-                Salesforce-informed business, geographic and
-                organisational context without relying on
+                Three audience models use Salesforce business,
+                location and relationship data with less
                 manual list maintenance.
               </p>
             </article>
 
             <article class="case-study-outcome">
-              <h3>Extensible operating foundation</h3>
+              <h3>A clear next phase</h3>
 
               <p>
-                The initial rules and data routes created a
-                stable base for the separate ongoing audience-
-                governance and predictive-qualification phase.
+                The first build was complete before ongoing
+                optimisation and predictive qualification
+                began as separate work.
               </p>
             </article>
           </div>
@@ -731,6 +694,3 @@
     </footer>
   </body>
 </html>
-
-
-

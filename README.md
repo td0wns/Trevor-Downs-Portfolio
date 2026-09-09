@@ -8,3 +8,5 @@ while `about.html` contains the professional profile and connected-capability il
 in `styles.css`, with homepage filtering and sorting behaviour in `script.js`.
 
 To preview locally, serve the repository as a static website and open `index.html` through that local server.
+
+`VOICE_GUIDE.md` records the writing habits to avoid and the first-person editorial style used across the site.

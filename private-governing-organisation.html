@@ -10,7 +10,7 @@
 
     <meta
       name="description"
-      content="MAT and Private Governing-Organisation Commercial Architecture project by Trevor Downs."
+    content="How Trevor Downs mapped roughly half of school Accounts to 215 MATs and governing organisations for Salesforce and MCAE use."
     />
 
     <title>
@@ -312,7 +312,7 @@
 
           <span class="brand-text">
             <strong>Trevor Downs</strong>
-            <small>Commercial systems and transformation</small>
+            <small>Career Portfolio</small>
           </span>
         </a>
 
@@ -345,13 +345,11 @@
           </h1>
 
           <p class="case-study-introduction">
-            A Salesforce and MCAE architecture that
-            represented schools within their wider
-            Multi-Academy Trust, independent school group
-            and private governing-organisation
-            relationships, then used purchases within
-            connected organisations as a commercial signal
-            for marketing qualification and sales routing.
+            A school rarely buys in complete isolation. I
+            built a Salesforce and MCAE model that keeps its
+            MAT or governing organisation visible and uses
+            purchases elsewhere in that group as a signal
+            for marketing and sales.
           </p>
 
           <div class="case-study-tags">
@@ -384,16 +382,12 @@
             </span>
 
             <p class="case-study-overview-copy">
-              Advocated for, designed, secured senior approval
-              for and implemented an
-              architecture that mapped school Accounts to
-              their governing organisations, aligned
-              related Accounts, Contacts and Leads through
-              Custom Metadata Type-driven automation and
-              domain matching, and used purchases within
-              connected organisations to trigger Salesforce
-              Campaigns, MCAE validation, grading, nurture
-              and automated sales handoff.
+              I mapped school Accounts to their governing
+              organisations, built the Salesforce rules and
+              won senior approval for the commercial model.
+              Automation aligns Accounts, Contacts and Leads.
+              A related purchase can then trigger MCAE
+              checks, grading, nurture and sales handoff.
             </p>
           </div>
 
@@ -447,25 +441,18 @@
             <h2>The commercial problem</h2>
 
             <p>
-              A substantial proportion of school accounts
-              did not operate as fully independent
-              organisations. Approximately half belonged to
-              Multi-Academy Trusts, independent school
-              groups or other private governing
-              organisations, while every school also
-              operated within a local-authority context.
+              About half of the school Accounts belonged to
+              a MAT, independent-school group or another
+              private governing organisation. Every school
+              also had a separate Local Authority context.
             </p>
 
             <p>
-              The company historically risked approaching
-              schools as isolated buying entities, limiting
-              visibility of shared governance, related
-              purchases, buying momentum and influence
-              across connected organisations. Salesforce
-              did not contain a complete, governed
-              structure for these relationships, and Leads
-              could not be directly linked to Accounts
-              before conversion.
+              Treating each school as a lone buyer hid shared
+              governance and purchases elsewhere in the
+              group. Salesforce had no complete structure
+              for those links, and an unconverted Lead could
+              not use a standard Account lookup.
             </p>
 
             <ul class="case-study-list">
@@ -499,24 +486,19 @@
             <h2>Mapping the governing-organisation landscape</h2>
 
             <p>
-              Identified the governing-organisation
-              membership of school accounts across
-              Multi-Academy Trusts, independent school
-              groups and other private governing
-              organisations, then segmented the entire
-              school-account database according to the
-              correct governing organisation or confirmed
-              lack of membership.
+              I researched the governing membership of the
+              full school database, including MATs,
+              independent-school groups and other private
+              bodies. Each Account was mapped to the right
+              organisation or marked as having no known
+              membership.
             </p>
 
             <p>
-              Represented each governing organisation
-              through the additional parent-account
-              relationship within the Salesforce account
-              model, allowing school accounts to retain
-              both local-authority context and private
-              governing-organisation context at the same
-              time.
+              An additional parent relationship holds the
+              private governing organisation. Schools can
+              therefore retain that information and their
+              Local Authority relationship at the same time.
             </p>
 
             <ul class="case-study-list">
@@ -535,23 +517,18 @@
             <h2>Lookup keys and metadata-driven alignment</h2>
 
             <p>
-              Used Custom Metadata Types to support
-              repeatable assignment logic across accounts,
-              contacts and leads sharing the same MAT or
-              governing organisation, and built Salesforce
-              automation to align related records with the
-              appropriate master or MAT account.
+              Custom Metadata Types hold the assignment
+              rules. Salesforce automation uses them to
+              align Accounts, Contacts and Leads with the
+              correct MAT or master Account.
             </p>
 
             <p>
-              Added custom fields that created lookup keys
-              for governing-organisation assignment,
-              enabling unconverted Leads to retain
-              organisational context despite there being no
-              standard direct Lead-to-Account lookup before
-              conversion. Validation rules protected the
-              completeness and accuracy of the resulting
-              hierarchy.
+              I added lookup-key fields so unconverted Leads
+              could keep their governing context despite the
+              missing standard Account relationship.
+              Validation rules catch incomplete or inaccurate
+              assignments.
             </p>
 
             <ul class="case-study-list">
@@ -570,26 +547,20 @@
             <h2>One dynamic, multi-object Screen Flow</h2>
 
             <p>
-              Designed and implemented a single dynamic
-              Salesforce Screen Flow that adapted its
-              behaviour according to the object and record
-              context from which it was launched. From a
-              school Account it allowed alignment to the
-              correct private governing organisation, while
-              from a local-authority or local-authority
-              department Account it prevented an
-              inappropriate alignment being created.
+              I made one Screen Flow behave differently
+              according to where it is opened. On a school
+              Account it sets the private governing body.
+              On a Local Authority or one of its departments,
+              it blocks an inappropriate assignment.
             </p>
 
             <p>
-              From a Lead, the Flow presented the same user
-              experience while populating different
-              Lead-specific fields in the background, and
-              from a MAT Account it displayed a summary of
-              related Accounts and Leads, with safeguards
-              against selecting similarly named MATs and
-              support for requesting a new MAT Account
-              where none existed.
+              On a Lead, users see the same interface while
+              different fields are populated behind the
+              scenes. On a MAT Account, the Flow lists
+              related Accounts and Leads, helps users avoid
+              similarly named MATs and allows them to request
+              a new MAT record when needed.
             </p>
 
             <ul class="case-study-list">
@@ -609,25 +580,18 @@
             <h2>Domain matching for new records</h2>
 
             <p>
-              Documented thousands of email domains
-              associated with MATs, independent school
-              groups and other private governing
-              organisations, storing them as Custom
-              Metadata Type reference data. Flow automation
-              checked newly created Leads and Contacts not
-              already within the architecture against these
-              records, using exact like-for-like matching
-              and wildcard matching to identify valid domain
-              variations.
+              I documented thousands of email domains and
+              stored them in Custom Metadata Types. When a
+              new Lead or Contact has no governing link,
+              Flow checks for an exact domain or an approved
+              wildcard variation.
             </p>
 
             <p>
-              Government and personal email domains were
-              excluded from this matching to prevent false
-              MAT or independent-school assignments, and
-              the Flow completed quietly when no valid match
-              was found, avoiding unnecessary interruption
-              or forced manual action.
+              Government and personal domains are excluded
+              because they would create false matches. If
+              no valid domain is found, the Flow ends quietly
+              and does not interrupt the user.
             </p>
 
             <ul class="case-study-list">
@@ -646,34 +610,28 @@
             <h2>Commercial strategy, adoption and activation</h2>
 
             <p>
-              Advocated for and designed the wider
-              architecture around the principle that a
-              purchase by one organisation could act as a
-              tangential buying signal for related Accounts
-              and Leads. When an Account within a MAT or
-              private governing organisation entered
-              purchase, related Accounts not currently
-              purchasing and related Leads were added to
-              Salesforce Campaigns synchronised into MCAE.
+              The commercial premise was simple: a purchase
+              by one organisation may be relevant to others
+              in the same group. When an Account purchases,
+              related non-purchasing Accounts and Leads can
+              enter a Salesforce Campaign synchronised with
+              MCAE.
             </p>
 
             <p>
-              Presented the relationship-led model across
-              several meetings and secured formal approval
-              first from the Director and then the CEO. The
-              adopted model changed how interconnected Accounts
-              were understood and shaped email marketing,
-              departmental attitudes and wider brand voice.
+              I presented the model over several meetings
+              and secured formal approval from the Director,
+              then the CEO. It changed how the company
+              viewed related Accounts and influenced email
+              marketing and the wider brand voice.
             </p>
 
             <p>
-              MCAE validated whether these related prospects
-              were legitimate and appropriate to pursue,
-              adjusted qualification according to buying
-              momentum, placed validated prospects into
-              follow-up journeys, and automatically routed
-              qualified Leads and Accounts to the relevant
-              sales teams.
+              MCAE checks whether related prospects are
+              legitimate, adjusts their qualification,
+              places suitable records into follow-up and
+              sends qualified Leads or Accounts to the right
+              sales team.
             </p>
 
             <ul class="case-study-list">
@@ -689,8 +647,7 @@
           <p class="eyebrow">Outcomes</p>
 
           <h2>
-            What the MAT and governing-organisation
-            architecture enabled
+            How the model is used
           </h2>
 
           <div class="case-study-outcome-grid">
@@ -698,10 +655,9 @@
               <h3>Account-family visibility</h3>
 
               <p>
-                Mapped approximately 50% of school accounts
-                to 215 MATs and private governing
-                organisations, moving away from treating
-                schools as isolated buying entities.
+                Roughly half of all school Accounts are now
+                mapped to 215 MATs and other governing
+                organisations.
               </p>
             </article>
 
@@ -709,10 +665,8 @@
               <h3>Lead-to-organisation continuity</h3>
 
               <p>
-                Custom lookup keys let unconverted Leads
-                carry governing-organisation context despite
-                no standard Lead-to-Account lookup existing
-                before conversion.
+                Custom lookup keys preserve governing
+                information on Leads before conversion.
               </p>
             </article>
 
@@ -720,10 +674,9 @@
               <h3>One Flow, many contexts</h3>
 
               <p>
-                A single dynamic Screen Flow supported
-                school, local-authority, Lead and MAT
-                Account contexts while preventing
-                inappropriate alignments.
+                One Screen Flow covers schools, Local
+                Authorities, Leads and MAT Accounts, with
+                safeguards for each context.
               </p>
             </article>
 
@@ -731,10 +684,9 @@
               <h3>Senior adoption and activation</h3>
 
               <p>
-                Director and CEO approval moved the strategy
-                into formal company use, where related purchases
-                trigger validation, grading, nurture and sales
-                routing across connected Accounts and Leads.
+                After Director and CEO approval, related
+                purchases began feeding validation, nurture
+                and sales routing for the wider group.
               </p>
             </article>
           </div>

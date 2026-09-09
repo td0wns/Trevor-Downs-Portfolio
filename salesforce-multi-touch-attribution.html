@@ -10,7 +10,7 @@
 
     <meta
       name="description"
-      content="Salesforce Multi-Touch Attribution and Revenue Reporting project by Trevor Downs."
+    content="How Trevor Downs built a live Salesforce attribution model for email, events, sales activity, enquiries, placements and revenue."
     />
 
     <title>
@@ -312,7 +312,7 @@
 
           <span class="brand-text">
             <strong>Trevor Downs</strong>
-            <small>Commercial systems and transformation</small>
+            <small>Career Portfolio</small>
           </span>
         </a>
 
@@ -345,12 +345,12 @@
           </h1>
 
           <p class="case-study-introduction">
-            A weighted Salesforce attribution model
-            connecting recent email, event, sales and
-            organisational engagement with enquiries,
-            referrals, opportunities, placements and
-            revenue reporting, now used in production to
-            support commercial resource allocation.
+            I built this because a single person was rarely
+            the whole buying story. The live Salesforce
+            model weighs recent email, event and sales
+            activity at both person and organisation level,
+            then follows it through enquiries, referrals,
+            opportunities and placements.
           </p>
 
           <div class="case-study-tags">
@@ -383,17 +383,14 @@
             </span>
 
             <p class="case-study-overview-copy">
-              Built separate Salesforce Flow entry paths
-              for Lead enquiries, Contact enquiries and
-              Account-level referrals. The model used a
-              three-week engagement window, Campaign
-              Member activity, recognised organisational
-              domains, MAT and Account context,
-              returning-customer status and
-              sequence-sensitive weighting, normalising
-              applicable channel influence to 100% and
-              storing the result for dashboards, revenue
-              reports and live commercial ROI snapshots.
+              Three Salesforce Flow routes handle Lead
+              enquiries, Contact enquiries and Account-level
+              referrals. The calculation looks back three
+              weeks and checks Campaign activity, recognised
+              domains, MAT and Account context, returning
+              customers and the order of each touchpoint.
+              Every result totals 100% and is saved for
+              dashboards and revenue reports.
             </p>
           </div>
 
@@ -448,23 +445,19 @@
             <h2>The commercial challenge</h2>
 
             <p>
-              The organisation operated within a complex
-              education-sector purchasing environment
-              involving large buying committees, multiple
-              stakeholders, high staff turnover and
-              role-based email addresses. A person could
-              engage with email marketing, attend an
-              event or speak with sales, while a
-              completely different person from the same
-              organisation later submitted the website
-              enquiry or referral.
+              Education purchases often involved several
+              people, and staff turnover was high. One
+              person might open an email, another attend an
+              event and a third submit the eventual enquiry.
+              Role-based email addresses made the identity
+              trail even less reliable.
             </p>
 
             <p>
-              Conventional person-level, first-touch or
-              last-touch attribution could not reliably
-              explain which activity had actually
-              influenced the eventual outcome.
+              First-touch and last-touch reports credited
+              whichever individual happened to appear at
+              one end of the journey. They missed the rest
+              of the organisation's activity.
             </p>
 
             <ul class="case-study-list">
@@ -499,24 +492,19 @@
             <h2>Engagement tracking architecture</h2>
 
             <p>
-              Built an engagement-tracking architecture
-              using Salesforce Campaigns as indicators of
-              recent, attributable behaviour. MCAE
-              automation added prospects to engagement
-              Campaigns when they opened or clicked
-              qualifying email content, scheduled sales
-              calls added Leads and Contacts to a separate
-              Campaign, and event kiosk capture connected
-              attendees with event-specific Campaigns.
+              I used Salesforce Campaigns to record recent
+              behaviour. MCAE added prospects after a
+              qualifying email open or click. Scheduled
+              sales calls used a separate Campaign, and
+              event-kiosk records went into event-specific
+              Campaigns.
             </p>
 
             <p>
-              A weekly Salesforce Flow purged and
-              repopulated engagement Campaign membership
-              using a three-week engagement window, so
-              membership reflected recent commercially
-              relevant interaction rather than permanent
-              historical activity.
+              A weekly Flow clears and rebuilds membership
+              against a three-week window. Old activity
+              therefore stops influencing the calculation
+              once it is no longer recent.
             </p>
 
             <ul class="case-study-list">
@@ -536,21 +524,19 @@
             <h2>Three attribution Flow paths</h2>
 
             <p>
-              The attribution model triggered through
-              three separate Salesforce Flow entry paths:
-              a Lead enquiry, a Contact enquiry, and an
-              Account-level referral. Each path gathered
-              active engagement Campaigns, MAT membership,
-              Account context and related Lead or Contact
-              activity before calculating a result.
+              I created three entry points: a Lead enquiry,
+              a Contact enquiry and an Account-level
+              referral. Each one gathers current Campaign
+              membership, MAT information, Account context
+              and relevant Lead or Contact activity before
+              it calculates a result.
             </p>
 
             <p>
-              The Account-level path evaluated engagement
-              across the wider organisation rather than
-              focusing on one person, looping through
-              related contact data to identify the most
-              relevant organisational domain.
+              The Account route checks the wider
+              organisation. It loops through related
+              contact data to find the most relevant domain
+              instead of assuming the referrer acted alone.
             </p>
 
             <ul class="case-study-list">
@@ -571,25 +557,21 @@
             <h2>Domain matching and organisational context</h2>
 
             <p>
-              Where the submitting person did not use a
-              government email address, the model used
-              shared email-domain matching, backed by
-              Custom Metadata Type reference data, to
-              identify related Leads and Contacts within
-              the same organisation. Domains ending in
-              .gov.uk were excluded from this matching, as
-              their broad usage did not support safe
-              assumptions about interconnectedness.
+              For non-government addresses, the model uses
+              shared domains to find related Leads and
+              Contacts. Custom Metadata Types hold the
+              reference data. I excluded .gov.uk domains
+              because sharing one does not reliably mean
+              that two contacts belong to the same buying
+              group.
             </p>
 
             <p>
-              Engagement by several related people within
-              the same organisation could strengthen the
-              score of the corresponding attribution
-              channel, and Account status was factored in
-              because recent and returning customers were
-              more likely to purchase because of the
-              existing relationship.
+              Activity from several related people can
+              strengthen a channel's score. The calculation
+              also checks Account status, since an existing
+              customer relationship can influence a later
+              purchase.
             </p>
 
             <ul class="case-study-list">
@@ -608,24 +590,19 @@
             <h2>Sequence-sensitive weighting and normalisation</h2>
 
             <p>
-              Custom weighting rules considered the
-              sequence and relationship between touchpoints
-              — for example, a preceding sales call reduced
-              the relative influence assigned to later
-              mailshot engagement, since direct sales
-              interaction was likely to have been the
-              stronger driver. Known purchasing patterns
-              were also checked before assigning the final
-              attribution.
+              Order matters. If a sales call came before a
+              later mailshot interaction, for example, the
+              call received more weight because it was more
+              likely to have prompted the later activity. I
+              also checked known purchasing patterns before
+              assigning the final shares.
             </p>
 
             <p>
-              Individual channel scores were summed into a
-              total, each channel's proportional share was
-              calculated, and the final attribution across
-              events, returning-customer influence,
-              mailshots and sales outreach was always
-              normalised to 100%.
+              The model adds the channel scores, works out
+              each proportional share and normalises the
+              answer to 100% across events, customer
+              history, mailshots and sales outreach.
             </p>
 
             <ul class="case-study-list">
@@ -644,26 +621,20 @@
             <h2>Attribution Model object and reporting</h2>
 
             <p>
-              Results were stored in a custom Attribution
-              Model object, dynamically populated through
-              Salesforce Flow to minimise manual data
-              entry. The record held numerical attribution
-              for each channel, lookups to the relevant
-              Lead, Contact and converted Contact, the
-              enquiring and referring Accounts, the related
-              Opportunity, and referral-to-placement
-              progression.
+              Salesforce stores each result in a custom
+              Attribution Model object. Flow populates the
+              channel shares and the relevant Lead,
+              Contact, Accounts, Opportunity and placement
+              links, so users do not have to assemble the
+              record by hand.
             </p>
 
             <p>
-              This preserved visibility across the full
-              journey from initial engagement through
-              enquiry, referral, Opportunity progression
-              and placement, and fed a sales dashboard and
-              multiple revenue reports. The live model now
-              provides an ROI snapshot whenever a referral
-              or purchase is recorded, helping teams compare
-              what has worked and allocate resources.
+              Those records feed a sales dashboard and
+              several revenue reports. Whenever a referral
+              or purchase is recorded, teams get a current
+              ROI snapshot they can use when deciding where
+              to put sales and marketing effort.
             </p>
 
             <ul class="case-study-list">
@@ -679,7 +650,7 @@
           <p class="eyebrow">Outcomes</p>
 
           <h2>
-            What the attribution framework enabled
+            What changed after launch
           </h2>
 
           <div class="case-study-outcome-grid">
@@ -687,9 +658,8 @@
               <h3>Buying-committee visibility</h3>
 
               <p>
-                Enabled reporting to recognise
-                organisational and buying-committee
-                influence rather than crediting only the
+                Reports now recognise activity across a
+                buying group instead of crediting only the
                 person who completed the final form.
               </p>
             </article>
@@ -698,10 +668,9 @@
               <h3>Recent, relevant engagement</h3>
 
               <p>
-                A three-week engagement window and weekly
-                Campaign refresh kept attribution grounded
-                in current activity rather than permanent
-                historical engagement.
+                The weekly refresh removes activity after
+                three weeks, so old engagement does not keep
+                receiving credit indefinitely.
               </p>
             </article>
 
@@ -709,10 +678,9 @@
               <h3>Safe organisational matching</h3>
 
               <p>
-                Shared domain matching and .gov.uk
-                exclusions connected related people without
-                relying on unsafe assumptions about
-                government-domain contacts.
+                Domain matching finds related people where
+                the evidence is useful, while the .gov.uk
+                exclusion avoids a known false match.
               </p>
             </article>
 
@@ -720,10 +688,9 @@
               <h3>Operational resource allocation</h3>
 
               <p>
-                Automatically populated results provide
-                dashboards, revenue reporting and live ROI
-                snapshots used to guide current sales and
-                marketing resource decisions.
+                Live results feed the dashboards and revenue
+                reports used for current sales and marketing
+                resource decisions.
               </p>
             </article>
           </div>
